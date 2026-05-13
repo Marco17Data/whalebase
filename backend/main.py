@@ -54,11 +54,13 @@ app = FastAPI(
 )
 
 # CORS（前端开发地址 + 部署后地址）
-frontend_origin = os.getenv("FRONTEND_ORIGIN", "http://localhost:5173")
+# FRONTEND_ORIGIN 支持逗号分隔多个 origin
+frontend_origin_env = os.getenv("FRONTEND_ORIGIN", "http://localhost:5173")
+frontend_origins = [o.strip() for o in frontend_origin_env.split(",") if o.strip()]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        frontend_origin,
+        *frontend_origins,
         "http://localhost:5173",
         "http://localhost:3000",
         "http://127.0.0.1:5173",
