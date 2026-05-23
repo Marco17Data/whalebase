@@ -31,9 +31,23 @@ function App() {
   const [aiOpen, setAIOpen] = useState(false);
   const [currencyDialogOpen, setCurrencyDialogOpen] = useState(false);
   const [suggestedCurrency, setSuggestedCurrency] = useState<string>('USD');
+  const [isSample, setIsSample] = useState<boolean>(false);
+  const [sampleId, setSampleId] = useState<string | null>(null);
 
   useEffect(() => {
-    api.createSession().then((r) => setSessionId(r.session_id));
+    // Create session, load default sample, then expose sessionId to UI
+    // so the user sees a real dashboard immediately (no empty welcome page).
+    (async () => {
+      const r = await api.createSession();
+      try {
+        await api.loadSample(r.session_id, 'sales');
+      } catch (e) {
+        // If sample loading fails (e.g. cold backend), session still works
+        console.warn('Sample auto-load failed:', e);
+      }
+      // Set sessionId LAST so the refresh-tables effect runs after sample is loaded
+      setSessionId(r.session_id);
+    })();
   }, []);
 
   // 切语言时,如果有已生成的查询,把它们的 insight 用新语言重新生成
@@ -50,6 +64,8 @@ function App() {
     const info = await api.listTables(sessionId);
     setTables(info.tables);
     setCurrencyState(info.currency || 'none');
+    setIsSample(info.is_sample || false);
+    setSampleId(info.sample_id || null);
     // 默认选第一张表(如果还没选过/已选的表被删了)
     setActiveTable((prev) => {
       if (info.tables.length === 0) return null;
@@ -64,6 +80,14 @@ function App() {
       setQueries([]);
     }
   }, [sessionId, view]);
+
+  // Once session is created, refresh tables -- sample data will appear here
+  useEffect(() => {
+    if (sessionId) {
+      refreshTables();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sessionId]);
 
   // 上传成功回调:立即设 USD 为默认货币(这样数字立刻有 $ 符号),
   // 然后弹货币对话框给用户修改成自己想要的(如 CNY/EUR)

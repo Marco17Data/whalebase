@@ -39,7 +39,32 @@ export const api = {
   },
 
   listTables: (sid: string) =>
-    request<{ tables: TableInfo[]; currency: string }>(`/session/${sid}/tables`),
+    request<{
+      tables: TableInfo[];
+      currency: string;
+      is_sample?: boolean;
+      sample_id?: string | null;
+    }>(`/session/${sid}/tables`),
+
+  // ===== Samples =====
+  listSamples: () =>
+    request<{
+      samples: Array<{
+        id: string;
+        label_en: string;
+        label_zh: string;
+        rows: number;
+        cols: number;
+        currency: string;
+      }>;
+    }>('/samples'),
+
+  loadSample: (sid: string, sampleId: string) =>
+    request<{
+      table: TableInfo;
+      currency: string;
+      sample_id: string;
+    }>(`/session/${sid}/load-sample/${sampleId}`, { method: 'POST' }),
 
   deleteTable: (sid: string, tableName: string) =>
     request<{ ok: boolean }>(
