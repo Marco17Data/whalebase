@@ -57,7 +57,7 @@ class GeminiClient(LLMClient):
 
     def __init__(self):
         self.api_key = os.getenv("GEMINI_API_KEY", "").strip()
-        self.model = os.getenv("GEMINI_MODEL", "gemini-2.0-flash-exp")
+        self.model = os.getenv("LLM_MODEL") or os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
         if not self.api_key:
             raise LLMError(
                 "GEMINI_API_KEY 未设置。在 https://aistudio.google.com/app/apikey 申请后填到 .env"
