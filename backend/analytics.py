@@ -211,6 +211,8 @@ async def generate_auto_insights(
         user_message=f"{schema}\n\nProvide 3-5 insights.",
         json_mode=True,
     )
+    import logging
+    logger = logging.getLogger(__name__)
     try:
         parsed = extract_json(raw)
         if isinstance(parsed, dict):
@@ -219,7 +221,7 @@ async def generate_auto_insights(
                     parsed = v
                     break
         if isinstance(parsed, list):
-            return [
+            insights = [
                 {
                     "title": str(item.get("title", "")),
                     "content": str(item.get("content", "")),
@@ -228,8 +230,15 @@ async def generate_auto_insights(
                 for item in parsed[:5]
                 if isinstance(item, dict)
             ]
-    except ValueError:
-        pass
+            if not insights:
+                logger.warning("auto_insights: parsed list but no valid items. Raw: %s", raw[:500])
+            return insights
+        logger.warning("auto_insights: parsed JSON is neither list nor dict-with-list. Type=%s, Raw: %s",
+                       type(parsed).__name__, raw[:500])
+    except ValueError as e:
+        logger.warning("auto_insights: extract_json failed (%s). Raw: %s", e, raw[:500])
+    except Exception as e:
+        logger.warning("auto_insights: unexpected error (%s). Raw: %s", e, raw[:500])
     return []
 
 
