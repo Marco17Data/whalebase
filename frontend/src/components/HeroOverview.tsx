@@ -70,6 +70,8 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
   const { t, lang } = useI18n();
   const [data, setData] = useState<Overview | null>(null);
   const [loading, setLoading] = useState(true);
+  const [aiInsights, setAiInsights] = useState<Array<{ title: string; content: string }> | null>(null);
+  const [aiLoading, setAiLoading] = useState(true);
 
   useEffect(() => {
     if (currency === 'none') return;
@@ -80,6 +82,24 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
         setLoading(false);
       })
       .catch(() => setLoading(false));
+  }, [sessionId, lang, activeTable, currency]);
+
+  // Fetch real AI insights (async, takes longer than overview)
+  useEffect(() => {
+    if (currency === 'none') return;
+    setAiLoading(true);
+    setAiInsights(null);
+    api.getAutoInsights(sessionId, lang)
+      .then((r) => {
+        if (r.insights && r.insights.length > 0) {
+          setAiInsights(r.insights.slice(0, 3));
+        }
+        setAiLoading(false);
+      })
+      .catch(() => {
+        setAiInsights(null);
+        setAiLoading(false);
+      });
   }, [sessionId, lang, activeTable, currency]);
 
   if (loading || !data) {
@@ -170,20 +190,49 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
           <div className="flex items-center gap-2 mb-3">
             <Sparkles className="w-4 h-4 text-amber-300" />
             <div className="text-xs font-semibold uppercase tracking-wide">AI Insights</div>
+            {aiLoading && (
+              <div className="ml-auto w-3 h-3 border-2 border-amber-300/30 border-t-amber-300 rounded-full animate-spin" />
+            )}
           </div>
           <div className="space-y-2.5 text-sm text-blue-100">
-            <div className="flex items-start gap-2">
-              <span className="text-amber-300 mt-0.5">✦</span>
-              <span>{t('hero.insight_placeholder_1')}</span>
-            </div>
-            <div className="flex items-start gap-2">
-              <span className="text-amber-300 mt-0.5">✦</span>
-              <span>{t('hero.insight_placeholder_2')}</span>
-            </div>
-            <div className="flex items-start gap-2">
-              <span className="text-amber-300 mt-0.5">✦</span>
-              <span>{t('hero.insight_placeholder_3')}</span>
-            </div>
+            {aiLoading && !aiInsights ? (
+              [0, 1, 2].map((i) => (
+                <div key={i} className="flex items-start gap-2 animate-pulse">
+                  <span className="text-amber-300/40 mt-0.5">✦</span>
+                  <div className="flex-1 space-y-1">
+                    <div className="h-3 bg-blue-700/40 rounded w-5/6"></div>
+                    <div className="h-3 bg-blue-700/40 rounded w-2/3"></div>
+                  </div>
+                </div>
+              ))
+            ) : aiInsights && aiInsights.length > 0 ? (
+              aiInsights.map((insight, i) => (
+                <div key={i} className="flex items-start gap-2">
+                  <span className="text-amber-300 mt-0.5">✦</span>
+                  <div>
+                    {insight.title && (
+                      <div className="font-semibold text-white">{insight.title}</div>
+                    )}
+                    <div className="text-blue-100">{insight.content}</div>
+                  </div>
+                </div>
+              ))
+            ) : (
+              <>
+                <div className="flex items-start gap-2">
+                  <span className="text-amber-300 mt-0.5">✦</span>
+                  <span>{t('hero.insight_placeholder_1')}</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-amber-300 mt-0.5">✦</span>
+                  <span>{t('hero.insight_placeholder_2')}</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-amber-300 mt-0.5">✦</span>
+                  <span>{t('hero.insight_placeholder_3')}</span>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>
