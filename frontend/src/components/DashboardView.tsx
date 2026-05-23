@@ -8,6 +8,7 @@ import type {
 } from '../types';
 import { api } from '../api';
 import { useI18n } from '../i18n';
+import { HeroOverview } from './HeroOverview';
 import { SmartChart } from './SmartChart';
 
 type View = 'home' | 'template' | 'presets' | 'pivot';
@@ -113,78 +114,78 @@ export function DashboardView({ sessionId, currency, activeTable, onQueryGenerat
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-6 animate-fade-in space-y-6">
-      <div>
-        <h1 className="text-xl font-semibold text-slate-900 tracking-tight">
-          {t('dashboard.title')}
-        </h1>
-        <p className="text-sm text-slate-500 mt-0.5">{t('dashboard.subtitle')}</p>
-      </div>
+    <div className="max-w-6xl mx-auto px-6 py-5 animate-fade-in space-y-4">
+      {/* HERO: 4 KPIs + main pie + AI insights + trend */}
+      <HeroOverview
+        sessionId={sessionId}
+        currency={currency}
+        activeTable={activeTable}
+      />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-        <EntryCard
-          icon={<LayoutGrid className="w-5 h-5" />}
-          title={t('dashboard.templates_title')}
-          desc={t('dashboard.templates_desc')}
-          badge={templates.length.toString()}
-          onClick={() => setView('home')}
-          accent
-        />
-        <EntryCard
-          icon={<MessageSquare className="w-5 h-5" />}
-          title={t('dashboard.presets_title')}
-          desc={t('dashboard.presets_desc')}
-          badge={presets.length.toString()}
-          onClick={() => setView('presets')}
-        />
-        <EntryCard
-          icon={<BarChart3 className="w-5 h-5" />}
-          title={t('dashboard.pivot_title')}
-          desc={t('dashboard.pivot_desc')}
-          onClick={onOpenPivot}
-        />
-      </div>
-
-      <section>
-        <h2 className="text-sm font-semibold text-slate-700 uppercase tracking-wide mb-3">
-          {t('dashboard.templates_title')}
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {templates.map((tpl) => (
-            <TemplateButton
-              key={tpl.id}
-              template={tpl}
-              loading={loadingTemplate === tpl.id}
-              onClick={() => runTemplate(tpl.id)}
-            />
-          ))}
+      {/* Explore deeper: collapsed templates / presets / pivot */}
+      <div className="pt-2">
+        <div className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-3">
+          {t('dashboard.explore_deeper')}
         </div>
-      </section>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
+          <EntryCard
+            icon={<LayoutGrid className="w-4 h-4" />}
+            title={t('dashboard.templates_title')}
+            desc={t('dashboard.templates_desc')}
+            badge={templates.length.toString()}
+            onClick={() => {
+              const el = document.getElementById('templates-section');
+              if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }}
+            accent
+          />
+          <EntryCard
+            icon={<MessageSquare className="w-4 h-4" />}
+            title={t('dashboard.presets_title')}
+            desc={t('dashboard.presets_desc')}
+            badge={presets.length.toString()}
+            onClick={() => setView('presets')}
+          />
+          <EntryCard
+            icon={<BarChart3 className="w-4 h-4" />}
+            title={t('dashboard.pivot_title')}
+            desc={t('dashboard.pivot_desc')}
+            onClick={onOpenPivot}
+          />
+        </div>
 
-      {presets.length > 0 && (
-        <section>
-          <div className="flex items-center justify-between mb-3">
-            <h2 className="text-sm font-semibold text-slate-700 uppercase tracking-wide">
-              {t('dashboard.presets_title')}
-            </h2>
-            {presets.length > 6 && (
-              <button onClick={() => setView('presets')} className="btn-ghost text-xs">
-                {t('dashboard.open')} <ArrowRight className="w-3 h-3" />
-              </button>
-            )}
-          </div>
-          <PresetList presets={presets.slice(0, 6)} onRun={runPreset} loadingId={loadingPreset} />
-        </section>
-      )}
-
-      {autoCards.length > 0 && (
-        <section>
-          <h2 className="text-sm font-semibold text-slate-700 uppercase tracking-wide mb-3">
-            Quick Overview
+        <section id="templates-section">
+          <h2 className="text-xs font-semibold text-slate-600 uppercase tracking-wide mb-3">
+            {t('dashboard.templates_title')}
           </h2>
-          <DashboardGrid cards={autoCards} currency={currency} />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {templates.map((tpl) => (
+              <TemplateButton
+                key={tpl.id}
+                template={tpl}
+                loading={loadingTemplate === tpl.id}
+                onClick={() => runTemplate(tpl.id)}
+              />
+            ))}
+          </div>
         </section>
-      )}
+
+        {presets.length > 0 && (
+          <section className="mt-5">
+            <div className="flex items-center justify-between mb-3">
+              <h2 className="text-xs font-semibold text-slate-600 uppercase tracking-wide">
+                {t('dashboard.presets_title')}
+              </h2>
+              {presets.length > 6 && (
+                <button onClick={() => setView('presets')} className="btn-ghost text-xs">
+                  {t('dashboard.open')} <ArrowRight className="w-3 h-3" />
+                </button>
+              )}
+            </div>
+            <PresetList presets={presets.slice(0, 6)} onRun={runPreset} loadingId={loadingPreset} />
+          </section>
+        )}
+      </div>
     </div>
   );
 }

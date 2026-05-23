@@ -66,6 +66,27 @@ export const api = {
       sample_id: string;
     }>(`/session/${sid}/load-sample/${sampleId}`, { method: 'POST' }),
 
+  // ===== Overview (hero view: KPIs + pie + trend) =====
+  getOverview: (sid: string, lang: string = 'en', table?: string) => {
+    const params = new URLSearchParams({ lang });
+    if (table) params.set('table', table);
+    return request<{
+      kpis: Array<{ label: string; value: number | string; format: 'number' | 'currency' | 'date'; sub?: number }>;
+      pie: null | {
+        title: string;
+        dimension: string;
+        total: number;
+        is_currency: boolean;
+        slices: Array<{ label: string; value: number; pct: number }>;
+      };
+      trend: null | {
+        title: string;
+        is_currency: boolean;
+        points: Array<{ month: string; value: number }>;
+      };
+    }>(`/session/${sid}/overview?${params}`);
+  },
+
   deleteTable: (sid: string, tableName: string) =>
     request<{ ok: boolean }>(
       `/session/${sid}/table/${encodeURIComponent(tableName)}`,
