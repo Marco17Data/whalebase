@@ -36,18 +36,19 @@ function App() {
   const [initialLoading, setInitialLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    // Create session, load default sample, fetch tables, THEN dismiss loading
-    // so we never flash an empty welcome page.
+    // Bootstrap: do ALL fetches BEFORE setting any state, so React renders
+    // the final UI in one batched paint (no flash of intermediate state).
     (async () => {
-      const r = await api.createSession();
       try {
-        await api.loadSample(r.session_id, 'sales');
-      } catch (e) {
-        console.warn('Sample auto-load failed:', e);
-      }
-      setSessionId(r.session_id);
-      try {
+        const r = await api.createSession();
+        try {
+          await api.loadSample(r.session_id, 'sales');
+        } catch (e) {
+          console.warn('Sample auto-load failed:', e);
+        }
         const info = await api.listTables(r.session_id);
+        // All data is ready -- set state in one sync batch.
+        setSessionId(r.session_id);
         setTables(info.tables);
         setCurrencyState(info.currency || 'none');
         setIsSample(info.is_sample || false);
@@ -57,9 +58,10 @@ function App() {
           setView('dashboard');
         }
       } catch (e) {
-        console.warn('Initial tables fetch failed:', e);
+        console.warn('Bootstrap failed:', e);
+      } finally {
+        setInitialLoading(false);
       }
-      setInitialLoading(false);
     })();
   }, []);
 
