@@ -199,15 +199,19 @@ def generate_overview(session: Session, lang: str = "en", table_name: str | None
     is_currency = revenue_col and _is_currency_col(revenue_col)
 
     kpis = []
-    total_rows = _safe_exec(session, f'SELECT COUNT(*) AS n FROM "{tname}"')
-    if total_rows and total_rows["rows"]:
-        kpis.append({"label": tr("kpi.total_records", lang), "value": total_rows["rows"][0][0], "format": "number"})
 
     if revenue_col:
         total_rev = _safe_exec(session, f'SELECT ROUND(SUM("{revenue_col.name}"), 2) AS total FROM "{tname}"')
         if total_rev and total_rev["rows"]:
             kpis.append({"label": tr("kpi.total_revenue", lang), "value": total_rev["rows"][0][0],
                          "format": "currency" if is_currency else "number"})
+
+    # Whalebase is a sales analytics tool, so default this to Total Orders
+    total_rows = _safe_exec(session, f'SELECT COUNT(*) AS n FROM "{tname}"')
+    if total_rows and total_rows["rows"]:
+        kpis.append({"label": tr("kpi.total_orders", lang), "value": total_rows["rows"][0][0], "format": "number"})
+
+    if revenue_col:
         avg_rev = _safe_exec(session, f'SELECT ROUND(AVG("{revenue_col.name}"), 2) AS avg FROM "{tname}"')
         if avg_rev and avg_rev["rows"]:
             kpis.append({"label": tr("kpi.average_order", lang), "value": avg_rev["rows"][0][0],

@@ -130,6 +130,12 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
         "de": "Datensätze Gesamt", "pt": "Total Registros", "it": "Record Totali",
         "ru": "Всего записей",
     },
+    "kpi.total_orders": {
+        "en": "Total Orders", "zh": "总订单数", "es": "Total Pedidos",
+        "ja": "総注文数", "ko": "총 주문", "fr": "Total Commandes",
+        "de": "Bestellungen Gesamt", "pt": "Total Pedidos", "it": "Ordini Totali",
+        "ru": "Всего заказов",
+    },
     "kpi.total_revenue": {
         "en": "Total Revenue", "zh": "总收入", "es": "Ingresos Totales",
         "ja": "総売上", "ko": "총 매출", "fr": "Revenu Total",
