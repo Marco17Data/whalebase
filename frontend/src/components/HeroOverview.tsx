@@ -255,15 +255,29 @@ function KPICard({ kpi, currency }: { kpi: KPI; currency: string }) {
       </div>
 
       {hasSparkline && (
-        <div className="mt-2 -mx-1 h-8">
+        <div className="mt-2 -mx-1 h-12">
           <ResponsiveContainer width="100%" height="100%">
-            <LineChart data={sparkline.map((v, i) => ({ i, v }))}>
+            <LineChart data={sparkline.map((v, i) => ({ i, v }))} margin={{ top: 4, right: 2, left: 2, bottom: 2 }}>
+              <YAxis hide domain={['dataMin - dataMin*0.1', 'dataMax + dataMax*0.05']} />
               <Line
                 type="monotone"
                 dataKey="v"
-                stroke={isPositive ? '#10b981' : '#64748b'}
-                strokeWidth={1.5}
-                dot={false}
+                stroke={isPositive ? '#10b981' : '#ef4444'}
+                strokeWidth={2}
+                dot={(props: { cx?: number; cy?: number; index?: number }) => {
+                  const isLast = props.index === sparkline.length - 1;
+                  if (!isLast) return <g />;
+                  return (
+                    <circle
+                      cx={props.cx}
+                      cy={props.cy}
+                      r={3}
+                      fill={isPositive ? '#10b981' : '#ef4444'}
+                      stroke="white"
+                      strokeWidth={1.5}
+                    />
+                  );
+                }}
                 isAnimationActive={false}
               />
             </LineChart>
