@@ -1,0 +1,2501 @@
+transaction_id,purchase_date,category,product_name,channel,customer_age_group,customer_gender,quantity,unit_price,discount_rate,revenue,customer_id
+TX50077,2024-06-01,Clothing,Sneakers,Marketplace,26-35,F,2,76.0,0.2,152.0,U00138
+TX50180,2024-06-01,Beauty,Face Mask,Web,36-45,M,3,18,0,54,U00157
+TX50453,2024-06-01,Home,Rug,Social Media,46-55,M,2,120,0,240,U00537
+TX50474,2024-06-01,Home,Curtain,Social Media,56+,F,2,65,0,130,U00726
+TX50593,2024-06-01,Books,Biography,Marketplace,46-55,M,2,28,0,56,U00048
+TX50821,2024-06-01,Home,Lamp,Web,46-55,F,1,55,0,55,U00447
+TX51876,2024-06-01,Books,Self-Help,Social Media,46-55,Other,1,22,0,22,U00045
+TX52025,2024-06-01,Beauty,Hair Dryer,Mobile App,56+,F,1,52.0,0.2,52.0,U00808
+TX52496,2024-06-01,Electronics,Headphones,Marketplace,36-45,M,3,89,0,267,U00388
+TX50203,2024-06-02,Beauty,Face Mask,Mobile App,26-35,F,3,14.4,0.2,43.2,U00293
+TX50505,2024-06-02,Electronics,Phone Case,Marketplace,46-55,F,1,25,0,25,U00779
+TX51170,2024-06-02,Electronics,Headphones,Marketplace,36-45,F,2,89,0,178,U00606
+TX52499,2024-06-02,Beauty,Face Mask,Mobile App,26-35,F,1,18,0,18,U00056
+TX50012,2024-06-03,Electronics,Headphones,Social Media,56+,F,1,89,0,89,U00299
+TX50110,2024-06-03,Clothing,Sneakers,Mobile App,36-45,F,1,95,0,95,U00764
+TX50234,2024-06-03,Electronics,Headphones,Mobile App,18-25,F,3,71.2,0.2,213.6,U00738
+TX50615,2024-06-03,Home,Bedsheet,Mobile App,56+,Other,3,45,0,135,U00329
+TX51513,2024-06-03,Books,Tech Manual,Social Media,26-35,F,1,45,0,45,U00682
+TX51629,2024-06-03,Books,Self-Help,Mobile App,36-45,Other,1,22,0,22,U00017
+TX51720,2024-06-03,Home,Pillow,Marketplace,46-55,Other,1,24.5,0.3,24.5,U00027
+TX51801,2024-06-03,Electronics,Phone Case,Social Media,46-55,M,1,25,0,25,U00275
+TX52335,2024-06-03,Electronics,Phone Case,Web,56+,Other,1,25,0,25,U00874
+TX50825,2024-06-04,Home,Bedsheet,Social Media,56+,Other,1,31.5,0.3,31.5,U00723
+TX51125,2024-06-04,Beauty,Hair Dryer,Mobile App,46-55,Other,1,58.5,0.1,58.5,U00135
+TX51165,2024-06-04,Home,Curtain,Social Media,18-25,Other,1,65,0,65,U00132
+TX51209,2024-06-04,Electronics,Headphones,Web,46-55,Other,1,89,0,89,U00512
+TX51396,2024-06-04,Electronics,Smart Watch,Social Media,56+,Other,2,139.3,0.3,278.6,U00195
+TX51420,2024-06-04,Books,Tech Manual,Marketplace,56+,Other,2,36.0,0.2,72.0,U00627
+TX51551,2024-06-04,Home,Lamp,Social Media,46-55,F,3,44.0,0.2,132.0,U00537
+TX52136,2024-06-04,Home,Curtain,Web,56+,M,2,65,0,130,U00663
+TX52175,2024-06-04,Beauty,Skincare Set,Social Media,18-25,Other,3,71.2,0.2,213.6,U00581
+TX50326,2024-06-05,Electronics,Charger,Mobile App,56+,F,1,35,0,35,U00714
+TX50370,2024-06-05,Beauty,Lipstick,Marketplace,18-25,Other,1,22,0,22,U00688
+TX50517,2024-06-05,Home,Curtain,Social Media,18-25,Other,2,65,0,130,U00631
+TX52063,2024-06-05,Home,Bedsheet,Social Media,18-25,Other,1,45,0,45,U00490
+TX52135,2024-06-05,Books,Self-Help,Marketplace,26-35,M,1,22,0,22,U00348
+TX50604,2024-06-06,Beauty,Perfume,Mobile App,18-25,Other,1,77.0,0.3,77.0,U00255
+TX50957,2024-06-06,Home,Lamp,Marketplace,46-55,M,1,44.0,0.2,44.0,U00765
+TX51120,2024-06-06,Home,Rug,Mobile App,26-35,Other,3,120,0,360,U00733
+TX51477,2024-06-06,Beauty,Lipstick,Mobile App,18-25,F,1,22,0,22,U00370
+TX52056,2024-06-06,Electronics,Headphones,Social Media,46-55,Other,1,80.1,0.1,80.1,U00504
+TX50233,2024-06-07,Beauty,Skincare Set,Mobile App,56+,M,1,89,0,89,U00206
+TX51035,2024-06-07,Beauty,Face Mask,Marketplace,36-45,M,3,18,0,54,U00415
+TX51202,2024-06-07,Electronics,Headphones,Social Media,18-25,M,2,89,0,178,U00796
+TX51705,2024-06-07,Beauty,Hair Dryer,Web,18-25,M,2,65,0,130,U00829
+TX51841,2024-06-07,Clothing,Hoodie,Social Media,18-25,Other,1,55,0,55,U00893
+TX50518,2024-06-08,Clothing,Dress,Marketplace,56+,Other,1,75,0,75,U00817
+TX50739,2024-06-08,Clothing,Jeans,Mobile App,36-45,Other,2,65,0,130,U00558
+TX50807,2024-06-08,Books,Fiction Novel,Web,56+,Other,1,12.6,0.3,12.6,U00150
+TX50888,2024-06-08,Beauty,Lipstick,Marketplace,46-55,M,2,19.8,0.1,39.6,U00491
+TX51052,2024-06-08,Clothing,Hoodie,Web,46-55,F,1,49.5,0.1,49.5,U00831
+TX51144,2024-06-08,Clothing,Hoodie,Social Media,18-25,F,1,44.0,0.2,44.0,U00777
+TX51537,2024-06-08,Home,Curtain,Mobile App,46-55,M,1,65,0,65,U00070
+TX51714,2024-06-08,Beauty,Skincare Set,Social Media,18-25,Other,2,89,0,178,U00363
+TX51809,2024-06-08,Electronics,Bluetooth Speaker,Social Media,18-25,M,2,79,0,158,U00393
+TX51969,2024-06-08,Books,Fiction Novel,Web,36-45,Other,1,18,0,18,U00521
+TX52367,2024-06-08,Books,Tech Manual,Web,18-25,M,1,45,0,45,U00896
+TX50147,2024-06-09,Clothing,Sneakers,Web,26-35,Other,2,85.5,0.1,171.0,U00569
+TX50445,2024-06-09,Home,Curtain,Mobile App,46-55,M,1,58.5,0.1,58.5,U00319
+TX50476,2024-06-09,Books,Tech Manual,Mobile App,26-35,F,1,40.5,0.1,40.5,U00748
+TX50701,2024-06-09,Beauty,Lipstick,Web,56+,Other,2,22,0,44,U00374
+TX50720,2024-06-09,Electronics,Smart Watch,Marketplace,46-55,M,1,159.2,0.2,159.2,U00777
+TX50945,2024-06-09,Clothing,Hoodie,Marketplace,26-35,M,3,55,0,165,U00894
+TX51465,2024-06-09,Electronics,Bluetooth Speaker,Mobile App,26-35,F,1,71.1,0.1,71.1,U00335
+TX51807,2024-06-09,Electronics,Bluetooth Speaker,Marketplace,46-55,Other,2,71.1,0.1,142.2,U00455
+TX50310,2024-06-10,Electronics,Headphones,Web,18-25,Other,2,89,0,178,U00520
+TX50670,2024-06-10,Home,Pillow,Social Media,18-25,Other,1,35,0,35,U00032
+TX51050,2024-06-10,Clothing,Dress,Mobile App,56+,F,1,60.0,0.2,60.0,U00849
+TX51182,2024-06-10,Clothing,Hoodie,Marketplace,46-55,F,1,44.0,0.2,44.0,U00004
+TX51991,2024-06-10,Electronics,Charger,Web,46-55,F,1,31.5,0.1,31.5,U00578
+TX52266,2024-06-10,Books,Fiction Novel,Marketplace,46-55,M,2,16.2,0.1,32.4,U00317
+TX50314,2024-06-11,Clothing,Sneakers,Social Media,26-35,M,2,76.0,0.2,152.0,U00719
+TX51442,2024-06-11,Home,Curtain,Marketplace,18-25,F,1,65,0,65,U00125
+TX51897,2024-06-11,Home,Bedsheet,Social Media,18-25,M,2,45,0,90,U00599
+TX51917,2024-06-11,Home,Curtain,Web,18-25,Other,1,52.0,0.2,52.0,U00887
+TX51918,2024-06-11,Home,Bedsheet,Marketplace,46-55,Other,2,45,0,90,U00655
+TX51962,2024-06-11,Electronics,Bluetooth Speaker,Mobile App,18-25,F,3,79,0,237,U00276
+TX52282,2024-06-11,Electronics,Bluetooth Speaker,Marketplace,46-55,F,1,79,0,79,U00815
+TX52347,2024-06-11,Electronics,Bluetooth Speaker,Marketplace,36-45,M,1,71.1,0.1,71.1,U00044
+TX52469,2024-06-11,Beauty,Skincare Set,Social Media,46-55,F,1,89,0,89,U00262
+TX50201,2024-06-12,Clothing,Dress,Social Media,26-35,F,1,75,0,75,U00862
+TX50634,2024-06-12,Beauty,Lipstick,Social Media,56+,M,2,15.4,0.3,30.8,U00725
+TX50978,2024-06-12,Books,Self-Help,Web,56+,F,1,19.8,0.1,19.8,U00371
+TX50283,2024-06-13,Books,Self-Help,Social Media,18-25,M,1,17.6,0.2,17.6,U00668
+TX50377,2024-06-13,Home,Lamp,Mobile App,56+,Other,1,55,0,55,U00490
+TX51502,2024-06-13,Clothing,Jeans,Mobile App,46-55,M,1,65,0,65,U00105
+TX51556,2024-06-13,Electronics,Charger,Mobile App,18-25,M,1,35,0,35,U00736
+TX52257,2024-06-13,Home,Pillow,Social Media,56+,Other,1,28.0,0.2,28.0,U00123
+TX52419,2024-06-13,Books,Biography,Mobile App,46-55,Other,2,28,0,56,U00178
+TX50038,2024-06-14,Clothing,Jeans,Web,18-25,Other,1,58.5,0.1,58.5,U00833
+TX50048,2024-06-14,Beauty,Lipstick,Web,18-25,F,2,22,0,44,U00466
+TX50122,2024-06-14,Beauty,Lipstick,Marketplace,56+,M,1,22,0,22,U00605
+TX51114,2024-06-14,Clothing,Dress,Mobile App,56+,F,1,60.0,0.2,60.0,U00109
+TX51263,2024-06-14,Beauty,Hair Dryer,Marketplace,56+,Other,1,65,0,65,U00820
+TX51435,2024-06-14,Electronics,Smart Watch,Web,26-35,Other,2,199,0,398,U00428
+TX51884,2024-06-14,Home,Bedsheet,Web,36-45,Other,2,45,0,90,U00348
+TX52291,2024-06-14,Home,Curtain,Social Media,46-55,F,2,65,0,130,U00678
+TX50214,2024-06-15,Clothing,Hoodie,Mobile App,56+,Other,2,49.5,0.1,99.0,U00579
+TX50963,2024-06-15,Electronics,Smart Watch,Web,46-55,F,2,199,0,398,U00558
+TX51863,2024-06-15,Clothing,Jeans,Mobile App,36-45,Other,1,65,0,65,U00311
+TX51898,2024-06-15,Home,Bedsheet,Social Media,46-55,F,1,36.0,0.2,36.0,U00108
+TX50075,2024-06-16,Books,Tech Manual,Web,56+,F,1,36.0,0.2,36.0,U00426
+TX51002,2024-06-16,Beauty,Perfume,Marketplace,36-45,Other,2,99.0,0.1,198.0,U00555
+TX51115,2024-06-16,Electronics,Smart Watch,Social Media,18-25,Other,2,159.2,0.2,318.4,U00095
+TX51408,2024-06-16,Home,Pillow,Social Media,46-55,Other,1,31.5,0.1,31.5,U00405
+TX51994,2024-06-16,Clothing,Jeans,Web,56+,M,3,58.5,0.1,175.5,U00859
+TX50054,2024-06-17,Home,Pillow,Mobile App,56+,M,1,35,0,35,U00728
+TX50188,2024-06-17,Home,Bedsheet,Web,36-45,M,1,45,0,45,U00253
+TX50366,2024-06-17,Books,Cookbook,Social Media,56+,F,1,25,0,25,U00742
+TX50469,2024-06-17,Electronics,Headphones,Web,18-25,F,1,89,0,89,U00754
+TX50877,2024-06-17,Beauty,Hair Dryer,Web,46-55,F,1,52.0,0.2,52.0,U00746
+TX51126,2024-06-17,Clothing,T-Shirt,Marketplace,18-25,M,3,28,0,84,U00326
+TX51188,2024-06-17,Home,Rug,Mobile App,26-35,M,1,120,0,120,U00670
+TX51220,2024-06-17,Beauty,Face Mask,Mobile App,26-35,Other,1,18,0,18,U00547
+TX51713,2024-06-17,Electronics,Headphones,Marketplace,26-35,M,1,89,0,89,U00402
+TX51745,2024-06-17,Books,Cookbook,Social Media,46-55,M,3,25,0,75,U00802
+TX51767,2024-06-17,Beauty,Skincare Set,Web,26-35,F,1,71.2,0.2,71.2,U00424
+TX51922,2024-06-17,Home,Rug,Social Media,46-55,F,2,120,0,240,U00149
+TX52397,2024-06-17,Books,Tech Manual,Marketplace,46-55,Other,1,45,0,45,U00239
+TX50934,2024-06-18,Clothing,Jeans,Mobile App,26-35,F,1,52.0,0.2,52.0,U00219
+TX52108,2024-06-18,Books,Tech Manual,Web,46-55,Other,1,40.5,0.1,40.5,U00638
+TX52262,2024-06-18,Home,Lamp,Marketplace,18-25,M,1,38.5,0.3,38.5,U00708
+TX50554,2024-06-19,Beauty,Lipstick,Marketplace,26-35,Other,1,22,0,22,U00856
+TX50571,2024-06-19,Beauty,Hair Dryer,Web,46-55,Other,1,58.5,0.1,58.5,U00443
+TX50943,2024-06-19,Home,Pillow,Mobile App,26-35,Other,1,35,0,35,U00554
+TX50951,2024-06-19,Electronics,Phone Case,Marketplace,56+,M,1,25,0,25,U00224
+TX50992,2024-06-19,Home,Bedsheet,Mobile App,18-25,F,1,40.5,0.1,40.5,U00279
+TX51240,2024-06-19,Beauty,Face Mask,Marketplace,46-55,Other,1,18,0,18,U00749
+TX51359,2024-06-19,Electronics,Bluetooth Speaker,Marketplace,46-55,Other,1,71.1,0.1,71.1,U00592
+TX51458,2024-06-19,Beauty,Face Mask,Social Media,46-55,Other,2,16.2,0.1,32.4,U00516
+TX50139,2024-06-20,Electronics,Phone Case,Social Media,18-25,M,2,25,0,50,U00593
+TX50431,2024-06-20,Books,Biography,Marketplace,26-35,M,2,28,0,56,U00256
+TX51460,2024-06-20,Beauty,Skincare Set,Marketplace,18-25,Other,1,89,0,89,U00318
+TX52157,2024-06-20,Books,Tech Manual,Social Media,56+,M,1,45,0,45,U00429
+TX52171,2024-06-20,Electronics,Charger,Web,26-35,F,2,24.5,0.3,49.0,U00455
+TX51063,2024-06-21,Beauty,Skincare Set,Marketplace,26-35,Other,1,89,0,89,U00153
+TX51410,2024-06-21,Beauty,Perfume,Web,18-25,F,1,110,0,110,U00853
+TX52162,2024-06-21,Beauty,Lipstick,Marketplace,46-55,M,1,15.4,0.3,15.4,U00526
+TX50491,2024-06-22,Electronics,Smart Watch,Marketplace,46-55,F,3,199,0,597,U00266
+TX50741,2024-06-22,Clothing,T-Shirt,Web,26-35,M,2,22.4,0.2,44.8,U00696
+TX51112,2024-06-22,Home,Bedsheet,Mobile App,26-35,M,1,40.5,0.1,40.5,U00135
+TX51510,2024-06-22,Electronics,Smart Watch,Mobile App,18-25,M,1,199,0,199,U00199
+TX51970,2024-06-22,Books,Fiction Novel,Marketplace,18-25,M,1,18,0,18,U00035
+TX52389,2024-06-22,Home,Lamp,Mobile App,26-35,F,1,55,0,55,U00485
+TX50436,2024-06-23,Home,Curtain,Mobile App,18-25,F,1,65,0,65,U00781
+TX50509,2024-06-23,Home,Rug,Web,26-35,Other,2,96.0,0.2,192.0,U00529
+TX50736,2024-06-23,Books,Fiction Novel,Mobile App,46-55,Other,2,18,0,36,U00567
+TX51103,2024-06-23,Books,Biography,Web,46-55,F,1,25.2,0.1,25.2,U00765
+TX51142,2024-06-23,Electronics,Charger,Social Media,26-35,Other,3,24.5,0.3,73.5,U00646
+TX51239,2024-06-23,Beauty,Perfume,Social Media,36-45,F,1,110,0,110,U00508
+TX51283,2024-06-23,Clothing,Hoodie,Mobile App,26-35,Other,1,55,0,55,U00223
+TX50051,2024-06-24,Clothing,Sneakers,Social Media,56+,Other,1,95,0,95,U00424
+TX50199,2024-06-24,Beauty,Lipstick,Mobile App,26-35,F,1,22,0,22,U00383
+TX50347,2024-06-24,Clothing,Dress,Web,26-35,M,1,67.5,0.1,67.5,U00136
+TX50446,2024-06-24,Clothing,Sneakers,Social Media,18-25,M,2,85.5,0.1,171.0,U00852
+TX50466,2024-06-24,Books,Self-Help,Marketplace,46-55,M,2,19.8,0.1,39.6,U00744
+TX50830,2024-06-24,Electronics,Headphones,Mobile App,36-45,M,1,89,0,89,U00519
+TX51544,2024-06-24,Clothing,T-Shirt,Web,26-35,Other,1,22.4,0.2,22.4,U00416
+TX51635,2024-06-24,Home,Bedsheet,Social Media,18-25,Other,3,45,0,135,U00050
+TX51646,2024-06-24,Clothing,Jeans,Social Media,46-55,F,1,65,0,65,U00036
+TX52084,2024-06-24,Beauty,Skincare Set,Web,18-25,F,1,89,0,89,U00453
+TX52303,2024-06-24,Electronics,Charger,Web,46-55,M,1,35,0,35,U00230
+TX52360,2024-06-24,Beauty,Hair Dryer,Mobile App,26-35,Other,1,58.5,0.1,58.5,U00778
+TX52364,2024-06-24,Home,Rug,Marketplace,46-55,Other,1,120,0,120,U00900
+TX52373,2024-06-24,Books,Fiction Novel,Social Media,56+,M,1,18,0,18,U00840
+TX50105,2024-06-25,Home,Curtain,Web,18-25,F,1,65,0,65,U00777
+TX50364,2024-06-25,Home,Bedsheet,Web,18-25,Other,1,45,0,45,U00318
+TX50637,2024-06-25,Electronics,Charger,Marketplace,36-45,Other,2,35,0,70,U00491
+TX51524,2024-06-25,Beauty,Face Mask,Marketplace,56+,Other,1,18,0,18,U00801
+TX51607,2024-06-25,Books,Biography,Social Media,18-25,F,3,28,0,84,U00617
+TX51888,2024-06-25,Books,Tech Manual,Mobile App,18-25,M,2,40.5,0.1,81.0,U00894
+TX52024,2024-06-25,Clothing,T-Shirt,Social Media,56+,F,1,25.2,0.1,25.2,U00263
+TX52392,2024-06-25,Beauty,Lipstick,Web,46-55,F,1,22,0,22,U00153
+TX52439,2024-06-25,Books,Fiction Novel,Marketplace,36-45,M,1,18,0,18,U00319
+TX50004,2024-06-26,Beauty,Lipstick,Marketplace,56+,Other,3,22,0,66,U00379
+TX50671,2024-06-26,Books,Self-Help,Marketplace,46-55,F,1,22,0,22,U00490
+TX51539,2024-06-26,Clothing,Jeans,Marketplace,46-55,F,1,65,0,65,U00145
+TX52480,2024-06-26,Clothing,T-Shirt,Web,26-35,M,2,22.4,0.2,44.8,U00542
+TX50093,2024-06-27,Books,Self-Help,Social Media,26-35,F,1,22,0,22,U00320
+TX50440,2024-06-27,Electronics,Phone Case,Web,18-25,F,1,20.0,0.2,20.0,U00818
+TX50684,2024-06-27,Home,Pillow,Social Media,56+,F,1,35,0,35,U00742
+TX50784,2024-06-27,Books,Biography,Mobile App,18-25,F,1,28,0,28,U00271
+TX50918,2024-06-27,Beauty,Skincare Set,Web,18-25,F,1,80.1,0.1,80.1,U00152
+TX51535,2024-06-27,Electronics,Smart Watch,Web,46-55,Other,1,199,0,199,U00273
+TX51851,2024-06-27,Clothing,Sneakers,Social Media,26-35,Other,2,76.0,0.2,152.0,U00247
+TX51908,2024-06-27,Clothing,T-Shirt,Web,46-55,M,1,28,0,28,U00154
+TX52379,2024-06-27,Home,Rug,Social Media,18-25,F,2,120,0,240,U00501
+TX52468,2024-06-27,Beauty,Lipstick,Web,56+,M,1,22,0,22,U00661
+TX52471,2024-06-27,Home,Curtain,Mobile App,46-55,Other,1,65,0,65,U00530
+TX50111,2024-06-28,Books,Self-Help,Social Media,26-35,M,1,19.8,0.1,19.8,U00678
+TX50761,2024-06-28,Beauty,Hair Dryer,Social Media,26-35,Other,1,65,0,65,U00493
+TX50882,2024-06-28,Home,Lamp,Social Media,26-35,Other,1,55,0,55,U00149
+TX51364,2024-06-28,Clothing,Dress,Social Media,36-45,M,1,67.5,0.1,67.5,U00517
+TX51587,2024-06-28,Beauty,Perfume,Marketplace,18-25,Other,1,88.0,0.2,88.0,U00281
+TX51590,2024-06-28,Books,Tech Manual,Mobile App,36-45,M,1,45,0,45,U00005
+TX51798,2024-06-28,Home,Curtain,Social Media,18-25,F,1,65,0,65,U00718
+TX52208,2024-06-28,Electronics,Bluetooth Speaker,Web,36-45,F,2,79,0,158,U00713
+TX50402,2024-06-29,Clothing,Hoodie,Marketplace,36-45,Other,1,49.5,0.1,49.5,U00796
+TX51254,2024-06-29,Home,Lamp,Mobile App,56+,M,1,49.5,0.1,49.5,U00455
+TX52375,2024-06-29,Electronics,Headphones,Marketplace,56+,M,1,89,0,89,U00247
+TX50724,2024-06-30,Clothing,Sneakers,Marketplace,18-25,Other,3,95,0,285,U00060
+TX50829,2024-06-30,Home,Curtain,Marketplace,26-35,Other,3,65,0,195,U00373
+TX51243,2024-06-30,Books,Fiction Novel,Mobile App,46-55,M,1,14.4,0.2,14.4,U00252
+TX51581,2024-06-30,Books,Self-Help,Mobile App,18-25,F,2,19.8,0.1,39.6,U00553
+TX52149,2024-06-30,Electronics,Bluetooth Speaker,Marketplace,26-35,F,1,79,0,79,U00113
+TX52344,2024-06-30,Beauty,Face Mask,Social Media,18-25,Other,2,16.2,0.1,32.4,U00779
+TX50325,2024-07-01,Home,Bedsheet,Social Media,46-55,F,1,45,0,45,U00751
+TX51000,2024-07-01,Electronics,Charger,Web,18-25,Other,1,31.5,0.1,31.5,U00508
+TX51130,2024-07-01,Beauty,Skincare Set,Marketplace,56+,M,1,80.1,0.1,80.1,U00569
+TX51471,2024-07-01,Electronics,Bluetooth Speaker,Mobile App,26-35,F,1,55.3,0.3,55.3,U00086
+TX51609,2024-07-01,Beauty,Skincare Set,Social Media,46-55,M,1,89,0,89,U00339
+TX51691,2024-07-01,Electronics,Phone Case,Marketplace,46-55,Other,1,25,0,25,U00201
+TX51711,2024-07-01,Books,Biography,Marketplace,26-35,M,2,28,0,56,U00038
+TX51899,2024-07-01,Books,Fiction Novel,Social Media,56+,Other,1,18,0,18,U00238
+TX52315,2024-07-01,Home,Rug,Social Media,56+,M,3,84.0,0.3,252.0,U00158
+TX50883,2024-07-02,Beauty,Skincare Set,Web,18-25,F,1,80.1,0.1,80.1,U00432
+TX50952,2024-07-02,Clothing,Hoodie,Mobile App,26-35,Other,1,49.5,0.1,49.5,U00353
+TX51873,2024-07-02,Electronics,Charger,Social Media,26-35,F,1,31.5,0.1,31.5,U00537
+TX51997,2024-07-02,Home,Bedsheet,Mobile App,46-55,Other,1,45,0,45,U00178
+TX52249,2024-07-02,Beauty,Skincare Set,Web,56+,F,2,89,0,178,U00736
+TX50056,2024-07-03,Home,Curtain,Web,26-35,F,3,58.5,0.1,175.5,U00664
+TX50353,2024-07-03,Beauty,Skincare Set,Social Media,26-35,Other,2,89,0,178,U00630
+TX50413,2024-07-03,Electronics,Smart Watch,Mobile App,46-55,M,1,179.1,0.1,179.1,U00030
+TX50531,2024-07-03,Home,Rug,Mobile App,46-55,M,1,96.0,0.2,96.0,U00331
+TX51148,2024-07-03,Home,Curtain,Mobile App,36-45,F,3,65,0,195,U00281
+TX52178,2024-07-03,Beauty,Lipstick,Marketplace,36-45,M,1,22,0,22,U00757
+TX50114,2024-07-04,Home,Curtain,Mobile App,36-45,F,2,65,0,130,U00894
+TX50288,2024-07-04,Home,Rug,Mobile App,56+,Other,2,108.0,0.1,216.0,U00052
+TX50427,2024-07-04,Books,Cookbook,Mobile App,36-45,F,1,25,0,25,U00288
+TX51001,2024-07-04,Home,Bedsheet,Mobile App,26-35,M,1,45,0,45,U00221
+TX51093,2024-07-04,Beauty,Hair Dryer,Web,18-25,Other,1,65,0,65,U00011
+TX51613,2024-07-04,Home,Lamp,Marketplace,18-25,M,2,49.5,0.1,99.0,U00321
+TX51673,2024-07-04,Beauty,Perfume,Web,18-25,M,2,110,0,220,U00051
+TX52011,2024-07-04,Electronics,Bluetooth Speaker,Mobile App,36-45,Other,1,79,0,79,U00053
+TX52203,2024-07-04,Beauty,Perfume,Mobile App,18-25,M,1,110,0,110,U00771
+TX50243,2024-07-05,Electronics,Phone Case,Marketplace,46-55,M,1,25,0,25,U00522
+TX50256,2024-07-05,Home,Rug,Social Media,56+,M,2,96.0,0.2,192.0,U00620
+TX50791,2024-07-05,Books,Cookbook,Mobile App,56+,F,1,17.5,0.3,17.5,U00651
+TX50973,2024-07-05,Books,Cookbook,Marketplace,46-55,M,1,20.0,0.2,20.0,U00728
+TX51032,2024-07-05,Beauty,Skincare Set,Marketplace,36-45,Other,1,89,0,89,U00189
+TX51163,2024-07-05,Beauty,Face Mask,Web,36-45,F,1,16.2,0.1,16.2,U00256
+TX51961,2024-07-05,Clothing,Hoodie,Marketplace,36-45,Other,2,55,0,110,U00662
+TX52009,2024-07-05,Books,Tech Manual,Social Media,18-25,F,1,45,0,45,U00891
+TX52409,2024-07-05,Beauty,Face Mask,Web,46-55,M,3,18,0,54,U00875
+TX51751,2024-07-06,Home,Rug,Web,46-55,F,1,108.0,0.1,108.0,U00147
+TX52340,2024-07-06,Electronics,Bluetooth Speaker,Social Media,18-25,F,3,71.1,0.1,213.3,U00494
+TX52451,2024-07-06,Home,Lamp,Mobile App,26-35,F,1,49.5,0.1,49.5,U00826
+TX50540,2024-07-07,Home,Pillow,Social Media,46-55,Other,1,35,0,35,U00498
+TX50891,2024-07-07,Beauty,Perfume,Marketplace,26-35,M,1,110,0,110,U00077
+TX51324,2024-07-07,Clothing,T-Shirt,Social Media,46-55,Other,1,28,0,28,U00614
+TX51737,2024-07-07,Home,Pillow,Web,36-45,F,2,31.5,0.1,63.0,U00524
+TX51775,2024-07-07,Clothing,Jeans,Mobile App,26-35,F,1,65,0,65,U00268
+TX51823,2024-07-07,Books,Fiction Novel,Social Media,26-35,Other,3,14.4,0.2,43.2,U00519
+TX52231,2024-07-07,Clothing,Dress,Web,18-25,Other,1,75,0,75,U00652
+TX50000,2024-07-08,Clothing,Hoodie,Mobile App,26-35,F,1,49.5,0.1,49.5,U00837
+TX50142,2024-07-08,Books,Tech Manual,Web,26-35,M,1,45,0,45,U00514
+TX50801,2024-07-08,Books,Fiction Novel,Social Media,46-55,F,1,18,0,18,U00739
+TX50878,2024-07-08,Books,Cookbook,Mobile App,56+,Other,1,22.5,0.1,22.5,U00651
+TX50879,2024-07-08,Books,Cookbook,Mobile App,18-25,F,1,25,0,25,U00871
+TX51194,2024-07-08,Books,Cookbook,Web,26-35,M,1,22.5,0.1,22.5,U00199
+TX52232,2024-07-08,Clothing,Jeans,Marketplace,26-35,M,1,65,0,65,U00784
+TX52307,2024-07-08,Home,Curtain,Social Media,56+,Other,1,65,0,65,U00146
+TX50144,2024-07-09,Beauty,Lipstick,Web,46-55,Other,1,22,0,22,U00103
+TX50155,2024-07-09,Electronics,Smart Watch,Web,46-55,Other,1,199,0,199,U00556
+TX51036,2024-07-09,Clothing,T-Shirt,Marketplace,56+,M,2,22.4,0.2,44.8,U00093
+TX52320,2024-07-09,Beauty,Skincare Set,Marketplace,36-45,F,1,71.2,0.2,71.2,U00162
+TX52327,2024-07-09,Books,Fiction Novel,Marketplace,18-25,Other,1,18,0,18,U00009
+TX51371,2024-07-10,Electronics,Phone Case,Mobile App,46-55,F,1,25,0,25,U00052
+TX51387,2024-07-10,Electronics,Charger,Web,46-55,F,1,31.5,0.1,31.5,U00346
+TX52422,2024-07-10,Home,Pillow,Social Media,36-45,M,3,35,0,105,U00141
+TX52486,2024-07-10,Home,Pillow,Mobile App,56+,M,1,31.5,0.1,31.5,U00138
+TX50924,2024-07-11,Beauty,Skincare Set,Marketplace,36-45,F,1,89,0,89,U00637
+TX51837,2024-07-11,Books,Self-Help,Web,18-25,M,1,22,0,22,U00522
+TX51978,2024-07-11,Home,Curtain,Marketplace,46-55,Other,1,45.5,0.3,45.5,U00893
+TX52201,2024-07-11,Beauty,Face Mask,Marketplace,18-25,Other,1,18,0,18,U00719
+TX52331,2024-07-11,Electronics,Headphones,Marketplace,46-55,M,2,89,0,178,U00864
+TX52436,2024-07-11,Home,Rug,Mobile App,36-45,F,1,120,0,120,U00664
+TX50136,2024-07-12,Clothing,Jeans,Mobile App,46-55,Other,1,45.5,0.3,45.5,U00430
+TX51200,2024-07-12,Clothing,Dress,Web,36-45,M,1,75,0,75,U00188
+TX51418,2024-07-12,Beauty,Face Mask,Mobile App,36-45,F,1,16.2,0.1,16.2,U00320
+TX51723,2024-07-12,Clothing,T-Shirt,Mobile App,46-55,F,1,28,0,28,U00680
+TX51777,2024-07-12,Clothing,Hoodie,Marketplace,56+,Other,2,55,0,110,U00899
+TX51872,2024-07-12,Electronics,Charger,Mobile App,18-25,F,2,35,0,70,U00098
+TX52221,2024-07-12,Clothing,Sneakers,Marketplace,18-25,Other,1,95,0,95,U00726
+TX50354,2024-07-13,Electronics,Bluetooth Speaker,Mobile App,26-35,F,1,63.2,0.2,63.2,U00608
+TX50495,2024-07-13,Home,Lamp,Web,36-45,F,1,44.0,0.2,44.0,U00040
+TX50832,2024-07-13,Beauty,Perfume,Mobile App,18-25,M,1,110,0,110,U00368
+TX51072,2024-07-13,Clothing,Sneakers,Web,36-45,M,1,76.0,0.2,76.0,U00225
+TX51244,2024-07-13,Beauty,Hair Dryer,Marketplace,36-45,M,2,65,0,130,U00043
+TX51367,2024-07-13,Beauty,Hair Dryer,Web,26-35,Other,1,65,0,65,U00667
+TX51989,2024-07-13,Clothing,Hoodie,Web,56+,F,1,44.0,0.2,44.0,U00628
+TX52174,2024-07-13,Home,Curtain,Mobile App,26-35,M,1,52.0,0.2,52.0,U00191
+TX50250,2024-07-14,Books,Tech Manual,Social Media,36-45,Other,1,36.0,0.2,36.0,U00754
+TX50631,2024-07-14,Electronics,Charger,Web,26-35,Other,2,24.5,0.3,49.0,U00612
+TX50674,2024-07-14,Home,Bedsheet,Mobile App,46-55,F,2,40.5,0.1,81.0,U00112
+TX50804,2024-07-14,Electronics,Headphones,Social Media,46-55,F,1,89,0,89,U00224
+TX51154,2024-07-14,Clothing,Dress,Mobile App,18-25,M,1,75,0,75,U00716
+TX51235,2024-07-14,Books,Fiction Novel,Mobile App,46-55,F,3,18,0,54,U00884
+TX51759,2024-07-14,Books,Tech Manual,Marketplace,18-25,M,3,45,0,135,U00695
+TX50696,2024-07-15,Clothing,Sneakers,Web,46-55,Other,1,76.0,0.2,76.0,U00078
+TX51152,2024-07-15,Clothing,T-Shirt,Social Media,18-25,M,1,28,0,28,U00628
+TX51319,2024-07-15,Clothing,Hoodie,Web,26-35,F,1,55,0,55,U00207
+TX52012,2024-07-15,Books,Self-Help,Social Media,26-35,M,1,22,0,22,U00691
+TX50065,2024-07-16,Home,Rug,Marketplace,26-35,F,1,108.0,0.1,108.0,U00233
+TX50133,2024-07-16,Books,Biography,Social Media,56+,F,1,25.2,0.1,25.2,U00224
+TX50271,2024-07-16,Books,Fiction Novel,Web,46-55,F,2,18,0,36,U00371
+TX50611,2024-07-16,Clothing,Dress,Marketplace,36-45,Other,1,75,0,75,U00651
+TX50709,2024-07-16,Books,Self-Help,Web,36-45,Other,3,17.6,0.2,52.8,U00037
+TX51229,2024-07-16,Electronics,Smart Watch,Social Media,56+,F,1,199,0,199,U00699
+TX51574,2024-07-16,Clothing,Sneakers,Social Media,56+,M,1,95,0,95,U00898
+TX51734,2024-07-16,Home,Rug,Marketplace,26-35,M,2,96.0,0.2,192.0,U00578
+TX52134,2024-07-16,Clothing,Dress,Marketplace,36-45,F,1,75,0,75,U00863
+TX52461,2024-07-16,Home,Rug,Marketplace,46-55,M,2,120,0,240,U00120
+TX51090,2024-07-17,Electronics,Smart Watch,Mobile App,46-55,Other,2,159.2,0.2,318.4,U00386
+TX51703,2024-07-17,Clothing,Sneakers,Mobile App,46-55,Other,1,95,0,95,U00656
+TX52195,2024-07-17,Books,Fiction Novel,Mobile App,36-45,M,1,18,0,18,U00602
+TX52311,2024-07-17,Beauty,Face Mask,Web,18-25,Other,1,14.4,0.2,14.4,U00711
+TX50113,2024-07-18,Home,Pillow,Social Media,36-45,M,3,24.5,0.3,73.5,U00577
+TX51174,2024-07-18,Electronics,Headphones,Marketplace,26-35,M,2,80.1,0.1,160.2,U00309
+TX51605,2024-07-18,Home,Pillow,Web,18-25,M,1,31.5,0.1,31.5,U00645
+TX52031,2024-07-18,Electronics,Charger,Marketplace,46-55,M,1,31.5,0.1,31.5,U00275
+TX52406,2024-07-18,Books,Tech Manual,Social Media,18-25,Other,1,45,0,45,U00704
+TX50080,2024-07-19,Beauty,Hair Dryer,Marketplace,36-45,M,1,65,0,65,U00124
+TX50101,2024-07-19,Electronics,Phone Case,Social Media,46-55,F,2,25,0,50,U00106
+TX50393,2024-07-19,Books,Tech Manual,Web,46-55,F,1,45,0,45,U00505
+TX50758,2024-07-19,Clothing,Sneakers,Marketplace,18-25,F,1,95,0,95,U00288
+TX51048,2024-07-19,Clothing,T-Shirt,Web,56+,F,2,25.2,0.1,50.4,U00774
+TX51929,2024-07-19,Home,Lamp,Marketplace,18-25,M,1,55,0,55,U00379
+TX50490,2024-07-20,Books,Cookbook,Web,56+,Other,1,22.5,0.1,22.5,U00784
+TX50693,2024-07-20,Electronics,Charger,Marketplace,36-45,Other,2,35,0,70,U00880
+TX50727,2024-07-20,Beauty,Skincare Set,Marketplace,26-35,Other,1,80.1,0.1,80.1,U00226
+TX51526,2024-07-20,Home,Lamp,Social Media,26-35,F,1,49.5,0.1,49.5,U00401
+TX52112,2024-07-20,Beauty,Lipstick,Marketplace,18-25,M,1,22,0,22,U00893
+TX50722,2024-07-21,Beauty,Hair Dryer,Mobile App,46-55,F,1,65,0,65,U00381
+TX51258,2024-07-21,Books,Self-Help,Social Media,46-55,Other,1,22,0,22,U00803
+TX51768,2024-07-21,Clothing,Sneakers,Mobile App,18-25,M,1,95,0,95,U00275
+TX52452,2024-07-21,Beauty,Perfume,Mobile App,26-35,Other,2,110,0,220,U00507
+TX50053,2024-07-22,Clothing,Jeans,Web,36-45,M,1,65,0,65,U00693
+TX50332,2024-07-22,Electronics,Smart Watch,Web,36-45,F,1,199,0,199,U00411
+TX50340,2024-07-22,Clothing,Hoodie,Web,56+,Other,1,55,0,55,U00453
+TX50550,2024-07-22,Books,Tech Manual,Marketplace,18-25,F,1,45,0,45,U00587
+TX50552,2024-07-22,Beauty,Perfume,Mobile App,56+,Other,1,110,0,110,U00345
+TX51306,2024-07-22,Home,Pillow,Web,56+,Other,1,35,0,35,U00356
+TX51350,2024-07-22,Electronics,Bluetooth Speaker,Social Media,36-45,M,1,71.1,0.1,71.1,U00029
+TX51374,2024-07-22,Beauty,Face Mask,Social Media,18-25,Other,1,14.4,0.2,14.4,U00550
+TX51812,2024-07-22,Electronics,Smart Watch,Social Media,46-55,M,1,159.2,0.2,159.2,U00439
+TX52225,2024-07-22,Home,Pillow,Web,46-55,Other,1,35,0,35,U00245
+TX50217,2024-07-23,Beauty,Face Mask,Social Media,36-45,Other,1,16.2,0.1,16.2,U00074
+TX50381,2024-07-23,Home,Pillow,Social Media,56+,Other,1,35,0,35,U00432
+TX50472,2024-07-23,Home,Rug,Marketplace,46-55,M,1,84.0,0.3,84.0,U00079
+TX51741,2024-07-23,Books,Fiction Novel,Social Media,18-25,F,1,14.4,0.2,14.4,U00208
+TX50541,2024-07-24,Home,Lamp,Web,36-45,F,1,55,0,55,U00600
+TX50923,2024-07-24,Beauty,Face Mask,Mobile App,18-25,M,2,16.2,0.1,32.4,U00441
+TX51208,2024-07-24,Home,Lamp,Mobile App,26-35,M,2,55,0,110,U00479
+TX51528,2024-07-24,Books,Fiction Novel,Web,36-45,F,1,16.2,0.1,16.2,U00667
+TX51826,2024-07-24,Clothing,T-Shirt,Social Media,46-55,F,1,28,0,28,U00537
+TX52043,2024-07-24,Clothing,Jeans,Social Media,36-45,M,1,65,0,65,U00021
+TX52234,2024-07-24,Clothing,Jeans,Mobile App,26-35,F,1,58.5,0.1,58.5,U00035
+TX52334,2024-07-24,Beauty,Skincare Set,Social Media,18-25,F,1,89,0,89,U00862
+TX52356,2024-07-24,Electronics,Phone Case,Web,36-45,F,1,20.0,0.2,20.0,U00030
+TX50407,2024-07-25,Clothing,Jeans,Social Media,26-35,Other,1,65,0,65,U00613
+TX51810,2024-07-25,Books,Self-Help,Social Media,56+,F,1,22,0,22,U00449
+TX51879,2024-07-25,Beauty,Skincare Set,Web,46-55,M,2,89,0,178,U00642
+TX52033,2024-07-25,Books,Biography,Social Media,36-45,M,1,19.6,0.3,19.6,U00715
+TX50277,2024-07-26,Home,Rug,Marketplace,46-55,F,1,120,0,120,U00728
+TX50876,2024-07-26,Clothing,T-Shirt,Mobile App,36-45,M,1,28,0,28,U00627
+TX52474,2024-07-26,Books,Tech Manual,Marketplace,46-55,Other,1,31.5,0.3,31.5,U00583
+TX50247,2024-07-27,Beauty,Hair Dryer,Web,26-35,M,1,65,0,65,U00810
+TX50372,2024-07-27,Books,Fiction Novel,Marketplace,36-45,M,1,16.2,0.1,16.2,U00373
+TX50380,2024-07-27,Electronics,Charger,Marketplace,26-35,Other,1,35,0,35,U00688
+TX50573,2024-07-27,Home,Rug,Social Media,46-55,M,2,120,0,240,U00694
+TX50763,2024-07-27,Electronics,Charger,Social Media,18-25,F,1,31.5,0.1,31.5,U00285
+TX50809,2024-07-27,Electronics,Charger,Mobile App,18-25,F,1,35,0,35,U00652
+TX51660,2024-07-27,Electronics,Charger,Social Media,26-35,Other,3,35,0,105,U00008
+TX51697,2024-07-27,Home,Bedsheet,Social Media,36-45,M,1,45,0,45,U00658
+TX52424,2024-07-27,Beauty,Face Mask,Web,36-45,Other,1,18,0,18,U00885
+TX50769,2024-07-28,Books,Biography,Web,46-55,F,1,28,0,28,U00582
+TX50907,2024-07-28,Home,Pillow,Marketplace,18-25,F,1,35,0,35,U00245
+TX51647,2024-07-28,Clothing,Dress,Mobile App,18-25,Other,1,75,0,75,U00792
+TX51658,2024-07-28,Electronics,Charger,Marketplace,26-35,Other,1,35,0,35,U00763
+TX51847,2024-07-28,Home,Curtain,Mobile App,56+,M,1,65,0,65,U00077
+TX52121,2024-07-28,Clothing,Sneakers,Social Media,46-55,Other,1,95,0,95,U00513
+TX52166,2024-07-28,Home,Rug,Marketplace,46-55,M,1,108.0,0.1,108.0,U00299
+TX52286,2024-07-28,Books,Fiction Novel,Social Media,26-35,Other,2,18,0,36,U00586
+TX50070,2024-07-29,Beauty,Lipstick,Mobile App,26-35,F,1,22,0,22,U00526
+TX50386,2024-07-29,Clothing,Hoodie,Mobile App,36-45,F,3,55,0,165,U00045
+TX50389,2024-07-29,Beauty,Face Mask,Web,46-55,M,2,14.4,0.2,28.8,U00694
+TX51379,2024-07-29,Clothing,Jeans,Mobile App,36-45,M,2,52.0,0.2,104.0,U00329
+TX52074,2024-07-29,Beauty,Skincare Set,Marketplace,18-25,M,1,89,0,89,U00747
+TX52159,2024-07-29,Home,Bedsheet,Mobile App,18-25,Other,1,45,0,45,U00703
+TX50177,2024-07-30,Clothing,T-Shirt,Social Media,36-45,F,1,25.2,0.1,25.2,U00842
+TX50843,2024-07-30,Clothing,Dress,Mobile App,46-55,F,1,67.5,0.1,67.5,U00649
+TX51449,2024-07-30,Books,Self-Help,Social Media,56+,F,1,19.8,0.1,19.8,U00661
+TX51789,2024-07-30,Books,Tech Manual,Mobile App,56+,F,1,45,0,45,U00704
+TX52177,2024-07-30,Beauty,Lipstick,Mobile App,26-35,F,1,17.6,0.2,17.6,U00008
+TX52264,2024-07-30,Beauty,Hair Dryer,Mobile App,18-25,F,2,58.5,0.1,117.0,U00074
+TX52346,2024-07-30,Home,Rug,Social Media,18-25,M,1,108.0,0.1,108.0,U00570
+TX50171,2024-07-31,Home,Curtain,Social Media,56+,F,1,65,0,65,U00030
+TX50206,2024-07-31,Books,Self-Help,Web,18-25,Other,3,22,0,66,U00463
+TX50313,2024-07-31,Books,Fiction Novel,Web,46-55,Other,1,14.4,0.2,14.4,U00201
+TX50420,2024-07-31,Books,Biography,Social Media,36-45,F,1,19.6,0.3,19.6,U00628
+TX50775,2024-07-31,Electronics,Charger,Mobile App,36-45,M,1,35,0,35,U00403
+TX51700,2024-07-31,Home,Pillow,Marketplace,18-25,M,2,35,0,70,U00378
+TX52220,2024-07-31,Beauty,Face Mask,Mobile App,26-35,F,1,18,0,18,U00248
+TX50008,2024-08-01,Electronics,Bluetooth Speaker,Social Media,18-25,M,1,63.2,0.2,63.2,U00411
+TX50532,2024-08-01,Electronics,Bluetooth Speaker,Marketplace,26-35,M,1,79,0,79,U00628
+TX50659,2024-08-01,Books,Cookbook,Mobile App,26-35,F,1,22.5,0.1,22.5,U00722
+TX51042,2024-08-01,Electronics,Charger,Social Media,36-45,M,1,35,0,35,U00391
+TX51118,2024-08-01,Books,Fiction Novel,Mobile App,56+,M,1,16.2,0.1,16.2,U00546
+TX51979,2024-08-01,Beauty,Hair Dryer,Web,26-35,F,1,52.0,0.2,52.0,U00293
+TX52482,2024-08-01,Clothing,Sneakers,Web,46-55,F,1,76.0,0.2,76.0,U00098
+TX50642,2024-08-02,Clothing,T-Shirt,Web,56+,Other,2,28,0,56,U00334
+TX51128,2024-08-02,Clothing,Jeans,Mobile App,26-35,F,2,58.5,0.1,117.0,U00187
+TX51134,2024-08-02,Beauty,Perfume,Web,36-45,M,2,88.0,0.2,176.0,U00766
+TX51366,2024-08-02,Beauty,Skincare Set,Mobile App,26-35,Other,1,89,0,89,U00227
+TX51505,2024-08-02,Electronics,Phone Case,Mobile App,56+,Other,1,25,0,25,U00618
+TX51519,2024-08-02,Books,Tech Manual,Marketplace,26-35,F,2,31.5,0.3,63.0,U00611
+TX52187,2024-08-02,Home,Rug,Web,46-55,Other,1,96.0,0.2,96.0,U00568
+TX52193,2024-08-02,Electronics,Charger,Social Media,18-25,M,1,28.0,0.2,28.0,U00107
+TX52276,2024-08-02,Books,Biography,Marketplace,36-45,M,1,28,0,28,U00103
+TX52387,2024-08-02,Clothing,Dress,Marketplace,18-25,Other,2,75,0,150,U00026
+TX50392,2024-08-03,Electronics,Phone Case,Marketplace,46-55,M,1,25,0,25,U00530
+TX50404,2024-08-03,Clothing,Hoodie,Mobile App,56+,Other,2,38.5,0.3,77.0,U00158
+TX50458,2024-08-03,Beauty,Perfume,Social Media,46-55,F,1,110,0,110,U00692
+TX50558,2024-08-03,Electronics,Headphones,Marketplace,46-55,M,1,71.2,0.2,71.2,U00880
+TX50744,2024-08-03,Electronics,Bluetooth Speaker,Marketplace,46-55,Other,2,71.1,0.1,142.2,U00693
+TX51147,2024-08-03,Beauty,Perfume,Social Media,36-45,F,1,88.0,0.2,88.0,U00162
+TX51360,2024-08-03,Clothing,Hoodie,Web,56+,M,2,55,0,110,U00600
+TX51365,2024-08-03,Electronics,Smart Watch,Mobile App,36-45,Other,1,199,0,199,U00378
+TX51496,2024-08-03,Beauty,Lipstick,Mobile App,56+,M,1,22,0,22,U00253
+TX52021,2024-08-03,Books,Biography,Mobile App,26-35,M,1,28,0,28,U00211
+TX50261,2024-08-04,Electronics,Charger,Mobile App,46-55,M,2,35,0,70,U00481
+TX50297,2024-08-04,Books,Tech Manual,Mobile App,46-55,Other,2,45,0,90,U00539
+TX50677,2024-08-04,Books,Cookbook,Marketplace,46-55,M,1,25,0,25,U00168
+TX50881,2024-08-04,Clothing,Dress,Marketplace,26-35,M,1,75,0,75,U00799
+TX51370,2024-08-04,Home,Pillow,Marketplace,26-35,Other,1,35,0,35,U00713
+TX51562,2024-08-04,Electronics,Bluetooth Speaker,Mobile App,56+,M,1,63.2,0.2,63.2,U00319
+TX52200,2024-08-04,Clothing,T-Shirt,Marketplace,26-35,Other,1,22.4,0.2,22.4,U00076
+TX50078,2024-08-05,Clothing,Jeans,Web,18-25,F,1,65,0,65,U00743
+TX50172,2024-08-05,Books,Fiction Novel,Marketplace,18-25,Other,2,18,0,36,U00295
+TX50492,2024-08-05,Books,Cookbook,Marketplace,56+,M,1,25,0,25,U00763
+TX50516,2024-08-05,Clothing,Dress,Web,26-35,Other,1,75,0,75,U00392
+TX51440,2024-08-05,Electronics,Phone Case,Social Media,36-45,F,1,25,0,25,U00742
+TX51478,2024-08-05,Clothing,T-Shirt,Mobile App,46-55,M,3,28,0,84,U00670
+TX51594,2024-08-05,Beauty,Perfume,Marketplace,36-45,Other,1,110,0,110,U00110
+TX51982,2024-08-05,Clothing,T-Shirt,Marketplace,56+,M,1,28,0,28,U00395
+TX52280,2024-08-05,Home,Lamp,Mobile App,56+,M,2,44.0,0.2,88.0,U00767
+TX50224,2024-08-06,Books,Biography,Marketplace,18-25,F,1,28,0,28,U00839
+TX50448,2024-08-06,Home,Bedsheet,Mobile App,56+,M,3,40.5,0.1,121.5,U00893
+TX50602,2024-08-06,Home,Bedsheet,Web,18-25,Other,2,45,0,90,U00071
+TX50733,2024-08-06,Clothing,Sneakers,Social Media,46-55,F,1,95,0,95,U00189
+TX51167,2024-08-06,Electronics,Charger,Mobile App,46-55,Other,1,35,0,35,U00369
+TX51445,2024-08-06,Electronics,Charger,Social Media,56+,M,1,31.5,0.1,31.5,U00503
+TX51620,2024-08-06,Clothing,Hoodie,Web,36-45,F,1,55,0,55,U00440
+TX51725,2024-08-06,Home,Lamp,Marketplace,56+,Other,1,55,0,55,U00240
+TX52197,2024-08-06,Beauty,Lipstick,Mobile App,36-45,F,2,17.6,0.2,35.2,U00126
+TX52258,2024-08-06,Electronics,Charger,Web,56+,M,3,28.0,0.2,84.0,U00489
+TX50009,2024-08-07,Electronics,Headphones,Marketplace,46-55,Other,1,89,0,89,U00519
+TX50210,2024-08-07,Clothing,T-Shirt,Social Media,18-25,M,1,28,0,28,U00645
+TX50506,2024-08-07,Books,Biography,Mobile App,18-25,F,1,28,0,28,U00661
+TX50628,2024-08-07,Beauty,Face Mask,Social Media,46-55,M,1,16.2,0.1,16.2,U00450
+TX51060,2024-08-07,Clothing,T-Shirt,Social Media,56+,F,1,19.6,0.3,19.6,U00060
+TX51138,2024-08-07,Beauty,Perfume,Mobile App,56+,Other,1,110,0,110,U00560
+TX51270,2024-08-07,Clothing,Dress,Social Media,18-25,F,1,75,0,75,U00338
+TX51586,2024-08-07,Beauty,Skincare Set,Web,36-45,F,1,80.1,0.1,80.1,U00241
+TX50037,2024-08-08,Beauty,Skincare Set,Social Media,56+,Other,1,89,0,89,U00594
+TX51388,2024-08-08,Electronics,Phone Case,Mobile App,18-25,F,1,22.5,0.1,22.5,U00170
+TX51509,2024-08-08,Beauty,Face Mask,Mobile App,18-25,M,3,16.2,0.1,48.6,U00123
+TX51721,2024-08-08,Books,Self-Help,Social Media,46-55,Other,2,19.8,0.1,39.6,U00016
+TX51854,2024-08-08,Beauty,Skincare Set,Mobile App,26-35,M,1,89,0,89,U00694
+TX52270,2024-08-08,Home,Curtain,Mobile App,56+,F,1,65,0,65,U00714
+TX50104,2024-08-09,Home,Bedsheet,Mobile App,26-35,Other,1,45,0,45,U00181
+TX51750,2024-08-09,Clothing,Jeans,Web,26-35,M,1,52.0,0.2,52.0,U00696
+TX51811,2024-08-09,Electronics,Smart Watch,Mobile App,26-35,Other,1,159.2,0.2,159.2,U00563
+TX51839,2024-08-09,Books,Tech Manual,Mobile App,18-25,F,1,40.5,0.1,40.5,U00544
+TX51911,2024-08-09,Beauty,Lipstick,Marketplace,26-35,F,1,22,0,22,U00615
+TX51949,2024-08-09,Clothing,T-Shirt,Social Media,46-55,M,2,25.2,0.1,50.4,U00416
+TX50291,2024-08-10,Beauty,Face Mask,Marketplace,46-55,Other,1,14.4,0.2,14.4,U00263
+TX50543,2024-08-10,Beauty,Skincare Set,Mobile App,46-55,Other,1,89,0,89,U00874
+TX50812,2024-08-10,Books,Biography,Social Media,26-35,M,1,25.2,0.1,25.2,U00628
+TX50860,2024-08-10,Beauty,Perfume,Marketplace,36-45,F,1,110,0,110,U00292
+TX50871,2024-08-10,Beauty,Hair Dryer,Web,36-45,Other,2,65,0,130,U00844
+TX51475,2024-08-10,Home,Bedsheet,Mobile App,18-25,F,2,40.5,0.1,81.0,U00842
+TX51724,2024-08-10,Beauty,Perfume,Web,56+,F,2,110,0,220,U00898
+TX50193,2024-08-11,Books,Biography,Mobile App,56+,M,1,28,0,28,U00402
+TX50195,2024-08-11,Clothing,T-Shirt,Mobile App,18-25,M,1,28,0,28,U00701
+TX50339,2024-08-11,Electronics,Phone Case,Social Media,26-35,M,2,25,0,50,U00264
+TX50787,2024-08-11,Electronics,Charger,Social Media,36-45,F,1,35,0,35,U00493
+TX51492,2024-08-11,Electronics,Headphones,Social Media,26-35,M,2,89,0,178,U00260
+TX51618,2024-08-11,Electronics,Headphones,Mobile App,36-45,F,1,89,0,89,U00750
+TX50452,2024-08-12,Beauty,Face Mask,Web,56+,Other,1,16.2,0.1,16.2,U00214
+TX51653,2024-08-12,Books,Cookbook,Web,18-25,Other,2,20.0,0.2,40.0,U00244
+TX52091,2024-08-12,Beauty,Face Mask,Marketplace,18-25,M,1,16.2,0.1,16.2,U00759
+TX52490,2024-08-12,Beauty,Hair Dryer,Marketplace,46-55,F,3,65,0,195,U00682
+TX50220,2024-08-13,Beauty,Skincare Set,Marketplace,26-35,F,3,89,0,267,U00501
+TX50231,2024-08-13,Clothing,Jeans,Mobile App,18-25,Other,1,58.5,0.1,58.5,U00716
+TX51495,2024-08-13,Beauty,Skincare Set,Web,46-55,M,1,71.2,0.2,71.2,U00207
+TX50264,2024-08-14,Electronics,Headphones,Marketplace,26-35,F,2,80.1,0.1,160.2,U00303
+TX50405,2024-08-14,Home,Lamp,Web,56+,Other,1,44.0,0.2,44.0,U00758
+TX50563,2024-08-14,Books,Self-Help,Web,56+,M,3,22,0,66,U00498
+TX51257,2024-08-14,Clothing,Dress,Marketplace,26-35,Other,2,75,0,150,U00364
+TX51297,2024-08-14,Clothing,Jeans,Mobile App,26-35,F,1,65,0,65,U00232
+TX51855,2024-08-14,Beauty,Lipstick,Social Media,26-35,Other,1,19.8,0.1,19.8,U00705
+TX52172,2024-08-14,Electronics,Headphones,Web,36-45,F,2,80.1,0.1,160.2,U00215
+TX52350,2024-08-14,Beauty,Hair Dryer,Web,36-45,F,2,65,0,130,U00067
+TX50026,2024-08-15,Electronics,Smart Watch,Mobile App,36-45,Other,3,199,0,597,U00288
+TX50228,2024-08-15,Clothing,Sneakers,Web,36-45,M,2,95,0,190,U00505
+TX50352,2024-08-15,Books,Fiction Novel,Mobile App,46-55,M,3,14.4,0.2,43.2,U00829
+TX50866,2024-08-15,Beauty,Lipstick,Social Media,46-55,F,2,22,0,44,U00158
+TX51328,2024-08-15,Home,Pillow,Marketplace,36-45,Other,1,35,0,35,U00114
+TX51904,2024-08-15,Electronics,Bluetooth Speaker,Social Media,56+,Other,1,79,0,79,U00216
+TX52446,2024-08-15,Beauty,Hair Dryer,Marketplace,56+,Other,2,65,0,130,U00314
+TX50660,2024-08-16,Books,Biography,Mobile App,46-55,Other,2,22.4,0.2,44.8,U00349
+TX51038,2024-08-16,Books,Cookbook,Social Media,36-45,M,1,25,0,25,U00675
+TX51067,2024-08-16,Books,Self-Help,Mobile App,46-55,F,1,22,0,22,U00806
+TX51157,2024-08-16,Electronics,Headphones,Mobile App,18-25,F,1,89,0,89,U00504
+TX51214,2024-08-16,Beauty,Hair Dryer,Marketplace,56+,M,2,58.5,0.1,117.0,U00828
+TX51552,2024-08-16,Home,Rug,Marketplace,26-35,M,2,120,0,240,U00519
+TX51606,2024-08-16,Clothing,Hoodie,Marketplace,26-35,M,1,55,0,55,U00521
+TX51784,2024-08-16,Clothing,Jeans,Social Media,46-55,F,1,65,0,65,U00657
+TX52456,2024-08-16,Books,Cookbook,Web,46-55,M,1,25,0,25,U00643
+TX50152,2024-08-17,Electronics,Phone Case,Mobile App,18-25,M,1,25,0,25,U00224
+TX50503,2024-08-17,Electronics,Charger,Mobile App,46-55,Other,1,31.5,0.1,31.5,U00583
+TX50779,2024-08-17,Home,Lamp,Web,36-45,F,1,44.0,0.2,44.0,U00637
+TX50799,2024-08-17,Electronics,Phone Case,Social Media,26-35,F,3,17.5,0.3,52.5,U00423
+TX51893,2024-08-17,Clothing,Dress,Marketplace,18-25,Other,1,52.5,0.3,52.5,U00860
+TX52053,2024-08-17,Books,Cookbook,Web,56+,M,1,25,0,25,U00744
+TX52142,2024-08-17,Books,Self-Help,Web,26-35,M,1,19.8,0.1,19.8,U00501
+TX50542,2024-08-18,Beauty,Lipstick,Marketplace,46-55,Other,1,22,0,22,U00718
+TX50656,2024-08-18,Clothing,Jeans,Marketplace,56+,Other,1,65,0,65,U00103
+TX51095,2024-08-18,Beauty,Perfume,Mobile App,46-55,Other,1,99.0,0.1,99.0,U00366
+TX51437,2024-08-18,Home,Bedsheet,Web,46-55,F,2,45,0,90,U00138
+TX52475,2024-08-18,Books,Cookbook,Web,18-25,M,1,25,0,25,U00823
+TX50045,2024-08-19,Electronics,Charger,Social Media,18-25,F,1,35,0,35,U00118
+TX50047,2024-08-19,Books,Tech Manual,Web,56+,F,1,45,0,45,U00836
+TX50732,2024-08-19,Beauty,Perfume,Mobile App,26-35,F,1,110,0,110,U00039
+TX50890,2024-08-19,Beauty,Face Mask,Mobile App,46-55,Other,1,18,0,18,U00737
+TX51474,2024-08-19,Home,Curtain,Web,36-45,F,2,65,0,130,U00390
+TX51689,2024-08-19,Beauty,Skincare Set,Mobile App,26-35,M,1,62.3,0.3,62.3,U00004
+TX52161,2024-08-19,Electronics,Headphones,Social Media,26-35,M,1,80.1,0.1,80.1,U00816
+TX52313,2024-08-19,Books,Biography,Marketplace,46-55,M,3,22.4,0.2,67.2,U00605
+TX50120,2024-08-20,Beauty,Hair Dryer,Mobile App,36-45,M,3,58.5,0.1,175.5,U00218
+TX50645,2024-08-20,Home,Rug,Web,46-55,Other,1,120,0,120,U00592
+TX50678,2024-08-20,Books,Tech Manual,Marketplace,56+,M,1,36.0,0.2,36.0,U00701
+TX51887,2024-08-20,Electronics,Smart Watch,Web,36-45,Other,1,179.1,0.1,179.1,U00186
+TX52044,2024-08-20,Electronics,Smart Watch,Marketplace,18-25,M,1,199,0,199,U00512
+TX52336,2024-08-20,Clothing,Sneakers,Web,26-35,Other,1,95,0,95,U00391
+TX50365,2024-08-21,Clothing,T-Shirt,Mobile App,36-45,F,1,28,0,28,U00178
+TX50502,2024-08-21,Home,Pillow,Mobile App,46-55,Other,2,35,0,70,U00129
+TX50530,2024-08-21,Books,Tech Manual,Social Media,36-45,F,1,45,0,45,U00703
+TX51395,2024-08-21,Books,Tech Manual,Web,36-45,F,2,45,0,90,U00292
+TX51588,2024-08-21,Electronics,Smart Watch,Mobile App,36-45,F,2,199,0,398,U00500
+TX51632,2024-08-21,Beauty,Skincare Set,Social Media,56+,Other,1,89,0,89,U00621
+TX52039,2024-08-21,Beauty,Skincare Set,Social Media,46-55,M,2,89,0,178,U00481
+TX52086,2024-08-21,Home,Lamp,Marketplace,18-25,Other,1,55,0,55,U00360
+TX50806,2024-08-22,Home,Rug,Mobile App,26-35,F,1,96.0,0.2,96.0,U00816
+TX51434,2024-08-22,Clothing,T-Shirt,Marketplace,56+,M,2,25.2,0.1,50.4,U00690
+TX51506,2024-08-22,Electronics,Charger,Marketplace,56+,M,2,35,0,70,U00174
+TX51932,2024-08-22,Clothing,Dress,Marketplace,26-35,M,1,60.0,0.2,60.0,U00212
+TX52403,2024-08-22,Beauty,Perfume,Social Media,46-55,F,1,110,0,110,U00424
+TX50903,2024-08-23,Clothing,Dress,Mobile App,56+,M,1,75,0,75,U00374
+TX51383,2024-08-23,Electronics,Smart Watch,Marketplace,36-45,M,3,159.2,0.2,477.6,U00638
+TX51398,2024-08-23,Electronics,Headphones,Mobile App,18-25,Other,1,71.2,0.2,71.2,U00519
+TX51682,2024-08-23,Beauty,Hair Dryer,Mobile App,26-35,F,1,65,0,65,U00633
+TX52189,2024-08-23,Home,Bedsheet,Marketplace,36-45,M,1,40.5,0.1,40.5,U00427
+TX52411,2024-08-23,Home,Pillow,Marketplace,56+,F,1,35,0,35,U00433
+TX52466,2024-08-23,Electronics,Headphones,Marketplace,26-35,F,2,89,0,178,U00676
+TX50917,2024-08-24,Electronics,Smart Watch,Web,56+,Other,1,199,0,199,U00215
+TX50985,2024-08-24,Books,Fiction Novel,Web,26-35,F,2,16.2,0.1,32.4,U00095
+TX51007,2024-08-24,Clothing,Hoodie,Mobile App,56+,Other,1,55,0,55,U00501
+TX51049,2024-08-24,Beauty,Hair Dryer,Social Media,46-55,M,1,65,0,65,U00746
+TX51054,2024-08-24,Electronics,Charger,Web,56+,Other,2,31.5,0.1,63.0,U00241
+TX51304,2024-08-24,Beauty,Lipstick,Social Media,36-45,F,1,22,0,22,U00258
+TX52366,2024-08-24,Home,Curtain,Mobile App,46-55,F,2,65,0,130,U00761
+TX50126,2024-08-25,Electronics,Headphones,Social Media,56+,Other,1,80.1,0.1,80.1,U00020
+TX50426,2024-08-25,Books,Self-Help,Web,56+,M,1,22,0,22,U00096
+TX50584,2024-08-25,Electronics,Phone Case,Mobile App,46-55,F,1,25,0,25,U00111
+TX50840,2024-08-25,Clothing,T-Shirt,Social Media,18-25,F,2,28,0,56,U00527
+TX51696,2024-08-25,Electronics,Bluetooth Speaker,Marketplace,46-55,F,1,79,0,79,U00518
+TX51966,2024-08-25,Books,Biography,Marketplace,18-25,Other,1,28,0,28,U00616
+TX50680,2024-08-26,Clothing,Hoodie,Marketplace,46-55,Other,2,55,0,110,U00799
+TX50867,2024-08-26,Clothing,Dress,Web,36-45,M,1,67.5,0.1,67.5,U00304
+TX51578,2024-08-26,Books,Cookbook,Marketplace,26-35,M,1,20.0,0.2,20.0,U00538
+TX51892,2024-08-26,Home,Bedsheet,Marketplace,56+,M,2,45,0,90,U00834
+TX50388,2024-08-27,Clothing,Dress,Mobile App,18-25,F,1,75,0,75,U00550
+TX50850,2024-08-27,Beauty,Skincare Set,Marketplace,36-45,Other,1,80.1,0.1,80.1,U00238
+TX50898,2024-08-27,Electronics,Charger,Web,46-55,M,1,35,0,35,U00060
+TX51566,2024-08-27,Books,Tech Manual,Social Media,36-45,F,1,40.5,0.1,40.5,U00064
+TX51729,2024-08-27,Clothing,Sneakers,Marketplace,46-55,M,3,85.5,0.1,256.5,U00813
+TX51868,2024-08-27,Home,Rug,Marketplace,46-55,M,1,120,0,120,U00897
+TX52028,2024-08-27,Home,Pillow,Mobile App,18-25,F,1,35,0,35,U00158
+TX50780,2024-08-28,Beauty,Lipstick,Web,18-25,F,1,19.8,0.1,19.8,U00838
+TX50816,2024-08-28,Clothing,T-Shirt,Social Media,26-35,F,1,28,0,28,U00247
+TX51795,2024-08-28,Books,Self-Help,Mobile App,46-55,M,3,22,0,66,U00224
+TX50014,2024-08-29,Home,Lamp,Social Media,36-45,F,1,49.5,0.1,49.5,U00148
+TX50066,2024-08-29,Home,Bedsheet,Marketplace,18-25,Other,1,31.5,0.3,31.5,U00356
+TX50107,2024-08-29,Home,Pillow,Web,26-35,F,1,24.5,0.3,24.5,U00250
+TX50175,2024-08-29,Electronics,Bluetooth Speaker,Mobile App,18-25,M,1,63.2,0.2,63.2,U00228
+TX50606,2024-08-29,Electronics,Charger,Web,56+,Other,1,28.0,0.2,28.0,U00523
+TX51354,2024-08-29,Home,Bedsheet,Social Media,46-55,Other,1,45,0,45,U00273
+TX52312,2024-08-29,Books,Self-Help,Mobile App,18-25,F,1,22,0,22,U00556
+TX50423,2024-08-31,Beauty,Lipstick,Web,18-25,Other,1,17.6,0.2,17.6,U00205
+TX50800,2024-08-31,Beauty,Hair Dryer,Mobile App,36-45,Other,2,65,0,130,U00305
+TX51149,2024-08-31,Clothing,Sneakers,Social Media,18-25,F,1,76.0,0.2,76.0,U00534
+TX51661,2024-08-31,Home,Bedsheet,Marketplace,26-35,M,1,45,0,45,U00454
+TX51859,2024-08-31,Books,Self-Help,Mobile App,26-35,F,1,19.8,0.1,19.8,U00523
+TX50477,2024-09-01,Books,Cookbook,Web,36-45,M,1,20.0,0.2,20.0,U00859
+TX50925,2024-09-01,Beauty,Hair Dryer,Social Media,56+,Other,2,52.0,0.2,104.0,U00538
+TX51206,2024-09-01,Clothing,Hoodie,Mobile App,18-25,M,1,55,0,55,U00522
+TX51602,2024-09-01,Electronics,Headphones,Mobile App,18-25,Other,1,80.1,0.1,80.1,U00401
+TX51857,2024-09-01,Clothing,Hoodie,Marketplace,36-45,M,1,49.5,0.1,49.5,U00574
+TX51344,2024-09-02,Beauty,Lipstick,Social Media,18-25,F,1,17.6,0.2,17.6,U00851
+TX51584,2024-09-02,Clothing,T-Shirt,Social Media,26-35,Other,1,28,0,28,U00811
+TX52417,2024-09-02,Electronics,Smart Watch,Web,46-55,Other,1,139.3,0.3,139.3,U00433
+TX50187,2024-09-03,Clothing,Jeans,Marketplace,56+,F,2,65,0,130,U00786
+TX50194,2024-09-03,Books,Tech Manual,Social Media,36-45,F,1,45,0,45,U00615
+TX50369,2024-09-03,Electronics,Headphones,Marketplace,18-25,F,1,89,0,89,U00486
+TX50406,2024-09-03,Home,Rug,Marketplace,46-55,M,2,120,0,240,U00184
+TX50499,2024-09-03,Books,Tech Manual,Marketplace,36-45,F,1,45,0,45,U00057
+TX50811,2024-09-03,Electronics,Charger,Social Media,18-25,Other,1,35,0,35,U00303
+TX51335,2024-09-03,Home,Rug,Mobile App,26-35,Other,1,96.0,0.2,96.0,U00840
+TX51631,2024-09-03,Beauty,Hair Dryer,Mobile App,26-35,M,1,52.0,0.2,52.0,U00459
+TX51948,2024-09-03,Beauty,Lipstick,Social Media,26-35,F,1,22,0,22,U00886
+TX52127,2024-09-03,Beauty,Perfume,Mobile App,56+,M,1,110,0,110,U00757
+TX50374,2024-09-04,Beauty,Hair Dryer,Social Media,18-25,Other,1,65,0,65,U00774
+TX50984,2024-09-04,Beauty,Skincare Set,Web,26-35,F,1,89,0,89,U00792
+TX51092,2024-09-04,Clothing,Jeans,Marketplace,56+,F,1,65,0,65,U00613
+TX51110,2024-09-04,Clothing,T-Shirt,Mobile App,56+,Other,2,28,0,56,U00415
+TX52183,2024-09-04,Books,Biography,Social Media,46-55,M,1,28,0,28,U00761
+TX51026,2024-09-05,Beauty,Perfume,Web,26-35,M,2,99.0,0.1,198.0,U00836
+TX51424,2024-09-05,Electronics,Phone Case,Web,56+,M,1,25,0,25,U00214
+TX52130,2024-09-05,Books,Cookbook,Marketplace,26-35,M,1,25,0,25,U00178
+TX52381,2024-09-05,Electronics,Headphones,Web,18-25,Other,1,80.1,0.1,80.1,U00559
+TX50462,2024-09-06,Beauty,Hair Dryer,Web,26-35,M,2,52.0,0.2,104.0,U00399
+TX50496,2024-09-06,Electronics,Phone Case,Web,18-25,F,1,25,0,25,U00632
+TX51141,2024-09-06,Books,Self-Help,Web,56+,M,1,19.8,0.1,19.8,U00200
+TX51709,2024-09-06,Electronics,Charger,Web,26-35,M,1,28.0,0.2,28.0,U00170
+TX52333,2024-09-06,Electronics,Charger,Social Media,26-35,F,1,24.5,0.3,24.5,U00190
+TX50713,2024-09-07,Beauty,Skincare Set,Social Media,56+,F,1,89,0,89,U00745
+TX50989,2024-09-07,Home,Curtain,Mobile App,18-25,M,3,58.5,0.1,175.5,U00156
+TX51671,2024-09-07,Home,Bedsheet,Social Media,56+,F,1,45,0,45,U00075
+TX52498,2024-09-07,Clothing,Dress,Marketplace,18-25,F,1,75,0,75,U00346
+TX50017,2024-09-08,Electronics,Bluetooth Speaker,Mobile App,26-35,Other,1,63.2,0.2,63.2,U00659
+TX50300,2024-09-08,Beauty,Hair Dryer,Marketplace,26-35,F,1,65,0,65,U00564
+TX50577,2024-09-08,Books,Fiction Novel,Social Media,36-45,F,1,18,0,18,U00505
+TX51290,2024-09-08,Clothing,Hoodie,Mobile App,46-55,Other,1,55,0,55,U00804
+TX51315,2024-09-08,Electronics,Phone Case,Social Media,46-55,Other,3,25,0,75,U00760
+TX51484,2024-09-08,Home,Rug,Marketplace,56+,F,1,120,0,120,U00711
+TX52051,2024-09-08,Home,Rug,Mobile App,46-55,Other,1,120,0,120,U00681
+TX50099,2024-09-09,Electronics,Charger,Web,26-35,Other,1,35,0,35,U00443
+TX50686,2024-09-09,Home,Pillow,Web,36-45,M,1,35,0,35,U00875
+TX50841,2024-09-09,Home,Curtain,Mobile App,56+,Other,1,58.5,0.1,58.5,U00592
+TX50996,2024-09-09,Beauty,Face Mask,Web,36-45,Other,2,18,0,36,U00774
+TX51008,2024-09-09,Beauty,Face Mask,Mobile App,56+,F,2,18,0,36,U00034
+TX51071,2024-09-09,Electronics,Bluetooth Speaker,Marketplace,36-45,M,2,79,0,158,U00650
+TX51829,2024-09-09,Home,Rug,Marketplace,26-35,Other,1,108.0,0.1,108.0,U00592
+TX52013,2024-09-09,Books,Tech Manual,Marketplace,56+,Other,1,36.0,0.2,36.0,U00899
+TX50090,2024-09-10,Clothing,Sneakers,Social Media,56+,Other,1,95,0,95,U00478
+TX51201,2024-09-10,Beauty,Perfume,Web,36-45,Other,1,110,0,110,U00619
+TX52443,2024-09-10,Clothing,T-Shirt,Social Media,56+,F,1,28,0,28,U00047
+TX50773,2024-09-11,Electronics,Charger,Web,46-55,F,2,35,0,70,U00375
+TX51065,2024-09-11,Beauty,Face Mask,Marketplace,26-35,M,1,18,0,18,U00741
+TX51791,2024-09-11,Electronics,Headphones,Web,46-55,M,1,71.2,0.2,71.2,U00815
+TX52090,2024-09-11,Books,Fiction Novel,Marketplace,56+,Other,1,16.2,0.1,16.2,U00489
+TX50015,2024-09-12,Clothing,Dress,Social Media,18-25,Other,1,75,0,75,U00795
+TX50030,2024-09-12,Electronics,Bluetooth Speaker,Marketplace,56+,M,1,71.1,0.1,71.1,U00714
+TX50119,2024-09-12,Beauty,Hair Dryer,Web,36-45,M,3,65,0,195,U00084
+TX50284,2024-09-12,Electronics,Smart Watch,Social Media,26-35,M,3,199,0,597,U00613
+TX50893,2024-09-12,Electronics,Charger,Marketplace,18-25,F,1,24.5,0.3,24.5,U00478
+TX51325,2024-09-12,Clothing,Jeans,Mobile App,26-35,F,1,58.5,0.1,58.5,U00645
+TX50023,2024-09-13,Home,Curtain,Web,56+,M,2,65,0,130,U00511
+TX50230,2024-09-13,Clothing,Dress,Social Media,56+,Other,1,75,0,75,U00862
+TX50236,2024-09-13,Clothing,Hoodie,Social Media,18-25,Other,2,49.5,0.1,99.0,U00171
+TX51441,2024-09-13,Home,Lamp,Marketplace,18-25,F,1,55,0,55,U00825
+TX51699,2024-09-13,Home,Pillow,Social Media,36-45,Other,1,31.5,0.1,31.5,U00584
+TX51782,2024-09-13,Electronics,Bluetooth Speaker,Social Media,26-35,M,1,63.2,0.2,63.2,U00699
+TX52067,2024-09-13,Books,Biography,Social Media,36-45,Other,1,28,0,28,U00766
+TX52374,2024-09-13,Books,Biography,Mobile App,36-45,F,2,22.4,0.2,44.8,U00773
+TX50094,2024-09-14,Books,Fiction Novel,Marketplace,26-35,M,1,14.4,0.2,14.4,U00493
+TX50145,2024-09-14,Books,Biography,Social Media,18-25,Other,1,28,0,28,U00089
+TX50962,2024-09-14,Electronics,Headphones,Mobile App,26-35,Other,1,80.1,0.1,80.1,U00524
+TX51077,2024-09-14,Clothing,Hoodie,Social Media,56+,Other,1,38.5,0.3,38.5,U00372
+TX51210,2024-09-14,Clothing,Hoodie,Social Media,56+,M,1,38.5,0.3,38.5,U00417
+TX51485,2024-09-14,Home,Pillow,Web,46-55,M,1,35,0,35,U00047
+TX51508,2024-09-14,Books,Cookbook,Mobile App,46-55,F,1,25,0,25,U00749
+TX51681,2024-09-14,Books,Fiction Novel,Mobile App,36-45,M,1,12.6,0.3,12.6,U00517
+TX51852,2024-09-14,Books,Tech Manual,Marketplace,26-35,M,1,45,0,45,U00788
+TX52194,2024-09-14,Electronics,Headphones,Mobile App,56+,F,1,89,0,89,U00878
+TX50087,2024-09-15,Home,Lamp,Social Media,46-55,F,3,55,0,165,U00185
+TX50106,2024-09-15,Home,Rug,Web,26-35,F,1,120,0,120,U00658
+TX50257,2024-09-15,Electronics,Smart Watch,Marketplace,26-35,F,1,179.1,0.1,179.1,U00846
+TX50279,2024-09-15,Electronics,Charger,Social Media,46-55,M,1,28.0,0.2,28.0,U00150
+TX50382,2024-09-15,Beauty,Perfume,Social Media,36-45,M,1,88.0,0.2,88.0,U00552
+TX50444,2024-09-15,Home,Rug,Marketplace,18-25,M,2,84.0,0.3,168.0,U00332
+TX50616,2024-09-15,Clothing,Hoodie,Social Media,46-55,M,1,55,0,55,U00476
+TX50726,2024-09-15,Books,Biography,Social Media,26-35,M,1,28,0,28,U00387
+TX51251,2024-09-15,Clothing,T-Shirt,Marketplace,26-35,F,1,22.4,0.2,22.4,U00572
+TX51871,2024-09-15,Beauty,Perfume,Marketplace,46-55,M,1,110,0,110,U00585
+TX52165,2024-09-15,Clothing,Jeans,Mobile App,36-45,M,1,58.5,0.1,58.5,U00039
+TX52176,2024-09-15,Electronics,Charger,Social Media,46-55,F,2,35,0,70,U00237
+TX52308,2024-09-15,Electronics,Charger,Web,26-35,F,1,35,0,35,U00773
+TX50022,2024-09-16,Home,Curtain,Marketplace,36-45,F,1,65,0,65,U00476
+TX50937,2024-09-16,Books,Fiction Novel,Social Media,56+,F,1,14.4,0.2,14.4,U00405
+TX51223,2024-09-16,Electronics,Phone Case,Social Media,26-35,F,1,25,0,25,U00831
+TX51233,2024-09-16,Home,Bedsheet,Mobile App,46-55,F,3,36.0,0.2,108.0,U00191
+TX51264,2024-09-16,Home,Lamp,Web,56+,Other,1,55,0,55,U00138
+TX51380,2024-09-16,Books,Self-Help,Web,18-25,F,2,17.6,0.2,35.2,U00333
+TX50394,2024-09-17,Home,Curtain,Social Media,26-35,F,2,65,0,130,U00173
+TX50397,2024-09-17,Books,Tech Manual,Web,46-55,Other,1,36.0,0.2,36.0,U00171
+TX50687,2024-09-17,Books,Cookbook,Mobile App,56+,M,2,22.5,0.1,45.0,U00572
+TX50767,2024-09-17,Clothing,Sneakers,Web,36-45,Other,1,95,0,95,U00712
+TX51213,2024-09-17,Clothing,Hoodie,Web,26-35,M,1,44.0,0.2,44.0,U00206
+TX51286,2024-09-17,Books,Self-Help,Web,46-55,M,1,17.6,0.2,17.6,U00443
+TX51340,2024-09-17,Beauty,Perfume,Marketplace,36-45,F,1,110,0,110,U00395
+TX51573,2024-09-17,Home,Bedsheet,Mobile App,56+,M,3,31.5,0.3,94.5,U00730
+TX52023,2024-09-17,Home,Pillow,Marketplace,56+,M,1,28.0,0.2,28.0,U00331
+TX52414,2024-09-17,Home,Rug,Marketplace,36-45,M,2,108.0,0.1,216.0,U00544
+TX50721,2024-09-18,Clothing,Hoodie,Mobile App,18-25,Other,2,55,0,110,U00205
+TX51161,2024-09-18,Home,Rug,Mobile App,46-55,Other,1,120,0,120,U00153
+TX51179,2024-09-18,Electronics,Smart Watch,Marketplace,36-45,Other,1,199,0,199,U00042
+TX52222,2024-09-18,Books,Self-Help,Web,46-55,F,3,17.6,0.2,52.8,U00706
+TX52445,2024-09-18,Home,Bedsheet,Web,46-55,M,1,45,0,45,U00181
+TX51061,2024-09-19,Clothing,Hoodie,Marketplace,26-35,M,1,44.0,0.2,44.0,U00454
+TX51659,2024-09-19,Clothing,Hoodie,Web,46-55,M,1,55,0,55,U00518
+TX52298,2024-09-19,Electronics,Charger,Social Media,26-35,Other,1,28.0,0.2,28.0,U00641
+TX50245,2024-09-20,Beauty,Perfume,Web,26-35,F,1,110,0,110,U00640
+TX50610,2024-09-20,Home,Bedsheet,Web,36-45,F,1,45,0,45,U00828
+TX50887,2024-09-20,Beauty,Face Mask,Social Media,56+,Other,1,18,0,18,U00268
+TX51236,2024-09-20,Books,Fiction Novel,Marketplace,36-45,Other,1,18,0,18,U00661
+TX51411,2024-09-20,Electronics,Phone Case,Social Media,26-35,M,2,25,0,50,U00818
+TX51608,2024-09-20,Clothing,Dress,Web,18-25,Other,2,75,0,150,U00045
+TX52316,2024-09-20,Books,Self-Help,Mobile App,46-55,M,2,22,0,44,U00883
+TX50213,2024-09-21,Beauty,Lipstick,Marketplace,26-35,F,1,17.6,0.2,17.6,U00042
+TX50746,2024-09-21,Home,Bedsheet,Web,56+,F,1,45,0,45,U00114
+TX51068,2024-09-21,Beauty,Skincare Set,Mobile App,18-25,F,1,80.1,0.1,80.1,U00239
+TX51122,2024-09-21,Clothing,Jeans,Marketplace,26-35,F,1,65,0,65,U00044
+TX51346,2024-09-21,Beauty,Lipstick,Marketplace,56+,F,1,22,0,22,U00835
+TX51813,2024-09-21,Beauty,Skincare Set,Social Media,26-35,M,3,89,0,267,U00793
+TX51827,2024-09-21,Clothing,T-Shirt,Marketplace,26-35,Other,1,28,0,28,U00555
+TX52059,2024-09-21,Clothing,Sneakers,Social Media,26-35,F,2,95,0,190,U00492
+TX50197,2024-09-22,Clothing,Sneakers,Web,26-35,Other,2,66.5,0.3,133.0,U00161
+TX50796,2024-09-22,Clothing,T-Shirt,Web,36-45,Other,1,28,0,28,U00512
+TX51091,2024-09-22,Clothing,Sneakers,Social Media,26-35,Other,2,85.5,0.1,171.0,U00722
+TX51598,2024-09-22,Clothing,Dress,Marketplace,56+,F,1,75,0,75,U00295
+TX51999,2024-09-22,Clothing,Sneakers,Mobile App,56+,F,1,95,0,95,U00138
+TX52147,2024-09-22,Clothing,Jeans,Web,56+,F,1,65,0,65,U00108
+TX52330,2024-09-22,Home,Lamp,Marketplace,26-35,F,1,55,0,55,U00678
+TX50124,2024-09-23,Books,Fiction Novel,Mobile App,46-55,F,1,14.4,0.2,14.4,U00030
+TX50561,2024-09-23,Home,Lamp,Social Media,36-45,F,1,49.5,0.1,49.5,U00403
+TX50698,2024-09-23,Home,Rug,Web,56+,Other,3,96.0,0.2,288.0,U00896
+TX50854,2024-09-23,Beauty,Perfume,Web,46-55,M,1,77.0,0.3,77.0,U00539
+TX50964,2024-09-23,Clothing,Sneakers,Marketplace,56+,F,1,85.5,0.1,85.5,U00040
+TX51062,2024-09-23,Clothing,T-Shirt,Web,46-55,M,1,25.2,0.1,25.2,U00795
+TX51083,2024-09-23,Home,Curtain,Marketplace,56+,Other,1,65,0,65,U00695
+TX51728,2024-09-23,Beauty,Perfume,Marketplace,26-35,M,1,99.0,0.1,99.0,U00078
+TX51733,2024-09-23,Books,Self-Help,Web,56+,M,1,22,0,22,U00778
+TX52265,2024-09-23,Home,Bedsheet,Web,46-55,Other,1,45,0,45,U00491
+TX50619,2024-09-24,Clothing,Sneakers,Social Media,36-45,M,1,95,0,95,U00271
+TX51192,2024-09-24,Beauty,Perfume,Web,46-55,Other,1,110,0,110,U00347
+TX52332,2024-09-24,Electronics,Smart Watch,Web,46-55,M,1,179.1,0.1,179.1,U00581
+TX50635,2024-09-25,Electronics,Charger,Mobile App,36-45,M,1,31.5,0.1,31.5,U00551
+TX50958,2024-09-25,Clothing,Jeans,Web,26-35,M,2,58.5,0.1,117.0,U00558
+TX51455,2024-09-25,Books,Self-Help,Web,26-35,F,2,17.6,0.2,35.2,U00757
+TX51491,2024-09-25,Books,Self-Help,Social Media,18-25,Other,2,17.6,0.2,35.2,U00104
+TX51515,2024-09-25,Electronics,Smart Watch,Marketplace,18-25,Other,1,139.3,0.3,139.3,U00319
+TX52279,2024-09-25,Clothing,Dress,Web,26-35,M,2,75,0,150,U00648
+TX50345,2024-09-26,Books,Tech Manual,Marketplace,18-25,Other,1,45,0,45,U00299
+TX50559,2024-09-26,Home,Rug,Web,36-45,Other,3,120,0,360,U00550
+TX51069,2024-09-26,Beauty,Lipstick,Marketplace,26-35,Other,1,19.8,0.1,19.8,U00213
+TX51225,2024-09-26,Books,Biography,Mobile App,36-45,M,1,28,0,28,U00479
+TX50050,2024-09-27,Clothing,Sneakers,Social Media,36-45,Other,2,95,0,190,U00466
+TX50226,2024-09-27,Home,Bedsheet,Mobile App,36-45,Other,1,45,0,45,U00899
+TX50608,2024-09-27,Books,Self-Help,Web,18-25,M,1,17.6,0.2,17.6,U00371
+TX50633,2024-09-27,Clothing,Jeans,Mobile App,36-45,M,1,65,0,65,U00389
+TX50939,2024-09-27,Home,Curtain,Web,56+,F,1,52.0,0.2,52.0,U00170
+TX51417,2024-09-27,Home,Curtain,Marketplace,56+,F,2,65,0,130,U00073
+TX51668,2024-09-27,Home,Lamp,Social Media,26-35,M,2,55,0,110,U00172
+TX51894,2024-09-27,Beauty,Hair Dryer,Marketplace,26-35,Other,1,65,0,65,U00576
+TX50016,2024-09-28,Home,Curtain,Social Media,18-25,F,2,58.5,0.1,117.0,U00419
+TX50982,2024-09-28,Home,Rug,Mobile App,26-35,Other,2,120,0,240,U00786
+TX50990,2024-09-28,Beauty,Hair Dryer,Web,46-55,F,1,45.5,0.3,45.5,U00012
+TX51033,2024-09-28,Home,Bedsheet,Mobile App,26-35,M,2,40.5,0.1,81.0,U00286
+TX51542,2024-09-28,Clothing,Sneakers,Social Media,18-25,F,1,85.5,0.1,85.5,U00595
+TX51662,2024-09-28,Electronics,Smart Watch,Marketplace,18-25,M,1,179.1,0.1,179.1,U00703
+TX51666,2024-09-28,Beauty,Face Mask,Social Media,18-25,Other,1,18,0,18,U00008
+TX51885,2024-09-28,Clothing,Jeans,Web,36-45,M,2,65,0,130,U00589
+TX52181,2024-09-28,Home,Pillow,Marketplace,56+,M,2,24.5,0.3,49.0,U00090
+TX52361,2024-09-28,Home,Rug,Web,56+,F,2,120,0,240,U00114
+TX50681,2024-09-29,Beauty,Perfume,Mobile App,56+,Other,1,99.0,0.1,99.0,U00017
+TX50847,2024-09-29,Books,Biography,Web,18-25,M,1,28,0,28,U00243
+TX50927,2024-09-29,Home,Bedsheet,Mobile App,56+,Other,1,40.5,0.1,40.5,U00219
+TX51107,2024-09-29,Books,Biography,Web,26-35,M,1,28,0,28,U00889
+TX51443,2024-09-29,Home,Lamp,Marketplace,26-35,F,1,49.5,0.1,49.5,U00739
+TX51454,2024-09-29,Books,Cookbook,Marketplace,36-45,F,1,22.5,0.1,22.5,U00421
+TX51585,2024-09-29,Books,Cookbook,Mobile App,36-45,F,3,25,0,75,U00750
+TX51781,2024-09-29,Electronics,Headphones,Web,18-25,M,1,89,0,89,U00400
+TX52022,2024-09-29,Home,Pillow,Social Media,46-55,M,3,35,0,105,U00455
+TX52050,2024-09-29,Home,Pillow,Social Media,18-25,M,1,35,0,35,U00744
+TX52065,2024-09-29,Beauty,Hair Dryer,Marketplace,56+,F,1,65,0,65,U00622
+TX52167,2024-09-29,Electronics,Bluetooth Speaker,Marketplace,56+,M,1,71.1,0.1,71.1,U00466
+TX52248,2024-09-29,Clothing,T-Shirt,Social Media,46-55,Other,1,28,0,28,U00506
+TX50361,2024-09-30,Electronics,Phone Case,Mobile App,36-45,M,1,22.5,0.1,22.5,U00702
+TX51428,2024-09-30,Beauty,Skincare Set,Social Media,46-55,Other,1,89,0,89,U00806
+TX52173,2024-09-30,Electronics,Phone Case,Marketplace,18-25,F,1,25,0,25,U00050
+TX50260,2024-10-01,Electronics,Bluetooth Speaker,Web,56+,Other,1,79,0,79,U00484
+TX51453,2024-10-01,Beauty,Skincare Set,Marketplace,56+,F,1,71.2,0.2,71.2,U00786
+TX51862,2024-10-01,Electronics,Phone Case,Mobile App,36-45,M,2,25,0,50,U00231
+TX50196,2024-10-02,Books,Cookbook,Mobile App,46-55,F,2,25,0,50,U00406
+TX50425,2024-10-02,Beauty,Hair Dryer,Social Media,56+,F,2,65,0,130,U00794
+TX50493,2024-10-02,Electronics,Bluetooth Speaker,Web,56+,M,2,79,0,158,U00159
+TX50757,2024-10-02,Electronics,Headphones,Social Media,36-45,M,1,62.3,0.3,62.3,U00417
+TX51644,2024-10-02,Books,Fiction Novel,Mobile App,26-35,M,1,18,0,18,U00653
+TX52212,2024-10-02,Electronics,Charger,Marketplace,18-25,Other,2,35,0,70,U00220
+TX52318,2024-10-02,Home,Rug,Mobile App,18-25,Other,1,120,0,120,U00184
+TX50290,2024-10-03,Beauty,Hair Dryer,Web,56+,F,1,52.0,0.2,52.0,U00144
+TX50914,2024-10-03,Home,Pillow,Web,18-25,F,3,31.5,0.1,94.5,U00093
+TX51173,2024-10-03,Home,Rug,Social Media,56+,M,3,120,0,360,U00030
+TX51281,2024-10-03,Electronics,Charger,Marketplace,18-25,F,1,35,0,35,U00035
+TX52100,2024-10-03,Home,Lamp,Social Media,46-55,Other,1,55,0,55,U00134
+TX50125,2024-10-04,Electronics,Charger,Social Media,18-25,M,2,35,0,70,U00708
+TX50419,2024-10-04,Home,Bedsheet,Social Media,36-45,Other,1,45,0,45,U00094
+TX50470,2024-10-04,Home,Rug,Social Media,18-25,F,3,108.0,0.1,324.0,U00615
+TX50827,2024-10-04,Clothing,Jeans,Web,36-45,Other,1,45.5,0.3,45.5,U00858
+TX51053,2024-10-04,Beauty,Face Mask,Social Media,46-55,Other,2,18,0,36,U00231
+TX51479,2024-10-04,Home,Pillow,Marketplace,46-55,F,1,31.5,0.1,31.5,U00127
+TX51568,2024-10-04,Clothing,T-Shirt,Web,56+,Other,1,28,0,28,U00195
+TX51985,2024-10-04,Home,Bedsheet,Marketplace,26-35,Other,1,45,0,45,U00655
+TX52251,2024-10-04,Beauty,Skincare Set,Marketplace,18-25,F,2,71.2,0.2,142.4,U00500
+TX50169,2024-10-05,Home,Bedsheet,Marketplace,26-35,M,2,36.0,0.2,72.0,U00799
+TX50254,2024-10-05,Home,Pillow,Mobile App,36-45,F,3,35,0,105,U00398
+TX50754,2024-10-05,Books,Fiction Novel,Marketplace,18-25,F,2,18,0,36,U00836
+TX51227,2024-10-05,Clothing,Jeans,Social Media,36-45,F,2,65,0,130,U00344
+TX51575,2024-10-05,Clothing,Dress,Social Media,36-45,F,2,75,0,150,U00476
+TX51596,2024-10-05,Books,Cookbook,Mobile App,56+,M,2,25,0,50,U00184
+TX51640,2024-10-05,Books,Fiction Novel,Mobile App,36-45,M,1,18,0,18,U00431
+TX51642,2024-10-05,Books,Tech Manual,Mobile App,26-35,F,2,45,0,90,U00079
+TX50574,2024-10-06,Home,Pillow,Mobile App,36-45,Other,2,35,0,70,U00815
+TX50719,2024-10-06,Electronics,Bluetooth Speaker,Social Media,26-35,Other,1,71.1,0.1,71.1,U00151
+TX50852,2024-10-06,Home,Rug,Marketplace,56+,Other,1,120,0,120,U00056
+TX52188,2024-10-06,Electronics,Charger,Web,18-25,F,3,35,0,105,U00265
+TX52338,2024-10-06,Home,Rug,Social Media,18-25,F,2,96.0,0.2,192.0,U00850
+TX52440,2024-10-06,Electronics,Headphones,Marketplace,46-55,F,1,71.2,0.2,71.2,U00671
+TX50778,2024-10-07,Clothing,Hoodie,Social Media,46-55,Other,1,38.5,0.3,38.5,U00598
+TX51070,2024-10-07,Electronics,Smart Watch,Mobile App,26-35,F,2,199,0,398,U00780
+TX51164,2024-10-07,Home,Lamp,Mobile App,56+,M,1,49.5,0.1,49.5,U00163
+TX51203,2024-10-07,Beauty,Face Mask,Web,36-45,M,1,14.4,0.2,14.4,U00230
+TX51232,2024-10-07,Clothing,Sneakers,Marketplace,46-55,Other,1,85.5,0.1,85.5,U00605
+TX51405,2024-10-07,Electronics,Smart Watch,Marketplace,46-55,F,1,179.1,0.1,179.1,U00403
+TX51604,2024-10-07,Clothing,Hoodie,Mobile App,56+,M,1,55,0,55,U00603
+TX51814,2024-10-07,Books,Cookbook,Social Media,46-55,F,3,25,0,75,U00472
+TX52070,2024-10-07,Beauty,Hair Dryer,Mobile App,18-25,F,1,65,0,65,U00228
+TX52179,2024-10-07,Electronics,Phone Case,Marketplace,18-25,Other,2,22.5,0.1,45.0,U00076
+TX52242,2024-10-07,Books,Self-Help,Marketplace,36-45,M,1,22,0,22,U00032
+TX52488,2024-10-07,Books,Self-Help,Social Media,36-45,M,2,19.8,0.1,39.6,U00695
+TX50782,2024-10-08,Books,Tech Manual,Mobile App,18-25,F,1,36.0,0.2,36.0,U00689
+TX51305,2024-10-08,Clothing,T-Shirt,Social Media,46-55,M,1,28,0,28,U00467
+TX51390,2024-10-08,Electronics,Bluetooth Speaker,Marketplace,18-25,F,2,63.2,0.2,126.4,U00224
+TX51407,2024-10-08,Clothing,Jeans,Web,46-55,M,1,65,0,65,U00395
+TX51488,2024-10-08,Home,Lamp,Mobile App,18-25,M,1,55,0,55,U00438
+TX52001,2024-10-08,Home,Curtain,Web,56+,Other,1,65,0,65,U00899
+TX52126,2024-10-08,Beauty,Lipstick,Marketplace,36-45,F,2,22,0,44,U00379
+TX52289,2024-10-08,Clothing,Sneakers,Mobile App,18-25,M,1,85.5,0.1,85.5,U00446
+TX52352,2024-10-08,Books,Biography,Web,46-55,Other,1,28,0,28,U00577
+TX50358,2024-10-09,Home,Lamp,Mobile App,18-25,F,1,44.0,0.2,44.0,U00795
+TX51692,2024-10-09,Home,Pillow,Social Media,26-35,Other,3,35,0,105,U00570
+TX51755,2024-10-09,Clothing,Hoodie,Social Media,26-35,F,1,44.0,0.2,44.0,U00179
+TX51983,2024-10-09,Electronics,Smart Watch,Marketplace,36-45,M,1,159.2,0.2,159.2,U00258
+TX52416,2024-10-09,Beauty,Perfume,Social Media,26-35,M,1,88.0,0.2,88.0,U00062
+TX51996,2024-10-10,Beauty,Hair Dryer,Web,18-25,F,1,65,0,65,U00678
+TX50513,2024-10-11,Clothing,T-Shirt,Marketplace,46-55,F,1,28,0,28,U00226
+TX51009,2024-10-11,Clothing,Hoodie,Marketplace,46-55,M,1,55,0,55,U00819
+TX51386,2024-10-11,Beauty,Lipstick,Web,26-35,Other,2,22,0,44,U00539
+TX51762,2024-10-11,Electronics,Phone Case,Social Media,46-55,Other,1,20.0,0.2,20.0,U00375
+TX51850,2024-10-11,Beauty,Perfume,Social Media,36-45,Other,2,110,0,220,U00439
+TX50408,2024-10-12,Home,Lamp,Marketplace,36-45,F,1,55,0,55,U00097
+TX51343,2024-10-12,Beauty,Skincare Set,Marketplace,46-55,F,2,89,0,178,U00669
+TX51909,2024-10-12,Books,Fiction Novel,Social Media,36-45,F,1,18,0,18,U00625
+TX52057,2024-10-12,Home,Curtain,Social Media,56+,Other,1,65,0,65,U00562
+TX52151,2024-10-12,Electronics,Phone Case,Social Media,46-55,F,1,25,0,25,U00513
+TX52431,2024-10-12,Electronics,Smart Watch,Mobile App,56+,M,1,199,0,199,U00688
+TX50174,2024-10-13,Home,Curtain,Marketplace,26-35,Other,1,58.5,0.1,58.5,U00038
+TX50993,2024-10-13,Books,Self-Help,Web,36-45,Other,1,15.4,0.3,15.4,U00487
+TX51272,2024-10-13,Books,Fiction Novel,Mobile App,26-35,M,1,18,0,18,U00152
+TX50387,2024-10-14,Electronics,Charger,Web,18-25,Other,2,31.5,0.1,63.0,U00463
+TX50886,2024-10-14,Beauty,Skincare Set,Marketplace,26-35,M,1,89,0,89,U00473
+TX51189,2024-10-14,Clothing,Sneakers,Web,18-25,Other,1,85.5,0.1,85.5,U00674
+TX51215,2024-10-14,Home,Rug,Social Media,56+,M,1,108.0,0.1,108.0,U00839
+TX51472,2024-10-14,Home,Curtain,Web,26-35,M,2,65,0,130,U00377
+TX51619,2024-10-14,Home,Lamp,Marketplace,26-35,M,1,55,0,55,U00657
+TX52000,2024-10-14,Clothing,Sneakers,Social Media,26-35,M,2,95,0,190,U00468
+TX52191,2024-10-14,Electronics,Bluetooth Speaker,Social Media,46-55,Other,2,79,0,158,U00329
+TX50592,2024-10-15,Electronics,Headphones,Mobile App,46-55,F,1,89,0,89,U00201
+TX51019,2024-10-15,Electronics,Smart Watch,Marketplace,36-45,M,1,179.1,0.1,179.1,U00347
+TX51376,2024-10-15,Electronics,Headphones,Marketplace,26-35,M,2,89,0,178,U00799
+TX51933,2024-10-15,Home,Rug,Mobile App,36-45,F,2,120,0,240,U00817
+TX51957,2024-10-15,Home,Bedsheet,Social Media,26-35,M,1,45,0,45,U00575
+TX51976,2024-10-15,Books,Tech Manual,Marketplace,56+,Other,2,40.5,0.1,81.0,U00742
+TX52216,2024-10-15,Beauty,Skincare Set,Social Media,26-35,Other,1,89,0,89,U00900
+TX50227,2024-10-16,Clothing,T-Shirt,Social Media,36-45,F,1,28,0,28,U00191
+TX50433,2024-10-16,Clothing,Sneakers,Marketplace,26-35,Other,2,95,0,190,U00649
+TX50528,2024-10-16,Home,Rug,Marketplace,26-35,F,1,120,0,120,U00237
+TX50862,2024-10-16,Beauty,Hair Dryer,Marketplace,18-25,Other,1,65,0,65,U00249
+TX51241,2024-10-16,Books,Cookbook,Marketplace,46-55,F,2,25,0,50,U00444
+TX52218,2024-10-16,Electronics,Charger,Web,56+,Other,1,35,0,35,U00754
+TX50429,2024-10-17,Beauty,Skincare Set,Mobile App,26-35,M,1,89,0,89,U00214
+TX51483,2024-10-17,Books,Tech Manual,Web,26-35,F,2,40.5,0.1,81.0,U00137
+TX51818,2024-10-17,Beauty,Face Mask,Mobile App,18-25,M,1,18,0,18,U00530
+TX52132,2024-10-17,Electronics,Smart Watch,Marketplace,26-35,M,1,199,0,199,U00159
+TX52204,2024-10-17,Books,Self-Help,Marketplace,36-45,F,1,22,0,22,U00099
+TX52255,2024-10-17,Beauty,Perfume,Marketplace,46-55,F,1,110,0,110,U00151
+TX52423,2024-10-17,Beauty,Face Mask,Marketplace,26-35,F,1,12.6,0.3,12.6,U00856
+TX50760,2024-10-18,Books,Self-Help,Mobile App,46-55,F,1,22,0,22,U00026
+TX51055,2024-10-18,Books,Self-Help,Social Media,46-55,Other,1,19.8,0.1,19.8,U00312
+TX51064,2024-10-18,Beauty,Hair Dryer,Mobile App,36-45,Other,2,65,0,130,U00572
+TX51547,2024-10-18,Beauty,Lipstick,Mobile App,46-55,F,2,19.8,0.1,39.6,U00053
+TX51557,2024-10-18,Books,Self-Help,Social Media,46-55,F,3,22,0,66,U00373
+TX50081,2024-10-19,Home,Bedsheet,Marketplace,18-25,M,1,45,0,45,U00312
+TX50865,2024-10-19,Beauty,Hair Dryer,Mobile App,56+,F,1,65,0,65,U00651
+TX51010,2024-10-19,Books,Biography,Marketplace,18-25,M,2,22.4,0.2,44.8,U00237
+TX51040,2024-10-19,Beauty,Hair Dryer,Mobile App,18-25,Other,1,65,0,65,U00887
+TX51861,2024-10-19,Home,Lamp,Mobile App,36-45,Other,1,44.0,0.2,44.0,U00543
+TX51874,2024-10-19,Home,Lamp,Web,56+,Other,1,55,0,55,U00340
+TX52426,2024-10-19,Beauty,Perfume,Marketplace,46-55,M,2,99.0,0.1,198.0,U00302
+TX50652,2024-10-20,Clothing,T-Shirt,Web,46-55,Other,1,25.2,0.1,25.2,U00786
+TX51368,2024-10-20,Beauty,Perfume,Web,36-45,M,2,99.0,0.1,198.0,U00494
+TX51572,2024-10-20,Clothing,Hoodie,Marketplace,46-55,Other,1,44.0,0.2,44.0,U00536
+TX50930,2024-10-21,Books,Self-Help,Mobile App,46-55,Other,2,22,0,44,U00808
+TX50961,2024-10-21,Clothing,Hoodie,Web,56+,Other,1,55,0,55,U00331
+TX51289,2024-10-21,Clothing,Hoodie,Marketplace,46-55,Other,1,44.0,0.2,44.0,U00573
+TX51548,2024-10-21,Books,Fiction Novel,Marketplace,36-45,F,2,16.2,0.1,32.4,U00397
+TX51919,2024-10-21,Clothing,T-Shirt,Mobile App,18-25,Other,1,25.2,0.1,25.2,U00515
+TX51927,2024-10-21,Clothing,Hoodie,Marketplace,36-45,Other,2,55,0,110,U00414
+TX52241,2024-10-21,Beauty,Skincare Set,Mobile App,46-55,F,1,89,0,89,U00688
+TX52494,2024-10-21,Home,Curtain,Social Media,46-55,Other,1,52.0,0.2,52.0,U00471
+TX50040,2024-10-22,Beauty,Hair Dryer,Web,46-55,M,1,58.5,0.1,58.5,U00509
+TX50055,2024-10-22,Home,Bedsheet,Mobile App,18-25,F,1,31.5,0.3,31.5,U00319
+TX50537,2024-10-22,Books,Cookbook,Mobile App,46-55,M,1,22.5,0.1,22.5,U00421
+TX51226,2024-10-22,Beauty,Perfume,Social Media,46-55,Other,1,77.0,0.3,77.0,U00039
+TX51589,2024-10-22,Home,Bedsheet,Mobile App,26-35,F,2,40.5,0.1,81.0,U00528
+TX50157,2024-10-23,Books,Tech Manual,Web,18-25,M,3,45,0,135,U00109
+TX50723,2024-10-23,Books,Biography,Web,26-35,M,1,28,0,28,U00681
+TX51489,2024-10-23,Electronics,Headphones,Mobile App,46-55,M,1,89,0,89,U00560
+TX51523,2024-10-23,Electronics,Charger,Marketplace,18-25,F,1,35,0,35,U00025
+TX51753,2024-10-23,Electronics,Phone Case,Marketplace,36-45,Other,1,25,0,25,U00489
+TX51825,2024-10-23,Clothing,Hoodie,Web,56+,Other,2,55,0,110,U00283
+TX51830,2024-10-23,Electronics,Smart Watch,Web,26-35,F,1,199,0,199,U00253
+TX52294,2024-10-23,Home,Rug,Marketplace,46-55,M,1,108.0,0.1,108.0,U00136
+TX50166,2024-10-24,Electronics,Bluetooth Speaker,Mobile App,56+,F,1,79,0,79,U00367
+TX50706,2024-10-24,Beauty,Lipstick,Mobile App,46-55,Other,2,19.8,0.1,39.6,U00538
+TX50868,2024-10-24,Beauty,Face Mask,Web,36-45,M,1,18,0,18,U00379
+TX50899,2024-10-24,Clothing,Jeans,Marketplace,46-55,Other,1,65,0,65,U00389
+TX51610,2024-10-24,Beauty,Perfume,Mobile App,56+,Other,1,110,0,110,U00317
+TX52448,2024-10-24,Beauty,Hair Dryer,Web,46-55,F,1,65,0,65,U00161
+TX50378,2024-10-25,Electronics,Smart Watch,Marketplace,46-55,F,2,199,0,398,U00310
+TX51098,2024-10-25,Home,Curtain,Social Media,46-55,Other,2,58.5,0.1,117.0,U00856
+TX51612,2024-10-25,Beauty,Perfume,Social Media,56+,M,1,77.0,0.3,77.0,U00843
+TX51687,2024-10-25,Home,Pillow,Mobile App,36-45,Other,1,35,0,35,U00778
+TX51816,2024-10-25,Clothing,Dress,Marketplace,36-45,M,1,75,0,75,U00839
+TX52104,2024-10-25,Electronics,Phone Case,Marketplace,56+,F,1,25,0,25,U00120
+TX50269,2024-10-26,Home,Bedsheet,Mobile App,26-35,M,1,40.5,0.1,40.5,U00142
+TX51501,2024-10-26,Clothing,Hoodie,Mobile App,26-35,Other,2,55,0,110,U00287
+TX51595,2024-10-26,Beauty,Lipstick,Social Media,18-25,M,1,22,0,22,U00700
+TX52227,2024-10-26,Clothing,Sneakers,Marketplace,56+,F,1,76.0,0.2,76.0,U00680
+TX52305,2024-10-26,Books,Fiction Novel,Social Media,56+,M,1,18,0,18,U00023
+TX52395,2024-10-26,Clothing,Hoodie,Marketplace,26-35,F,1,38.5,0.3,38.5,U00674
+TX50281,2024-10-27,Electronics,Headphones,Mobile App,18-25,Other,2,80.1,0.1,160.2,U00401
+TX50622,2024-10-27,Clothing,Hoodie,Marketplace,56+,Other,1,55,0,55,U00307
+TX50986,2024-10-27,Books,Self-Help,Web,56+,Other,1,22,0,22,U00661
+TX51834,2024-10-27,Clothing,T-Shirt,Social Media,26-35,F,1,28,0,28,U00708
+TX52206,2024-10-27,Beauty,Skincare Set,Web,46-55,Other,1,80.1,0.1,80.1,U00613
+TX52349,2024-10-27,Electronics,Phone Case,Mobile App,56+,M,2,25,0,50,U00785
+TX50060,2024-10-28,Home,Curtain,Marketplace,18-25,F,3,65,0,195,U00840
+TX50241,2024-10-28,Beauty,Lipstick,Web,56+,F,1,19.8,0.1,19.8,U00222
+TX50349,2024-10-28,Books,Fiction Novel,Mobile App,18-25,Other,2,16.2,0.1,32.4,U00872
+TX51389,2024-10-28,Electronics,Charger,Web,56+,M,1,35,0,35,U00447
+TX51464,2024-10-28,Home,Curtain,Social Media,46-55,F,1,65,0,65,U00118
+TX51867,2024-10-28,Clothing,Sneakers,Mobile App,26-35,F,1,95,0,95,U00591
+TX52141,2024-10-28,Beauty,Face Mask,Social Media,36-45,Other,3,16.2,0.1,48.6,U00703
+TX50737,2024-10-29,Home,Curtain,Social Media,26-35,M,1,65,0,65,U00085
+TX51487,2024-10-29,Clothing,Sneakers,Social Media,46-55,M,1,85.5,0.1,85.5,U00495
+TX51761,2024-10-29,Home,Curtain,Mobile App,56+,F,1,65,0,65,U00031
+TX51822,2024-10-29,Beauty,Lipstick,Social Media,18-25,F,2,19.8,0.1,39.6,U00027
+TX52119,2024-10-29,Beauty,Face Mask,Web,36-45,F,1,18,0,18,U00104
+TX52325,2024-10-29,Electronics,Charger,Mobile App,56+,M,1,28.0,0.2,28.0,U00887
+TX50320,2024-10-30,Books,Cookbook,Social Media,26-35,M,1,20.0,0.2,20.0,U00853
+TX50418,2024-10-30,Books,Self-Help,Web,26-35,Other,1,15.4,0.3,15.4,U00287
+TX50750,2024-10-30,Books,Biography,Mobile App,18-25,M,1,28,0,28,U00829
+TX50835,2024-10-30,Home,Rug,Marketplace,56+,M,2,120,0,240,U00454
+TX50974,2024-10-30,Home,Pillow,Mobile App,46-55,Other,1,35,0,35,U00395
+TX51942,2024-10-30,Clothing,Hoodie,Web,36-45,F,1,49.5,0.1,49.5,U00525
+TX51992,2024-10-30,Home,Bedsheet,Marketplace,36-45,M,1,45,0,45,U00229
+TX52455,2024-10-30,Beauty,Hair Dryer,Social Media,36-45,Other,1,58.5,0.1,58.5,U00493
+TX50379,2024-10-31,Beauty,Hair Dryer,Mobile App,18-25,M,1,65,0,65,U00697
+TX50851,2024-10-31,Beauty,Perfume,Social Media,18-25,Other,3,110,0,330,U00266
+TX51400,2024-10-31,Books,Fiction Novel,Mobile App,56+,F,1,18,0,18,U00254
+TX51436,2024-10-31,Books,Self-Help,Web,26-35,F,2,19.8,0.1,39.6,U00513
+TX52034,2024-10-31,Home,Pillow,Marketplace,18-25,Other,1,31.5,0.1,31.5,U00620
+TX50068,2024-11-01,Home,Curtain,Social Media,26-35,Other,2,58.5,0.1,117.0,U00126
+TX50072,2024-11-01,Home,Curtain,Marketplace,56+,F,1,52.0,0.2,52.0,U00711
+TX50544,2024-11-01,Books,Tech Manual,Mobile App,56+,M,1,45,0,45,U00419
+TX51099,2024-11-01,Home,Curtain,Mobile App,56+,M,2,58.5,0.1,117.0,U00787
+TX51565,2024-11-01,Home,Pillow,Marketplace,18-25,M,1,35,0,35,U00622
+TX51845,2024-11-01,Home,Rug,Marketplace,26-35,Other,1,84.0,0.3,84.0,U00430
+TX50151,2024-11-02,Books,Fiction Novel,Marketplace,26-35,F,1,18,0,18,U00657
+TX50640,2024-11-02,Clothing,Sneakers,Social Media,56+,Other,1,95,0,95,U00653
+TX50683,2024-11-02,Clothing,Hoodie,Marketplace,36-45,M,1,55,0,55,U00675
+TX50776,2024-11-02,Beauty,Skincare Set,Social Media,18-25,F,2,89,0,178,U00304
+TX51094,2024-11-02,Books,Tech Manual,Web,46-55,F,1,40.5,0.1,40.5,U00880
+TX51591,2024-11-02,Clothing,T-Shirt,Social Media,46-55,F,1,25.2,0.1,25.2,U00686
+TX51743,2024-11-02,Clothing,Hoodie,Web,26-35,Other,1,44.0,0.2,44.0,U00017
+TX52393,2024-11-02,Electronics,Smart Watch,Marketplace,56+,F,1,179.1,0.1,179.1,U00141
+TX50109,2024-11-03,Clothing,Dress,Marketplace,56+,M,1,67.5,0.1,67.5,U00439
+TX50318,2024-11-03,Home,Lamp,Web,36-45,M,1,55,0,55,U00672
+TX50770,2024-11-03,Beauty,Skincare Set,Mobile App,26-35,Other,1,89,0,89,U00832
+TX52236,2024-11-03,Clothing,Dress,Social Media,18-25,Other,2,75,0,150,U00362
+TX52292,2024-11-03,Home,Curtain,Web,36-45,F,1,65,0,65,U00364
+TX50415,2024-11-04,Clothing,Jeans,Marketplace,18-25,Other,1,58.5,0.1,58.5,U00632
+TX50555,2024-11-04,Clothing,Hoodie,Web,36-45,M,1,49.5,0.1,49.5,U00820
+TX50667,2024-11-04,Clothing,Sneakers,Social Media,56+,M,2,85.5,0.1,171.0,U00169
+TX52302,2024-11-04,Home,Rug,Marketplace,26-35,Other,1,96.0,0.2,96.0,U00370
+TX52396,2024-11-04,Home,Rug,Social Media,56+,F,3,120,0,360,U00377
+TX50307,2024-11-05,Books,Biography,Marketplace,18-25,F,1,22.4,0.2,22.4,U00736
+TX50417,2024-11-05,Electronics,Headphones,Marketplace,36-45,M,2,89,0,178,U00173
+TX50480,2024-11-05,Beauty,Skincare Set,Web,36-45,M,1,89,0,89,U00751
+TX50729,2024-11-05,Books,Cookbook,Marketplace,18-25,M,3,25,0,75,U00582
+TX51467,2024-11-05,Beauty,Hair Dryer,Social Media,36-45,Other,2,65,0,130,U00831
+TX51621,2024-11-05,Clothing,T-Shirt,Web,56+,F,1,22.4,0.2,22.4,U00226
+TX52138,2024-11-05,Electronics,Smart Watch,Web,26-35,F,1,199,0,199,U00417
+TX52309,2024-11-05,Books,Fiction Novel,Social Media,36-45,F,1,14.4,0.2,14.4,U00183
+TX50834,2024-11-06,Clothing,Jeans,Marketplace,36-45,Other,1,52.0,0.2,52.0,U00787
+TX50855,2024-11-06,Clothing,Sneakers,Mobile App,18-25,M,1,95,0,95,U00668
+TX51108,2024-11-06,Beauty,Face Mask,Marketplace,56+,F,1,18,0,18,U00218
+TX51190,2024-11-06,Beauty,Perfume,Mobile App,18-25,F,1,77.0,0.3,77.0,U00894
+TX51197,2024-11-06,Electronics,Charger,Marketplace,26-35,Other,1,35,0,35,U00025
+TX51560,2024-11-06,Home,Curtain,Social Media,46-55,M,1,65,0,65,U00837
+TX51786,2024-11-06,Electronics,Headphones,Web,26-35,Other,2,71.2,0.2,142.4,U00164
+TX52052,2024-11-06,Beauty,Perfume,Marketplace,18-25,M,1,99.0,0.1,99.0,U00701
+TX52055,2024-11-06,Home,Bedsheet,Web,18-25,M,2,45,0,90,U00543
+TX52192,2024-11-06,Home,Bedsheet,Web,26-35,M,1,45,0,45,U00008
+TX52454,2024-11-06,Home,Curtain,Social Media,36-45,Other,1,52.0,0.2,52.0,U00056
+TX50473,2024-11-07,Home,Curtain,Social Media,56+,M,1,52.0,0.2,52.0,U00685
+TX50648,2024-11-07,Home,Bedsheet,Mobile App,18-25,F,1,45,0,45,U00741
+TX51719,2024-11-07,Electronics,Headphones,Marketplace,56+,F,1,89,0,89,U00325
+TX51931,2024-11-07,Electronics,Charger,Mobile App,56+,M,2,31.5,0.1,63.0,U00537
+TX50041,2024-11-08,Home,Pillow,Web,46-55,Other,1,35,0,35,U00216
+TX50409,2024-11-08,Beauty,Skincare Set,Web,46-55,Other,2,80.1,0.1,160.2,U00410
+TX50703,2024-11-08,Electronics,Phone Case,Social Media,56+,M,1,25,0,25,U00684
+TX50762,2024-11-08,Books,Self-Help,Web,46-55,Other,1,17.6,0.2,17.6,U00106
+TX52078,2024-11-08,Books,Tech Manual,Mobile App,56+,F,1,45,0,45,U00748
+TX50102,2024-11-09,Electronics,Phone Case,Mobile App,18-25,F,1,25,0,25,U00881
+TX51162,2024-11-09,Home,Lamp,Marketplace,26-35,M,2,55,0,110,U00120
+TX51375,2024-11-09,Home,Bedsheet,Mobile App,56+,Other,1,40.5,0.1,40.5,U00280
+TX51559,2024-11-09,Beauty,Face Mask,Web,18-25,M,1,18,0,18,U00703
+TX51617,2024-11-09,Clothing,Jeans,Marketplace,56+,M,1,65,0,65,U00653
+TX51955,2024-11-09,Electronics,Headphones,Marketplace,36-45,M,1,62.3,0.3,62.3,U00009
+TX52116,2024-11-09,Electronics,Phone Case,Web,46-55,F,1,25,0,25,U00579
+TX50183,2024-11-10,Clothing,Hoodie,Social Media,56+,F,1,44.0,0.2,44.0,U00307
+TX50302,2024-11-10,Books,Tech Manual,Social Media,46-55,M,1,45,0,45,U00156
+TX50424,2024-11-10,Beauty,Perfume,Mobile App,18-25,Other,1,110,0,110,U00179
+TX50465,2024-11-10,Beauty,Skincare Set,Web,18-25,Other,1,89,0,89,U00735
+TX50486,2024-11-10,Books,Fiction Novel,Marketplace,26-35,Other,1,12.6,0.3,12.6,U00122
+TX51482,2024-11-10,Books,Cookbook,Marketplace,18-25,Other,1,25,0,25,U00110
+TX51886,2024-11-10,Home,Lamp,Mobile App,36-45,Other,2,55,0,110,U00183
+TX50276,2024-11-11,Home,Rug,Social Media,18-25,Other,1,120,0,120,U00192
+TX50422,2024-11-11,Home,Pillow,Web,56+,F,1,35,0,35,U00521
+TX50547,2024-11-11,Books,Cookbook,Mobile App,46-55,M,1,25,0,25,U00223
+TX50586,2024-11-11,Beauty,Perfume,Marketplace,26-35,F,1,110,0,110,U00384
+TX51217,2024-11-11,Electronics,Smart Watch,Mobile App,46-55,M,1,179.1,0.1,179.1,U00174
+TX51452,2024-11-11,Books,Self-Help,Web,56+,Other,1,17.6,0.2,17.6,U00334
+TX51571,2024-11-11,Home,Pillow,Social Media,18-25,M,1,35,0,35,U00077
+TX51735,2024-11-11,Beauty,Perfume,Marketplace,18-25,Other,1,99.0,0.1,99.0,U00207
+TX51824,2024-11-11,Home,Curtain,Mobile App,36-45,Other,1,58.5,0.1,58.5,U00509
+TX51848,2024-11-11,Beauty,Hair Dryer,Web,36-45,F,1,65,0,65,U00677
+TX52102,2024-11-11,Home,Rug,Social Media,56+,M,1,120,0,120,U00775
+TX52385,2024-11-11,Home,Bedsheet,Marketplace,46-55,F,1,45,0,45,U00095
+TX50092,2024-11-12,Home,Pillow,Social Media,18-25,Other,1,31.5,0.1,31.5,U00199
+TX50252,2024-11-12,Electronics,Phone Case,Marketplace,26-35,M,3,25,0,75,U00366
+TX50817,2024-11-12,Electronics,Smart Watch,Web,26-35,Other,2,199,0,398,U00279
+TX50836,2024-11-12,Beauty,Hair Dryer,Web,18-25,Other,1,45.5,0.3,45.5,U00193
+TX50905,2024-11-12,Books,Biography,Mobile App,36-45,F,2,28,0,56,U00393
+TX51150,2024-11-12,Books,Tech Manual,Web,46-55,F,1,45,0,45,U00111
+TX51726,2024-11-12,Beauty,Perfume,Marketplace,26-35,M,1,110,0,110,U00792
+TX51853,2024-11-12,Beauty,Lipstick,Marketplace,46-55,Other,1,22,0,22,U00654
+TX51977,2024-11-12,Books,Fiction Novel,Mobile App,18-25,F,2,18,0,36,U00230
+TX51984,2024-11-12,Books,Biography,Marketplace,56+,F,1,25.2,0.1,25.2,U00591
+TX50057,2024-11-13,Electronics,Smart Watch,Web,36-45,Other,1,139.3,0.3,139.3,U00769
+TX50519,2024-11-13,Clothing,Dress,Marketplace,36-45,F,1,67.5,0.1,67.5,U00604
+TX50869,2024-11-13,Home,Rug,Social Media,26-35,Other,1,120,0,120,U00341
+TX50885,2024-11-13,Clothing,Sneakers,Social Media,18-25,Other,1,95,0,95,U00437
+TX51104,2024-11-13,Electronics,Smart Watch,Social Media,36-45,M,1,199,0,199,U00822
+TX51950,2024-11-13,Home,Bedsheet,Mobile App,36-45,F,1,40.5,0.1,40.5,U00643
+TX50442,2024-11-14,Electronics,Phone Case,Social Media,18-25,Other,1,22.5,0.1,22.5,U00099
+TX51129,2024-11-14,Home,Rug,Social Media,56+,Other,2,120,0,240,U00139
+TX51301,2024-11-14,Beauty,Hair Dryer,Marketplace,46-55,Other,1,58.5,0.1,58.5,U00395
+TX52083,2024-11-14,Home,Bedsheet,Marketplace,36-45,M,2,40.5,0.1,81.0,U00678
+TX52133,2024-11-14,Home,Lamp,Mobile App,46-55,Other,1,55,0,55,U00157
+TX52281,2024-11-14,Books,Fiction Novel,Marketplace,56+,Other,2,18,0,36,U00314
+TX50316,2024-11-15,Beauty,Lipstick,Marketplace,46-55,Other,2,19.8,0.1,39.6,U00612
+TX50482,2024-11-15,Books,Self-Help,Mobile App,26-35,Other,1,22,0,22,U00493
+TX50536,2024-11-15,Books,Biography,Marketplace,26-35,F,1,28,0,28,U00537
+TX50738,2024-11-15,Clothing,Hoodie,Marketplace,36-45,M,1,55,0,55,U00160
+TX50781,2024-11-15,Beauty,Lipstick,Social Media,26-35,Other,1,17.6,0.2,17.6,U00265
+TX50814,2024-11-15,Home,Lamp,Web,36-45,F,1,49.5,0.1,49.5,U00034
+TX51252,2024-11-15,Electronics,Headphones,Mobile App,18-25,Other,1,89,0,89,U00875
+TX51521,2024-11-15,Books,Tech Manual,Marketplace,18-25,M,1,45,0,45,U00370
+TX51794,2024-11-15,Books,Tech Manual,Mobile App,46-55,Other,1,45,0,45,U00051
+TX52163,2024-11-15,Beauty,Face Mask,Mobile App,18-25,F,1,18,0,18,U00173
+TX52215,2024-11-15,Home,Bedsheet,Mobile App,56+,F,1,45,0,45,U00544
+TX52261,2024-11-15,Beauty,Face Mask,Social Media,36-45,M,2,14.4,0.2,28.8,U00190
+TX52382,2024-11-15,Beauty,Perfume,Web,56+,M,1,110,0,110,U00185
+TX50134,2024-11-16,Clothing,Dress,Social Media,18-25,F,1,75,0,75,U00359
+TX50143,2024-11-16,Home,Rug,Web,26-35,M,1,120,0,120,U00203
+TX50599,2024-11-16,Beauty,Perfume,Web,56+,Other,1,110,0,110,U00086
+TX50676,2024-11-16,Beauty,Face Mask,Web,18-25,Other,3,18,0,54,U00273
+TX50844,2024-11-16,Beauty,Lipstick,Mobile App,26-35,Other,2,17.6,0.2,35.2,U00694
+TX51242,2024-11-16,Home,Bedsheet,Mobile App,46-55,F,2,36.0,0.2,72.0,U00527
+TX51394,2024-11-16,Clothing,Sneakers,Web,18-25,Other,1,95,0,95,U00290
+TX51563,2024-11-16,Home,Pillow,Marketplace,56+,Other,1,35,0,35,U00551
+TX52228,2024-11-16,Clothing,T-Shirt,Marketplace,56+,M,2,28,0,56,U00507
+TX52351,2024-11-16,Electronics,Smart Watch,Social Media,26-35,M,1,199,0,199,U00523
+TX50097,2024-11-17,Beauty,Lipstick,Web,26-35,M,1,22,0,22,U00842
+TX50153,2024-11-17,Electronics,Charger,Mobile App,46-55,F,1,35,0,35,U00417
+TX50913,2024-11-17,Electronics,Bluetooth Speaker,Mobile App,26-35,M,1,79,0,79,U00383
+TX50920,2024-11-17,Home,Rug,Social Media,56+,F,2,96.0,0.2,192.0,U00736
+TX51680,2024-11-17,Electronics,Charger,Web,26-35,F,2,35,0,70,U00682
+TX51748,2024-11-17,Home,Pillow,Web,18-25,F,1,31.5,0.1,31.5,U00144
+TX51763,2024-11-17,Home,Curtain,Social Media,46-55,Other,2,58.5,0.1,117.0,U00704
+TX50403,2024-11-18,Books,Cookbook,Mobile App,56+,Other,1,25,0,25,U00562
+TX50468,2024-11-18,Beauty,Perfume,Mobile App,26-35,M,1,77.0,0.3,77.0,U00441
+TX51760,2024-11-18,Books,Tech Manual,Marketplace,36-45,M,1,40.5,0.1,40.5,U00673
+TX52421,2024-11-18,Home,Curtain,Mobile App,46-55,F,1,58.5,0.1,58.5,U00732
+TX50100,2024-11-19,Home,Bedsheet,Mobile App,26-35,M,1,36.0,0.2,36.0,U00759
+TX50238,2024-11-19,Home,Rug,Mobile App,18-25,Other,2,96.0,0.2,192.0,U00380
+TX51085,2024-11-19,Clothing,Sneakers,Mobile App,26-35,F,1,95,0,95,U00334
+TX51890,2024-11-19,Electronics,Phone Case,Mobile App,26-35,M,2,25,0,50,U00768
+TX52337,2024-11-19,Home,Rug,Mobile App,36-45,F,1,120,0,120,U00278
+TX50880,2024-11-20,Clothing,T-Shirt,Social Media,18-25,F,1,28,0,28,U00573
+TX50912,2024-11-20,Books,Biography,Marketplace,46-55,M,1,25.2,0.1,25.2,U00272
+TX50954,2024-11-20,Home,Curtain,Mobile App,56+,M,1,58.5,0.1,58.5,U00470
+TX51476,2024-11-20,Home,Bedsheet,Web,26-35,F,1,45,0,45,U00389
+TX52035,2024-11-20,Beauty,Hair Dryer,Social Media,26-35,M,1,65,0,65,U00149
+TX52186,2024-11-20,Clothing,Jeans,Social Media,36-45,F,1,65,0,65,U00404
+TX52296,2024-11-20,Home,Curtain,Social Media,26-35,F,1,52.0,0.2,52.0,U00848
+TX50589,2024-11-21,Clothing,T-Shirt,Web,56+,F,1,22.4,0.2,22.4,U00456
+TX51261,2024-11-21,Electronics,Phone Case,Web,36-45,Other,1,25,0,25,U00032
+TX51545,2024-11-21,Clothing,Jeans,Marketplace,56+,Other,1,65,0,65,U00617
+TX51663,2024-11-21,Clothing,T-Shirt,Marketplace,26-35,F,1,25.2,0.1,25.2,U00623
+TX51685,2024-11-21,Beauty,Lipstick,Web,56+,F,1,17.6,0.2,17.6,U00590
+TX52202,2024-11-21,Books,Cookbook,Social Media,46-55,M,1,20.0,0.2,20.0,U00151
+TX52297,2024-11-21,Home,Pillow,Marketplace,18-25,Other,1,28.0,0.2,28.0,U00350
+TX50036,2024-11-22,Books,Self-Help,Web,46-55,F,1,22,0,22,U00242
+TX50202,2024-11-22,Beauty,Perfume,Marketplace,36-45,Other,2,110,0,220,U00317
+TX50218,2024-11-22,Clothing,Dress,Marketplace,18-25,M,1,75,0,75,U00824
+TX50244,2024-11-22,Electronics,Smart Watch,Web,36-45,Other,2,199,0,398,U00662
+TX50620,2024-11-22,Electronics,Headphones,Web,56+,M,1,89,0,89,U00718
+TX50638,2024-11-22,Clothing,T-Shirt,Web,36-45,F,1,28,0,28,U00371
+TX50653,2024-11-22,Home,Rug,Mobile App,18-25,Other,3,96.0,0.2,288.0,U00382
+TX52442,2024-11-22,Books,Tech Manual,Mobile App,18-25,M,1,36.0,0.2,36.0,U00793
+TX50725,2024-11-23,Home,Rug,Web,56+,Other,3,120,0,360,U00564
+TX50910,2024-11-23,Beauty,Lipstick,Web,36-45,Other,2,22,0,44,U00306
+TX50950,2024-11-23,Beauty,Skincare Set,Social Media,46-55,Other,1,80.1,0.1,80.1,U00731
+TX51650,2024-11-23,Clothing,Jeans,Mobile App,36-45,F,3,52.0,0.2,156.0,U00803
+TX50069,2024-11-24,Books,Self-Help,Social Media,36-45,Other,1,19.8,0.1,19.8,U00625
+TX50130,2024-11-24,Beauty,Skincare Set,Web,46-55,F,2,89,0,178,U00767
+TX50176,2024-11-24,Beauty,Face Mask,Mobile App,46-55,Other,1,12.6,0.3,12.6,U00600
+TX50204,2024-11-24,Clothing,Jeans,Social Media,46-55,M,2,65,0,130,U00801
+TX51081,2024-11-24,Home,Bedsheet,Mobile App,36-45,F,1,40.5,0.1,40.5,U00406
+TX51101,2024-11-24,Electronics,Bluetooth Speaker,Marketplace,46-55,M,1,79,0,79,U00093
+TX51133,2024-11-24,Clothing,T-Shirt,Mobile App,46-55,F,1,25.2,0.1,25.2,U00532
+TX51796,2024-11-24,Clothing,T-Shirt,Marketplace,36-45,F,1,28,0,28,U00866
+TX52002,2024-11-24,Clothing,T-Shirt,Marketplace,46-55,F,1,22.4,0.2,22.4,U00233
+TX52384,2024-11-24,Home,Pillow,Mobile App,56+,M,1,35,0,35,U00075
+TX50692,2024-11-25,Electronics,Phone Case,Mobile App,26-35,F,2,25,0,50,U00335
+TX50803,2024-11-25,Electronics,Bluetooth Speaker,Marketplace,46-55,M,3,63.2,0.2,189.6,U00699
+TX51457,2024-11-25,Home,Lamp,Marketplace,36-45,M,2,49.5,0.1,99.0,U00778
+TX51764,2024-11-25,Electronics,Headphones,Social Media,18-25,Other,2,89,0,178,U00631
+TX51803,2024-11-25,Clothing,Dress,Mobile App,46-55,F,2,75,0,150,U00860
+TX51882,2024-11-25,Home,Lamp,Web,18-25,Other,2,55,0,110,U00016
+TX51975,2024-11-25,Books,Tech Manual,Mobile App,18-25,M,2,45,0,90,U00838
+TX52143,2024-11-25,Beauty,Skincare Set,Social Media,46-55,Other,3,71.2,0.2,213.6,U00267
+TX51139,2024-11-26,Books,Fiction Novel,Marketplace,18-25,M,1,18,0,18,U00147
+TX51747,2024-11-26,Home,Lamp,Marketplace,56+,F,1,55,0,55,U00629
+TX51881,2024-11-26,Electronics,Smart Watch,Mobile App,56+,Other,2,199,0,398,U00200
+TX51926,2024-11-26,Books,Self-Help,Mobile App,18-25,Other,2,22,0,44,U00814
+TX52020,2024-11-26,Clothing,Dress,Web,36-45,F,1,75,0,75,U00468
+TX52029,2024-11-26,Clothing,Hoodie,Marketplace,26-35,M,3,44.0,0.2,132.0,U00334
+TX52110,2024-11-26,Books,Fiction Novel,Social Media,26-35,Other,3,18,0,54,U00223
+TX52314,2024-11-26,Electronics,Headphones,Mobile App,26-35,Other,1,89,0,89,U00834
+TX50535,2024-11-27,Books,Cookbook,Mobile App,18-25,F,1,25,0,25,U00777
+TX50639,2024-11-27,Home,Pillow,Mobile App,46-55,M,1,35,0,35,U00779
+TX51341,2024-11-27,Home,Lamp,Marketplace,56+,F,2,38.5,0.3,77.0,U00862
+TX51657,2024-11-27,Clothing,Hoodie,Web,26-35,F,1,55,0,55,U00226
+TX51708,2024-11-27,Books,Fiction Novel,Marketplace,18-25,F,1,14.4,0.2,14.4,U00745
+TX51769,2024-11-27,Beauty,Perfume,Marketplace,26-35,Other,2,110,0,220,U00515
+TX51939,2024-11-27,Beauty,Lipstick,Web,46-55,Other,1,22,0,22,U00407
+TX50219,2024-11-28,Clothing,Hoodie,Social Media,26-35,M,1,55,0,55,U00066
+TX50306,2024-11-28,Beauty,Perfume,Social Media,18-25,Other,2,110,0,220,U00117
+TX50936,2024-11-28,Beauty,Skincare Set,Web,26-35,Other,2,80.1,0.1,160.2,U00079
+TX51086,2024-11-28,Books,Biography,Marketplace,26-35,Other,1,25.2,0.1,25.2,U00693
+TX51683,2024-11-28,Books,Cookbook,Social Media,26-35,M,1,25,0,25,U00726
+TX51785,2024-11-28,Beauty,Hair Dryer,Marketplace,26-35,Other,1,58.5,0.1,58.5,U00534
+TX52476,2024-11-28,Electronics,Phone Case,Mobile App,46-55,M,1,25,0,25,U00458
+TX50479,2024-11-29,Electronics,Smart Watch,Social Media,18-25,M,2,199,0,398,U00497
+TX50751,2024-11-29,Beauty,Perfume,Mobile App,46-55,M,1,110,0,110,U00678
+TX51031,2024-11-29,Beauty,Skincare Set,Web,18-25,F,1,89,0,89,U00425
+TX51493,2024-11-29,Clothing,Dress,Social Media,18-25,Other,1,75,0,75,U00854
+TX51738,2024-11-29,Clothing,T-Shirt,Marketplace,46-55,F,1,28,0,28,U00071
+TX51771,2024-11-29,Electronics,Charger,Web,36-45,M,2,35,0,70,U00761
+TX52101,2024-11-29,Electronics,Phone Case,Web,18-25,Other,1,25,0,25,U00554
+TX52150,2024-11-29,Home,Pillow,Web,36-45,M,1,35,0,35,U00252
+TX52247,2024-11-29,Clothing,Hoodie,Marketplace,18-25,M,1,55,0,55,U00871
+TX50084,2024-11-30,Beauty,Face Mask,Mobile App,26-35,M,1,18,0,18,U00702
+TX50212,2024-11-30,Books,Cookbook,Marketplace,56+,M,1,25,0,25,U00425
+TX50529,2024-11-30,Clothing,T-Shirt,Marketplace,36-45,Other,3,28,0,84,U00644
+TX50575,2024-11-30,Books,Tech Manual,Social Media,26-35,F,1,45,0,45,U00547
+TX51427,2024-11-30,Books,Fiction Novel,Web,36-45,F,3,18,0,54,U00504
+TX51536,2024-11-30,Books,Tech Manual,Marketplace,26-35,M,3,36.0,0.2,108.0,U00560
+TX51895,2024-11-30,Books,Fiction Novel,Social Media,36-45,F,1,12.6,0.3,12.6,U00295
+TX50011,2024-12-01,Beauty,Perfume,Marketplace,46-55,M,1,77.0,0.3,77.0,U00282
+TX50333,2024-12-01,Clothing,Hoodie,Social Media,46-55,F,2,55,0,110,U00826
+TX50337,2024-12-01,Home,Pillow,Social Media,26-35,M,1,31.5,0.1,31.5,U00191
+TX51404,2024-12-01,Beauty,Face Mask,Mobile App,36-45,F,2,14.4,0.2,28.8,U00557
+TX51423,2024-12-01,Home,Pillow,Marketplace,36-45,F,1,35,0,35,U00201
+TX52388,2024-12-01,Electronics,Phone Case,Web,46-55,M,1,25,0,25,U00648
+TX50089,2024-12-02,Home,Curtain,Marketplace,46-55,M,2,58.5,0.1,117.0,U00595
+TX50734,2024-12-02,Electronics,Phone Case,Marketplace,18-25,Other,1,22.5,0.1,22.5,U00872
+TX50895,2024-12-02,Clothing,Sneakers,Social Media,18-25,F,1,95,0,95,U00591
+TX52103,2024-12-02,Beauty,Skincare Set,Marketplace,18-25,F,1,89,0,89,U00813
+TX52256,2024-12-02,Home,Bedsheet,Mobile App,56+,Other,2,36.0,0.2,72.0,U00621
+TX52355,2024-12-02,Books,Biography,Social Media,46-55,M,1,22.4,0.2,22.4,U00755
+TX50624,2024-12-03,Home,Lamp,Social Media,26-35,F,1,55,0,55,U00397
+TX50786,2024-12-03,Home,Curtain,Web,56+,Other,1,65,0,65,U00140
+TX50902,2024-12-03,Electronics,Smart Watch,Marketplace,36-45,Other,1,199,0,199,U00485
+TX50976,2024-12-03,Clothing,Jeans,Mobile App,36-45,M,2,65,0,130,U00010
+TX51044,2024-12-03,Home,Pillow,Social Media,26-35,Other,2,35,0,70,U00833
+TX51151,2024-12-03,Electronics,Phone Case,Marketplace,26-35,M,2,25,0,50,U00204
+TX51553,2024-12-03,Clothing,T-Shirt,Social Media,26-35,M,1,25.2,0.1,25.2,U00213
+TX51579,2024-12-03,Electronics,Charger,Social Media,46-55,Other,3,35,0,105,U00745
+TX51694,2024-12-03,Electronics,Phone Case,Mobile App,18-25,F,1,20.0,0.2,20.0,U00108
+TX52362,2024-12-03,Clothing,Hoodie,Social Media,56+,F,3,49.5,0.1,148.5,U00201
+TX50581,2024-12-04,Books,Cookbook,Mobile App,36-45,F,1,25,0,25,U00686
+TX50774,2024-12-04,Books,Fiction Novel,Marketplace,46-55,Other,1,18,0,18,U00129
+TX51271,2024-12-04,Books,Cookbook,Mobile App,46-55,M,1,25,0,25,U00458
+TX51275,2024-12-04,Home,Rug,Marketplace,56+,M,1,120,0,120,U00851
+TX51276,2024-12-04,Beauty,Skincare Set,Mobile App,26-35,M,3,89,0,267,U00814
+TX51331,2024-12-04,Clothing,Jeans,Mobile App,18-25,M,3,65,0,195,U00494
+TX51540,2024-12-04,Beauty,Hair Dryer,Mobile App,26-35,F,3,45.5,0.3,136.5,U00028
+TX51844,2024-12-04,Electronics,Phone Case,Mobile App,36-45,M,1,25,0,25,U00737
+TX51956,2024-12-04,Clothing,Dress,Social Media,56+,M,3,75,0,225,U00817
+TX51993,2024-12-04,Clothing,Sneakers,Marketplace,26-35,Other,1,76.0,0.2,76.0,U00075
+TX52038,2024-12-04,Clothing,Hoodie,Mobile App,56+,M,2,38.5,0.3,77.0,U00374
+TX50063,2024-12-05,Beauty,Skincare Set,Mobile App,46-55,F,1,80.1,0.1,80.1,U00107
+TX50221,2024-12-05,Beauty,Perfume,Social Media,46-55,M,3,110,0,330,U00542
+TX51121,2024-12-05,Electronics,Charger,Social Media,18-25,F,2,31.5,0.1,63.0,U00606
+TX51316,2024-12-05,Electronics,Smart Watch,Mobile App,26-35,F,1,199,0,199,U00412
+TX51866,2024-12-05,Electronics,Bluetooth Speaker,Social Media,56+,M,1,63.2,0.2,63.2,U00396
+TX51935,2024-12-05,Books,Biography,Mobile App,46-55,F,2,25.2,0.1,50.4,U00062
+TX52106,2024-12-05,Beauty,Hair Dryer,Web,36-45,M,1,58.5,0.1,58.5,U00680
+TX52170,2024-12-05,Electronics,Phone Case,Mobile App,56+,M,2,25,0,50,U00370
+TX50223,2024-12-06,Electronics,Headphones,Marketplace,18-25,M,1,80.1,0.1,80.1,U00593
+TX50317,2024-12-06,Beauty,Hair Dryer,Social Media,26-35,M,1,58.5,0.1,58.5,U00662
+TX50969,2024-12-06,Electronics,Phone Case,Social Media,26-35,Other,1,22.5,0.1,22.5,U00728
+TX51089,2024-12-06,Clothing,T-Shirt,Mobile App,18-25,F,1,28,0,28,U00154
+TX51282,2024-12-06,Home,Rug,Web,36-45,F,1,120,0,120,U00178
+TX51342,2024-12-06,Beauty,Lipstick,Social Media,36-45,F,1,17.6,0.2,17.6,U00591
+TX52359,2024-12-06,Home,Curtain,Social Media,46-55,M,1,65,0,65,U00819
+TX50116,2024-12-07,Clothing,Jeans,Marketplace,26-35,M,1,65,0,65,U00900
+TX50240,2024-12-07,Electronics,Bluetooth Speaker,Web,18-25,F,3,79,0,237,U00340
+TX50304,2024-12-07,Books,Fiction Novel,Marketplace,18-25,M,1,14.4,0.2,14.4,U00112
+TX51326,2024-12-07,Home,Rug,Marketplace,18-25,M,1,120,0,120,U00339
+TX51624,2024-12-07,Electronics,Headphones,Marketplace,56+,M,2,80.1,0.1,160.2,U00137
+TX52254,2024-12-07,Books,Cookbook,Web,46-55,F,1,25,0,25,U00849
+TX52295,2024-12-07,Beauty,Skincare Set,Marketplace,56+,M,1,71.2,0.2,71.2,U00366
+TX50179,2024-12-08,Books,Tech Manual,Marketplace,26-35,Other,1,40.5,0.1,40.5,U00755
+TX51080,2024-12-08,Electronics,Smart Watch,Marketplace,56+,Other,1,199,0,199,U00431
+TX51221,2024-12-08,Beauty,Face Mask,Web,26-35,M,1,16.2,0.1,16.2,U00616
+TX51358,2024-12-08,Beauty,Face Mask,Web,26-35,M,1,18,0,18,U00149
+TX51776,2024-12-08,Electronics,Bluetooth Speaker,Social Media,18-25,Other,1,79,0,79,U00132
+TX52369,2024-12-08,Home,Rug,Web,36-45,F,1,96.0,0.2,96.0,U00401
+TX50603,2024-12-09,Books,Tech Manual,Mobile App,56+,M,1,45,0,45,U00476
+TX51116,2024-12-09,Books,Fiction Novel,Web,56+,M,1,14.4,0.2,14.4,U00623
+TX51357,2024-12-09,Books,Tech Manual,Marketplace,26-35,Other,1,36.0,0.2,36.0,U00241
+TX51373,2024-12-09,Beauty,Perfume,Marketplace,26-35,F,3,110,0,330,U00591
+TX52158,2024-12-09,Electronics,Bluetooth Speaker,Social Media,56+,Other,1,79,0,79,U00168
+TX50454,2024-12-10,Beauty,Lipstick,Social Media,26-35,F,2,22,0,44,U00199
+TX51752,2024-12-10,Home,Bedsheet,Social Media,18-25,M,1,36.0,0.2,36.0,U00451
+TX50076,2024-12-11,Beauty,Hair Dryer,Social Media,46-55,M,1,58.5,0.1,58.5,U00080
+TX50162,2024-12-11,Books,Biography,Social Media,18-25,F,2,28,0,56,U00004
+TX51295,2024-12-11,Books,Fiction Novel,Social Media,36-45,Other,2,14.4,0.2,28.8,U00398
+TX51636,2024-12-11,Books,Biography,Social Media,56+,Other,1,22.4,0.2,22.4,U00535
+TX50368,2024-12-12,Books,Fiction Novel,Marketplace,46-55,M,1,18,0,18,U00494
+TX50742,2024-12-12,Books,Fiction Novel,Mobile App,56+,M,3,16.2,0.1,48.6,U00007
+TX51018,2024-12-12,Books,Self-Help,Mobile App,46-55,M,3,17.6,0.2,52.8,U00092
+TX51222,2024-12-12,Home,Rug,Web,46-55,F,1,96.0,0.2,96.0,U00470
+TX51567,2024-12-12,Beauty,Skincare Set,Social Media,26-35,Other,1,71.2,0.2,71.2,U00039
+TX52196,2024-12-12,Home,Curtain,Web,36-45,M,1,65,0,65,U00877
+TX52402,2024-12-12,Beauty,Face Mask,Social Media,26-35,M,1,18,0,18,U00044
+TX50504,2024-12-13,Clothing,T-Shirt,Social Media,56+,Other,1,25.2,0.1,25.2,U00089
+TX50591,2024-12-13,Clothing,Jeans,Mobile App,26-35,F,1,65,0,65,U00332
+TX50941,2024-12-13,Beauty,Face Mask,Marketplace,46-55,Other,1,14.4,0.2,14.4,U00732
+TX51015,2024-12-13,Electronics,Headphones,Mobile App,46-55,F,1,71.2,0.2,71.2,U00092
+TX51740,2024-12-13,Home,Rug,Mobile App,56+,F,2,120,0,240,U00294
+TX51749,2024-12-13,Books,Cookbook,Mobile App,18-25,Other,1,25,0,25,U00634
+TX51836,2024-12-13,Clothing,Dress,Web,36-45,M,1,75,0,75,U00573
+TX52120,2024-12-13,Home,Lamp,Mobile App,36-45,M,1,55,0,55,U00238
+TX50034,2024-12-14,Beauty,Skincare Set,Web,36-45,F,2,89,0,178,U00832
+TX50083,2024-12-14,Clothing,Hoodie,Web,56+,Other,2,55,0,110,U00802
+TX50190,2024-12-14,Clothing,Hoodie,Mobile App,36-45,F,1,55,0,55,U00378
+TX50443,2024-12-14,Beauty,Perfume,Mobile App,26-35,M,1,88.0,0.2,88.0,U00711
+TX50743,2024-12-14,Electronics,Headphones,Web,56+,Other,1,71.2,0.2,71.2,U00854
+TX50788,2024-12-14,Electronics,Smart Watch,Social Media,36-45,F,2,199,0,398,U00707
+TX51159,2024-12-14,Clothing,Sneakers,Social Media,56+,Other,1,95,0,95,U00773
+TX51253,2024-12-14,Books,Cookbook,Web,18-25,Other,2,25,0,50,U00244
+TX52006,2024-12-14,Books,Cookbook,Marketplace,26-35,F,1,25,0,25,U00661
+TX52272,2024-12-14,Home,Pillow,Web,36-45,Other,1,35,0,35,U00338
+TX52479,2024-12-14,Electronics,Bluetooth Speaker,Social Media,46-55,M,2,71.1,0.1,142.2,U00646
+TX50451,2024-12-15,Clothing,Sneakers,Web,18-25,F,1,95,0,95,U00871
+TX50708,2024-12-15,Clothing,Dress,Social Media,56+,Other,1,75,0,75,U00361
+TX51643,2024-12-15,Clothing,T-Shirt,Web,18-25,Other,1,28,0,28,U00157
+TX51923,2024-12-15,Home,Curtain,Web,56+,F,1,65,0,65,U00862
+TX52485,2024-12-15,Clothing,Jeans,Social Media,36-45,F,1,65,0,65,U00091
+TX50305,2024-12-16,Home,Curtain,Web,26-35,Other,1,65,0,65,U00884
+TX50601,2024-12-16,Home,Rug,Social Media,18-25,F,1,120,0,120,U00306
+TX51030,2024-12-16,Beauty,Face Mask,Web,46-55,Other,1,18,0,18,U00715
+TX51205,2024-12-16,Beauty,Skincare Set,Social Media,18-25,F,3,89,0,267,U00821
+TX51207,2024-12-16,Books,Tech Manual,Marketplace,36-45,Other,1,45,0,45,U00481
+TX51778,2024-12-16,Books,Biography,Social Media,26-35,F,1,28,0,28,U00586
+TX51832,2024-12-16,Clothing,Dress,Web,26-35,M,1,75,0,75,U00018
+TX51870,2024-12-16,Electronics,Headphones,Mobile App,56+,F,1,80.1,0.1,80.1,U00242
+TX51921,2024-12-16,Home,Rug,Mobile App,36-45,F,1,120,0,120,U00122
+TX52275,2024-12-16,Clothing,T-Shirt,Mobile App,26-35,Other,1,25.2,0.1,25.2,U00254
+TX51145,2024-12-17,Beauty,Skincare Set,Social Media,18-25,F,2,89,0,178,U00316
+TX51191,2024-12-17,Clothing,Hoodie,Web,36-45,Other,1,55,0,55,U00728
+TX51296,2024-12-17,Beauty,Face Mask,Mobile App,26-35,Other,1,14.4,0.2,14.4,U00801
+TX51504,2024-12-17,Home,Lamp,Social Media,26-35,Other,1,55,0,55,U00082
+TX51690,2024-12-17,Clothing,T-Shirt,Mobile App,26-35,M,2,28,0,56,U00799
+TX51780,2024-12-17,Books,Cookbook,Web,46-55,M,1,25,0,25,U00137
+TX52438,2024-12-17,Electronics,Bluetooth Speaker,Web,56+,F,2,79,0,158,U00007
+TX50311,2024-12-18,Electronics,Charger,Web,46-55,Other,1,35,0,35,U00659
+TX50341,2024-12-18,Clothing,T-Shirt,Social Media,56+,F,1,22.4,0.2,22.4,U00086
+TX50636,2024-12-18,Home,Pillow,Marketplace,26-35,M,1,35,0,35,U00733
+TX50646,2024-12-18,Home,Lamp,Mobile App,26-35,Other,1,55,0,55,U00571
+TX50700,2024-12-18,Beauty,Skincare Set,Mobile App,36-45,M,1,89,0,89,U00252
+TX50822,2024-12-18,Home,Rug,Marketplace,36-45,Other,1,120,0,120,U00340
+TX50994,2024-12-18,Home,Bedsheet,Marketplace,26-35,M,2,45,0,90,U00725
+TX51889,2024-12-18,Books,Fiction Novel,Social Media,56+,M,1,14.4,0.2,14.4,U00171
+TX52365,2024-12-18,Books,Tech Manual,Web,26-35,Other,3,45,0,135,U00793
+TX50058,2024-12-19,Books,Tech Manual,Social Media,46-55,Other,1,45,0,45,U00458
+TX50740,2024-12-19,Clothing,T-Shirt,Social Media,18-25,M,1,28,0,28,U00376
+TX51688,2024-12-19,Home,Pillow,Social Media,46-55,M,2,31.5,0.1,63.0,U00171
+TX51998,2024-12-19,Electronics,Headphones,Social Media,56+,M,1,89,0,89,U00660
+TX50082,2024-12-20,Home,Curtain,Social Media,18-25,F,2,65,0,130,U00563
+TX51058,2024-12-20,Home,Lamp,Mobile App,56+,F,1,55,0,55,U00458
+TX51181,2024-12-20,Books,Biography,Social Media,36-45,F,1,28,0,28,U00471
+TX50128,2024-12-21,Clothing,Dress,Social Media,46-55,F,2,67.5,0.1,135.0,U00332
+TX50189,2024-12-21,Books,Fiction Novel,Social Media,36-45,Other,1,18,0,18,U00030
+TX50274,2024-12-21,Clothing,Hoodie,Mobile App,46-55,M,1,55,0,55,U00574
+TX50999,2024-12-21,Beauty,Face Mask,Mobile App,26-35,Other,1,16.2,0.1,16.2,U00473
+TX51799,2024-12-21,Home,Pillow,Marketplace,56+,Other,1,28.0,0.2,28.0,U00074
+TX51958,2024-12-21,Books,Cookbook,Social Media,18-25,F,2,25,0,50,U00393
+TX51981,2024-12-21,Home,Lamp,Marketplace,26-35,F,1,55,0,55,U00788
+TX52118,2024-12-21,Beauty,Face Mask,Web,26-35,Other,2,18,0,36,U00559
+TX52148,2024-12-21,Beauty,Perfume,Mobile App,46-55,F,1,110,0,110,U00551
+TX52371,2024-12-21,Clothing,Hoodie,Marketplace,26-35,M,2,55,0,110,U00526
+TX50255,2024-12-22,Clothing,T-Shirt,Social Media,36-45,Other,1,25.2,0.1,25.2,U00045
+TX50510,2024-12-22,Electronics,Charger,Mobile App,26-35,M,1,35,0,35,U00014
+TX50998,2024-12-22,Beauty,Lipstick,Marketplace,46-55,Other,1,22,0,22,U00884
+TX51249,2024-12-22,Home,Lamp,Web,46-55,Other,3,38.5,0.3,115.5,U00659
+TX51421,2024-12-22,Clothing,Sneakers,Social Media,26-35,F,1,95,0,95,U00244
+TX51679,2024-12-22,Electronics,Headphones,Web,46-55,M,1,89,0,89,U00314
+TX52169,2024-12-22,Beauty,Face Mask,Marketplace,36-45,Other,2,18,0,36,U00666
+TX52437,2024-12-22,Electronics,Headphones,Social Media,46-55,M,2,89,0,178,U00876
+TX50005,2024-12-23,Home,Curtain,Marketplace,46-55,F,2,65,0,130,U00772
+TX50103,2024-12-23,Beauty,Skincare Set,Mobile App,26-35,F,1,80.1,0.1,80.1,U00874
+TX50376,2024-12-23,Electronics,Smart Watch,Social Media,46-55,Other,2,179.1,0.1,358.2,U00225
+TX50385,2024-12-23,Clothing,T-Shirt,Mobile App,26-35,Other,2,28,0,56,U00609
+TX50600,2024-12-23,Electronics,Phone Case,Mobile App,56+,Other,2,22.5,0.1,45.0,U00021
+TX50792,2024-12-23,Beauty,Lipstick,Mobile App,46-55,Other,1,17.6,0.2,17.6,U00267
+TX50932,2024-12-23,Clothing,Jeans,Web,46-55,F,2,65,0,130,U00674
+TX51143,2024-12-23,Electronics,Charger,Social Media,56+,M,3,31.5,0.1,94.5,U00597
+TX51320,2024-12-23,Electronics,Charger,Web,46-55,F,3,35,0,105,U00257
+TX51353,2024-12-23,Clothing,Dress,Marketplace,56+,Other,3,67.5,0.1,202.5,U00625
+TX51938,2024-12-23,Electronics,Headphones,Web,36-45,F,1,71.2,0.2,71.2,U00162
+TX52435,2024-12-23,Home,Curtain,Marketplace,26-35,M,1,65,0,65,U00668
+TX50160,2024-12-24,Clothing,Sneakers,Social Media,18-25,M,1,95,0,95,U00024
+TX50178,2024-12-24,Books,Tech Manual,Marketplace,36-45,M,1,36.0,0.2,36.0,U00804
+TX50534,2024-12-24,Beauty,Face Mask,Web,18-25,Other,1,18,0,18,U00212
+TX50569,2024-12-24,Electronics,Headphones,Social Media,18-25,F,1,89,0,89,U00080
+TX50966,2024-12-24,Beauty,Lipstick,Social Media,26-35,Other,1,19.8,0.1,19.8,U00786
+TX51137,2024-12-24,Electronics,Bluetooth Speaker,Marketplace,56+,F,1,63.2,0.2,63.2,U00424
+TX51287,2024-12-24,Clothing,Sneakers,Web,56+,F,2,76.0,0.2,152.0,U00307
+TX51451,2024-12-24,Home,Bedsheet,Web,36-45,M,1,40.5,0.1,40.5,U00825
+TX52111,2024-12-24,Home,Curtain,Marketplace,36-45,Other,1,65,0,65,U00762
+TX50296,2024-12-25,Beauty,Hair Dryer,Social Media,46-55,M,1,52.0,0.2,52.0,U00891
+TX50557,2024-12-25,Clothing,Sneakers,Marketplace,56+,M,2,95,0,190,U00478
+TX51106,2024-12-25,Books,Self-Help,Web,36-45,M,1,22,0,22,U00033
+TX51322,2024-12-25,Beauty,Lipstick,Web,18-25,F,1,19.8,0.1,19.8,U00365
+TX52105,2024-12-25,Beauty,Lipstick,Web,18-25,M,1,22,0,22,U00651
+TX52341,2024-12-25,Books,Cookbook,Marketplace,46-55,M,2,22.5,0.1,45.0,U00622
+TX50010,2024-12-26,Home,Lamp,Social Media,36-45,M,1,44.0,0.2,44.0,U00770
+TX50497,2024-12-26,Home,Rug,Marketplace,36-45,M,1,108.0,0.1,108.0,U00417
+TX50533,2024-12-26,Home,Lamp,Social Media,36-45,F,1,55,0,55,U00627
+TX50981,2024-12-26,Electronics,Headphones,Web,26-35,M,1,89,0,89,U00759
+TX51066,2024-12-26,Books,Cookbook,Mobile App,26-35,M,1,25,0,25,U00133
+TX51135,2024-12-26,Electronics,Bluetooth Speaker,Social Media,18-25,M,2,71.1,0.1,142.2,U00040
+TX51774,2024-12-26,Electronics,Phone Case,Web,46-55,F,1,25,0,25,U00885
+TX52016,2024-12-26,Beauty,Face Mask,Web,36-45,M,1,18,0,18,U00332
+TX52077,2024-12-26,Home,Pillow,Mobile App,36-45,Other,1,28.0,0.2,28.0,U00484
+TX52390,2024-12-26,Books,Cookbook,Marketplace,46-55,F,2,25,0,50,U00524
+TX52427,2024-12-26,Beauty,Skincare Set,Social Media,56+,Other,1,80.1,0.1,80.1,U00325
+TX51463,2024-12-27,Beauty,Lipstick,Marketplace,26-35,M,1,22,0,22,U00130
+TX51480,2024-12-27,Electronics,Phone Case,Marketplace,36-45,Other,1,22.5,0.1,22.5,U00146
+TX51806,2024-12-27,Beauty,Lipstick,Social Media,36-45,Other,2,22,0,44,U00349
+TX52301,2024-12-27,Beauty,Face Mask,Mobile App,46-55,M,1,16.2,0.1,16.2,U00698
+TX50018,2024-12-28,Electronics,Smart Watch,Web,56+,Other,1,179.1,0.1,179.1,U00754
+TX50450,2024-12-28,Clothing,Dress,Social Media,56+,F,1,75,0,75,U00688
+TX50716,2024-12-28,Beauty,Lipstick,Web,46-55,M,1,22,0,22,U00540
+TX50864,2024-12-28,Electronics,Charger,Marketplace,36-45,M,1,35,0,35,U00578
+TX50872,2024-12-28,Electronics,Headphones,Mobile App,46-55,Other,1,80.1,0.1,80.1,U00387
+TX51616,2024-12-28,Electronics,Headphones,Mobile App,26-35,M,2,80.1,0.1,160.2,U00762
+TX51930,2024-12-28,Electronics,Smart Watch,Web,18-25,Other,1,159.2,0.2,159.2,U00433
+TX51973,2024-12-28,Beauty,Face Mask,Mobile App,18-25,F,1,18,0,18,U00298
+TX52153,2024-12-28,Clothing,Jeans,Mobile App,26-35,M,1,45.5,0.3,45.5,U00108
+TX50459,2024-12-29,Clothing,Hoodie,Marketplace,18-25,Other,1,55,0,55,U00629
+TX50790,2024-12-29,Beauty,Hair Dryer,Mobile App,26-35,Other,1,52.0,0.2,52.0,U00683
+TX51481,2024-12-29,Electronics,Bluetooth Speaker,Marketplace,26-35,M,1,63.2,0.2,63.2,U00782
+TX51527,2024-12-29,Books,Self-Help,Mobile App,56+,M,1,22,0,22,U00348
+TX51849,2024-12-29,Books,Fiction Novel,Mobile App,18-25,Other,3,18,0,54,U00229
+TX52026,2024-12-29,Electronics,Bluetooth Speaker,Marketplace,46-55,M,1,79,0,79,U00725
+TX52027,2024-12-29,Books,Biography,Mobile App,18-25,M,2,28,0,56,U00123
+TX52099,2024-12-29,Electronics,Charger,Marketplace,56+,M,1,35,0,35,U00460
+TX52268,2024-12-29,Home,Lamp,Mobile App,36-45,Other,1,55,0,55,U00549
+TX52277,2024-12-29,Books,Self-Help,Social Media,36-45,M,3,22,0,66,U00780
+TX50582,2024-12-30,Clothing,Hoodie,Web,26-35,Other,2,44.0,0.2,88.0,U00885
+TX50672,2024-12-30,Clothing,Sneakers,Mobile App,26-35,M,2,95,0,190,U00268
+TX50679,2024-12-30,Beauty,Hair Dryer,Marketplace,26-35,Other,2,65,0,130,U00021
+TX50794,2024-12-30,Home,Lamp,Mobile App,46-55,Other,1,55,0,55,U00748
+TX50826,2024-12-30,Electronics,Smart Watch,Marketplace,36-45,F,1,159.2,0.2,159.2,U00715
+TX50928,2024-12-30,Electronics,Phone Case,Social Media,36-45,Other,3,25,0,75,U00066
+TX51087,2024-12-30,Clothing,Dress,Marketplace,18-25,F,1,67.5,0.1,67.5,U00570
+TX51838,2024-12-30,Electronics,Phone Case,Social Media,46-55,F,1,25,0,25,U00608
+TX51988,2024-12-30,Clothing,Hoodie,Mobile App,46-55,Other,1,55,0,55,U00242
+TX52032,2024-12-30,Electronics,Smart Watch,Mobile App,46-55,Other,1,199,0,199,U00243
+TX52155,2024-12-30,Clothing,T-Shirt,Web,36-45,M,1,28,0,28,U00865
+TX52418,2024-12-30,Home,Bedsheet,Social Media,36-45,F,1,40.5,0.1,40.5,U00656
+TX50500,2024-12-31,Home,Bedsheet,Web,18-25,M,3,36.0,0.2,108.0,U00108
+TX50938,2024-12-31,Electronics,Phone Case,Marketplace,56+,M,1,25,0,25,U00386
+TX51963,2024-12-31,Electronics,Charger,Marketplace,26-35,Other,1,35,0,35,U00824
+TX50239,2025-01-01,Home,Rug,Mobile App,26-35,M,2,120,0,240,U00637
+TX50344,2025-01-01,Beauty,Skincare Set,Mobile App,26-35,M,1,89,0,89,U00801
+TX50511,2025-01-01,Home,Lamp,Social Media,56+,M,2,55,0,110,U00043
+TX50632,2025-01-01,Clothing,Jeans,Mobile App,36-45,F,1,65,0,65,U00168
+TX50933,2025-01-01,Home,Rug,Marketplace,26-35,F,1,120,0,120,U00388
+TX51693,2025-01-01,Clothing,Jeans,Marketplace,36-45,M,1,65,0,65,U00373
+TX51946,2025-01-01,Electronics,Phone Case,Mobile App,18-25,Other,1,25,0,25,U00210
+TX52008,2025-01-01,Beauty,Face Mask,Social Media,46-55,Other,3,18,0,54,U00681
+TX50373,2025-01-02,Books,Biography,Marketplace,46-55,F,1,28,0,28,U00615
+TX52152,2025-01-02,Clothing,Jeans,Marketplace,46-55,F,2,65,0,130,U00145
+TX52198,2025-01-02,Home,Pillow,Marketplace,18-25,F,1,31.5,0.1,31.5,U00260
+TX52430,2025-01-02,Beauty,Face Mask,Web,18-25,M,1,18,0,18,U00793
+TX52434,2025-01-02,Clothing,Dress,Web,18-25,F,1,75,0,75,U00370
+TX50061,2025-01-03,Beauty,Perfume,Mobile App,26-35,Other,2,110,0,220,U00327
+TX50295,2025-01-03,Books,Cookbook,Marketplace,18-25,Other,1,25,0,25,U00107
+TX50455,2025-01-03,Clothing,Sneakers,Marketplace,46-55,Other,1,95,0,95,U00800
+TX50690,2025-01-03,Home,Bedsheet,Social Media,36-45,F,2,45,0,90,U00649
+TX50820,2025-01-03,Beauty,Face Mask,Marketplace,18-25,F,1,18,0,18,U00212
+TX50960,2025-01-03,Clothing,Jeans,Marketplace,56+,Other,1,65,0,65,U00694
+TX51446,2025-01-03,Beauty,Hair Dryer,Mobile App,56+,M,2,52.0,0.2,104.0,U00476
+TX52184,2025-01-03,Electronics,Smart Watch,Mobile App,36-45,M,1,199,0,199,U00451
+TX52363,2025-01-03,Beauty,Perfume,Web,26-35,Other,2,110,0,220,U00789
+TX50718,2025-01-04,Home,Lamp,Marketplace,46-55,F,1,55,0,55,U00311
+TX51531,2025-01-04,Beauty,Hair Dryer,Social Media,56+,Other,1,65,0,65,U00754
+TX51779,2025-01-04,Clothing,T-Shirt,Web,36-45,Other,1,28,0,28,U00210
+TX52081,2025-01-04,Clothing,T-Shirt,Mobile App,56+,Other,1,28,0,28,U00833
+TX52087,2025-01-04,Beauty,Lipstick,Mobile App,56+,Other,1,22,0,22,U00861
+TX52098,2025-01-04,Books,Fiction Novel,Social Media,46-55,M,1,18,0,18,U00683
+TX52321,2025-01-04,Beauty,Face Mask,Marketplace,56+,F,1,18,0,18,U00708
+TX52481,2025-01-04,Home,Rug,Social Media,18-25,F,2,120,0,240,U00360
+TX50435,2025-01-05,Books,Biography,Web,46-55,M,1,28,0,28,U00337
+TX51865,2025-01-05,Books,Tech Manual,Web,26-35,F,2,40.5,0.1,81.0,U00799
+TX52058,2025-01-05,Beauty,Skincare Set,Marketplace,46-55,M,2,80.1,0.1,160.2,U00249
+TX52428,2025-01-05,Home,Pillow,Marketplace,26-35,M,1,35,0,35,U00343
+TX50039,2025-01-06,Home,Lamp,Social Media,18-25,Other,2,49.5,0.1,99.0,U00566
+TX50150,2025-01-06,Clothing,Dress,Web,18-25,Other,1,75,0,75,U00512
+TX50319,2025-01-06,Books,Tech Manual,Mobile App,36-45,Other,1,45,0,45,U00204
+TX50590,2025-01-06,Books,Self-Help,Marketplace,46-55,F,2,22,0,44,U00267
+TX50662,2025-01-06,Clothing,Dress,Mobile App,18-25,M,1,75,0,75,U00343
+TX50870,2025-01-06,Electronics,Charger,Marketplace,26-35,F,1,31.5,0.1,31.5,U00662
+TX51790,2025-01-06,Books,Self-Help,Mobile App,18-25,Other,1,15.4,0.3,15.4,U00343
+TX52140,2025-01-06,Beauty,Perfume,Web,56+,Other,1,99.0,0.1,99.0,U00865
+TX50324,2025-01-07,Books,Self-Help,Web,36-45,M,2,22,0,44,U00819
+TX51187,2025-01-07,Books,Cookbook,Social Media,46-55,Other,1,25,0,25,U00407
+TX51628,2025-01-07,Beauty,Hair Dryer,Mobile App,46-55,Other,1,58.5,0.1,58.5,U00840
+TX51964,2025-01-07,Home,Pillow,Marketplace,46-55,F,1,35,0,35,U00760
+TX51974,2025-01-07,Beauty,Hair Dryer,Web,26-35,Other,2,65,0,130,U00702
+TX52250,2025-01-07,Electronics,Headphones,Marketplace,26-35,F,3,89,0,267,U00610
+TX50702,2025-01-08,Clothing,Sneakers,Web,46-55,M,1,76.0,0.2,76.0,U00075
+TX51987,2025-01-08,Books,Biography,Mobile App,36-45,Other,1,25.2,0.1,25.2,U00613
+TX52310,2025-01-08,Books,Cookbook,Marketplace,18-25,Other,2,25,0,50,U00004
+TX50303,2025-01-09,Home,Rug,Web,56+,F,2,120,0,240,U00571
+TX50627,2025-01-09,Beauty,Face Mask,Social Media,18-25,F,2,18,0,36,U00532
+TX51160,2025-01-09,Clothing,Sneakers,Marketplace,36-45,F,1,95,0,95,U00428
+TX51490,2025-01-09,Clothing,Hoodie,Mobile App,46-55,M,1,55,0,55,U00608
+TX52473,2025-01-09,Clothing,Hoodie,Marketplace,36-45,M,1,55,0,55,U00275
+TX50249,2025-01-10,Electronics,Headphones,Social Media,56+,M,1,71.2,0.2,71.2,U00116
+TX51082,2025-01-10,Beauty,Face Mask,Web,46-55,Other,1,16.2,0.1,16.2,U00469
+TX51294,2025-01-10,Beauty,Perfume,Marketplace,18-25,F,1,110,0,110,U00642
+TX51754,2025-01-10,Clothing,T-Shirt,Social Media,36-45,Other,3,22.4,0.2,67.2,U00251
+TX51947,2025-01-10,Books,Fiction Novel,Marketplace,36-45,F,1,14.4,0.2,14.4,U00680
+TX52342,2025-01-10,Beauty,Lipstick,Marketplace,46-55,F,2,22,0,44,U00325
+TX50079,2025-01-11,Beauty,Face Mask,Marketplace,56+,Other,1,18,0,18,U00017
+TX50085,2025-01-11,Beauty,Perfume,Web,18-25,F,2,110,0,220,U00879
+TX50621,2025-01-11,Clothing,T-Shirt,Social Media,18-25,M,1,19.6,0.3,19.6,U00866
+TX51119,2025-01-11,Electronics,Bluetooth Speaker,Web,46-55,F,1,71.1,0.1,71.1,U00550
+TX51180,2025-01-11,Electronics,Phone Case,Marketplace,56+,F,1,22.5,0.1,22.5,U00817
+TX51944,2025-01-11,Electronics,Smart Watch,Web,46-55,Other,2,199,0,398,U00238
+TX52370,2025-01-11,Beauty,Lipstick,Social Media,36-45,Other,1,22,0,22,U00881
+TX52386,2025-01-11,Books,Tech Manual,Marketplace,18-25,Other,1,40.5,0.1,40.5,U00371
+TX50028,2025-01-12,Beauty,Hair Dryer,Marketplace,56+,M,1,65,0,65,U00117
+TX50222,2025-01-12,Books,Self-Help,Marketplace,56+,M,1,22,0,22,U00726
+TX50457,2025-01-12,Beauty,Lipstick,Web,46-55,F,1,17.6,0.2,17.6,U00859
+TX50521,2025-01-12,Clothing,Dress,Web,46-55,M,1,75,0,75,U00221
+TX50759,2025-01-12,Home,Rug,Social Media,56+,Other,1,120,0,120,U00606
+TX50810,2025-01-12,Clothing,Hoodie,Marketplace,56+,M,3,49.5,0.1,148.5,U00153
+TX50935,2025-01-12,Clothing,Hoodie,Mobile App,36-45,M,1,55,0,55,U00468
+TX50997,2025-01-12,Electronics,Smart Watch,Social Media,26-35,F,2,199,0,398,U00435
+TX51073,2025-01-12,Electronics,Bluetooth Speaker,Marketplace,18-25,M,1,71.1,0.1,71.1,U00432
+TX52190,2025-01-12,Clothing,T-Shirt,Social Media,18-25,Other,2,22.4,0.2,44.8,U00482
+TX52243,2025-01-12,Beauty,Lipstick,Marketplace,36-45,Other,1,17.6,0.2,17.6,U00520
+TX52269,2025-01-12,Home,Pillow,Mobile App,36-45,M,1,35,0,35,U00436
+TX50117,2025-01-13,Home,Curtain,Mobile App,36-45,F,1,65,0,65,U00575
+TX50170,2025-01-13,Clothing,Jeans,Mobile App,18-25,M,2,65,0,130,U00297
+TX50838,2025-01-13,Home,Lamp,Web,46-55,F,2,49.5,0.1,99.0,U00563
+TX51431,2025-01-13,Home,Pillow,Mobile App,46-55,Other,3,35,0,105,U00325
+TX51903,2025-01-13,Clothing,Jeans,Marketplace,46-55,M,1,58.5,0.1,58.5,U00107
+TX52088,2025-01-13,Clothing,Sneakers,Web,56+,Other,2,95,0,190,U00472
+TX52324,2025-01-13,Clothing,Dress,Social Media,56+,F,1,75,0,75,U00054
+TX50545,2025-01-14,Clothing,Dress,Web,36-45,M,1,75,0,75,U00740
+TX51385,2025-01-14,Clothing,Sneakers,Web,56+,M,1,95,0,95,U00854
+TX51546,2025-01-14,Beauty,Lipstick,Social Media,18-25,F,2,17.6,0.2,35.2,U00511
+TX51840,2025-01-14,Home,Curtain,Mobile App,26-35,Other,1,65,0,65,U00857
+TX51858,2025-01-14,Clothing,Hoodie,Mobile App,18-25,Other,1,55,0,55,U00159
+TX52018,2025-01-14,Electronics,Headphones,Marketplace,36-45,Other,1,89,0,89,U00712
+TX52185,2025-01-14,Home,Bedsheet,Marketplace,46-55,F,1,45,0,45,U00511
+TX50641,2025-01-15,Books,Biography,Mobile App,56+,F,1,28,0,28,U00173
+TX51318,2025-01-15,Clothing,Jeans,Mobile App,46-55,M,1,65,0,65,U00255
+TX51522,2025-01-15,Books,Fiction Novel,Web,46-55,F,1,18,0,18,U00620
+TX51599,2025-01-15,Beauty,Skincare Set,Web,26-35,Other,1,71.2,0.2,71.2,U00886
+TX51960,2025-01-15,Home,Bedsheet,Marketplace,56+,M,2,45,0,90,U00224
+TX52239,2025-01-15,Electronics,Phone Case,Social Media,56+,M,1,25,0,25,U00277
+TX52287,2025-01-15,Home,Curtain,Social Media,46-55,F,1,65,0,65,U00709
+TX50390,2025-01-16,Books,Tech Manual,Marketplace,56+,M,2,36.0,0.2,72.0,U00292
+TX50609,2025-01-16,Clothing,Sneakers,Marketplace,36-45,M,2,95,0,190,U00588
+TX50837,2025-01-16,Books,Tech Manual,Marketplace,46-55,M,1,40.5,0.1,40.5,U00147
+TX50909,2025-01-16,Beauty,Face Mask,Social Media,18-25,Other,1,16.2,0.1,16.2,U00328
+TX50948,2025-01-16,Books,Cookbook,Web,18-25,M,2,25,0,50,U00187
+TX50953,2025-01-16,Electronics,Phone Case,Web,26-35,M,2,22.5,0.1,45.0,U00351
+TX51941,2025-01-16,Books,Biography,Marketplace,18-25,M,1,28,0,28,U00895
+TX52093,2025-01-16,Clothing,T-Shirt,Marketplace,46-55,Other,2,28,0,56,U00249
+TX52319,2025-01-16,Beauty,Skincare Set,Social Media,56+,F,1,89,0,89,U00834
+TX52444,2025-01-16,Electronics,Bluetooth Speaker,Web,18-25,M,1,79,0,79,U00096
+TX50753,2025-01-17,Home,Lamp,Social Media,18-25,Other,1,55,0,55,U00236
+TX50756,2025-01-17,Home,Pillow,Web,36-45,M,3,31.5,0.1,94.5,U00407
+TX51817,2025-01-17,Clothing,Dress,Web,56+,Other,1,75,0,75,U00350
+TX51916,2025-01-17,Clothing,Dress,Web,26-35,Other,1,67.5,0.1,67.5,U00257
+TX52146,2025-01-17,Books,Fiction Novel,Mobile App,56+,Other,1,18,0,18,U00547
+TX52293,2025-01-17,Beauty,Lipstick,Web,18-25,M,1,22,0,22,U00378
+TX50191,2025-01-18,Electronics,Smart Watch,Mobile App,56+,M,3,199,0,597,U00692
+TX50357,2025-01-18,Beauty,Lipstick,Web,36-45,F,1,22,0,22,U00058
+TX50900,2025-01-18,Clothing,Sneakers,Marketplace,18-25,F,1,85.5,0.1,85.5,U00036
+TX52122,2025-01-18,Beauty,Skincare Set,Marketplace,46-55,Other,2,89,0,178,U00655
+TX51321,2025-01-19,Home,Lamp,Mobile App,18-25,Other,1,55,0,55,U00248
+TX51337,2025-01-19,Beauty,Face Mask,Web,46-55,Other,1,18,0,18,U00243
+TX51669,2025-01-19,Books,Biography,Mobile App,56+,F,1,25.2,0.1,25.2,U00121
+TX51727,2025-01-19,Books,Self-Help,Social Media,36-45,M,1,22,0,22,U00470
+TX51758,2025-01-19,Beauty,Lipstick,Marketplace,56+,Other,1,22,0,22,U00618
+TX51875,2025-01-19,Books,Biography,Marketplace,18-25,F,1,22.4,0.2,22.4,U00650
+TX52160,2025-01-19,Electronics,Phone Case,Mobile App,56+,F,2,25,0,50,U00618
+TX50262,2025-01-20,Electronics,Headphones,Mobile App,36-45,F,2,89,0,178,U00710
+TX50268,2025-01-20,Beauty,Perfume,Social Media,56+,F,1,99.0,0.1,99.0,U00200
+TX50607,2025-01-20,Home,Lamp,Mobile App,26-35,M,1,55,0,55,U00559
+TX50802,2025-01-20,Books,Cookbook,Social Media,56+,M,1,25,0,25,U00782
+TX51178,2025-01-20,Beauty,Skincare Set,Marketplace,56+,F,1,89,0,89,U00216
+TX51450,2025-01-20,Clothing,Sneakers,Web,46-55,Other,1,95,0,95,U00674
+TX51500,2025-01-20,Books,Fiction Novel,Web,46-55,Other,1,16.2,0.1,16.2,U00896
+TX51648,2025-01-20,Beauty,Perfume,Web,18-25,Other,1,110,0,110,U00006
+TX52329,2025-01-20,Electronics,Smart Watch,Web,36-45,Other,1,199,0,199,U00406
+TX52415,2025-01-20,Books,Tech Manual,Marketplace,56+,F,1,36.0,0.2,36.0,U00198
+TX50292,2025-01-21,Electronics,Phone Case,Web,18-25,M,2,25,0,50,U00698
+TX50908,2025-01-21,Books,Cookbook,Social Media,56+,Other,2,22.5,0.1,45.0,U00623
+TX51550,2025-01-21,Beauty,Skincare Set,Social Media,46-55,M,2,71.2,0.2,142.4,U00853
+TX52453,2025-01-21,Home,Lamp,Mobile App,26-35,Other,1,55,0,55,U00720
+TX50182,2025-01-22,Clothing,Jeans,Social Media,18-25,F,1,65,0,65,U00409
+TX50186,2025-01-22,Beauty,Skincare Set,Web,56+,M,1,71.2,0.2,71.2,U00692
+TX50356,2025-01-22,Beauty,Hair Dryer,Mobile App,56+,Other,1,65,0,65,U00699
+TX50570,2025-01-22,Home,Rug,Web,18-25,M,1,108.0,0.1,108.0,U00768
+TX50663,2025-01-22,Home,Bedsheet,Mobile App,36-45,Other,3,31.5,0.3,94.5,U00831
+TX50967,2025-01-22,Electronics,Phone Case,Social Media,56+,M,3,25,0,75,U00474
+TX52223,2025-01-22,Electronics,Phone Case,Mobile App,46-55,Other,1,25,0,25,U00726
+TX52328,2025-01-22,Electronics,Bluetooth Speaker,Marketplace,26-35,Other,1,79,0,79,U00255
+TX50002,2025-01-23,Books,Biography,Mobile App,26-35,F,1,28,0,28,U00462
+TX50042,2025-01-23,Books,Fiction Novel,Social Media,56+,F,1,18,0,18,U00572
+TX50258,2025-01-23,Clothing,Hoodie,Mobile App,36-45,M,2,55,0,110,U00072
+TX50853,2025-01-23,Books,Tech Manual,Marketplace,46-55,Other,3,45,0,135,U00775
+TX50926,2025-01-23,Beauty,Perfume,Marketplace,46-55,M,1,110,0,110,U00071
+TX51412,2025-01-23,Clothing,Sneakers,Marketplace,18-25,M,1,95,0,95,U00763
+TX51503,2025-01-23,Beauty,Perfume,Marketplace,18-25,M,2,99.0,0.1,198.0,U00746
+TX51597,2025-01-23,Electronics,Smart Watch,Web,26-35,M,3,199,0,597,U00851
+TX51611,2025-01-23,Electronics,Smart Watch,Mobile App,26-35,F,1,159.2,0.2,159.2,U00729
+TX51712,2025-01-23,Books,Biography,Social Media,56+,M,2,25.2,0.1,50.4,U00168
+TX52037,2025-01-23,Electronics,Phone Case,Web,26-35,Other,2,25,0,50,U00670
+TX52164,2025-01-23,Clothing,Dress,Mobile App,26-35,Other,1,75,0,75,U00804
+TX50411,2025-01-24,Clothing,Sneakers,Mobile App,18-25,M,2,95,0,190,U00496
+TX50508,2025-01-24,Electronics,Smart Watch,Marketplace,26-35,Other,1,199,0,199,U00831
+TX51466,2025-01-24,Electronics,Phone Case,Web,46-55,F,1,25,0,25,U00138
+TX51469,2025-01-24,Beauty,Face Mask,Mobile App,36-45,M,1,16.2,0.1,16.2,U00862
+TX51746,2025-01-24,Beauty,Skincare Set,Social Media,46-55,M,2,89,0,178,U00366
+TX52129,2025-01-24,Books,Fiction Novel,Social Media,26-35,F,1,18,0,18,U00618
+TX50463,2025-01-25,Beauty,Face Mask,Mobile App,18-25,M,1,18,0,18,U00432
+TX50595,2025-01-25,Beauty,Skincare Set,Social Media,46-55,Other,2,89,0,178,U00495
+TX50651,2025-01-25,Home,Bedsheet,Social Media,56+,M,2,45,0,90,U00259
+TX51429,2025-01-25,Electronics,Smart Watch,Mobile App,26-35,Other,2,159.2,0.2,318.4,U00846
+TX51702,2025-01-25,Books,Cookbook,Web,18-25,Other,1,22.5,0.1,22.5,U00516
+TX51843,2025-01-25,Electronics,Smart Watch,Social Media,46-55,M,3,199,0,597,U00715
+TX52322,2025-01-25,Clothing,Hoodie,Social Media,56+,F,3,49.5,0.1,148.5,U00752
+TX52391,2025-01-25,Books,Cookbook,Marketplace,26-35,F,1,20.0,0.2,20.0,U00618
+TX52407,2025-01-25,Home,Bedsheet,Mobile App,18-25,F,1,36.0,0.2,36.0,U00577
+TX50327,2025-01-26,Beauty,Skincare Set,Mobile App,56+,M,2,89,0,178,U00277
+TX50464,2025-01-26,Home,Bedsheet,Mobile App,36-45,F,1,45,0,45,U00078
+TX50664,2025-01-26,Clothing,Dress,Marketplace,56+,F,1,75,0,75,U00530
+TX50889,2025-01-26,Beauty,Lipstick,Social Media,26-35,Other,3,22,0,66,U00314
+TX51041,2025-01-26,Electronics,Bluetooth Speaker,Web,46-55,Other,2,79,0,158,U00591
+TX51234,2025-01-26,Electronics,Charger,Social Media,46-55,F,2,35,0,70,U00493
+TX51298,2025-01-26,Clothing,Jeans,Marketplace,18-25,M,1,65,0,65,U00692
+TX51456,2025-01-26,Electronics,Phone Case,Marketplace,26-35,F,1,25,0,25,U00704
+TX51695,2025-01-26,Home,Lamp,Marketplace,46-55,Other,2,55,0,110,U00296
+TX51772,2025-01-26,Electronics,Phone Case,Social Media,18-25,M,1,25,0,25,U00425
+TX52463,2025-01-26,Electronics,Bluetooth Speaker,Mobile App,18-25,Other,2,79,0,158,U00246
+TX50699,2025-01-27,Electronics,Phone Case,Marketplace,36-45,M,1,20.0,0.2,20.0,U00125
+TX51047,2025-01-27,Books,Tech Manual,Marketplace,26-35,F,2,40.5,0.1,81.0,U00343
+TX51409,2025-01-27,Home,Bedsheet,Social Media,46-55,F,3,40.5,0.1,121.5,U00077
+TX51718,2025-01-27,Books,Tech Manual,Social Media,46-55,F,2,45,0,90,U00481
+TX51787,2025-01-27,Clothing,T-Shirt,Mobile App,46-55,M,1,28,0,28,U00886
+TX52139,2025-01-27,Clothing,Hoodie,Social Media,26-35,M,1,55,0,55,U00458
+TX52271,2025-01-27,Books,Self-Help,Web,26-35,Other,2,22,0,44,U00110
+TX50348,2025-01-28,Home,Lamp,Web,18-25,Other,1,55,0,55,U00340
+TX50430,2025-01-28,Home,Bedsheet,Social Media,46-55,Other,3,40.5,0.1,121.5,U00261
+TX50494,2025-01-28,Clothing,Sneakers,Social Media,18-25,F,1,95,0,95,U00256
+TX50752,2025-01-28,Books,Self-Help,Marketplace,18-25,F,2,22,0,44,U00220
+TX51124,2025-01-28,Beauty,Perfume,Mobile App,46-55,M,1,110,0,110,U00554
+TX51444,2025-01-28,Clothing,Jeans,Marketplace,46-55,Other,1,65,0,65,U00476
+TX51518,2025-01-28,Clothing,Jeans,Social Media,18-25,F,1,58.5,0.1,58.5,U00772
+TX51637,2025-01-28,Books,Cookbook,Marketplace,18-25,F,1,25,0,25,U00697
+TX52182,2025-01-28,Beauty,Skincare Set,Mobile App,18-25,F,1,89,0,89,U00722
+TX52343,2025-01-28,Home,Bedsheet,Marketplace,46-55,M,2,45,0,90,U00776
+TX51279,2025-01-29,Electronics,Phone Case,Marketplace,26-35,F,2,22.5,0.1,45.0,U00641
+TX51327,2025-01-29,Electronics,Charger,Web,56+,F,1,35,0,35,U00033
+TX51561,2025-01-29,Beauty,Hair Dryer,Social Media,18-25,Other,1,65,0,65,U00362
+TX51986,2025-01-29,Books,Tech Manual,Web,56+,F,1,45,0,45,U00016
+TX52096,2025-01-29,Electronics,Charger,Social Media,26-35,Other,1,28.0,0.2,28.0,U00037
+TX52199,2025-01-29,Home,Lamp,Mobile App,36-45,Other,1,44.0,0.2,44.0,U00150
+TX52213,2025-01-29,Electronics,Headphones,Marketplace,56+,M,2,89,0,178,U00571
+TX51057,2025-01-30,Home,Lamp,Social Media,26-35,M,2,55,0,110,U00483
+TX52131,2025-01-30,Beauty,Lipstick,Web,36-45,M,2,22,0,44,U00268
+TX50211,2025-01-31,Beauty,Skincare Set,Mobile App,46-55,F,1,89,0,89,U00553
+TX50414,2025-01-31,Clothing,T-Shirt,Marketplace,18-25,Other,1,28,0,28,U00185
+TX50623,2025-01-31,Beauty,Lipstick,Social Media,46-55,M,1,22,0,22,U00461
+TX50980,2025-01-31,Books,Self-Help,Mobile App,26-35,M,1,17.6,0.2,17.6,U00310
+TX51109,2025-01-31,Beauty,Perfume,Web,18-25,M,1,110,0,110,U00084
+TX51363,2025-01-31,Home,Pillow,Mobile App,46-55,Other,1,28.0,0.2,28.0,U00176
+TX51406,2025-01-31,Electronics,Smart Watch,Mobile App,36-45,F,3,199,0,597,U00856
+TX52284,2025-01-31,Clothing,Hoodie,Social Media,46-55,M,1,49.5,0.1,49.5,U00875
+TX52304,2025-01-31,Beauty,Hair Dryer,Marketplace,46-55,F,1,65,0,65,U00431
+TX50062,2025-02-01,Clothing,Hoodie,Web,36-45,Other,1,55,0,55,U00511
+TX50185,2025-02-01,Beauty,Face Mask,Social Media,36-45,M,1,16.2,0.1,16.2,U00309
+TX50772,2025-02-01,Beauty,Face Mask,Web,26-35,M,1,18,0,18,U00591
+TX50797,2025-02-01,Electronics,Phone Case,Web,46-55,Other,1,25,0,25,U00171
+TX51303,2025-02-01,Beauty,Perfume,Marketplace,26-35,M,1,88.0,0.2,88.0,U00230
+TX50033,2025-02-02,Home,Rug,Social Media,26-35,Other,1,96.0,0.2,96.0,U00003
+TX50137,2025-02-02,Clothing,Sneakers,Web,56+,Other,1,95,0,95,U00817
+TX50263,2025-02-02,Books,Biography,Web,18-25,M,1,25.2,0.1,25.2,U00085
+TX50478,2025-02-02,Clothing,Dress,Mobile App,18-25,M,1,75,0,75,U00057
+TX50689,2025-02-02,Clothing,Sneakers,Mobile App,18-25,F,1,85.5,0.1,85.5,U00236
+TX50798,2025-02-02,Books,Biography,Marketplace,56+,F,3,28,0,84,U00705
+TX50946,2025-02-02,Books,Biography,Marketplace,26-35,M,1,22.4,0.2,22.4,U00148
+TX52045,2025-02-02,Electronics,Smart Watch,Marketplace,26-35,Other,2,139.3,0.3,278.6,U00641
+TX52226,2025-02-02,Home,Bedsheet,Web,56+,Other,1,45,0,45,U00632
+TX50266,2025-02-03,Beauty,Hair Dryer,Social Media,18-25,Other,1,58.5,0.1,58.5,U00594
+TX50560,2025-02-03,Clothing,Jeans,Marketplace,46-55,M,1,65,0,65,U00107
+TX51907,2025-02-03,Beauty,Perfume,Social Media,56+,M,1,88.0,0.2,88.0,U00573
+TX52019,2025-02-03,Clothing,Sneakers,Marketplace,56+,M,1,95,0,95,U00434
+TX50021,2025-02-04,Books,Biography,Mobile App,56+,M,1,28,0,28,U00113
+TX50149,2025-02-04,Electronics,Bluetooth Speaker,Marketplace,46-55,M,1,79,0,79,U00302
+TX50845,2025-02-04,Books,Tech Manual,Mobile App,56+,M,1,36.0,0.2,36.0,U00752
+TX51255,2025-02-04,Books,Biography,Mobile App,36-45,Other,2,28,0,56,U00338
+TX51525,2025-02-04,Home,Lamp,Web,56+,M,1,55,0,55,U00589
+TX52383,2025-02-04,Home,Bedsheet,Marketplace,18-25,M,1,45,0,45,U00168
+TX50073,2025-02-05,Beauty,Perfume,Mobile App,56+,M,1,77.0,0.3,77.0,U00296
+TX51530,2025-02-05,Beauty,Perfume,Mobile App,56+,M,1,88.0,0.2,88.0,U00110
+TX51622,2025-02-05,Clothing,Jeans,Web,56+,F,1,65,0,65,U00371
+TX52372,2025-02-05,Clothing,Jeans,Mobile App,36-45,M,2,58.5,0.1,117.0,U00369
+TX50487,2025-02-06,Books,Tech Manual,Web,56+,Other,1,36.0,0.2,36.0,U00311
+TX50649,2025-02-06,Home,Lamp,Social Media,36-45,Other,1,55,0,55,U00511
+TX50309,2025-02-07,Home,Curtain,Web,26-35,Other,3,58.5,0.1,175.5,U00201
+TX51011,2025-02-07,Electronics,Smart Watch,Social Media,36-45,M,1,199,0,199,U00173
+TX51039,2025-02-07,Books,Tech Manual,Mobile App,46-55,M,1,45,0,45,U00388
+TX51127,2025-02-07,Electronics,Smart Watch,Web,18-25,Other,1,199,0,199,U00084
+TX51351,2025-02-07,Beauty,Skincare Set,Marketplace,46-55,Other,1,62.3,0.3,62.3,U00818
+TX51462,2025-02-07,Books,Fiction Novel,Web,36-45,Other,2,18,0,36,U00438
+TX51707,2025-02-07,Books,Fiction Novel,Web,36-45,M,1,18,0,18,U00086
+TX51880,2025-02-07,Books,Tech Manual,Mobile App,26-35,F,1,31.5,0.3,31.5,U00441
+TX52345,2025-02-07,Home,Lamp,Mobile App,46-55,M,2,49.5,0.1,99.0,U00112
+TX52441,2025-02-07,Home,Pillow,Marketplace,26-35,Other,2,35,0,70,U00134
+TX50343,2025-02-08,Electronics,Phone Case,Mobile App,26-35,Other,1,22.5,0.1,22.5,U00721
+TX50399,2025-02-08,Home,Pillow,Web,46-55,F,2,31.5,0.1,63.0,U00822
+TX50613,2025-02-08,Beauty,Lipstick,Mobile App,18-25,M,2,19.8,0.1,39.6,U00421
+TX51196,2025-02-08,Beauty,Hair Dryer,Social Media,18-25,F,1,65,0,65,U00854
+TX51266,2025-02-08,Home,Lamp,Marketplace,18-25,F,1,55,0,55,U00223
+TX51928,2025-02-08,Electronics,Charger,Marketplace,36-45,Other,2,35,0,70,U00728
+TX52014,2025-02-08,Beauty,Face Mask,Mobile App,26-35,F,1,18,0,18,U00046
+TX52252,2025-02-08,Books,Fiction Novel,Mobile App,46-55,Other,3,18,0,54,U00647
+TX50146,2025-02-09,Electronics,Smart Watch,Web,56+,Other,2,179.1,0.1,358.2,U00317
+TX50321,2025-02-09,Clothing,Hoodie,Marketplace,26-35,F,3,44.0,0.2,132.0,U00031
+TX50527,2025-02-09,Books,Fiction Novel,Marketplace,56+,F,1,18,0,18,U00492
+TX51349,2025-02-09,Electronics,Headphones,Mobile App,46-55,Other,1,89,0,89,U00133
+TX51461,2025-02-09,Electronics,Headphones,Web,46-55,M,2,89,0,178,U00685
+TX51614,2025-02-09,Clothing,Sneakers,Marketplace,18-25,Other,3,85.5,0.1,256.5,U00864
+TX51940,2025-02-09,Beauty,Perfume,Web,46-55,F,1,99.0,0.1,99.0,U00160
+TX52125,2025-02-09,Electronics,Charger,Social Media,18-25,M,1,35,0,35,U00855
+TX52224,2025-02-09,Clothing,Jeans,Mobile App,46-55,M,1,58.5,0.1,58.5,U00185
+TX52357,2025-02-09,Beauty,Lipstick,Social Media,36-45,F,1,17.6,0.2,17.6,U00728
+TX50484,2025-02-10,Beauty,Perfume,Mobile App,36-45,F,1,110,0,110,U00518
+TX50630,2025-02-10,Beauty,Face Mask,Social Media,18-25,Other,1,16.2,0.1,16.2,U00805
+TX50731,2025-02-10,Clothing,Sneakers,Social Media,26-35,F,1,85.5,0.1,85.5,U00345
+TX50848,2025-02-10,Books,Self-Help,Marketplace,36-45,M,1,15.4,0.3,15.4,U00474
+TX51356,2025-02-10,Home,Rug,Social Media,46-55,Other,1,84.0,0.3,84.0,U00245
+TX51426,2025-02-10,Home,Lamp,Social Media,26-35,M,1,55,0,55,U00775
+TX51486,2025-02-10,Books,Fiction Novel,Social Media,26-35,M,1,14.4,0.2,14.4,U00266
+TX51512,2025-02-10,Electronics,Phone Case,Web,18-25,M,2,25,0,50,U00186
+TX52274,2025-02-10,Home,Bedsheet,Social Media,46-55,Other,1,40.5,0.1,40.5,U00678
+TX50207,2025-02-11,Beauty,Hair Dryer,Marketplace,26-35,Other,2,65,0,130,U00483
+TX50694,2025-02-11,Electronics,Bluetooth Speaker,Web,36-45,F,3,79,0,237,U00156
+TX51381,2025-02-11,Electronics,Smart Watch,Web,18-25,M,1,199,0,199,U00294
+TX51615,2025-02-11,Beauty,Face Mask,Marketplace,56+,M,1,18,0,18,U00336
+TX51678,2025-02-11,Beauty,Hair Dryer,Marketplace,26-35,M,1,52.0,0.2,52.0,U00579
+TX52062,2025-02-11,Clothing,Sneakers,Mobile App,18-25,Other,3,95,0,285,U00297
+TX52472,2025-02-11,Beauty,Perfume,Mobile App,56+,Other,1,77.0,0.3,77.0,U00637
+TX50198,2025-02-12,Electronics,Phone Case,Marketplace,18-25,F,1,20.0,0.2,20.0,U00155
+TX50481,2025-02-12,Home,Pillow,Marketplace,26-35,F,1,35,0,35,U00193
+TX50614,2025-02-12,Beauty,Lipstick,Mobile App,36-45,Other,2,22,0,44,U00392
+TX50707,2025-02-12,Books,Fiction Novel,Marketplace,46-55,Other,1,18,0,18,U00118
+TX51238,2025-02-12,Beauty,Lipstick,Web,46-55,Other,1,19.8,0.1,19.8,U00068
+TX51300,2025-02-12,Clothing,T-Shirt,Marketplace,56+,M,3,25.2,0.1,75.6,U00703
+TX51800,2025-02-12,Home,Pillow,Mobile App,56+,Other,2,35,0,70,U00174
+TX51905,2025-02-12,Clothing,Sneakers,Marketplace,18-25,M,2,95,0,190,U00222
+TX51952,2025-02-12,Beauty,Lipstick,Marketplace,56+,F,1,19.8,0.1,19.8,U00246
+TX52145,2025-02-12,Clothing,Jeans,Web,26-35,F,1,65,0,65,U00496
+TX50749,2025-02-13,Home,Curtain,Web,46-55,M,1,58.5,0.1,58.5,U00103
+TX51684,2025-02-13,Beauty,Skincare Set,Mobile App,26-35,Other,3,62.3,0.3,186.9,U00743
+TX51686,2025-02-13,Beauty,Hair Dryer,Marketplace,46-55,M,1,58.5,0.1,58.5,U00547
+TX51766,2025-02-13,Electronics,Headphones,Web,46-55,M,2,89,0,178,U00729
+TX51819,2025-02-13,Beauty,Face Mask,Marketplace,26-35,F,1,14.4,0.2,14.4,U00140
+TX52404,2025-02-13,Electronics,Phone Case,Mobile App,56+,F,1,17.5,0.3,17.5,U00864
+TX52459,2025-02-13,Clothing,Hoodie,Social Media,18-25,F,1,55,0,55,U00292
+TX50159,2025-02-14,Home,Pillow,Web,46-55,F,2,35,0,70,U00400
+TX50278,2025-02-14,Beauty,Hair Dryer,Mobile App,26-35,F,2,58.5,0.1,117.0,U00898
+TX50363,2025-02-14,Electronics,Headphones,Mobile App,46-55,F,1,89,0,89,U00074
+TX50661,2025-02-14,Clothing,Dress,Marketplace,36-45,F,2,75,0,150,U00080
+TX51311,2025-02-14,Books,Fiction Novel,Web,36-45,F,2,18,0,36,U00130
+TX52004,2025-02-14,Home,Pillow,Marketplace,46-55,M,2,35,0,70,U00705
+TX52410,2025-02-14,Books,Fiction Novel,Web,36-45,Other,2,18,0,36,U00887
+TX50467,2025-02-15,Clothing,Jeans,Marketplace,26-35,Other,2,58.5,0.1,117.0,U00820
+TX50647,2025-02-15,Electronics,Charger,Web,26-35,Other,1,35,0,35,U00500
+TX50654,2025-02-15,Beauty,Skincare Set,Mobile App,46-55,Other,2,80.1,0.1,160.2,U00725
+TX52071,2025-02-15,Home,Rug,Web,56+,F,1,120,0,120,U00562
+TX52408,2025-02-15,Beauty,Skincare Set,Mobile App,56+,Other,1,89,0,89,U00666
+TX50064,2025-02-16,Beauty,Face Mask,Web,26-35,Other,2,18,0,36,U00850
+TX51211,2025-02-16,Books,Tech Manual,Social Media,18-25,F,2,40.5,0.1,81.0,U00775
+TX51538,2025-02-16,Beauty,Perfume,Social Media,56+,F,1,110,0,110,U00776
+TX51821,2025-02-16,Electronics,Headphones,Marketplace,18-25,F,1,89,0,89,U00799
+TX52449,2025-02-16,Home,Rug,Social Media,36-45,M,2,120,0,240,U00614
+TX52458,2025-02-16,Clothing,Dress,Marketplace,26-35,F,1,75,0,75,U00132
+TX50526,2025-02-17,Books,Self-Help,Social Media,46-55,M,1,19.8,0.1,19.8,U00655
+TX51262,2025-02-17,Books,Cookbook,Marketplace,18-25,F,1,25,0,25,U00341
+TX51651,2025-02-17,Beauty,Lipstick,Marketplace,46-55,M,1,22,0,22,U00446
+TX51856,2025-02-17,Beauty,Face Mask,Marketplace,46-55,M,3,12.6,0.3,37.8,U00741
+TX52323,2025-02-17,Books,Tech Manual,Web,26-35,Other,2,36.0,0.2,72.0,U00447
+TX52467,2025-02-17,Electronics,Phone Case,Mobile App,46-55,Other,1,22.5,0.1,22.5,U00467
+TX50815,2025-02-18,Electronics,Bluetooth Speaker,Marketplace,26-35,F,1,79,0,79,U00440
+TX51013,2025-02-18,Electronics,Headphones,Web,36-45,M,2,89,0,178,U00183
+TX51288,2025-02-18,Electronics,Smart Watch,Social Media,46-55,M,1,179.1,0.1,179.1,U00493
+TX50031,2025-02-19,Home,Bedsheet,Mobile App,26-35,M,1,45,0,45,U00032
+TX50514,2025-02-19,Books,Biography,Social Media,46-55,M,1,22.4,0.2,22.4,U00436
+TX50717,2025-02-19,Beauty,Hair Dryer,Marketplace,46-55,F,1,52.0,0.2,52.0,U00087
+TX51034,2025-02-19,Books,Biography,Web,18-25,F,2,25.2,0.1,50.4,U00456
+TX51267,2025-02-19,Beauty,Skincare Set,Mobile App,46-55,Other,2,80.1,0.1,160.2,U00482
+TX51808,2025-02-19,Clothing,Jeans,Marketplace,56+,F,3,65,0,195,U00393
+TX51910,2025-02-19,Clothing,Dress,Marketplace,26-35,Other,1,75,0,75,U00376
+TX52082,2025-02-19,Clothing,Hoodie,Social Media,56+,M,2,55,0,110,U00516
+TX50842,2025-02-20,Books,Tech Manual,Social Media,36-45,M,2,45,0,90,U00109
+TX51016,2025-02-20,Books,Cookbook,Marketplace,36-45,M,1,22.5,0.1,22.5,U00727
+TX51516,2025-02-20,Home,Bedsheet,Social Media,36-45,Other,2,40.5,0.1,81.0,U00655
+TX52460,2025-02-20,Books,Fiction Novel,Social Media,56+,Other,1,16.2,0.1,16.2,U00582
+TX50052,2025-02-21,Clothing,Jeans,Web,46-55,M,1,58.5,0.1,58.5,U00242
+TX50280,2025-02-21,Clothing,Sneakers,Mobile App,46-55,Other,1,95,0,95,U00132
+TX50489,2025-02-21,Electronics,Charger,Mobile App,26-35,Other,1,31.5,0.1,31.5,U00211
+TX51438,2025-02-21,Home,Curtain,Social Media,56+,M,1,58.5,0.1,58.5,U00657
+TX51564,2025-02-21,Beauty,Face Mask,Social Media,26-35,M,1,18,0,18,U00370
+TX51953,2025-02-21,Electronics,Phone Case,Mobile App,46-55,M,1,25,0,25,U00878
+TX52244,2025-02-21,Clothing,Jeans,Web,18-25,Other,2,65,0,130,U00029
+TX52267,2025-02-21,Home,Bedsheet,Marketplace,18-25,F,3,45,0,135,U00300
+TX52400,2025-02-21,Books,Cookbook,Web,26-35,M,1,25,0,25,U00028
+TX50181,2025-02-22,Books,Tech Manual,Web,46-55,M,1,45,0,45,U00431
+TX50410,2025-02-22,Home,Rug,Marketplace,36-45,Other,1,120,0,120,U00552
+TX51677,2025-02-22,Electronics,Bluetooth Speaker,Marketplace,36-45,Other,1,79,0,79,U00417
+TX50434,2025-02-23,Books,Self-Help,Social Media,18-25,F,1,17.6,0.2,17.6,U00583
+TX50583,2025-02-23,Beauty,Hair Dryer,Mobile App,26-35,F,3,65,0,195,U00816
+TX51664,2025-02-23,Home,Bedsheet,Social Media,36-45,M,1,45,0,45,U00003
+TX50242,2025-02-24,Books,Tech Manual,Web,36-45,M,1,40.5,0.1,40.5,U00654
+TX50416,2025-02-24,Clothing,T-Shirt,Mobile App,26-35,M,1,22.4,0.2,22.4,U00321
+TX50441,2025-02-24,Home,Curtain,Marketplace,46-55,M,1,65,0,65,U00746
+TX50597,2025-02-24,Books,Biography,Web,56+,M,1,25.2,0.1,25.2,U00834
+TX50644,2025-02-24,Beauty,Skincare Set,Mobile App,18-25,M,2,89,0,178,U00821
+TX50711,2025-02-24,Electronics,Headphones,Social Media,26-35,F,1,89,0,89,U00742
+TX51212,2025-02-24,Home,Rug,Social Media,46-55,Other,1,96.0,0.2,96.0,U00301
+TX51355,2025-02-24,Beauty,Hair Dryer,Mobile App,18-25,M,1,65,0,65,U00745
+TX51378,2025-02-24,Electronics,Bluetooth Speaker,Social Media,56+,Other,1,71.1,0.1,71.1,U00657
+TX50003,2025-02-25,Books,Biography,Marketplace,18-25,M,1,25.2,0.1,25.2,U00535
+TX50401,2025-02-25,Home,Lamp,Web,36-45,Other,1,49.5,0.1,49.5,U00617
+TX51259,2025-02-25,Electronics,Phone Case,Mobile App,18-25,Other,2,25,0,50,U00127
+TX51459,2025-02-25,Books,Tech Manual,Mobile App,18-25,F,3,45,0,135,U00759
+TX51507,2025-02-25,Clothing,Hoodie,Social Media,46-55,M,2,44.0,0.2,88.0,U00187
+TX51739,2025-02-25,Books,Biography,Mobile App,56+,F,1,28,0,28,U00667
+TX52137,2025-02-25,Clothing,T-Shirt,Mobile App,46-55,F,1,28,0,28,U00211
+TX50947,2025-02-26,Beauty,Hair Dryer,Mobile App,18-25,Other,3,58.5,0.1,175.5,U00495
+TX50987,2025-02-26,Electronics,Bluetooth Speaker,Marketplace,26-35,F,1,79,0,79,U00120
+TX51027,2025-02-26,Home,Rug,Social Media,46-55,F,1,96.0,0.2,96.0,U00016
+TX51665,2025-02-26,Home,Rug,Social Media,46-55,M,1,120,0,120,U00064
+TX52097,2025-02-26,Home,Rug,Marketplace,56+,F,1,120,0,120,U00882
+TX50035,2025-02-27,Electronics,Charger,Mobile App,46-55,M,1,35,0,35,U00842
+TX50141,2025-02-27,Books,Biography,Social Media,56+,F,2,22.4,0.2,44.8,U00766
+TX50565,2025-02-27,Home,Bedsheet,Mobile App,26-35,Other,2,45,0,90,U00754
+TX51023,2025-02-27,Clothing,Dress,Web,56+,M,1,67.5,0.1,67.5,U00858
+TX51204,2025-02-27,Electronics,Charger,Social Media,46-55,Other,1,28.0,0.2,28.0,U00237
+TX51630,2025-02-27,Home,Lamp,Social Media,26-35,Other,1,55,0,55,U00489
+TX50287,2025-02-28,Electronics,Smart Watch,Mobile App,36-45,Other,1,139.3,0.3,139.3,U00286
+TX50371,2025-02-28,Books,Self-Help,Web,56+,M,1,22,0,22,U00083
+TX51084,2025-02-28,Beauty,Skincare Set,Web,18-25,F,1,89,0,89,U00541
+TX52030,2025-02-28,Beauty,Hair Dryer,Web,46-55,Other,1,65,0,65,U00778
+TX52493,2025-02-28,Beauty,Hair Dryer,Marketplace,56+,F,1,65,0,65,U00281
+TX50019,2025-03-01,Clothing,T-Shirt,Marketplace,18-25,F,3,25.2,0.1,75.6,U00276
+TX50088,2025-03-01,Books,Cookbook,Mobile App,26-35,F,1,25,0,25,U00259
+TX50095,2025-03-01,Beauty,Skincare Set,Web,46-55,Other,1,71.2,0.2,71.2,U00080
+TX50205,2025-03-01,Electronics,Phone Case,Marketplace,26-35,M,1,25,0,25,U00014
+TX50562,2025-03-01,Home,Lamp,Marketplace,26-35,F,1,49.5,0.1,49.5,U00882
+TX50833,2025-03-01,Books,Fiction Novel,Web,56+,M,2,18,0,36,U00070
+TX51915,2025-03-01,Electronics,Bluetooth Speaker,Social Media,36-45,Other,1,63.2,0.2,63.2,U00491
+TX52246,2025-03-01,Home,Curtain,Mobile App,36-45,Other,1,45.5,0.3,45.5,U00498
+TX50164,2025-03-02,Clothing,T-Shirt,Web,18-25,M,1,28,0,28,U00892
+TX50525,2025-03-02,Electronics,Headphones,Marketplace,26-35,F,1,89,0,89,U00448
+TX52358,2025-03-02,Electronics,Headphones,Marketplace,26-35,Other,2,71.2,0.2,142.4,U00291
+TX50059,2025-03-03,Electronics,Smart Watch,Marketplace,36-45,M,1,139.3,0.3,139.3,U00525
+TX50576,2025-03-03,Clothing,Sneakers,Mobile App,36-45,F,2,66.5,0.3,133.0,U00772
+TX51185,2025-03-03,Clothing,Hoodie,Social Media,26-35,M,1,55,0,55,U00268
+TX52354,2025-03-03,Electronics,Charger,Web,36-45,F,1,35,0,35,U00437
+TX52432,2025-03-03,Books,Cookbook,Mobile App,56+,Other,3,22.5,0.1,67.5,U00769
+TX50922,2025-03-04,Home,Curtain,Mobile App,56+,F,1,65,0,65,U00467
+TX50965,2025-03-04,Electronics,Headphones,Social Media,36-45,F,1,89,0,89,U00334
+TX51056,2025-03-04,Beauty,Hair Dryer,Social Media,36-45,F,3,65,0,195,U00873
+TX51166,2025-03-04,Books,Biography,Social Media,18-25,Other,1,25.2,0.1,25.2,U00682
+TX51333,2025-03-04,Home,Bedsheet,Mobile App,46-55,M,1,31.5,0.3,31.5,U00034
+TX51543,2025-03-04,Electronics,Phone Case,Mobile App,46-55,Other,2,20.0,0.2,40.0,U00621
+TX50795,2025-03-05,Beauty,Face Mask,Web,18-25,M,1,12.6,0.3,12.6,U00802
+TX52492,2025-03-05,Clothing,Sneakers,Web,26-35,F,1,76.0,0.2,76.0,U00669
+TX50338,2025-03-06,Electronics,Charger,Marketplace,46-55,F,1,35,0,35,U00864
+TX51014,2025-03-06,Electronics,Phone Case,Web,18-25,M,2,22.5,0.1,45.0,U00552
+TX51113,2025-03-06,Beauty,Hair Dryer,Marketplace,36-45,Other,1,52.0,0.2,52.0,U00001
+TX51330,2025-03-06,Books,Fiction Novel,Mobile App,26-35,M,2,18,0,36,U00401
+TX52477,2025-03-06,Beauty,Lipstick,Mobile App,26-35,F,1,22,0,22,U00073
+TX50665,2025-03-07,Clothing,T-Shirt,Social Media,46-55,F,1,25.2,0.1,25.2,U00778
+TX51422,2025-03-07,Electronics,Phone Case,Marketplace,56+,M,2,25,0,50,U00758
+TX51430,2025-03-07,Electronics,Smart Watch,Mobile App,36-45,M,1,199,0,199,U00691
+TX51626,2025-03-07,Beauty,Face Mask,Marketplace,46-55,M,3,16.2,0.1,48.6,U00469
+TX52168,2025-03-07,Electronics,Headphones,Mobile App,36-45,M,1,80.1,0.1,80.1,U00222
+TX52412,2025-03-07,Electronics,Charger,Marketplace,18-25,Other,1,35,0,35,U00626
+TX50025,2025-03-08,Electronics,Smart Watch,Mobile App,56+,M,1,199,0,199,U00277
+TX50086,2025-03-08,Home,Bedsheet,Marketplace,36-45,F,3,40.5,0.1,121.5,U00747
+TX50096,2025-03-08,Beauty,Lipstick,Marketplace,46-55,M,1,19.8,0.1,19.8,U00132
+TX50154,2025-03-08,Home,Lamp,Mobile App,46-55,Other,1,38.5,0.3,38.5,U00320
+TX50293,2025-03-08,Clothing,Jeans,Social Media,26-35,Other,1,58.5,0.1,58.5,U00459
+TX50828,2025-03-08,Clothing,Hoodie,Mobile App,36-45,M,1,49.5,0.1,49.5,U00758
+TX51198,2025-03-08,Books,Self-Help,Mobile App,26-35,F,1,19.8,0.1,19.8,U00623
+TX51269,2025-03-08,Home,Rug,Marketplace,18-25,M,1,120,0,120,U00437
+TX51308,2025-03-08,Home,Bedsheet,Mobile App,26-35,F,1,40.5,0.1,40.5,U00727
+TX51943,2025-03-08,Electronics,Charger,Social Media,26-35,F,2,35,0,70,U00869
+TX52259,2025-03-08,Books,Fiction Novel,Marketplace,18-25,Other,2,18,0,36,U00102
+TX50044,2025-03-09,Clothing,Dress,Social Media,26-35,Other,1,75,0,75,U00024
+TX50355,2025-03-09,Clothing,Hoodie,Marketplace,46-55,F,1,55,0,55,U00696
+TX51100,2025-03-09,Electronics,Phone Case,Web,36-45,M,1,20.0,0.2,20.0,U00448
+TX51317,2025-03-09,Books,Biography,Mobile App,46-55,F,1,22.4,0.2,22.4,U00290
+TX52015,2025-03-09,Electronics,Headphones,Marketplace,26-35,Other,2,89,0,178,U00837
+TX52042,2025-03-09,Clothing,Hoodie,Mobile App,26-35,Other,1,49.5,0.1,49.5,U00846
+TX50823,2025-03-10,Electronics,Headphones,Social Media,46-55,M,1,80.1,0.1,80.1,U00147
+TX51136,2025-03-10,Clothing,Sneakers,Marketplace,56+,M,1,95,0,95,U00031
+TX51245,2025-03-10,Books,Tech Manual,Mobile App,18-25,F,2,31.5,0.3,63.0,U00191
+TX51415,2025-03-10,Clothing,Dress,Mobile App,26-35,M,1,60.0,0.2,60.0,U00563
+TX51541,2025-03-10,Home,Curtain,Marketplace,56+,F,1,52.0,0.2,52.0,U00377
+TX50168,2025-03-11,Home,Curtain,Marketplace,18-25,Other,1,65,0,65,U00119
+TX50335,2025-03-11,Home,Lamp,Marketplace,46-55,F,1,38.5,0.3,38.5,U00818
+TX50460,2025-03-11,Books,Biography,Social Media,36-45,Other,2,28,0,56,U00280
+TX50538,2025-03-11,Electronics,Bluetooth Speaker,Social Media,18-25,F,1,71.1,0.1,71.1,U00824
+TX51529,2025-03-11,Home,Lamp,Marketplace,46-55,F,2,49.5,0.1,99.0,U00109
+TX51971,2025-03-11,Electronics,Headphones,Mobile App,36-45,Other,1,62.3,0.3,62.3,U00531
+TX52094,2025-03-11,Beauty,Lipstick,Marketplace,26-35,M,2,22,0,44,U00583
+TX52238,2025-03-11,Clothing,Jeans,Web,56+,Other,1,65,0,65,U00215
+TX50127,2025-03-12,Clothing,Hoodie,Web,26-35,F,2,55,0,110,U00293
+TX50523,2025-03-12,Home,Rug,Social Media,36-45,M,2,120,0,240,U00706
+TX50568,2025-03-12,Home,Lamp,Mobile App,46-55,M,1,38.5,0.3,38.5,U00382
+TX50783,2025-03-12,Books,Cookbook,Marketplace,46-55,Other,1,25,0,25,U00640
+TX50944,2025-03-12,Beauty,Lipstick,Mobile App,26-35,Other,2,19.8,0.1,39.6,U00164
+TX51347,2025-03-12,Electronics,Charger,Mobile App,46-55,Other,1,28.0,0.2,28.0,U00416
+TX51362,2025-03-12,Beauty,Face Mask,Social Media,56+,F,1,18,0,18,U00528
+TX51675,2025-03-12,Beauty,Skincare Set,Marketplace,18-25,M,1,89,0,89,U00756
+TX51896,2025-03-12,Beauty,Skincare Set,Web,56+,M,2,89,0,178,U00832
+TX52405,2025-03-12,Books,Cookbook,Web,56+,M,1,20.0,0.2,20.0,U00031
+TX52484,2025-03-12,Beauty,Face Mask,Social Media,36-45,Other,2,16.2,0.1,32.4,U00863
+TX51592,2025-03-13,Clothing,Jeans,Mobile App,26-35,M,1,58.5,0.1,58.5,U00487
+TX51625,2025-03-13,Home,Bedsheet,Marketplace,26-35,Other,1,45,0,45,U00056
+TX51710,2025-03-13,Books,Tech Manual,Mobile App,26-35,F,1,31.5,0.3,31.5,U00177
+TX51831,2025-03-13,Books,Biography,Social Media,46-55,F,1,19.6,0.3,19.6,U00648
+TX51954,2025-03-13,Books,Biography,Marketplace,26-35,M,1,28,0,28,U00113
+TX52066,2025-03-13,Electronics,Charger,Mobile App,46-55,M,2,35,0,70,U00374
+TX52095,2025-03-13,Clothing,T-Shirt,Mobile App,36-45,F,1,19.6,0.3,19.6,U00229
+TX52235,2025-03-13,Beauty,Skincare Set,Social Media,18-25,Other,1,89,0,89,U00590
+TX52339,2025-03-13,Electronics,Headphones,Web,36-45,Other,3,89,0,267,U00249
+TX52348,2025-03-13,Clothing,Hoodie,Marketplace,18-25,M,1,55,0,55,U00278
+TX50329,2025-03-14,Home,Bedsheet,Web,36-45,M,1,40.5,0.1,40.5,U00024
+TX50384,2025-03-14,Clothing,T-Shirt,Social Media,56+,Other,1,28,0,28,U00234
+TX50643,2025-03-14,Beauty,Hair Dryer,Mobile App,56+,M,3,45.5,0.3,136.5,U00580
+TX50771,2025-03-14,Home,Rug,Mobile App,56+,F,1,120,0,120,U00887
+TX51403,2025-03-14,Electronics,Headphones,Marketplace,26-35,F,1,89,0,89,U00105
+TX51549,2025-03-14,Beauty,Lipstick,Social Media,26-35,Other,1,19.8,0.1,19.8,U00720
+TX51667,2025-03-14,Clothing,T-Shirt,Marketplace,18-25,M,1,28,0,28,U00523
+TX51773,2025-03-14,Books,Self-Help,Social Media,26-35,M,3,22,0,66,U00257
+TX51912,2025-03-14,Beauty,Skincare Set,Web,18-25,M,1,71.2,0.2,71.2,U00635
+TX50432,2025-03-15,Clothing,Hoodie,Marketplace,36-45,F,3,44.0,0.2,132.0,U00461
+TX50549,2025-03-15,Books,Fiction Novel,Web,56+,Other,2,14.4,0.2,28.8,U00584
+TX50747,2025-03-15,Electronics,Phone Case,Web,26-35,F,1,17.5,0.3,17.5,U00323
+TX51302,2025-03-15,Electronics,Headphones,Mobile App,46-55,Other,2,89,0,178,U00767
+TX51805,2025-03-15,Home,Rug,Marketplace,36-45,M,2,120,0,240,U00492
+TX52237,2025-03-15,Beauty,Face Mask,Web,26-35,F,1,16.2,0.1,16.2,U00435
+TX52429,2025-03-15,Beauty,Hair Dryer,Web,46-55,F,1,58.5,0.1,58.5,U00139
+TX50556,2025-03-16,Clothing,Jeans,Marketplace,56+,F,2,52.0,0.2,104.0,U00499
+TX50874,2025-03-16,Beauty,Perfume,Social Media,18-25,M,3,99.0,0.1,297.0,U00792
+TX51088,2025-03-16,Home,Lamp,Marketplace,46-55,Other,2,55,0,110,U00669
+TX51123,2025-03-16,Home,Bedsheet,Mobile App,46-55,Other,1,36.0,0.2,36.0,U00075
+TX51309,2025-03-16,Books,Biography,Mobile App,26-35,M,2,28,0,56,U00688
+TX51352,2025-03-16,Electronics,Bluetooth Speaker,Marketplace,18-25,F,2,79,0,158,U00378
+TX52072,2025-03-16,Books,Biography,Mobile App,26-35,Other,1,28,0,28,U00192
+TX50383,2025-03-17,Beauty,Face Mask,Web,26-35,M,1,18,0,18,U00565
+TX50730,2025-03-17,Beauty,Perfume,Social Media,26-35,Other,3,110,0,330,U00635
+TX51231,2025-03-17,Beauty,Skincare Set,Web,46-55,F,1,62.3,0.3,62.3,U00270
+TX51336,2025-03-17,Beauty,Lipstick,Marketplace,46-55,Other,1,17.6,0.2,17.6,U00112
+TX52378,2025-03-17,Clothing,Hoodie,Marketplace,36-45,M,1,49.5,0.1,49.5,U00626
+TX50229,2025-03-18,Beauty,Skincare Set,Marketplace,18-25,M,1,71.2,0.2,71.2,U00025
+TX50579,2025-03-18,Beauty,Hair Dryer,Marketplace,56+,F,2,52.0,0.2,104.0,U00201
+TX51020,2025-03-18,Home,Curtain,Mobile App,18-25,F,2,65,0,130,U00095
+TX51117,2025-03-18,Books,Fiction Novel,Marketplace,18-25,M,1,18,0,18,U00345
+TX51514,2025-03-18,Home,Bedsheet,Mobile App,46-55,M,1,45,0,45,U00871
+TX51569,2025-03-18,Clothing,Jeans,Web,18-25,Other,2,52.0,0.2,104.0,U00270
+TX51655,2025-03-18,Electronics,Smart Watch,Social Media,18-25,F,2,199,0,398,U00384
+TX51804,2025-03-18,Home,Lamp,Web,26-35,Other,2,55,0,110,U00313
+TX51900,2025-03-18,Electronics,Headphones,Marketplace,18-25,F,1,89,0,89,U00206
+TX52075,2025-03-18,Electronics,Bluetooth Speaker,Mobile App,36-45,M,1,79,0,79,U00129
+TX50691,2025-03-19,Books,Self-Help,Mobile App,18-25,F,1,17.6,0.2,17.6,U00236
+TX50839,2025-03-19,Home,Rug,Web,18-25,M,1,96.0,0.2,96.0,U00676
+TX51499,2025-03-19,Beauty,Perfume,Marketplace,56+,M,1,99.0,0.1,99.0,U00863
+TX51835,2025-03-19,Clothing,Dress,Web,26-35,M,2,60.0,0.2,120.0,U00771
+TX52260,2025-03-19,Books,Biography,Marketplace,36-45,M,1,22.4,0.2,22.4,U00446
+TX50135,2025-03-20,Electronics,Headphones,Marketplace,56+,F,1,80.1,0.1,80.1,U00780
+TX50275,2025-03-20,Clothing,Sneakers,Social Media,56+,F,2,76.0,0.2,152.0,U00226
+TX50901,2025-03-20,Electronics,Headphones,Web,46-55,Other,1,89,0,89,U00755
+TX51051,2025-03-20,Home,Curtain,Mobile App,18-25,Other,1,65,0,65,U00002
+TX51074,2025-03-20,Beauty,Face Mask,Social Media,36-45,M,1,12.6,0.3,12.6,U00865
+TX51284,2025-03-20,Beauty,Skincare Set,Web,26-35,Other,1,89,0,89,U00574
+TX52285,2025-03-20,Beauty,Skincare Set,Mobile App,36-45,F,1,89,0,89,U00360
+TX50112,2025-03-21,Books,Self-Help,Mobile App,36-45,M,1,22,0,22,U00855
+TX50315,2025-03-21,Beauty,Perfume,Marketplace,18-25,Other,1,88.0,0.2,88.0,U00829
+TX50594,2025-03-21,Electronics,Charger,Web,56+,F,1,35,0,35,U00795
+TX50819,2025-03-21,Clothing,Dress,Social Media,46-55,F,1,67.5,0.1,67.5,U00127
+TX50988,2025-03-21,Electronics,Bluetooth Speaker,Mobile App,18-25,Other,2,79,0,158,U00223
+TX51025,2025-03-21,Electronics,Charger,Web,56+,F,1,28.0,0.2,28.0,U00072
+TX51329,2025-03-21,Electronics,Smart Watch,Web,36-45,Other,2,199,0,398,U00313
+TX51470,2025-03-21,Clothing,Sneakers,Web,18-25,Other,1,95,0,95,U00197
+TX51498,2025-03-21,Home,Pillow,Web,46-55,Other,1,35,0,35,U00271
+TX52010,2025-03-21,Home,Rug,Marketplace,56+,F,2,108.0,0.1,216.0,U00722
+TX52214,2025-03-21,Beauty,Perfume,Marketplace,26-35,Other,1,99.0,0.1,99.0,U00022
+TX50421,2025-03-22,Home,Bedsheet,Web,26-35,M,1,45,0,45,U00040
+TX50598,2025-03-22,Clothing,T-Shirt,Mobile App,46-55,M,1,22.4,0.2,22.4,U00671
+TX50682,2025-03-22,Electronics,Headphones,Social Media,18-25,Other,1,71.2,0.2,71.2,U00320
+TX51012,2025-03-22,Beauty,Hair Dryer,Marketplace,56+,M,1,65,0,65,U00005
+TX51260,2025-03-22,Beauty,Face Mask,Social Media,46-55,F,1,18,0,18,U00692
+TX51361,2025-03-22,Clothing,Jeans,Mobile App,18-25,F,1,58.5,0.1,58.5,U00784
+TX51802,2025-03-22,Electronics,Smart Watch,Marketplace,46-55,M,1,199,0,199,U00860
+TX51945,2025-03-22,Electronics,Phone Case,Marketplace,46-55,F,1,17.5,0.3,17.5,U00344
+TX51980,2025-03-22,Books,Self-Help,Social Media,36-45,Other,2,22,0,44,U00103
+TX52489,2025-03-22,Beauty,Skincare Set,Marketplace,18-25,Other,1,80.1,0.1,80.1,U00734
+TX50808,2025-03-23,Clothing,Sneakers,Social Media,26-35,F,3,95,0,285,U00819
+TX50884,2025-03-23,Books,Fiction Novel,Social Media,36-45,Other,2,18,0,36,U00594
+TX51555,2025-03-23,Books,Tech Manual,Mobile App,18-25,M,2,36.0,0.2,72.0,U00577
+TX52060,2025-03-23,Clothing,Jeans,Social Media,26-35,Other,2,52.0,0.2,104.0,U00118
+TX50098,2025-03-24,Clothing,Jeans,Marketplace,36-45,F,3,58.5,0.1,175.5,U00724
+TX50439,2025-03-24,Home,Curtain,Social Media,18-25,M,1,58.5,0.1,58.5,U00599
+TX50512,2025-03-24,Electronics,Phone Case,Marketplace,46-55,M,2,22.5,0.1,45.0,U00705
+TX51193,2025-03-24,Home,Lamp,Marketplace,56+,M,2,44.0,0.2,88.0,U00171
+TX51280,2025-03-24,Beauty,Face Mask,Social Media,18-25,Other,1,18,0,18,U00699
+TX51715,2025-03-24,Home,Pillow,Marketplace,56+,Other,1,28.0,0.2,28.0,U00888
+TX52117,2025-03-24,Books,Biography,Web,56+,Other,1,28,0,28,U00119
+TX52283,2025-03-24,Clothing,Sneakers,Social Media,56+,F,1,76.0,0.2,76.0,U00660
+TX52290,2025-03-24,Beauty,Lipstick,Social Media,36-45,Other,1,22,0,22,U00120
+TX50043,2025-03-25,Home,Lamp,Social Media,26-35,M,1,49.5,0.1,49.5,U00847
+TX50118,2025-03-25,Beauty,Skincare Set,Marketplace,26-35,F,2,71.2,0.2,142.4,U00297
+TX50391,2025-03-25,Books,Biography,Mobile App,26-35,F,1,28,0,28,U00503
+TX50824,2025-03-25,Beauty,Skincare Set,Marketplace,18-25,F,1,89,0,89,U00368
+TX51278,2025-03-25,Electronics,Headphones,Web,36-45,F,1,80.1,0.1,80.1,U00082
+TX51397,2025-03-25,Electronics,Phone Case,Mobile App,18-25,F,2,25,0,50,U00849
+TX51432,2025-03-25,Beauty,Skincare Set,Mobile App,18-25,F,2,89,0,178,U00314
+TX51906,2025-03-25,Clothing,Sneakers,Social Media,56+,Other,1,95,0,95,U00337
+TX52300,2025-03-25,Home,Pillow,Social Media,46-55,F,2,31.5,0.1,63.0,U00241
+TX50267,2025-03-26,Beauty,Lipstick,Social Media,36-45,M,1,19.8,0.1,19.8,U00413
+TX50612,2025-03-26,Beauty,Face Mask,Marketplace,56+,M,1,14.4,0.2,14.4,U00103
+TX50894,2025-03-26,Books,Cookbook,Marketplace,26-35,Other,2,20.0,0.2,40.0,U00702
+TX51216,2025-03-26,Home,Curtain,Mobile App,36-45,M,2,65,0,130,U00259
+TX51577,2025-03-26,Electronics,Charger,Marketplace,46-55,M,1,28.0,0.2,28.0,U00721
+TX51756,2025-03-26,Home,Bedsheet,Social Media,26-35,M,1,45,0,45,U00172
+TX50131,2025-03-27,Books,Self-Help,Marketplace,56+,Other,1,22,0,22,U00082
+TX50585,2025-03-27,Beauty,Face Mask,Marketplace,56+,M,1,12.6,0.3,12.6,U00404
+TX50768,2025-03-27,Books,Cookbook,Marketplace,26-35,Other,1,25,0,25,U00396
+TX51641,2025-03-27,Electronics,Smart Watch,Mobile App,46-55,M,1,179.1,0.1,179.1,U00617
+TX52123,2025-03-27,Home,Curtain,Web,56+,Other,1,65,0,65,U00518
+TX52230,2025-03-27,Home,Curtain,Web,46-55,Other,1,65,0,65,U00804
+TX50049,2025-03-28,Clothing,Jeans,Mobile App,46-55,Other,1,65,0,65,U00622
+TX50184,2025-03-28,Books,Fiction Novel,Web,56+,M,1,18,0,18,U00200
+TX50618,2025-03-28,Beauty,Skincare Set,Social Media,26-35,F,2,80.1,0.1,160.2,U00234
+TX50697,2025-03-28,Electronics,Smart Watch,Marketplace,18-25,M,2,179.1,0.1,358.2,U00733
+TX51022,2025-03-28,Beauty,Perfume,Social Media,26-35,M,1,99.0,0.1,99.0,U00817
+TX51059,2025-03-28,Home,Curtain,Web,26-35,M,1,65,0,65,U00342
+TX51924,2025-03-28,Electronics,Smart Watch,Marketplace,26-35,M,2,179.1,0.1,358.2,U00592
+TX52017,2025-03-28,Home,Bedsheet,Web,56+,Other,1,45,0,45,U00408
+TX50091,2025-03-29,Home,Pillow,Web,36-45,F,1,28.0,0.2,28.0,U00598
+TX51237,2025-03-29,Books,Self-Help,Mobile App,26-35,M,3,22,0,66,U00422
+TX51339,2025-03-29,Electronics,Charger,Mobile App,18-25,M,1,35,0,35,U00603
+TX51820,2025-03-29,Clothing,Hoodie,Marketplace,36-45,M,2,55,0,110,U00797
+TX50001,2025-03-30,Books,Self-Help,Mobile App,36-45,M,3,22,0,66,U00733
+TX50158,2025-03-30,Home,Curtain,Social Media,26-35,M,1,52.0,0.2,52.0,U00373
+TX51310,2025-03-30,Electronics,Phone Case,Web,18-25,M,1,25,0,25,U00042
+TX51937,2025-03-30,Electronics,Charger,Web,56+,M,1,35,0,35,U00200
+TX52464,2025-03-30,Home,Rug,Social Media,56+,Other,1,120,0,120,U00803
+TX50299,2025-03-31,Clothing,Jeans,Web,56+,Other,1,65,0,65,U00705
+TX50437,2025-03-31,Books,Self-Help,Social Media,26-35,M,1,22,0,22,U00292
+TX50567,2025-03-31,Beauty,Lipstick,Social Media,26-35,M,1,15.4,0.3,15.4,U00128
+TX50765,2025-03-31,Beauty,Hair Dryer,Marketplace,56+,Other,1,65,0,65,U00417
+TX51102,2025-03-31,Books,Tech Manual,Marketplace,26-35,M,1,31.5,0.3,31.5,U00364
+TX51250,2025-03-31,Electronics,Phone Case,Web,26-35,Other,1,22.5,0.1,22.5,U00475
+TX51377,2025-03-31,Beauty,Perfume,Mobile App,18-25,F,1,110,0,110,U00110
+TX51730,2025-03-31,Electronics,Headphones,Mobile App,26-35,M,1,71.2,0.2,71.2,U00604
+TX50286,2025-04-01,Books,Cookbook,Web,18-25,M,1,25,0,25,U00875
+TX50673,2025-04-01,Clothing,T-Shirt,Mobile App,18-25,Other,1,25.2,0.1,25.2,U00779
+TX51172,2025-04-01,Books,Biography,Marketplace,26-35,F,1,28,0,28,U00839
+TX51228,2025-04-01,Clothing,T-Shirt,Marketplace,18-25,F,2,25.2,0.1,50.4,U00899
+TX51473,2025-04-01,Electronics,Charger,Mobile App,46-55,M,1,35,0,35,U00203
+TX51706,2025-04-01,Beauty,Skincare Set,Web,26-35,F,2,71.2,0.2,142.4,U00532
+TX52068,2025-04-01,Home,Lamp,Marketplace,36-45,M,1,55,0,55,U00812
+TX52073,2025-04-01,Electronics,Headphones,Web,36-45,M,2,89,0,178,U00360
+TX50156,2025-04-02,Books,Self-Help,Marketplace,46-55,M,1,17.6,0.2,17.6,U00620
+TX50331,2025-04-02,Home,Pillow,Marketplace,26-35,F,2,31.5,0.1,63.0,U00817
+TX50395,2025-04-02,Beauty,Perfume,Mobile App,46-55,F,2,110,0,220,U00429
+TX50396,2025-04-02,Home,Rug,Web,18-25,Other,1,120,0,120,U00860
+TX50629,2025-04-02,Home,Curtain,Social Media,26-35,M,1,58.5,0.1,58.5,U00229
+TX51146,2025-04-02,Books,Cookbook,Social Media,46-55,Other,1,20.0,0.2,20.0,U00048
+TX51171,2025-04-02,Beauty,Perfume,Marketplace,26-35,F,1,110,0,110,U00071
+TX51230,2025-04-02,Home,Bedsheet,Marketplace,56+,M,1,31.5,0.3,31.5,U00488
+TX51392,2025-04-02,Electronics,Phone Case,Marketplace,56+,F,2,22.5,0.1,45.0,U00450
+TX52128,2025-04-02,Home,Lamp,Web,26-35,Other,1,49.5,0.1,49.5,U00838
+TX50108,2025-04-03,Home,Lamp,Marketplace,36-45,F,2,55,0,110,U00222
+TX50216,2025-04-03,Books,Biography,Social Media,56+,Other,1,28,0,28,U00265
+TX50456,2025-04-03,Beauty,Skincare Set,Mobile App,26-35,F,1,89,0,89,U00380
+TX50564,2025-04-03,Home,Curtain,Social Media,46-55,F,1,65,0,65,U00160
+TX50745,2025-04-03,Clothing,Sneakers,Mobile App,36-45,F,2,95,0,190,U00047
+TX51097,2025-04-03,Clothing,Hoodie,Marketplace,56+,F,1,55,0,55,U00015
+TX51248,2025-04-03,Books,Biography,Mobile App,26-35,M,1,28,0,28,U00871
+TX51601,2025-04-03,Clothing,Dress,Social Media,18-25,M,1,75,0,75,U00822
+TX52180,2025-04-03,Electronics,Headphones,Marketplace,46-55,M,2,80.1,0.1,160.2,U00818
+TX52240,2025-04-03,Books,Tech Manual,Web,26-35,M,2,36.0,0.2,72.0,U00654
+TX50192,2025-04-04,Home,Lamp,Web,36-45,Other,1,55,0,55,U00551
+TX50312,2025-04-04,Home,Pillow,Mobile App,46-55,Other,3,35,0,105,U00216
+TX51004,2025-04-04,Electronics,Bluetooth Speaker,Marketplace,56+,Other,1,79,0,79,U00145
+TX51021,2025-04-04,Beauty,Skincare Set,Mobile App,56+,M,1,80.1,0.1,80.1,U00820
+TX51175,2025-04-04,Books,Biography,Marketplace,56+,Other,1,25.2,0.1,25.2,U00424
+TX51218,2025-04-04,Electronics,Bluetooth Speaker,Social Media,36-45,F,2,71.1,0.1,142.2,U00658
+TX51656,2025-04-04,Clothing,Jeans,Mobile App,26-35,Other,1,65,0,65,U00754
+TX51716,2025-04-04,Home,Curtain,Social Media,26-35,M,3,58.5,0.1,175.5,U00720
+TX51891,2025-04-04,Electronics,Smart Watch,Web,26-35,Other,2,199,0,398,U00769
+TX52069,2025-04-04,Beauty,Lipstick,Marketplace,26-35,M,2,22,0,44,U00491
+TX50308,2025-04-05,Clothing,Sneakers,Mobile App,56+,M,1,85.5,0.1,85.5,U00575
+TX50342,2025-04-05,Beauty,Skincare Set,Marketplace,18-25,M,1,71.2,0.2,71.2,U00763
+TX50959,2025-04-05,Home,Lamp,Social Media,18-25,F,1,44.0,0.2,44.0,U00676
+TX51079,2025-04-05,Beauty,Face Mask,Mobile App,26-35,F,2,18,0,36,U00711
+TX51312,2025-04-05,Electronics,Bluetooth Speaker,Marketplace,56+,M,1,79,0,79,U00371
+TX51792,2025-04-05,Electronics,Smart Watch,Social Media,26-35,M,1,199,0,199,U00667
+TX51913,2025-04-05,Beauty,Perfume,Social Media,26-35,Other,1,110,0,110,U00891
+TX52211,2025-04-05,Beauty,Lipstick,Marketplace,26-35,M,1,22,0,22,U00857
+TX52273,2025-04-05,Electronics,Phone Case,Web,46-55,F,1,25,0,25,U00795
+TX50336,2025-04-06,Electronics,Bluetooth Speaker,Social Media,36-45,M,1,79,0,79,U00849
+TX50668,2025-04-06,Beauty,Perfume,Social Media,36-45,F,1,110,0,110,U00531
+TX50793,2025-04-06,Books,Tech Manual,Mobile App,36-45,F,1,36.0,0.2,36.0,U00630
+TX50859,2025-04-06,Home,Pillow,Web,26-35,F,3,35,0,105,U00090
+TX50896,2025-04-06,Electronics,Bluetooth Speaker,Web,56+,M,1,79,0,79,U00003
+TX51168,2025-04-06,Clothing,T-Shirt,Mobile App,46-55,F,1,25.2,0.1,25.2,U00098
+TX51600,2025-04-06,Electronics,Smart Watch,Web,26-35,M,1,199,0,199,U00355
+TX50167,2025-04-07,Books,Tech Manual,Web,18-25,Other,1,45,0,45,U00770
+TX50548,2025-04-07,Home,Curtain,Marketplace,46-55,F,1,65,0,65,U00457
+TX50875,2025-04-07,Electronics,Charger,Web,18-25,M,1,28.0,0.2,28.0,U00695
+TX50942,2025-04-07,Books,Self-Help,Mobile App,56+,M,1,22,0,22,U00460
+TX51199,2025-04-07,Electronics,Charger,Web,18-25,F,2,35,0,70,U00077
+TX51433,2025-04-07,Clothing,Jeans,Web,56+,Other,3,65,0,195,U00413
+TX51580,2025-04-07,Electronics,Headphones,Social Media,18-25,Other,2,89,0,178,U00778
+TX51990,2025-04-07,Home,Lamp,Web,26-35,F,1,55,0,55,U00527
+TX52217,2025-04-07,Books,Cookbook,Web,18-25,Other,1,25,0,25,U00355
+TX52433,2025-04-07,Books,Biography,Marketplace,46-55,Other,1,28,0,28,U00514
+TX50626,2025-04-08,Books,Self-Help,Marketplace,46-55,F,3,22,0,66,U00864
+TX50658,2025-04-08,Beauty,Skincare Set,Web,56+,F,1,89,0,89,U00048
+TX51105,2025-04-08,Clothing,Sneakers,Mobile App,36-45,M,3,95,0,285,U00542
+TX51717,2025-04-08,Books,Cookbook,Marketplace,46-55,M,1,25,0,25,U00589
+TX52229,2025-04-08,Books,Cookbook,Mobile App,46-55,F,1,22.5,0.1,22.5,U00472
+TX50027,2025-04-09,Electronics,Charger,Web,26-35,F,1,35,0,35,U00578
+TX50438,2025-04-09,Beauty,Hair Dryer,Social Media,56+,Other,1,65,0,65,U00626
+TX50921,2025-04-09,Clothing,T-Shirt,Social Media,36-45,Other,2,22.4,0.2,44.8,U00747
+TX51292,2025-04-09,Books,Cookbook,Web,36-45,M,1,25,0,25,U00394
+TX51293,2025-04-09,Clothing,Dress,Web,36-45,M,1,75,0,75,U00828
+TX51698,2025-04-09,Clothing,Sneakers,Social Media,26-35,M,1,95,0,95,U00452
+TX52288,2025-04-09,Electronics,Bluetooth Speaker,Marketplace,26-35,M,1,79,0,79,U00859
+TX52401,2025-04-09,Clothing,Hoodie,Marketplace,26-35,Other,1,55,0,55,U00446
+TX52413,2025-04-09,Beauty,Face Mask,Web,56+,F,1,18,0,18,U00544
+TX51864,2025-04-10,Electronics,Phone Case,Social Media,36-45,M,3,25,0,75,U00103
+TX52085,2025-04-10,Clothing,Jeans,Marketplace,26-35,M,1,65,0,65,U00530
+TX50475,2025-04-11,Electronics,Phone Case,Marketplace,56+,Other,2,25,0,50,U00384
+TX51096,2025-04-11,Home,Lamp,Web,56+,Other,1,38.5,0.3,38.5,U00024
+TX51448,2025-04-11,Beauty,Skincare Set,Mobile App,18-25,M,1,89,0,89,U00370
+TX51494,2025-04-11,Clothing,Jeans,Social Media,18-25,M,2,58.5,0.1,117.0,U00578
+TX52156,2025-04-11,Books,Biography,Mobile App,56+,Other,3,28,0,84,U00066
+TX52483,2025-04-11,Electronics,Phone Case,Social Media,56+,F,2,20.0,0.2,40.0,U00175
+TX50764,2025-04-12,Electronics,Smart Watch,Marketplace,18-25,M,3,199,0,597,U00343
+TX50911,2025-04-12,Beauty,Face Mask,Web,56+,F,1,18,0,18,U00217
+TX51078,2025-04-12,Clothing,Sneakers,Mobile App,56+,F,2,95,0,190,U00227
+TX51268,2025-04-12,Electronics,Headphones,Marketplace,36-45,Other,1,80.1,0.1,80.1,U00292
+TX51793,2025-04-12,Home,Curtain,Mobile App,26-35,M,1,65,0,65,U00870
+TX52061,2025-04-12,Electronics,Phone Case,Marketplace,26-35,Other,1,25,0,25,U00655
+TX52124,2025-04-12,Beauty,Lipstick,Mobile App,18-25,M,1,22,0,22,U00793
+TX52425,2025-04-12,Beauty,Hair Dryer,Marketplace,18-25,M,1,65,0,65,U00534
+TX50200,2025-04-13,Clothing,Hoodie,Web,18-25,F,1,55,0,55,U00662
+TX50294,2025-04-13,Books,Self-Help,Web,36-45,F,3,22,0,66,U00684
+TX51313,2025-04-13,Books,Fiction Novel,Web,26-35,M,1,18,0,18,U00632
+TX51372,2025-04-13,Home,Rug,Social Media,56+,Other,1,108.0,0.1,108.0,U00876
+TX51652,2025-04-13,Electronics,Headphones,Social Media,18-25,F,1,80.1,0.1,80.1,U00495
+TX51672,2025-04-13,Books,Fiction Novel,Web,46-55,M,1,18,0,18,U00066
+TX51722,2025-04-13,Beauty,Skincare Set,Social Media,18-25,M,1,80.1,0.1,80.1,U00335
+TX50650,2025-04-14,Clothing,T-Shirt,Social Media,46-55,F,1,22.4,0.2,22.4,U00896
+TX50657,2025-04-14,Beauty,Lipstick,Web,56+,M,1,22,0,22,U00509
+TX51006,2025-04-14,Electronics,Bluetooth Speaker,Mobile App,36-45,Other,3,71.1,0.1,213.3,U00883
+TX51247,2025-04-14,Books,Fiction Novel,Mobile App,18-25,F,1,18,0,18,U00622
+TX51314,2025-04-14,Beauty,Lipstick,Mobile App,36-45,Other,3,17.6,0.2,52.8,U00842
+TX52326,2025-04-14,Beauty,Perfume,Web,36-45,M,1,99.0,0.1,99.0,U00226
+TX50289,2025-04-15,Clothing,T-Shirt,Social Media,46-55,M,3,25.2,0.1,75.6,U00091
+TX50975,2025-04-15,Home,Curtain,Mobile App,36-45,F,1,65,0,65,U00194
+TX51158,2025-04-15,Books,Tech Manual,Web,18-25,Other,1,45,0,45,U00581
+TX50861,2025-04-16,Beauty,Skincare Set,Mobile App,26-35,F,1,80.1,0.1,80.1,U00252
+TX50904,2025-04-16,Books,Biography,Marketplace,26-35,Other,1,28,0,28,U00433
+TX50971,2025-04-16,Home,Pillow,Marketplace,26-35,F,1,35,0,35,U00465
+TX51153,2025-04-16,Clothing,Sneakers,Mobile App,18-25,F,1,95,0,95,U00620
+TX51219,2025-04-16,Home,Lamp,Marketplace,36-45,Other,2,55,0,110,U00888
+TX51534,2025-04-16,Clothing,Dress,Marketplace,26-35,M,1,67.5,0.1,67.5,U00485
+TX51732,2025-04-16,Beauty,Hair Dryer,Web,26-35,F,1,52.0,0.2,52.0,U00840
+TX50067,2025-04-17,Home,Rug,Social Media,18-25,M,1,120,0,120,U00213
+TX51176,2025-04-17,Electronics,Bluetooth Speaker,Social Media,56+,M,1,79,0,79,U00055
+TX51246,2025-04-17,Electronics,Charger,Web,36-45,F,1,35,0,35,U00434
+TX52005,2025-04-17,Books,Tech Manual,Marketplace,46-55,M,1,40.5,0.1,40.5,U00058
+TX50715,2025-04-18,Books,Self-Help,Marketplace,56+,Other,1,22,0,22,U00210
+TX50789,2025-04-18,Beauty,Face Mask,Marketplace,56+,Other,1,18,0,18,U00068
+TX50940,2025-04-18,Books,Tech Manual,Mobile App,56+,Other,1,45,0,45,U00554
+TX51274,2025-04-18,Clothing,Sneakers,Web,18-25,M,1,76.0,0.2,76.0,U00290
+TX51511,2025-04-18,Home,Rug,Social Media,36-45,F,1,96.0,0.2,96.0,U00896
+TX50735,2025-04-19,Clothing,Dress,Web,46-55,M,2,75,0,150,U00442
+TX50755,2025-04-19,Beauty,Perfume,Web,26-35,F,1,88.0,0.2,88.0,U00437
+TX51017,2025-04-19,Home,Curtain,Mobile App,46-55,Other,3,52.0,0.2,156.0,U00253
+TX51593,2025-04-19,Clothing,Hoodie,Social Media,46-55,F,1,55,0,55,U00449
+TX51744,2025-04-19,Books,Cookbook,Web,26-35,Other,1,25,0,25,U00069
+TX52080,2025-04-19,Home,Curtain,Mobile App,46-55,F,1,52.0,0.2,52.0,U00477
+TX50046,2025-04-20,Books,Fiction Novel,Web,56+,Other,1,18,0,18,U00103
+TX50970,2025-04-20,Electronics,Charger,Marketplace,18-25,Other,1,35,0,35,U00230
+TX51345,2025-04-20,Beauty,Lipstick,Web,18-25,F,1,22,0,22,U00621
+TX51439,2025-04-20,Clothing,Jeans,Social Media,18-25,F,2,65,0,130,U00681
+TX50539,2025-04-21,Books,Fiction Novel,Mobile App,36-45,Other,1,16.2,0.1,16.2,U00006
+TX51132,2025-04-21,Electronics,Bluetooth Speaker,Web,36-45,M,2,63.2,0.2,126.4,U00032
+TX51583,2025-04-21,Home,Lamp,Marketplace,36-45,M,2,55,0,110,U00706
+TX51731,2025-04-21,Clothing,Dress,Social Media,36-45,F,1,67.5,0.1,67.5,U00215
+TX50328,2025-04-22,Home,Bedsheet,Web,46-55,F,1,36.0,0.2,36.0,U00344
+TX50412,2025-04-22,Clothing,Sneakers,Web,46-55,M,1,85.5,0.1,85.5,U00521
+TX50578,2025-04-22,Home,Rug,Mobile App,36-45,M,1,120,0,120,U00730
+TX50748,2025-04-22,Electronics,Charger,Marketplace,36-45,M,2,31.5,0.1,63.0,U00040
+TX51285,2025-04-22,Beauty,Face Mask,Web,56+,Other,1,16.2,0.1,16.2,U00630
+TX52491,2025-04-22,Beauty,Face Mask,Web,36-45,Other,1,16.2,0.1,16.2,U00113
+TX50163,2025-04-23,Beauty,Hair Dryer,Marketplace,18-25,M,1,65,0,65,U00139
+TX50259,2025-04-23,Home,Bedsheet,Marketplace,36-45,M,1,45,0,45,U00110
+TX50360,2025-04-23,Home,Bedsheet,Social Media,46-55,M,1,45,0,45,U00049
+TX50367,2025-04-23,Beauty,Skincare Set,Web,46-55,F,1,89,0,89,U00756
+TX50605,2025-04-23,Beauty,Skincare Set,Mobile App,46-55,F,2,89,0,178,U00144
+TX50712,2025-04-23,Books,Fiction Novel,Marketplace,46-55,F,1,14.4,0.2,14.4,U00648
+TX50956,2025-04-23,Home,Curtain,Social Media,36-45,M,2,65,0,130,U00624
+TX51256,2025-04-23,Home,Pillow,Web,56+,F,1,35,0,35,U00498
+TX51623,2025-04-23,Clothing,Sneakers,Mobile App,26-35,Other,2,85.5,0.1,171.0,U00654
+TX51828,2025-04-23,Home,Pillow,Web,56+,Other,1,35,0,35,U00043
+TX51878,2025-04-23,Electronics,Charger,Mobile App,56+,Other,1,31.5,0.1,31.5,U00640
+TX52154,2025-04-23,Books,Cookbook,Web,26-35,M,2,20.0,0.2,40.0,U00045
+TX50024,2025-04-24,Clothing,Dress,Marketplace,56+,Other,1,75,0,75,U00780
+TX50115,2025-04-24,Books,Fiction Novel,Marketplace,18-25,M,1,18,0,18,U00485
+TX50123,2025-04-24,Clothing,Dress,Web,46-55,F,1,60.0,0.2,60.0,U00363
+TX50246,2025-04-24,Electronics,Headphones,Marketplace,46-55,M,3,89,0,267,U00459
+TX50273,2025-04-24,Books,Fiction Novel,Web,18-25,F,1,14.4,0.2,14.4,U00071
+TX50522,2025-04-24,Electronics,Bluetooth Speaker,Social Media,46-55,F,1,79,0,79,U00828
+TX51334,2025-04-24,Clothing,T-Shirt,Marketplace,46-55,F,2,28,0,56,U00114
+TX51815,2025-04-24,Electronics,Bluetooth Speaker,Social Media,36-45,M,1,79,0,79,U00825
+TX52007,2025-04-24,Electronics,Smart Watch,Marketplace,46-55,F,3,159.2,0.2,477.6,U00873
+TX52450,2025-04-24,Books,Biography,Mobile App,18-25,M,3,28,0,84,U00742
+TX50129,2025-04-25,Home,Pillow,Mobile App,46-55,Other,2,24.5,0.3,49.0,U00304
+TX50301,2025-04-25,Books,Tech Manual,Marketplace,56+,Other,3,45,0,135,U00248
+TX50857,2025-04-25,Electronics,Charger,Mobile App,26-35,F,1,35,0,35,U00203
+TX51155,2025-04-25,Electronics,Phone Case,Social Media,56+,F,2,20.0,0.2,40.0,U00272
+TX51934,2025-04-25,Books,Biography,Social Media,36-45,M,1,22.4,0.2,22.4,U00457
+TX52064,2025-04-25,Books,Biography,Marketplace,56+,M,1,28,0,28,U00462
+TX52420,2025-04-25,Home,Pillow,Social Media,18-25,M,1,35,0,35,U00083
+TX50032,2025-04-26,Home,Rug,Marketplace,26-35,M,1,108.0,0.1,108.0,U00431
+TX50253,2025-04-26,Books,Fiction Novel,Social Media,26-35,Other,1,18,0,18,U00379
+TX50655,2025-04-26,Electronics,Charger,Marketplace,36-45,M,1,35,0,35,U00609
+TX50846,2025-04-26,Books,Tech Manual,Web,56+,M,1,45,0,45,U00795
+TX51520,2025-04-26,Home,Rug,Mobile App,26-35,F,1,120,0,120,U00833
+TX51842,2025-04-26,Clothing,Sneakers,Mobile App,46-55,M,2,95,0,190,U00350
+TX52113,2025-04-26,Clothing,Sneakers,Social Media,46-55,Other,1,85.5,0.1,85.5,U00254
+TX52278,2025-04-26,Books,Tech Manual,Marketplace,18-25,Other,2,45,0,90,U00556
+TX50359,2025-04-27,Beauty,Face Mask,Web,26-35,Other,1,18,0,18,U00318
+TX50483,2025-04-27,Clothing,Sneakers,Social Media,46-55,M,3,95,0,285,U00888
+TX50666,2025-04-27,Beauty,Hair Dryer,Marketplace,36-45,F,1,52.0,0.2,52.0,U00651
+TX50892,2025-04-27,Books,Biography,Social Media,56+,Other,1,28,0,28,U00011
+TX51533,2025-04-27,Beauty,Hair Dryer,Marketplace,18-25,Other,1,45.5,0.3,45.5,U00459
+TX52046,2025-04-27,Home,Bedsheet,Social Media,18-25,M,2,45,0,90,U00447
+TX52394,2025-04-27,Home,Rug,Mobile App,46-55,M,3,120,0,360,U00593
+TX50208,2025-04-28,Beauty,Lipstick,Mobile App,56+,F,1,19.8,0.1,19.8,U00842
+TX50695,2025-04-28,Home,Lamp,Mobile App,36-45,M,1,55,0,55,U00877
+TX51393,2025-04-28,Books,Fiction Novel,Mobile App,56+,F,1,16.2,0.1,16.2,U00721
+TX51399,2025-04-28,Home,Lamp,Social Media,46-55,M,1,38.5,0.3,38.5,U00640
+TX51833,2025-04-28,Clothing,Dress,Mobile App,56+,M,1,52.5,0.3,52.5,U00294
+TX51959,2025-04-28,Clothing,Sneakers,Web,46-55,Other,1,95,0,95,U00894
+TX51968,2025-04-28,Electronics,Smart Watch,Social Media,56+,F,2,199,0,398,U00009
+TX52478,2025-04-28,Beauty,Face Mask,Mobile App,36-45,M,3,18,0,54,U00338
+TX50346,2025-04-29,Clothing,T-Shirt,Mobile App,46-55,M,1,25.2,0.1,25.2,U00376
+TX50546,2025-04-29,Clothing,Dress,Social Media,46-55,M,1,75,0,75,U00896
+TX50955,2025-04-29,Electronics,Phone Case,Web,36-45,Other,1,25,0,25,U00432
+TX51638,2025-04-29,Books,Self-Help,Marketplace,46-55,F,1,15.4,0.3,15.4,U00236
+TX52368,2025-04-29,Clothing,T-Shirt,Mobile App,46-55,F,2,28,0,56,U00232
+TX50323,2025-04-30,Beauty,Face Mask,Marketplace,36-45,F,1,16.2,0.1,16.2,U00893
+TX50704,2025-04-30,Beauty,Face Mask,Marketplace,26-35,Other,1,14.4,0.2,14.4,U00221
+TX51291,2025-04-30,Home,Rug,Social Media,46-55,M,1,108.0,0.1,108.0,U00280
+TX51416,2025-04-30,Beauty,Face Mask,Web,36-45,F,1,14.4,0.2,14.4,U00667
+TX51701,2025-04-30,Electronics,Bluetooth Speaker,Mobile App,26-35,F,1,79,0,79,U00348
+TX51783,2025-04-30,Electronics,Bluetooth Speaker,Social Media,18-25,M,1,79,0,79,U00808
+TX51951,2025-04-30,Electronics,Charger,Marketplace,26-35,Other,3,35,0,105,U00171
+TX52253,2025-04-30,Clothing,T-Shirt,Mobile App,18-25,F,1,22.4,0.2,22.4,U00294
+TX52462,2025-04-30,Clothing,Jeans,Marketplace,18-25,Other,1,52.0,0.2,52.0,U00891
+TX50428,2025-05-01,Clothing,Sneakers,Mobile App,56+,Other,1,95,0,95,U00193
+TX50995,2025-05-01,Beauty,Skincare Set,Mobile App,18-25,M,1,71.2,0.2,71.2,U00027
+TX51576,2025-05-01,Books,Cookbook,Web,18-25,Other,1,22.5,0.1,22.5,U00630
+TX51603,2025-05-01,Home,Rug,Marketplace,36-45,F,1,120,0,120,U00404
+TX51914,2025-05-01,Beauty,Hair Dryer,Web,56+,M,1,58.5,0.1,58.5,U00470
+TX52398,2025-05-01,Electronics,Bluetooth Speaker,Social Media,46-55,F,1,79,0,79,U00246
+TX50140,2025-05-02,Books,Fiction Novel,Marketplace,26-35,F,2,18,0,36,U00155
+TX50148,2025-05-02,Electronics,Phone Case,Social Media,36-45,M,1,25,0,25,U00140
+TX50566,2025-05-02,Home,Curtain,Web,36-45,M,1,65,0,65,U00827
+TX50991,2025-05-02,Clothing,Dress,Web,56+,M,2,75,0,150,U00298
+TX51846,2025-05-02,Books,Tech Manual,Marketplace,18-25,F,3,40.5,0.1,121.5,U00839
+TX52107,2025-05-02,Home,Bedsheet,Marketplace,36-45,Other,1,36.0,0.2,36.0,U00309
+TX52219,2025-05-02,Electronics,Charger,Web,26-35,Other,1,35,0,35,U00842
+TX52380,2025-05-02,Books,Tech Manual,Social Media,36-45,M,1,36.0,0.2,36.0,U00117
+TX52465,2025-05-02,Home,Lamp,Mobile App,18-25,F,1,49.5,0.1,49.5,U00536
+TX50029,2025-05-03,Home,Bedsheet,Marketplace,56+,Other,1,45,0,45,U00163
+TX50248,2025-05-03,Electronics,Charger,Mobile App,46-55,Other,2,35,0,70,U00106
+TX50330,2025-05-03,Clothing,Dress,Mobile App,18-25,F,1,75,0,75,U00476
+TX50919,2025-05-03,Beauty,Perfume,Social Media,26-35,F,1,99.0,0.1,99.0,U00343
+TX51131,2025-05-03,Books,Tech Manual,Web,56+,Other,3,36.0,0.2,108.0,U00397
+TX51169,2025-05-03,Electronics,Charger,Web,36-45,M,2,31.5,0.1,63.0,U00226
+TX51277,2025-05-03,Beauty,Hair Dryer,Marketplace,18-25,M,1,65,0,65,U00823
+TX51447,2025-05-03,Electronics,Smart Watch,Web,56+,Other,2,179.1,0.1,358.2,U00229
+TX51654,2025-05-03,Books,Fiction Novel,Mobile App,36-45,Other,2,18,0,36,U00731
+TX51972,2025-05-03,Beauty,Face Mask,Web,26-35,F,1,16.2,0.1,16.2,U00100
+TX52076,2025-05-03,Beauty,Lipstick,Mobile App,26-35,F,3,22,0,66,U00794
+TX52470,2025-05-03,Clothing,Jeans,Web,46-55,Other,1,65,0,65,U00538
+TX52487,2025-05-03,Electronics,Charger,Web,36-45,Other,1,31.5,0.1,31.5,U00307
+TX50121,2025-05-04,Home,Curtain,Social Media,26-35,Other,1,65,0,65,U00592
+TX50165,2025-05-04,Clothing,Jeans,Mobile App,26-35,Other,1,65,0,65,U00159
+TX50979,2025-05-04,Clothing,Sneakers,Web,18-25,M,1,95,0,95,U00837
+TX51425,2025-05-04,Home,Bedsheet,Web,18-25,Other,3,40.5,0.1,121.5,U00421
+TX51877,2025-05-04,Electronics,Smart Watch,Marketplace,46-55,Other,2,159.2,0.2,318.4,U00019
+TX51967,2025-05-04,Home,Pillow,Marketplace,56+,Other,1,31.5,0.1,31.5,U00783
+TX52457,2025-05-04,Electronics,Headphones,Marketplace,36-45,F,1,89,0,89,U00629
+TX50507,2025-05-05,Beauty,Perfume,Mobile App,36-45,F,1,99.0,0.1,99.0,U00570
+TX50524,2025-05-05,Clothing,Dress,Mobile App,26-35,Other,2,75,0,150,U00169
+TX50710,2025-05-05,Books,Biography,Mobile App,46-55,M,1,28,0,28,U00181
+TX50873,2025-05-05,Clothing,Hoodie,Mobile App,26-35,F,2,55,0,110,U00064
+TX51401,2025-05-05,Beauty,Hair Dryer,Web,46-55,M,2,65,0,130,U00280
+TX51582,2025-05-05,Beauty,Skincare Set,Marketplace,18-25,Other,1,89,0,89,U00043
+TX51676,2025-05-05,Books,Fiction Novel,Web,26-35,Other,1,18,0,18,U00674
+TX51920,2025-05-05,Books,Biography,Social Media,56+,Other,1,22.4,0.2,22.4,U00104
+TX50161,2025-05-06,Electronics,Headphones,Marketplace,18-25,F,1,62.3,0.3,62.3,U00006
+TX50322,2025-05-06,Beauty,Hair Dryer,Marketplace,26-35,F,1,65,0,65,U00792
+TX50553,2025-05-06,Books,Biography,Marketplace,46-55,M,1,28,0,28,U00597
+TX50777,2025-05-06,Home,Lamp,Mobile App,56+,Other,1,44.0,0.2,44.0,U00244
+TX50906,2025-05-06,Books,Self-Help,Marketplace,18-25,M,1,22,0,22,U00292
+TX51265,2025-05-06,Clothing,Hoodie,Social Media,46-55,Other,1,55,0,55,U00509
+TX51995,2025-05-06,Beauty,Hair Dryer,Social Media,46-55,Other,2,58.5,0.1,117.0,U00499
+TX50071,2025-05-07,Electronics,Charger,Marketplace,18-25,F,1,35,0,35,U00807
+TX50074,2025-05-07,Clothing,Jeans,Mobile App,46-55,Other,2,65,0,130,U00357
+TX50282,2025-05-07,Electronics,Headphones,Web,36-45,F,1,80.1,0.1,80.1,U00604
+TX50298,2025-05-07,Home,Bedsheet,Mobile App,46-55,M,1,40.5,0.1,40.5,U00177
+TX50785,2025-05-07,Home,Rug,Social Media,26-35,Other,1,108.0,0.1,108.0,U00423
+TX50949,2025-05-07,Books,Cookbook,Marketplace,36-45,M,2,25,0,50,U00249
+TX51076,2025-05-07,Books,Cookbook,Social Media,36-45,F,1,22.5,0.1,22.5,U00331
+TX51140,2025-05-07,Books,Fiction Novel,Social Media,46-55,F,1,18,0,18,U00324
+TX51869,2025-05-07,Clothing,Hoodie,Mobile App,18-25,Other,1,55,0,55,U00301
+TX52263,2025-05-07,Home,Curtain,Web,56+,F,1,45.5,0.3,45.5,U00050
+TX52353,2025-05-07,Books,Fiction Novel,Web,46-55,M,1,14.4,0.2,14.4,U00676
+TX50132,2025-05-08,Electronics,Smart Watch,Social Media,36-45,Other,1,179.1,0.1,179.1,U00472
+TX50334,2025-05-08,Home,Bedsheet,Social Media,26-35,Other,1,45,0,45,U00198
+TX50617,2025-05-08,Beauty,Lipstick,Marketplace,36-45,Other,1,22,0,22,U00864
+TX51348,2025-05-08,Clothing,Dress,Social Media,46-55,M,1,60.0,0.2,60.0,U00872
+TX51413,2025-05-08,Books,Tech Manual,Social Media,46-55,Other,1,45,0,45,U00772
+TX51558,2025-05-08,Home,Bedsheet,Social Media,46-55,F,2,45,0,90,U00304
+TX51639,2025-05-08,Home,Lamp,Mobile App,26-35,F,1,55,0,55,U00558
+TX51757,2025-05-08,Electronics,Smart Watch,Marketplace,56+,Other,1,179.1,0.1,179.1,U00212
+TX52047,2025-05-08,Home,Lamp,Mobile App,36-45,M,1,55,0,55,U00133
+TX52049,2025-05-08,Clothing,Jeans,Mobile App,56+,F,1,52.0,0.2,52.0,U00817
+TX52245,2025-05-08,Books,Cookbook,Marketplace,18-25,F,1,22.5,0.1,22.5,U00747
+TX50020,2025-05-09,Books,Fiction Novel,Web,56+,M,1,18,0,18,U00611
+TX50931,2025-05-09,Home,Curtain,Marketplace,46-55,Other,1,52.0,0.2,52.0,U00823
+TX50972,2025-05-09,Books,Tech Manual,Social Media,36-45,F,1,40.5,0.1,40.5,U00895
+TX51046,2025-05-09,Beauty,Perfume,Social Media,46-55,F,1,88.0,0.2,88.0,U00058
+TX51570,2025-05-09,Electronics,Charger,Marketplace,36-45,Other,1,35,0,35,U00511
+TX51674,2025-05-09,Beauty,Perfume,Social Media,56+,M,1,88.0,0.2,88.0,U00523
+TX50728,2025-05-10,Electronics,Headphones,Mobile App,36-45,F,1,89,0,89,U00630
+TX50856,2025-05-10,Electronics,Charger,Mobile App,36-45,Other,1,35,0,35,U00027
+TX51045,2025-05-10,Books,Tech Manual,Mobile App,26-35,M,2,40.5,0.1,81.0,U00739
+TX51307,2025-05-10,Electronics,Phone Case,Mobile App,26-35,M,1,22.5,0.1,22.5,U00873
+TX52089,2025-05-10,Electronics,Bluetooth Speaker,Social Media,36-45,Other,1,79,0,79,U00323
+TX52114,2025-05-10,Books,Fiction Novel,Marketplace,36-45,F,2,16.2,0.1,32.4,U00606
+TX52447,2025-05-10,Beauty,Perfume,Marketplace,18-25,M,1,110,0,110,U00198
+TX50225,2025-05-11,Electronics,Charger,Social Media,46-55,F,2,31.5,0.1,63.0,U00612
+TX51183,2025-05-11,Beauty,Hair Dryer,Mobile App,18-25,F,3,65,0,195,U00807
+TX51634,2025-05-11,Clothing,Sneakers,Social Media,46-55,M,1,76.0,0.2,76.0,U00108
+TX51925,2025-05-11,Books,Fiction Novel,Marketplace,18-25,Other,1,18,0,18,U00713
+TX52209,2025-05-11,Home,Lamp,Social Media,26-35,F,1,55,0,55,U00274
+TX52399,2025-05-11,Electronics,Smart Watch,Mobile App,26-35,F,1,199,0,199,U00709
+TX50265,2025-05-12,Home,Curtain,Web,36-45,Other,1,58.5,0.1,58.5,U00675
+TX50270,2025-05-12,Beauty,Perfume,Mobile App,26-35,F,1,110,0,110,U00858
+TX50375,2025-05-12,Books,Tech Manual,Social Media,26-35,Other,1,45,0,45,U00363
+TX50485,2025-05-12,Clothing,T-Shirt,Mobile App,36-45,M,1,28,0,28,U00791
+TX51391,2025-05-12,Clothing,Hoodie,Web,26-35,Other,1,49.5,0.1,49.5,U00349
+TX51497,2025-05-12,Books,Tech Manual,Marketplace,26-35,M,3,45,0,135,U00571
+TX51736,2025-05-12,Books,Biography,Mobile App,56+,M,1,28,0,28,U00428
+TX51902,2025-05-12,Beauty,Skincare Set,Social Media,46-55,M,1,80.1,0.1,80.1,U00006
+TX50235,2025-05-13,Books,Self-Help,Social Media,36-45,Other,1,22,0,22,U00209
+TX50551,2025-05-13,Home,Lamp,Mobile App,36-45,F,1,55,0,55,U00689
+TX50669,2025-05-13,Electronics,Smart Watch,Mobile App,36-45,Other,1,199,0,199,U00663
+TX50916,2025-05-13,Beauty,Face Mask,Marketplace,56+,F,1,16.2,0.1,16.2,U00839
+TX51742,2025-05-13,Clothing,T-Shirt,Marketplace,18-25,Other,1,28,0,28,U00666
+TX51965,2025-05-13,Books,Fiction Novel,Marketplace,56+,Other,3,18,0,54,U00111
+TX52233,2025-05-13,Electronics,Smart Watch,Marketplace,56+,M,2,199,0,398,U00729
+TX52317,2025-05-13,Home,Pillow,Mobile App,46-55,Other,1,35,0,35,U00491
+TX50006,2025-05-14,Home,Rug,Marketplace,56+,M,1,120,0,120,U00198
+TX50007,2025-05-14,Books,Cookbook,Social Media,26-35,F,3,20.0,0.2,60.0,U00405
+TX51024,2025-05-14,Beauty,Lipstick,Marketplace,18-25,Other,3,22,0,66,U00620
+TX51273,2025-05-14,Beauty,Hair Dryer,Marketplace,36-45,F,1,52.0,0.2,52.0,U00711
+TX51468,2025-05-14,Electronics,Smart Watch,Mobile App,56+,F,1,199,0,199,U00823
+TX51765,2025-05-14,Clothing,Hoodie,Marketplace,18-25,Other,1,49.5,0.1,49.5,U00132
+TX51704,2025-05-15,Beauty,Skincare Set,Web,36-45,Other,1,80.1,0.1,80.1,U00426
+TX50013,2025-05-16,Electronics,Phone Case,Marketplace,36-45,F,1,25,0,25,U00158
+TX50625,2025-05-16,Books,Cookbook,Web,26-35,Other,1,25,0,25,U00011
+TX50818,2025-05-16,Clothing,Sneakers,Mobile App,56+,F,1,95,0,95,U00446
+TX52109,2025-05-16,Electronics,Charger,Mobile App,36-45,M,1,31.5,0.1,31.5,U00665
+TX50461,2025-05-17,Home,Pillow,Marketplace,26-35,Other,3,28.0,0.2,84.0,U00363
+TX50849,2025-05-17,Home,Lamp,Web,46-55,M,1,44.0,0.2,44.0,U00596
+TX51323,2025-05-17,Beauty,Face Mask,Web,36-45,M,1,18,0,18,U00078
+TX52054,2025-05-17,Electronics,Bluetooth Speaker,Social Media,36-45,M,1,63.2,0.2,63.2,U00758
+TX52207,2025-05-17,Electronics,Charger,Marketplace,46-55,Other,1,35,0,35,U00385
+TX50351,2025-05-18,Clothing,Dress,Web,36-45,F,1,75,0,75,U00418
+TX50587,2025-05-18,Home,Lamp,Web,56+,Other,1,55,0,55,U00871
+TX50831,2025-05-18,Beauty,Skincare Set,Mobile App,46-55,F,1,80.1,0.1,80.1,U00227
+TX50983,2025-05-18,Books,Biography,Social Media,56+,M,1,22.4,0.2,22.4,U00090
+TX51005,2025-05-18,Home,Rug,Marketplace,36-45,F,3,108.0,0.1,324.0,U00217
+TX51184,2025-05-18,Books,Cookbook,Mobile App,56+,M,1,20.0,0.2,20.0,U00886
+TX51382,2025-05-18,Clothing,Hoodie,Marketplace,36-45,M,1,44.0,0.2,44.0,U00427
+TX51627,2025-05-18,Books,Fiction Novel,Mobile App,36-45,M,1,12.6,0.3,12.6,U00409
+TX51645,2025-05-18,Clothing,T-Shirt,Mobile App,18-25,F,1,28,0,28,U00497
+TX51883,2025-05-18,Beauty,Skincare Set,Mobile App,26-35,Other,1,89,0,89,U00675
+TX52306,2025-05-18,Beauty,Skincare Set,Web,18-25,M,1,89,0,89,U00621
+TX52495,2025-05-18,Beauty,Lipstick,Web,36-45,F,3,19.8,0.1,59.4,U00279
+TX50471,2025-05-19,Books,Tech Manual,Marketplace,18-25,F,1,40.5,0.1,40.5,U00561
+TX50596,2025-05-19,Electronics,Charger,Mobile App,18-25,M,1,35,0,35,U00559
+TX51195,2025-05-19,Beauty,Perfume,Social Media,46-55,M,1,110,0,110,U00533
+TX51338,2025-05-19,Books,Cookbook,Web,36-45,Other,1,22.5,0.1,22.5,U00372
+TX51797,2025-05-19,Beauty,Perfume,Marketplace,18-25,Other,1,88.0,0.2,88.0,U00256
+TX50138,2025-05-20,Home,Bedsheet,Social Media,46-55,Other,2,31.5,0.3,63.0,U00222
+TX50237,2025-05-20,Books,Tech Manual,Web,26-35,M,1,40.5,0.1,40.5,U00009
+TX50362,2025-05-20,Beauty,Perfume,Mobile App,26-35,M,1,110,0,110,U00555
+TX50400,2025-05-20,Clothing,Hoodie,Mobile App,18-25,M,3,44.0,0.2,132.0,U00629
+TX51028,2025-05-20,Beauty,Skincare Set,Marketplace,56+,M,2,71.2,0.2,142.4,U00898
+TX51649,2025-05-20,Electronics,Bluetooth Speaker,Web,46-55,M,1,71.1,0.1,71.1,U00890
+TX51670,2025-05-20,Books,Cookbook,Web,26-35,F,1,25,0,25,U00847
+TX52048,2025-05-20,Books,Self-Help,Social Media,26-35,F,1,19.8,0.1,19.8,U00803
+TX52205,2025-05-20,Clothing,Hoodie,Web,26-35,Other,3,44.0,0.2,132.0,U00691
+TX50272,2025-05-21,Home,Curtain,Web,36-45,M,1,65,0,65,U00808
+TX50705,2025-05-21,Beauty,Lipstick,Web,18-25,F,2,22,0,44,U00081
+TX50915,2025-05-21,Electronics,Bluetooth Speaker,Web,56+,M,1,71.1,0.1,71.1,U00421
+TX51369,2025-05-21,Beauty,Hair Dryer,Social Media,36-45,F,2,65,0,130,U00076
+TX50501,2025-05-22,Beauty,Hair Dryer,Web,56+,Other,1,65,0,65,U00136
+TX50688,2025-05-22,Clothing,Sneakers,Web,26-35,F,1,95,0,95,U00021
+TX51003,2025-05-22,Books,Tech Manual,Mobile App,26-35,M,1,36.0,0.2,36.0,U00344
+TX51156,2025-05-22,Clothing,Hoodie,Mobile App,36-45,F,2,55,0,110,U00775
+TX51402,2025-05-22,Books,Fiction Novel,Mobile App,26-35,Other,3,12.6,0.3,37.8,U00117
+TX51788,2025-05-22,Beauty,Skincare Set,Mobile App,36-45,M,2,89,0,178,U00083
+TX52041,2025-05-22,Books,Tech Manual,Web,36-45,M,1,40.5,0.1,40.5,U00721
+TX52497,2025-05-22,Home,Curtain,Social Media,36-45,Other,1,52.0,0.2,52.0,U00469
+TX50215,2025-05-23,Clothing,Jeans,Mobile App,36-45,M,2,65,0,130,U00353
+TX50515,2025-05-23,Books,Tech Manual,Social Media,18-25,M,2,45,0,90,U00663
+TX50588,2025-05-23,Home,Bedsheet,Mobile App,56+,F,1,36.0,0.2,36.0,U00704
+TX50968,2025-05-23,Books,Self-Help,Marketplace,56+,Other,1,22,0,22,U00380
+TX51517,2025-05-23,Electronics,Bluetooth Speaker,Web,18-25,Other,1,79,0,79,U00061
+TX51532,2025-05-23,Home,Rug,Web,18-25,F,1,120,0,120,U00405
+TX51860,2025-05-23,Electronics,Charger,Marketplace,18-25,Other,1,35,0,35,U00370
+TX52040,2025-05-23,Electronics,Phone Case,Web,46-55,F,1,25,0,25,U00187
+TX50398,2025-05-24,Electronics,Headphones,Web,46-55,F,2,80.1,0.1,160.2,U00437
+TX50813,2025-05-24,Beauty,Skincare Set,Mobile App,56+,Other,1,89,0,89,U00749
+TX50929,2025-05-24,Books,Cookbook,Web,18-25,F,1,20.0,0.2,20.0,U00861
+TX51037,2025-05-24,Home,Pillow,Mobile App,36-45,Other,1,28.0,0.2,28.0,U00360
+TX51111,2025-05-24,Home,Lamp,Web,56+,Other,1,55,0,55,U00046
+TX52092,2025-05-24,Electronics,Phone Case,Web,46-55,Other,1,25,0,25,U00426
+TX50209,2025-05-25,Home,Curtain,Web,56+,F,1,65,0,65,U00160
+TX50572,2025-05-25,Books,Cookbook,Web,46-55,Other,3,25,0,75,U00160
+TX51936,2025-05-25,Home,Pillow,Mobile App,36-45,Other,3,31.5,0.1,94.5,U00732
+TX50447,2025-05-26,Books,Tech Manual,Social Media,18-25,M,1,45,0,45,U00035
+TX50766,2025-05-26,Home,Lamp,Web,46-55,Other,3,55,0,165,U00028
+TX50897,2025-05-26,Electronics,Charger,Social Media,46-55,F,1,35,0,35,U00376
+TX50977,2025-05-26,Clothing,Dress,Mobile App,36-45,Other,1,67.5,0.1,67.5,U00856
+TX52210,2025-05-26,Clothing,Sneakers,Social Media,26-35,M,3,76.0,0.2,228.0,U00778
+TX52377,2025-05-26,Home,Curtain,Social Media,18-25,M,1,65,0,65,U00283
+TX50232,2025-05-27,Home,Lamp,Social Media,46-55,Other,1,44.0,0.2,44.0,U00456
+TX50580,2025-05-27,Electronics,Headphones,Mobile App,36-45,Other,2,80.1,0.1,160.2,U00448
+TX52079,2025-05-27,Electronics,Bluetooth Speaker,Social Media,56+,M,1,79,0,79,U00783
+TX50449,2025-05-28,Beauty,Hair Dryer,Marketplace,56+,F,2,58.5,0.1,117.0,U00645
+TX50488,2025-05-28,Electronics,Smart Watch,Social Media,36-45,M,3,199,0,597,U00828
+TX50685,2025-05-28,Electronics,Charger,Marketplace,56+,F,1,35,0,35,U00637
+TX51075,2025-05-28,Home,Lamp,Mobile App,18-25,M,1,44.0,0.2,44.0,U00502
+TX51224,2025-05-28,Home,Bedsheet,Mobile App,46-55,M,1,45,0,45,U00529
+TX52299,2025-05-28,Clothing,Hoodie,Social Media,18-25,Other,1,55,0,55,U00569
+TX50350,2025-05-29,Clothing,Sneakers,Marketplace,26-35,F,1,76.0,0.2,76.0,U00040
+TX50498,2025-05-29,Beauty,Skincare Set,Marketplace,18-25,Other,2,89,0,178,U00760
+TX51186,2025-05-29,Clothing,Dress,Marketplace,36-45,Other,1,60.0,0.2,60.0,U00601
+TX51332,2025-05-29,Home,Lamp,Web,18-25,Other,1,49.5,0.1,49.5,U00840
+TX51419,2025-05-29,Beauty,Lipstick,Web,46-55,M,1,17.6,0.2,17.6,U00384
+TX51554,2025-05-29,Home,Rug,Mobile App,26-35,Other,1,108.0,0.1,108.0,U00225
+TX50675,2025-05-30,Electronics,Charger,Marketplace,18-25,M,1,35,0,35,U00504
+TX50805,2025-05-30,Books,Biography,Social Media,46-55,F,1,28,0,28,U00106
+TX50863,2025-05-30,Home,Lamp,Web,26-35,F,1,49.5,0.1,49.5,U00042
+TX51029,2025-05-30,Electronics,Phone Case,Marketplace,36-45,M,2,25,0,50,U00628
+TX51177,2025-05-30,Clothing,T-Shirt,Social Media,56+,M,1,28,0,28,U00223
+TX51384,2025-05-30,Clothing,Jeans,Web,46-55,F,1,65,0,65,U00769
+TX51414,2025-05-30,Clothing,Dress,Mobile App,56+,Other,1,67.5,0.1,67.5,U00106
+TX51901,2025-05-30,Home,Lamp,Marketplace,56+,M,1,49.5,0.1,49.5,U00338
+TX52115,2025-05-30,Books,Fiction Novel,Social Media,46-55,Other,1,12.6,0.3,12.6,U00170
+TX52144,2025-05-30,Books,Fiction Novel,Social Media,46-55,M,2,18,0,36,U00662
+TX50173,2025-05-31,Home,Pillow,Mobile App,56+,F,1,31.5,0.1,31.5,U00672
+TX50251,2025-05-31,Books,Cookbook,Web,46-55,F,1,25,0,25,U00737
+TX50285,2025-05-31,Clothing,T-Shirt,Web,56+,F,1,28,0,28,U00539
+TX50520,2025-05-31,Electronics,Phone Case,Web,36-45,F,1,25,0,25,U00316
+TX50714,2025-05-31,Electronics,Bluetooth Speaker,Social Media,56+,Other,1,71.1,0.1,71.1,U00599
+TX50858,2025-05-31,Books,Self-Help,Mobile App,46-55,Other,1,22,0,22,U00602
+TX51043,2025-05-31,Electronics,Headphones,Mobile App,18-25,Other,3,71.2,0.2,213.6,U00469
+TX51299,2025-05-31,Electronics,Smart Watch,Marketplace,56+,M,1,199,0,199,U00508
+TX51633,2025-05-31,Clothing,Hoodie,Marketplace,46-55,F,3,49.5,0.1,148.5,U00198
+TX51770,2025-05-31,Clothing,Jeans,Social Media,56+,M,2,58.5,0.1,117.0,U00093
+TX52003,2025-05-31,Beauty,Skincare Set,Social Media,56+,M,1,89,0,89,U00556
+TX52036,2025-05-31,Electronics,Headphones,Marketplace,18-25,M,1,89,0,89,U00523
+TX52376,2025-05-31,Books,Cookbook,Marketplace,46-55,F,3,22.5,0.1,67.5,U00231

@@ -184,7 +184,89 @@ async def upload_files(session_id: str, files: list[UploadFile] = File(...)):
     if results and not getattr(s, "currency", None):
         s.currency = detect_default_currency(results[0]["original_filename"])
 
+    # User uploaded manually -> no longer in sample state
+    if results:
+        s.is_sample = False
+        s.sample_id = None
+
     return {"tables": results, "errors": errors, "suggested_currency": getattr(s, "currency", "USD")}
+
+
+# ============================================================
+# Sample data (one-click try for new users)
+# ============================================================
+SAMPLES_DIR = os.path.join(os.path.dirname(__file__), "samples")
+
+SAMPLE_REGISTRY = {
+    "sales": {
+        "filename": "sample_sales.csv",
+        "label_en": "Sales (mixed regions)",
+        "label_zh": "Sample dataset 1",
+        "rows": 5455, "cols": 13,
+        "currency": "USD",
+    },
+    "coffee": {
+        "filename": "coffee_shop_sales.csv",
+        "label_en": "Coffee shop chain",
+        "label_zh": "Sample dataset 2",
+        "rows": 3000, "cols": 11,
+        "currency": "USD",
+    },
+    "ecommerce": {
+        "filename": "ecommerce_orders.csv",
+        "label_en": "E-commerce orders",
+        "label_zh": "Sample dataset 3",
+        "rows": 2500, "cols": 12,
+        "currency": "USD",
+    },
+    "restaurant": {
+        "filename": "restaurant_orders.csv",
+        "label_en": "Restaurant orders",
+        "label_zh": "Sample dataset 4",
+        "rows": 1200, "cols": 12,
+        "currency": "EUR",
+    },
+}
+
+
+@app.get("/api/samples")
+async def list_samples():
+    """List all available sample datasets (used by welcome page)."""
+    return {
+        "samples": [
+            {"id": k, **{key: v for key, v in info.items() if key != "filename"}}
+            for k, info in SAMPLE_REGISTRY.items()
+        ]
+    }
+
+
+@app.post("/api/session/{session_id}/load-sample/{sample_id}")
+async def load_sample(session_id: str, sample_id: str):
+    """Load a sample dataset into the session (like upload, but with preset CSV)."""
+    s = get_session_or_404(session_id)
+    info = SAMPLE_REGISTRY.get(sample_id)
+    if not info:
+        raise HTTPException(404, f"Unknown sample: {sample_id}")
+    path = os.path.join(SAMPLES_DIR, info["filename"])
+    if not os.path.exists(path):
+        raise HTTPException(500, f"Sample file missing on server: {info['filename']}")
+    with open(path, "rb") as f:
+        content = f.read()
+    try:
+        table = add_table_from_file(s, info["filename"], content)
+    except Exception as e:
+        raise HTTPException(500, f"Failed to load sample: {e}")
+    # Auto-set sample-recommended currency
+    if not getattr(s, "currency", None) or s.currency == "none":
+        s.currency = info.get("currency", "USD")
+    # Mark session as "in sample state" (frontend uses this to show banner)
+    s.is_sample = True
+    s.sample_id = sample_id
+    return {
+        "table": serialize_table(table),
+        "currency": s.currency,
+        "sample_id": sample_id,
+    }
 
 
 @app.get("/api/session/{session_id}/tables")
@@ -193,6 +275,8 @@ async def list_tables(session_id: str):
     return {
         "tables": [serialize_table(t) for t in s.tables.values()],
         "currency": getattr(s, "currency", "none"),
+        "is_sample": getattr(s, "is_sample", False),
+        "sample_id": getattr(s, "sample_id", None),
     }
 
 
