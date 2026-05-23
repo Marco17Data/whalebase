@@ -114,9 +114,16 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                       innerRadius={60}
                       outerRadius={90}
                       paddingAngle={2}
+                      stroke="none"
+                      style={{ outline: 'none' }}
                     >
                       {data.pie.slices.map((_, i) => (
-                        <Cell key={i} fill={SLICE_COLORS[i % SLICE_COLORS.length]} />
+                        <Cell
+                          key={i}
+                          fill={SLICE_COLORS[i % SLICE_COLORS.length]}
+                          style={{ outline: 'none', cursor: 'default' }}
+                          tabIndex={-1}
+                        />
                       ))}
                     </Pie>
                   </PieChart>
