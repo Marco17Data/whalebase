@@ -200,22 +200,88 @@ def generate_overview(session: Session, lang: str = "en", table_name: str | None
 
     kpis = []
 
+    # Helper: compute sparkline + month-over-month % + completeness flag
+    def _month_metrics(agg_sql_expr: str) -> tuple[list[float], float | None, str | None]:
+        """Return (sparkline_last_12_months, change_pct, period_status).
+        period_status: 'partial' if current month is incomplete (>=5 days left),
+                       'complete' if current month finished,
+                       None if no date column or < 2 months data."""
+        if not groups["datetime"]:
+            return [], None, None
+        dc = groups["datetime"][0]
+        res = _safe_exec(session, (
+            f"SELECT DATE_TRUNC('month', \"{dc.name}\") AS m, {agg_sql_expr} AS v "
+            f'FROM "{tname}" GROUP BY m ORDER BY m DESC LIMIT 12'
+        ))
+        if not res or not res["rows"]:
+            return [], None, None
+        # Reverse to chronological order
+        points = [float(r[1]) if r[1] is not None else 0.0 for r in reversed(res["rows"])]
+
+        if len(points) < 2:
+            return points, None, "single"
+
+        # Check completeness of the last (most recent) month
+        max_date_res = _safe_exec(session, f'SELECT MAX("{dc.name}") AS d FROM "{tname}"')
+        is_partial = False
+        if max_date_res and max_date_res["rows"]:
+            md = max_date_res["rows"][0][0]
+            if md:
+                # Check if current month is incomplete (more than 5 days left in month)
+                days_left_res = _safe_exec(session, (
+                    "SELECT DATE_PART('day', LAST_DAY(CAST(? AS DATE))) - "
+                    "DATE_PART('day', CAST(? AS DATE)) AS days_left"
+                ).replace("?", f"'{str(md).split(' ')[0]}'"))
+                if days_left_res and days_left_res["rows"]:
+                    days_left = days_left_res["rows"][0][0]
+                    if days_left is not None and days_left >= 5:
+                        is_partial = True
+
+        pct = None
+        if not is_partial and points[-2] > 0:
+            pct = (points[-1] - points[-2]) / points[-2] * 100
+
+        status = "partial" if is_partial else "complete"
+        return points, pct, status
+
     if revenue_col:
         total_rev = _safe_exec(session, f'SELECT ROUND(SUM("{revenue_col.name}"), 2) AS total FROM "{tname}"')
         if total_rev and total_rev["rows"]:
-            kpis.append({"label": tr("kpi.total_revenue", lang), "value": total_rev["rows"][0][0],
-                         "format": "currency" if is_currency else "number"})
+            spark, change, status = _month_metrics(f'SUM("{revenue_col.name}")')
+            kpis.append({
+                "label": tr("kpi.total_revenue", lang),
+                "value": total_rev["rows"][0][0],
+                "format": "currency" if is_currency else "number",
+                "sparkline": spark,
+                "change_pct": change,
+                "period_status": status,
+            })
 
     # Whalebase is a sales analytics tool, so default this to Total Orders
     total_rows = _safe_exec(session, f'SELECT COUNT(*) AS n FROM "{tname}"')
     if total_rows and total_rows["rows"]:
-        kpis.append({"label": tr("kpi.total_orders", lang), "value": total_rows["rows"][0][0], "format": "number"})
+        spark, change, status = _month_metrics("COUNT(*)")
+        kpis.append({
+            "label": tr("kpi.total_orders", lang),
+            "value": total_rows["rows"][0][0],
+            "format": "number",
+            "sparkline": spark,
+            "change_pct": change,
+            "period_status": status,
+        })
 
     if revenue_col:
         avg_rev = _safe_exec(session, f'SELECT ROUND(AVG("{revenue_col.name}"), 2) AS avg FROM "{tname}"')
         if avg_rev and avg_rev["rows"]:
-            kpis.append({"label": tr("kpi.average_order", lang), "value": avg_rev["rows"][0][0],
-                         "format": "currency" if is_currency else "number"})
+            spark, change, status = _month_metrics(f'AVG("{revenue_col.name}")')
+            kpis.append({
+                "label": tr("kpi.average_order", lang),
+                "value": avg_rev["rows"][0][0],
+                "format": "currency" if is_currency else "number",
+                "sparkline": spark,
+                "change_pct": change,
+                "period_status": status,
+            })
 
     if revenue_col and groups["datetime"]:
         date_col = groups["datetime"][0]
