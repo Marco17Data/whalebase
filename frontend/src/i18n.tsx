@@ -52,7 +52,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.privacy.desc': 'Your data lives only in memory — never stored on our servers',
 
     'about.title': 'About Whalebase',
-    'about.desc': 'Whalebase helps you turn sales data into insights without writing SQL. Upload a CSV or Excel file, pick a template or click a preset question, and get charts and analysis instantly.',
+    'about.desc': 'Whalebase turns sales data into instant dashboards and insights. Upload a CSV or Excel file, pick a template or click a preset question, and get charts and analysis instantly.',
     'about.tech': 'Built with FastAPI, React, DuckDB, and Recharts',
 
     'data.title': 'Datasets',
@@ -67,7 +67,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.delete_confirm': 'Delete table {name}?',
 
     'welcome.title': 'Welcome to Whalebase',
-    'welcome.subtitle': 'Upload your sales data and explore insights — no SQL required.',
+    'welcome.subtitle': 'Upload your sales data. Get dashboards, insights, and answers in seconds.',
     'welcome.step1.title': 'Upload data',
     'welcome.step1.desc': 'Drop in a CSV, Excel, or JSON file. We auto-detect columns and types.',
     'welcome.step2.title': 'Pick a template',
@@ -175,7 +175,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.privacy.desc': '数据仅在内存,不写入任何服务器',
 
     'about.title': '关于 Whalebase',
-    'about.desc': 'Whalebase 帮你把销售数据变成洞察,无需写 SQL。上传 CSV 或 Excel,选模板或点预设问题,立即获得图表和分析。',
+    'about.desc': 'Whalebase 把销售数据瞬间变成仪表盘和洞察。上传 CSV 或 Excel,选模板或点预设问题,立即获得图表和分析。',
     'about.tech': '基于 FastAPI、React、DuckDB、Recharts 构建',
 
     'data.title': '数据集',
@@ -190,7 +190,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.delete_confirm': '删除表 {name}?',
 
     'welcome.title': '欢迎使用 Whalebase',
-    'welcome.subtitle': '上传销售数据,探索洞察 —— 不需要写 SQL',
+    'welcome.subtitle': '上传销售数据,几秒钟得到仪表盘、洞察和答案。',
     'welcome.step1.title': '上传数据',
     'welcome.step1.desc': '拖入 CSV / Excel / JSON,自动识别字段和类型',
     'welcome.step2.title': '选择模板',
@@ -298,7 +298,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.privacy.desc': 'Tus datos solo en memoria — nunca en nuestros servidores',
 
     'about.title': 'Acerca de Whalebase',
-    'about.desc': 'Whalebase convierte tus datos de ventas en insights sin escribir SQL. Sube un CSV o Excel, elige una plantilla o haz clic en una pregunta predefinida.',
+    'about.desc': 'Whalebase convierte tus datos de ventas en dashboards e insights instantáneos. Sube un CSV o Excel, elige una plantilla o haz clic en una pregunta predefinida.',
     'about.tech': 'Construido con FastAPI, React, DuckDB y Recharts',
 
     'data.title': 'Conjuntos de datos',
@@ -313,7 +313,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.delete_confirm': '¿Eliminar tabla {name}?',
 
     'welcome.title': 'Bienvenido a Whalebase',
-    'welcome.subtitle': 'Sube tus datos de ventas y explora insights — sin SQL.',
+    'welcome.subtitle': 'Sube tus datos de ventas. Obtén dashboards, insights y respuestas en segundos.',
     'welcome.step1.title': 'Subir datos',
     'welcome.step1.desc': 'Arrastra un archivo CSV, Excel o JSON. Detectamos columnas automáticamente.',
     'welcome.step2.title': 'Elegir plantilla',
@@ -420,7 +420,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.privacy.desc': 'データはメモリ内のみ — サーバーに保存しません',
 
     'about.title': 'Whalebase について',
-    'about.desc': 'Whalebase は SQL なしで販売データを洞察に変えるツールです。CSV/Excel をアップロードし、テンプレートまたはプリセット質問をクリックするだけ。',
+    'about.desc': 'Whalebase は販売データを瞬時にダッシュボードと洞察に変えるツールです。CSV/Excel をアップロードして、テンプレートやプリセット質問をクリックするだけ。',
     'about.tech': 'FastAPI, React, DuckDB, Recharts で構築',
 
     'data.title': 'データセット',
@@ -435,7 +435,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.delete_confirm': '{name} を削除?',
 
     'welcome.title': 'Whalebase へようこそ',
-    'welcome.subtitle': '販売データをアップロード — SQL 不要',
+    'welcome.subtitle': '販売データをアップロード。数秒でダッシュボード、洞察、回答を取得。',
     'welcome.step1.title': 'データアップロード',
     'welcome.step1.desc': 'CSV/Excel/JSON をドロップ。列と型を自動検出。',
     'welcome.step2.title': 'テンプレート選択',
@@ -542,7 +542,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.privacy.desc': '데이터는 메모리에만 — 서버에 저장되지 않음',
 
     'about.title': 'Whalebase 소개',
-    'about.desc': 'Whalebase 는 SQL 없이 판매 데이터를 인사이트로 변환합니다.',
+    'about.desc': 'Whalebase 는 판매 데이터를 즉각적인 대시보드와 인사이트로 변환합니다.',
     'about.tech': 'FastAPI, React, DuckDB, Recharts 로 제작',
 
     'data.title': '데이터셋',
@@ -557,7 +557,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.delete_confirm': '{name} 삭제?',
 
     'welcome.title': 'Whalebase 에 오신 것을 환영합니다',
-    'welcome.subtitle': '판매 데이터 업로드 — SQL 불필요',
+    'welcome.subtitle': '판매 데이터를 업로드하세요. 몇 초 만에 대시보드, 인사이트, 답변을 얻으세요.',
     'welcome.step1.title': '데이터 업로드',
     'welcome.step1.desc': 'CSV/Excel/JSON 드롭. 자동 인식.',
     'welcome.step2.title': '템플릿 선택',
@@ -664,7 +664,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.privacy.desc': 'Données uniquement en mémoire — jamais sur serveur',
 
     'about.title': 'À propos de Whalebase',
-    'about.desc': "Whalebase transforme vos données de ventes en insights sans SQL.",
+    'about.desc': "Whalebase transforme vos données de ventes en tableaux de bord et insights instantanés.",
     'about.tech': 'Construit avec FastAPI, React, DuckDB, Recharts',
 
     'data.title': 'Jeux de données',
@@ -679,7 +679,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.delete_confirm': 'Supprimer {name} ?',
 
     'welcome.title': 'Bienvenue sur Whalebase',
-    'welcome.subtitle': 'Téléchargez vos données — sans SQL',
+    'welcome.subtitle': 'Téléchargez vos données. Obtenez tableaux de bord, insights et réponses en quelques secondes.',
     'welcome.step1.title': 'Téléchargez',
     'welcome.step1.desc': 'Déposez un CSV/Excel/JSON',
     'welcome.step2.title': 'Choisissez un modèle',
@@ -786,7 +786,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.privacy.desc': 'Nur im Speicher — nie auf Server',
 
     'about.title': 'Über Whalebase',
-    'about.desc': 'Whalebase verwandelt Verkaufsdaten in Insights ohne SQL.',
+    'about.desc': 'Whalebase verwandelt Verkaufsdaten in sofortige Dashboards und Insights.',
     'about.tech': 'Mit FastAPI, React, DuckDB, Recharts',
 
     'data.title': 'Datensätze',
@@ -801,7 +801,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.delete_confirm': '{name} löschen?',
 
     'welcome.title': 'Willkommen bei Whalebase',
-    'welcome.subtitle': 'Daten hochladen — ohne SQL',
+    'welcome.subtitle': 'Daten hochladen. Erhalten Sie Dashboards, Insights und Antworten in Sekunden.',
     'welcome.step1.title': 'Daten hochladen',
     'welcome.step1.desc': 'CSV/Excel/JSON ablegen',
     'welcome.step2.title': 'Vorlage wählen',
@@ -908,7 +908,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.privacy.desc': 'Dados apenas na memória — nunca em servidor',
 
     'about.title': 'Sobre Whalebase',
-    'about.desc': 'Whalebase transforma dados de vendas em insights sem SQL.',
+    'about.desc': 'Whalebase transforma dados de vendas em dashboards e insights instantâneos.',
     'about.tech': 'Construído com FastAPI, React, DuckDB, Recharts',
 
     'data.title': 'Conjuntos de dados',
@@ -923,7 +923,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.delete_confirm': 'Excluir {name}?',
 
     'welcome.title': 'Bem-vindo ao Whalebase',
-    'welcome.subtitle': 'Envie seus dados — sem SQL',
+    'welcome.subtitle': 'Envie seus dados. Obtenha dashboards, insights e respostas em segundos.',
     'welcome.step1.title': 'Enviar dados',
     'welcome.step1.desc': 'Solte CSV/Excel/JSON',
     'welcome.step2.title': 'Escolher modelo',
@@ -1030,7 +1030,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.privacy.desc': 'Dati solo in memoria — mai sul server',
 
     'about.title': 'Info Whalebase',
-    'about.desc': "Whalebase trasforma i dati di vendita in insight senza SQL.",
+    'about.desc': "Whalebase trasforma i dati di vendita in dashboard e insight istantanei.",
     'about.tech': 'Costruito con FastAPI, React, DuckDB, Recharts',
 
     'data.title': 'Dataset',
@@ -1045,7 +1045,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.delete_confirm': 'Eliminare {name}?',
 
     'welcome.title': 'Benvenuto in Whalebase',
-    'welcome.subtitle': 'Carica dati — senza SQL',
+    'welcome.subtitle': 'Carica i dati. Ottieni dashboard, insight e risposte in pochi secondi.',
     'welcome.step1.title': 'Carica dati',
     'welcome.step1.desc': 'Trascina CSV/Excel/JSON',
     'welcome.step2.title': 'Scegli modello',
@@ -1152,7 +1152,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.privacy.desc': 'Данные только в памяти — не на сервере',
 
     'about.title': 'О Whalebase',
-    'about.desc': 'Whalebase превращает данные продаж в инсайты без SQL.',
+    'about.desc': 'Whalebase превращает данные продаж в мгновенные дашборды и инсайты.',
     'about.tech': 'Построен на FastAPI, React, DuckDB, Recharts',
 
     'data.title': 'Наборы данных',
@@ -1167,7 +1167,7 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.delete_confirm': 'Удалить {name}?',
 
     'welcome.title': 'Добро пожаловать в Whalebase',
-    'welcome.subtitle': 'Загрузите данные — без SQL',
+    'welcome.subtitle': 'Загрузите данные. Получайте дашборды, инсайты и ответы за секунды.',
     'welcome.step1.title': 'Загрузить данные',
     'welcome.step1.desc': 'CSV/Excel/JSON',
     'welcome.step2.title': 'Выбрать шаблон',

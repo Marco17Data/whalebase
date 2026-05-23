@@ -161,13 +161,19 @@ async def delete_session(session_id: str):
 @app.post("/api/session/{session_id}/upload")
 async def upload_files(session_id: str, files: list[UploadFile] = File(...)):
     s = get_session_or_404(session_id)
+    MAX_FILE_MB = 50
+    MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024
     results = []
     errors = []
     for f in files:
         try:
             content = await f.read()
-            if len(content) > 50 * 1024 * 1024:
-                errors.append({"filename": f.filename, "error": "File exceeds 50MB limit"})
+            if len(content) > MAX_FILE_BYTES:
+                size_mb = round(len(content) / (1024 * 1024), 1)
+                errors.append({
+                    "filename": f.filename,
+                    "error": f"File {f.filename} is {size_mb} MB; max allowed is {MAX_FILE_MB} MB. Please split or sample your data first."
+                })
                 continue
             table = add_table_from_file(s, f.filename or "data", content)
             results.append(serialize_table(table))

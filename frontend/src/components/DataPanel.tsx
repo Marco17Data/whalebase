@@ -23,6 +23,17 @@ export function DataPanel({ sessionId, tables, activeTable, onTablesChanged, onS
 
   const handleUpload = async (files: FileList | null) => {
     if (!files || files.length === 0) return;
+    // 前端先检查文件大小,避免上传后才报错
+    const MAX_MB = 50;
+    const oversized = Array.from(files).filter(f => f.size > MAX_MB * 1024 * 1024);
+    if (oversized.length > 0) {
+      const msgs = oversized.map(f =>
+        `${f.name} (${(f.size / 1024 / 1024).toFixed(1)} MB)`
+      ).join(', ');
+      setError(`File too large: ${msgs}. Max ${MAX_MB} MB per file. Tip: open in Excel, keep recent rows, save as a smaller CSV.`);
+      if (fileInputRef.current) fileInputRef.current.value = '';
+      return;
+    }
     setUploading(true);
     setError(null);
     try {
