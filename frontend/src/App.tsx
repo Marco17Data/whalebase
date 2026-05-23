@@ -6,6 +6,7 @@ import { DataPanel } from './components/DataPanel';
 import { DashboardView } from './components/DashboardView';
 import { PivotView } from './components/PivotView';
 import { WelcomeScreen } from './components/WelcomeScreen';
+import { SampleBanner } from './components/SampleBanner';
 import { QueryCard } from './components/QueryCard';
 import { HistoryPanel } from './components/HistoryPanel';
 import { SQLPlayground } from './components/SQLPlayground';
@@ -167,6 +168,28 @@ function App() {
         sqlOpen={sqlOpen}
         historyOpen={historyOpen}
       />
+
+      {isSample && (
+        <SampleBanner
+          sampleId={sampleId}
+          onSwitchSample={async (id) => {
+            if (!sessionId) return;
+            try {
+              for (const tb of tables) {
+                await api.deleteTable(sessionId, tb.name);
+              }
+              await api.loadSample(sessionId, id);
+              await refreshTables();
+            } catch (e) {
+              console.warn('Switch sample failed:', e);
+            }
+          }}
+          onUploadClick={() => {
+            const input = document.querySelector<HTMLInputElement>('input[type="file"]');
+            input?.click();
+          }}
+        />
+      )}
 
       <div className="flex flex-1 overflow-hidden">
         <DataPanel
