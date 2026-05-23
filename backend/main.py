@@ -425,26 +425,6 @@ async def get_auto_insights(session_id: str, lang: str = "en"):
     return {"insights": insights}
 
 
-@app.get("/api/session/{session_id}/auto-insights-debug")
-async def get_auto_insights_debug(session_id: str, lang: str = "en"):
-    """DEBUG ONLY: returns raw LLM output to diagnose parsing issues."""
-    from analytics import build_schema_prompt, _auto_insight_prompt
-    s = get_session_or_404(session_id)
-    if not s.tables:
-        return {"error": "no tables"}
-    try:
-        llm = get_llm_client()
-        schema = build_schema_prompt(s)
-        raw = await llm.chat(
-            system_prompt=_auto_insight_prompt(lang),
-            user_message=f"{schema}\n\nProvide 3-5 insights.",
-            json_mode=True,
-        )
-        return {"raw_llm_output": raw[:2000], "raw_length": len(raw)}
-    except LLMError as e:
-        return {"error": f"LLM call failed: {e}"}
-
-
 @app.get("/api/session/{session_id}/dashboard")
 async def get_dashboard(session_id: str, lang: str = "en", table: str | None = None):
     """预生成仪表盘 (无 LLM, 基于 schema)。"""
