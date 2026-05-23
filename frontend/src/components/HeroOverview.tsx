@@ -213,13 +213,13 @@ function KPICard({ kpi, currency }: { kpi: KPI; currency: string }) {
   }
 
   return (
-    <div className="bg-white rounded-xl border border-slate-200 p-4">
-      <div className="text-xs font-medium text-slate-500 uppercase tracking-wide">
+    <div className="bg-slate-800 rounded-xl border border-slate-700 p-4">
+      <div className="text-xs font-medium text-slate-400 uppercase tracking-wide">
         {kpi.label}
       </div>
-      <div className="text-2xl font-bold text-slate-800 mt-1">{displayValue}</div>
+      <div className="text-2xl font-bold text-white mt-1">{displayValue}</div>
       {kpi.sub !== undefined && (
-        <div className={`text-xs mt-1 flex items-center gap-1 ${isPositive ? 'text-emerald-600' : 'text-slate-500'}`}>
+        <div className={`text-xs mt-1 flex items-center gap-1 ${isPositive ? 'text-emerald-400' : 'text-slate-400'}`}>
           {isPositive ? <TrendingUp className="w-3 h-3" /> : <TrendingDown className="w-3 h-3" />}
           {formatNum(kpi.sub, kpi.format === 'currency' || (typeof kpi.sub === 'number'), currency)}
         </div>
