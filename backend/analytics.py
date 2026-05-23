@@ -178,16 +178,24 @@ async def suggest_questions(llm: LLMClient, session: Session, lang: str = "en") 
 # 4. Auto Insights
 # ============================================================
 def _auto_insight_prompt(lang: str) -> str:
+    from datetime import date
     lname = _lang_name(lang)
+    today = date.today().isoformat()
     return f"""You are a data analyst. The user just uploaded data and hasn't asked yet.
+
+CONTEXT:
+- Today's date is {today}.
+- Any date in the data that is on or before today is HISTORICAL, never "future" or "forecast".
+- Do not flag past dates as anomalies just because they appear recent.
 
 Task: Proactively analyze this data and find 3-5 most valuable insights.
 
 Strategy:
-- Don't repeat "the data has N rows"
-- Find: anomalies, significant trends, outstanding categories, imbalanced distributions, data quality issues
+- Don't repeat "the data has N rows" or basic schema info
+- Find: anomalies (real ones), significant trends, outstanding categories, imbalanced distributions, data quality issues
 - Each insight must reference specific fields and observations
 - 1-2 sentences each
+- Focus on actionable findings, not generic statements
 - Write IN {lname}
 
 You may reason from schema (sample values, ranges, distinct counts, null counts).
