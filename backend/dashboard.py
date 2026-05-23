@@ -167,3 +167,97 @@ def _safe_exec(session, sql):
         return execute_sql(session, sql, max_rows=200)
     except SQLExecutionError:
         return None
+
+
+
+def generate_overview(session: Session, lang: str = "en", table_name: str | None = None) -> dict:
+    """Hero overview: 4 KPIs + pie + trend (different from generate_dashboard)."""
+    lang = normalize_lang(lang)
+    if not session.tables:
+        return {"kpis": [], "pie": None, "trend": None}
+
+    if table_name and table_name in session.tables:
+        table = session.tables[table_name]
+    else:
+        table = next(iter(session.tables.values()))
+    tname = table.name
+    groups = _find_columns_by_type(table.columns)
+
+    revenue_keywords = ("revenue", "sales", "amount", "total", "value", "price",
+                        "营业额", "销售额", "总额", "金额")
+    revenue_col = None
+    for kw in revenue_keywords:
+        for col in groups["numeric"]:
+            if kw.lower() in col.name.lower():
+                revenue_col = col
+                break
+        if revenue_col:
+            break
+    if revenue_col is None and groups["numeric"]:
+        revenue_col = groups["numeric"][0]
+
+    is_currency = revenue_col and _is_currency_col(revenue_col)
+
+    kpis = []
+    total_rows = _safe_exec(session, f'SELECT COUNT(*) AS n FROM "{tname}"')
+    if total_rows and total_rows["rows"]:
+        kpis.append({"label": tr("kpi.total_records", lang), "value": total_rows["rows"][0][0], "format": "number"})
+
+    if revenue_col:
+        total_rev = _safe_exec(session, f'SELECT ROUND(SUM("{revenue_col.name}"), 2) AS total FROM "{tname}"')
+        if total_rev and total_rev["rows"]:
+            kpis.append({"label": tr("kpi.total_revenue", lang), "value": total_rev["rows"][0][0],
+                         "format": "currency" if is_currency else "number"})
+        avg_rev = _safe_exec(session, f'SELECT ROUND(AVG("{revenue_col.name}"), 2) AS avg FROM "{tname}"')
+        if avg_rev and avg_rev["rows"]:
+            kpis.append({"label": tr("kpi.average_order", lang), "value": avg_rev["rows"][0][0],
+                         "format": "currency" if is_currency else "number"})
+
+    if revenue_col and groups["datetime"]:
+        date_col = groups["datetime"][0]
+        peak = _safe_exec(session, (
+            f'SELECT "{date_col.name}", ROUND(SUM("{revenue_col.name}"), 2) AS day_total '
+            f'FROM "{tname}" GROUP BY "{date_col.name}" ORDER BY day_total DESC LIMIT 1'
+        ))
+        if peak and peak["rows"]:
+            d, v = peak["rows"][0]
+            date_str = str(d).split(" ")[0] if d else "-"
+            kpis.append({"label": tr("kpi.peak_day", lang), "value": date_str, "sub": v, "format": "date"})
+
+    pie = None
+    if revenue_col and groups["category"]:
+        cat_col = groups["category"][0]
+        pie_res = _safe_exec(session, (
+            f'SELECT "{cat_col.name}", ROUND(SUM("{revenue_col.name}"), 2) AS total '
+            f'FROM "{tname}" WHERE "{cat_col.name}" IS NOT NULL '
+            f'GROUP BY "{cat_col.name}" ORDER BY total DESC LIMIT 6'
+        ))
+        if pie_res and pie_res["rows"]:
+            total_sum = sum(row[1] for row in pie_res["rows"] if row[1])
+            pie = {
+                "title": tr("hero.pie_title", lang, dim=cat_col.name),
+                "dimension": cat_col.name,
+                "total": total_sum,
+                "is_currency": is_currency,
+                "slices": [{"label": str(row[0]), "value": row[1],
+                            "pct": (row[1] / total_sum * 100) if total_sum else 0}
+                           for row in pie_res["rows"]],
+            }
+
+    trend = None
+    if revenue_col and groups["datetime"]:
+        date_col = groups["datetime"][0]
+        trend_res = _safe_exec(session, (
+            f"SELECT DATE_TRUNC('month', \"{date_col.name}\") AS month, "
+            f'ROUND(SUM("{revenue_col.name}"), 2) AS total '
+            f'FROM "{tname}" GROUP BY month ORDER BY month'
+        ))
+        if trend_res and trend_res["rows"]:
+            trend = {
+                "title": tr("hero.trend_title", lang),
+                "is_currency": is_currency,
+                "points": [{"month": str(row[0]).split(" ")[0] if row[0] else "", "value": row[1]}
+                           for row in trend_res["rows"]],
+            }
+
+    return {"kpis": kpis, "pie": pie, "trend": trend}

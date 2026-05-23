@@ -433,6 +433,14 @@ async def get_dashboard(session_id: str, lang: str = "en", table: str | None = N
     return {"cards": cards}
 
 
+@app.get("/api/session/{session_id}/overview")
+async def get_overview(session_id: str, lang: str = "en", table: str | None = None):
+    """Hero overview: 4 KPIs + pie chart + monthly trend."""
+    from dashboard import generate_overview
+    s = get_session_or_404(session_id)
+    return generate_overview(s, lang=lang, table_name=table)
+
+
 @app.get("/api/templates")
 async def list_templates(lang: str = "en"):
     """列出所有可用的仪表盘模板。"""

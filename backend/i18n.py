@@ -122,6 +122,44 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
         "fr": "Tendance Mensuelle", "de": "Monatliche Entwicklung",
         "pt": "Tendência Mensal", "it": "Andamento Mensile", "ru": "Месячная динамика",
     },
+
+    # ---- Overview KPIs (hero view) ----
+    "kpi.total_records": {
+        "en": "Total Records", "zh": "总记录数", "es": "Total Registros",
+        "ja": "総レコード数", "ko": "총 레코드", "fr": "Total Enregistrements",
+        "de": "Datensätze Gesamt", "pt": "Total Registros", "it": "Record Totali",
+        "ru": "Всего записей",
+    },
+    "kpi.total_revenue": {
+        "en": "Total Revenue", "zh": "总收入", "es": "Ingresos Totales",
+        "ja": "総売上", "ko": "총 매출", "fr": "Revenu Total",
+        "de": "Gesamtumsatz", "pt": "Receita Total", "it": "Ricavi Totali",
+        "ru": "Общая выручка",
+    },
+    "kpi.average_order": {
+        "en": "Avg Order Value", "zh": "客单价", "es": "Valor Promedio",
+        "ja": "平均注文額", "ko": "객단가", "fr": "Panier Moyen",
+        "de": "Ø Bestellwert", "pt": "Ticket Médio", "it": "Valore Medio",
+        "ru": "Средний чек",
+    },
+    "kpi.peak_day": {
+        "en": "Peak Day", "zh": "最高单日", "es": "Mejor Día",
+        "ja": "最高日", "ko": "최고일", "fr": "Meilleur Jour",
+        "de": "Spitzentag", "pt": "Melhor Dia", "it": "Giorno Top",
+        "ru": "Пик дня",
+    },
+    "hero.pie_title": {
+        "en": "Revenue by {dim}", "zh": "{dim} 收入占比", "es": "Ingresos por {dim}",
+        "ja": "{dim} 別売上", "ko": "{dim}별 매출", "fr": "Revenu par {dim}",
+        "de": "Umsatz nach {dim}", "pt": "Receita por {dim}", "it": "Ricavi per {dim}",
+        "ru": "Выручка по {dim}",
+    },
+    "hero.trend_title": {
+        "en": "Monthly Revenue Trend", "zh": "月度收入趋势", "es": "Tendencia Mensual",
+        "ja": "月次収入推移", "ko": "월별 매출 추이", "fr": "Tendance Mensuelle",
+        "de": "Monatliche Umsatzentwicklung", "pt": "Tendência Mensal de Receita",
+        "it": "Andamento Mensile Ricavi", "ru": "Динамика выручки по месяцам",
+    },
     "card.top_by": {
         "en": "Top {col}", "zh": "{col} 排名", "es": "Top {col}",
         "ja": "{col} ランキング", "ko": "{col} 순위", "fr": "Top {col}",
