@@ -9,6 +9,9 @@ interface KPI {
   value: number | string;
   format: 'number' | 'currency' | 'date';
   sub?: number;
+  sparkline?: number[];
+  change_pct?: number | null;
+  period_status?: 'complete' | 'partial' | 'single' | null;
 }
 
 interface Slice {
@@ -202,7 +205,8 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
 }
 
 function KPICard({ kpi, currency }: { kpi: KPI; currency: string }) {
-  const isPositive = (kpi.sub ?? 0) > 0;
+  const { t } = useI18n();
+
   let displayValue: string;
   if (kpi.format === 'currency' || kpi.format === 'number') {
     displayValue = typeof kpi.value === 'number'
@@ -212,18 +216,67 @@ function KPICard({ kpi, currency }: { kpi: KPI; currency: string }) {
     displayValue = String(kpi.value);
   }
 
+  const hasChange = kpi.change_pct !== null && kpi.change_pct !== undefined;
+  const isPositive = (kpi.change_pct ?? 0) > 0;
+  const sparkline = kpi.sparkline ?? [];
+  const hasSparkline = sparkline.length >= 2;
+
+  let subInfo: string;
+  if (kpi.format === 'date') {
+    subInfo = kpi.sub !== undefined ? formatNum(kpi.sub, true, currency) : '';
+  } else if (kpi.period_status === 'partial') {
+    subInfo = t('kpi.partial_month');
+  } else if (kpi.period_status === 'single') {
+    subInfo = t('kpi.single_period');
+  } else if (kpi.period_status === 'complete' && hasSparkline) {
+    subInfo = t('kpi.last_12_months');
+  } else {
+    subInfo = t('kpi.all_data');
+  }
+
   return (
-    <div className="bg-slate-800 rounded-xl border border-slate-700 p-4">
-      <div className="text-xs font-medium text-slate-400 uppercase tracking-wide">
-        {kpi.label}
+    <div className="bg-white rounded-xl border border-slate-200 p-4 relative overflow-hidden">
+      <div className="flex items-start justify-between gap-2">
+        <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+          {kpi.label}
+        </div>
+        {hasChange && (
+          <div className={`text-[11px] font-semibold px-1.5 py-0.5 rounded flex items-center gap-0.5 ${
+            isPositive ? 'bg-emerald-50 text-emerald-700' : 'bg-rose-50 text-rose-700'
+          }`}>
+            {isPositive ? <TrendingUp className="w-3 h-3" /> : <TrendingDown className="w-3 h-3" />}
+            {isPositive ? '+' : ''}{kpi.change_pct!.toFixed(1)}%
+          </div>
+        )}
       </div>
-      <div className="text-2xl font-bold text-white mt-1">{displayValue}</div>
-      {kpi.sub !== undefined && (
-        <div className={`text-xs mt-1 flex items-center gap-1 ${isPositive ? 'text-emerald-400' : 'text-slate-400'}`}>
-          {isPositive ? <TrendingUp className="w-3 h-3" /> : <TrendingDown className="w-3 h-3" />}
-          {formatNum(kpi.sub, kpi.format === 'currency' || (typeof kpi.sub === 'number'), currency)}
+
+      <div className="text-2xl font-bold text-slate-800 mt-1.5 leading-tight">
+        {displayValue}
+      </div>
+
+      {hasSparkline && (
+        <div className="mt-2 -mx-1 h-8">
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={sparkline.map((v, i) => ({ i, v }))}>
+              <Line
+                type="monotone"
+                dataKey="v"
+                stroke={isPositive ? '#10b981' : '#64748b'}
+                strokeWidth={1.5}
+                dot={false}
+                isAnimationActive={false}
+              />
+            </LineChart>
+          </ResponsiveContainer>
         </div>
       )}
+
+      <div className={`text-[10px] mt-1.5 flex items-center gap-1 ${
+        kpi.period_status === 'partial' ? 'text-amber-600' : 'text-slate-400'
+      }`}>
+        {kpi.period_status === 'partial' && <span>⚠</span>}
+        {subInfo}
+      </div>
     </div>
   );
 }

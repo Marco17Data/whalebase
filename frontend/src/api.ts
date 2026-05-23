@@ -71,7 +71,15 @@ export const api = {
     const params = new URLSearchParams({ lang });
     if (table) params.set('table', table);
     return request<{
-      kpis: Array<{ label: string; value: number | string; format: 'number' | 'currency' | 'date'; sub?: number }>;
+      kpis: Array<{
+        label: string;
+        value: number | string;
+        format: 'number' | 'currency' | 'date';
+        sub?: number;
+        sparkline?: number[];
+        change_pct?: number | null;
+        period_status?: 'complete' | 'partial' | 'single' | null;
+      }>;
       pie: null | {
         title: string;
         dimension: string;
