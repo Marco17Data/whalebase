@@ -33,20 +33,33 @@ function App() {
   const [suggestedCurrency, setSuggestedCurrency] = useState<string>('USD');
   const [isSample, setIsSample] = useState<boolean>(false);
   const [sampleId, setSampleId] = useState<string | null>(null);
+  const [initialLoading, setInitialLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    // Create session, load default sample, then expose sessionId to UI
-    // so the user sees a real dashboard immediately (no empty welcome page).
+    // Create session, load default sample, fetch tables, THEN dismiss loading
+    // so we never flash an empty welcome page.
     (async () => {
       const r = await api.createSession();
       try {
         await api.loadSample(r.session_id, 'sales');
       } catch (e) {
-        // If sample loading fails (e.g. cold backend), session still works
         console.warn('Sample auto-load failed:', e);
       }
-      // Set sessionId LAST so the refresh-tables effect runs after sample is loaded
       setSessionId(r.session_id);
+      try {
+        const info = await api.listTables(r.session_id);
+        setTables(info.tables);
+        setCurrencyState(info.currency || 'none');
+        setIsSample(info.is_sample || false);
+        setSampleId(info.sample_id || null);
+        if (info.tables.length > 0) {
+          setActiveTable(info.tables[0].name);
+          setView('dashboard');
+        }
+      } catch (e) {
+        console.warn('Initial tables fetch failed:', e);
+      }
+      setInitialLoading(false);
     })();
   }, []);
 
@@ -80,14 +93,6 @@ function App() {
       setQueries([]);
     }
   }, [sessionId, view]);
-
-  // Once session is created, refresh tables -- sample data will appear here
-  useEffect(() => {
-    if (sessionId) {
-      refreshTables();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sessionId]);
 
   // 上传成功回调:立即设 USD 为默认货币(这样数字立刻有 $ 符号),
   // 然后弹货币对话框给用户修改成自己想要的(如 CNY/EUR)
@@ -130,10 +135,13 @@ function App() {
   const totalRows = tables.reduce((s, tb) => s + tb.row_count, 0);
   const hasData = tables.length > 0;
 
-  if (!sessionId) {
+  if (!sessionId || initialLoading) {
     return (
-      <div className="h-screen flex items-center justify-center text-sm text-slate-400">
-        {t('common.loading')}
+      <div className="h-screen flex items-center justify-center bg-slate-50">
+        <div className="flex flex-col items-center gap-3 text-slate-400">
+          <div className="w-10 h-10 border-2 border-slate-300 border-t-slate-600 rounded-full animate-spin" />
+          <div className="text-sm">{t('common.loading')}</div>
+        </div>
       </div>
     );
   }
