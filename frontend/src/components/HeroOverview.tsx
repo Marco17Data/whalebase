@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { PieChart, Pie, Cell, ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
+import { PieChartECharts, PIE_COLORS } from './PieChartECharts';
 import { Sparkles, TrendingUp, TrendingDown } from 'lucide-react';
 import { api } from '../api';
 import { useI18n } from '../i18n';
@@ -127,55 +128,20 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
               {data.pie.title}
             </div>
             <div className="flex items-center gap-4">
-              <div className="relative" style={{ width: 280, height: 280 }}>
-                <ResponsiveContainer width="100%" height="100%">
-                  <PieChart>
-                    <Pie
-                      data={data.pie.slices}
-                      dataKey="value"
-                      nameKey="label"
-                      innerRadius={80}
-                      outerRadius={130}
-                      paddingAngle={2}
-                      stroke="none"
-                      style={{ outline: 'none' }}
-                    >
-                      {data.pie.slices.map((_, i) => (
-                        <Cell
-                          key={i}
-                          fill={SLICE_COLORS[i % SLICE_COLORS.length]}
-                          style={{
-                            outline: 'none',
-                            cursor: 'pointer',
-                            transition: 'filter 0.2s ease',
-                            filter: 'drop-shadow(0 0 0 transparent)',
-                          }}
-                          onMouseEnter={(e: React.MouseEvent<SVGElement>) => {
-                            (e.target as SVGElement).style.filter =
-                              `drop-shadow(0 0 6px ${SLICE_COLORS[i % SLICE_COLORS.length]}99)`;
-                          }}
-                          onMouseLeave={(e: React.MouseEvent<SVGElement>) => {
-                            (e.target as SVGElement).style.filter = 'drop-shadow(0 0 0 transparent)';
-                          }}
-                          tabIndex={-1}
-                        />
-                      ))}
-                    </Pie>
-                  </PieChart>
-                </ResponsiveContainer>
-                <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-                  <div className="text-[11px] text-slate-400 uppercase tracking-wide">Total</div>
-                  <div className="text-2xl font-bold text-slate-800">
-                    {formatNum(data.pie.total, data.pie.is_currency, currency)}
-                  </div>
-                </div>
-              </div>
+              <PieChartECharts
+                slices={data.pie.slices}
+                total={data.pie.total}
+                totalLabel="TOTAL"
+                totalValueText={formatNum(data.pie.total, data.pie.is_currency, currency)}
+                width={280}
+                height={280}
+              />
               <div className="flex-1 space-y-1.5 text-sm">
                 {data.pie.slices.map((s, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <div
                       className="w-3 h-3 rounded-sm flex-shrink-0"
-                      style={{ background: SLICE_COLORS[i % SLICE_COLORS.length] }}
+                      style={{ background: PIE_COLORS[i % PIE_COLORS.length] }}
                     />
                     <span className="text-slate-700 flex-1 truncate">{s.label}</span>
                     <span className="text-slate-500 text-xs font-medium">{s.pct.toFixed(1)}%</span>
