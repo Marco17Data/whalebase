@@ -291,7 +291,14 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                   tickFormatter={(v) => formatNum(v, data.trend!.is_currency, currency)}
                 />
                 <Tooltip
-                  formatter={(v: number) => formatNum(v, data.trend!.is_currency, currency)}
+                  formatter={(v: number) => [formatNum(v, data.trend!.is_currency, currency), t('trend.value_label')]}
+                  labelFormatter={(label: string) => {
+                    // "2025-08-01" -> "2025-08"
+                    if (typeof label === 'string' && label.length >= 7) {
+                      return label.slice(0, 7);
+                    }
+                    return label;
+                  }}
                   contentStyle={{ fontSize: 12, borderRadius: 8 }}
                 />
                 <Line
