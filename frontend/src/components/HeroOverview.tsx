@@ -210,7 +210,7 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
           </div>
         )}
 
-        <div className="lg:col-span-2 bg-blue-900 text-white rounded-xl p-5" style={{ boxShadow: '0 0 24px rgba(30, 58, 138, 0.25), 0 8px 24px rgba(30, 58, 138, 0.15)' }}>
+        <div className="lg:col-span-2 bg-blue-900 text-white rounded-xl p-5 self-start" style={{ boxShadow: '0 0 24px rgba(30, 58, 138, 0.25), 0 8px 24px rgba(30, 58, 138, 0.15)' }}>
           <div className="flex items-center gap-2 mb-3">
             <Sparkles className="w-4 h-4 text-amber-300" />
             <div className="text-xs font-semibold uppercase tracking-wide">AI Insights</div>
