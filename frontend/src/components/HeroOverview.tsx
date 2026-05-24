@@ -187,23 +187,23 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
             {data.pie.slices.length >= 2 && (
               <div className="mt-5 pt-4 border-t border-slate-100 grid grid-cols-3 gap-3">
                 <div>
-                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">Top</div>
+                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">{t('hero.top')}</div>
                   <div className="text-sm font-semibold text-slate-800 mt-1 truncate">{data.pie.slices[0].label}</div>
                   <div className="text-xs text-slate-500 tabular-nums">{data.pie.slices[0].pct.toFixed(1)}%</div>
                 </div>
                 <div>
-                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">Lowest</div>
+                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">{t('hero.lowest')}</div>
                   <div className="text-sm font-semibold text-slate-800 mt-1 truncate">{data.pie.slices[data.pie.slices.length - 1].label}</div>
                   <div className="text-xs text-slate-500 tabular-nums">{data.pie.slices[data.pie.slices.length - 1].pct.toFixed(1)}%</div>
                 </div>
                 <div>
-                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">Concentration</div>
+                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">{t('hero.concentration')}</div>
                   <div className="text-sm font-semibold mt-1" style={{
                     color: data.pie.slices[0].pct > 50 ? '#dc2626' : data.pie.slices[0].pct > 35 ? '#d97706' : '#059669'
                   }}>
-                    {data.pie.slices[0].pct > 50 ? 'High Risk' : data.pie.slices[0].pct > 35 ? 'Moderate' : 'Balanced'}
+                    {data.pie.slices[0].pct > 50 ? t('hero.high_risk') : data.pie.slices[0].pct > 35 ? t('hero.moderate') : t('hero.balanced')}
                   </div>
-                  <div className="text-xs text-slate-500">Top 3: {data.pie.slices.slice(0, 3).reduce((s, x) => s + x.pct, 0).toFixed(0)}%</div>
+                  <div className="text-xs text-slate-500">{t('hero.top_3')}: {data.pie.slices.slice(0, 3).reduce((s, x) => s + x.pct, 0).toFixed(0)}%</div>
                 </div>
               </div>
             )}
@@ -213,7 +213,7 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
         <div className="lg:col-span-2 bg-blue-900 text-white rounded-xl p-5 self-start" style={{ boxShadow: '0 0 24px rgba(30, 58, 138, 0.25), 0 8px 24px rgba(30, 58, 138, 0.15)' }}>
           <div className="flex items-center gap-2 mb-3">
             <Sparkles className="w-4 h-4 text-amber-300" />
-            <div className="text-xs font-semibold uppercase tracking-wide">AI Insights</div>
+            <div className="text-xs font-semibold uppercase tracking-wide">{t('hero.ai_insights')}</div>
             {aiLoading && (
               <div className="ml-auto w-3 h-3 border-2 border-amber-300/30 border-t-amber-300 rounded-full animate-spin" />
             )}
