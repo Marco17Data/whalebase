@@ -183,6 +183,30 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                 ))}
               </div>
             </div>
+
+            {data.pie.slices.length >= 2 && (
+              <div className="mt-5 pt-4 border-t border-slate-100 grid grid-cols-3 gap-3">
+                <div>
+                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">Top</div>
+                  <div className="text-sm font-semibold text-slate-800 mt-1 truncate">{data.pie.slices[0].label}</div>
+                  <div className="text-xs text-slate-500 tabular-nums">{data.pie.slices[0].pct.toFixed(1)}%</div>
+                </div>
+                <div>
+                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">Lowest</div>
+                  <div className="text-sm font-semibold text-slate-800 mt-1 truncate">{data.pie.slices[data.pie.slices.length - 1].label}</div>
+                  <div className="text-xs text-slate-500 tabular-nums">{data.pie.slices[data.pie.slices.length - 1].pct.toFixed(1)}%</div>
+                </div>
+                <div>
+                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">Concentration</div>
+                  <div className="text-sm font-semibold mt-1" style={{
+                    color: data.pie.slices[0].pct > 50 ? '#dc2626' : data.pie.slices[0].pct > 35 ? '#d97706' : '#059669'
+                  }}>
+                    {data.pie.slices[0].pct > 50 ? 'High Risk' : data.pie.slices[0].pct > 35 ? 'Moderate' : 'Balanced'}
+                  </div>
+                  <div className="text-xs text-slate-500">Top 3: {data.pie.slices.slice(0, 3).reduce((s, x) => s + x.pct, 0).toFixed(0)}%</div>
+                </div>
+              </div>
+            )}
           </div>
         )}
 

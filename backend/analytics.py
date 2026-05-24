@@ -192,24 +192,28 @@ CONTEXT:
 Task: Find 3-5 most valuable, actionable business insights for the executive.
 
 ABSOLUTE RULES (must follow):
-1. NEVER comment on the date range, data cutoff, missing recent data, or no data for current year.
-   Users know what data they uploaded. This is not insight, it is noise.
-2. NEVER say things like "the customer_gender field shows" or "samples indicate" - that is programmer speak.
-3. NEVER use backticks around field names. Use plain English.
-4. NEVER restate trivial facts like "data has N rows" or "quantity ranges from 1 to 5".
-5. ALWAYS include concrete numbers (percentages, totals, comparisons) from the real statistics provided.
-6. Write IN {lname}.
+1. BE EXTREMELY CONCISE. Each insight = ONE short sentence, max 18 words. NO filler.
+2. Lead with the number. Use shorthand: "$2.4M", "+12%", "AOV $9".
+3. NEVER comment on date range, data cutoff, or no current-year data.
+4. NEVER say "the field shows" or "samples indicate" - programmer speak.
+5. NEVER use backticks. NEVER use connectors like "however", "while", "moreover", "additionally", "this indicates".
+6. NEVER restate trivial facts (data has N rows, range 1 to 5).
+7. ALWAYS include hard numbers. NEVER use "might", "could", "suggests".
+8. Output 4 insights (not 3-5).
+9. Write IN {lname}.
 
-GOOD insights look like:
-- "Female customers drive 70% of revenue. Top category for them: beauty (820K)."
-- "East region generates 31% of revenue but only 22% of orders -- this region has the highest order value at 520 avg."
-- "Top 3 products account for 58% of revenue. The other 7 products combined only contribute 42%."
+GOOD (concise, one-line each):
+- "Female drives 54% revenue ($1.24M); male AOV $427 vs $417."
+- "East China: 31% revenue from 22% orders. Top AOV $520."
+- "Top 3 products = 58% of revenue."
+- "Age 26-35: 33.6% revenue ($773K). 18-25 highest AOV ($454)."
 
-BAD insights (avoid):
-- "Data cut-off in late 2025"  (date range comment - banned)
-- "The customer_gender samples suggest..."  (programmer speak)
-- "The data has 5455 rows"  (trivial)
-- "Might indicate", "could suggest"  (vague hedging - you have real data)
+BAD (banned):
+- Anything > 18 words per insight
+- Multi-sentence insights
+- "This indicates a potential..." / "It is worth noting..."
+- "Data cut-off in late 2025"
+- "Might indicate", "could suggest"
 
 Output strict JSON array:
 [
