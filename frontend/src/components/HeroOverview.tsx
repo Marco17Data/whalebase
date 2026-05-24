@@ -51,7 +51,7 @@ interface Props {
   activeTable: string | null;
 }
 
-const SLICE_COLORS = ['#1e3a8a', '#f59e0b', '#10b981', '#ef4444', '#8b5cf6', '#06b6d4'];
+const SLICE_COLORS = ['#4f46e5', '#d97706', '#059669', '#dc2626', '#7c3aed', '#0891b2'];
 
 function formatNum(v: number, isCurrency: boolean, currency: string): string {
   if (typeof v !== 'number' || !isFinite(v)) return '—';
@@ -126,10 +126,29 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
             <div className="text-xs font-semibold uppercase tracking-wide text-slate-600 mb-3">
               {data.pie.title}
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center gap-8 lg:gap-12 px-2">
               <div className="relative" style={{ width: 280, height: 280 }}>
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
+                    <defs>
+                      {SLICE_COLORS.map((color, i) => (
+                        <radialGradient key={i} id={`pie-gradient-${i}`} cx="50%" cy="50%" r="65%">
+                          <stop offset="0%" stopColor={color} stopOpacity={1} />
+                          <stop offset="100%" stopColor={color} stopOpacity={0.78} />
+                        </radialGradient>
+                      ))}
+                      <filter id="pie-soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+                        <feOffset dx="0" dy="2" result="offsetblur" />
+                        <feComponentTransfer>
+                          <feFuncA type="linear" slope="0.18" />
+                        </feComponentTransfer>
+                        <feMerge>
+                          <feMergeNode />
+                          <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                      </filter>
+                    </defs>
                     <Pie
                       data={data.pie.slices}
                       dataKey="value"
@@ -137,25 +156,24 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                       innerRadius={80}
                       outerRadius={130}
                       paddingAngle={2}
-                      stroke="none"
-                      style={{ outline: 'none' }}
+                      stroke="white"
+                      strokeWidth={2}
+                      style={{ outline: 'none', filter: 'url(#pie-soft-shadow)' }}
                     >
                       {data.pie.slices.map((_, i) => (
                         <Cell
                           key={i}
-                          fill={SLICE_COLORS[i % SLICE_COLORS.length]}
+                          fill={`url(#pie-gradient-${i})`}
                           style={{
                             outline: 'none',
                             cursor: 'pointer',
-                            transition: 'filter 0.2s ease',
-                            filter: 'drop-shadow(0 0 0 transparent)',
+                            transition: 'opacity 0.2s ease',
                           }}
                           onMouseEnter={(e: React.MouseEvent<SVGElement>) => {
-                            (e.target as SVGElement).style.filter =
-                              `drop-shadow(0 0 6px ${SLICE_COLORS[i % SLICE_COLORS.length]}99)`;
+                            (e.target as SVGElement).style.opacity = '0.85';
                           }}
                           onMouseLeave={(e: React.MouseEvent<SVGElement>) => {
-                            (e.target as SVGElement).style.filter = 'drop-shadow(0 0 0 transparent)';
+                            (e.target as SVGElement).style.opacity = '1';
                           }}
                           tabIndex={-1}
                         />
@@ -170,15 +188,18 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 space-y-1.5 text-sm">
+              <div className="space-y-2.5 text-sm min-w-[180px]">
                 {data.pie.slices.map((s, i) => (
-                  <div key={i} className="flex items-center gap-2">
+                  <div key={i} className="flex items-center gap-3">
                     <div
-                      className="w-3 h-3 rounded-sm flex-shrink-0"
-                      style={{ background: SLICE_COLORS[i % SLICE_COLORS.length] }}
+                      className="w-3 h-3 rounded-full flex-shrink-0"
+                      style={{
+                        background: SLICE_COLORS[i % SLICE_COLORS.length],
+                        boxShadow: `0 0 0 3px ${SLICE_COLORS[i % SLICE_COLORS.length]}22`,
+                      }}
                     />
-                    <span className="text-slate-700 flex-1 truncate">{s.label}</span>
-                    <span className="text-slate-500 text-xs font-medium">{s.pct.toFixed(1)}%</span>
+                    <span className="text-slate-700 font-medium flex-1 truncate">{s.label}</span>
+                    <span className="text-slate-500 text-xs font-semibold tabular-nums">{s.pct.toFixed(1)}%</span>
                   </div>
                 ))}
               </div>
