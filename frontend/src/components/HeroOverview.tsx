@@ -27,11 +27,14 @@ interface PieData {
   total: number;
   is_currency: boolean;
   slices: Slice[];
+  high_concentration?: boolean;
 }
 
 interface TrendPoint {
   month: string;
   value: number;
+  is_anomaly?: boolean;
+  anomaly_type?: 'spike' | 'drop' | null;
 }
 
 interface TrendData {

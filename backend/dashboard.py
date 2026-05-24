@@ -323,11 +323,30 @@ def generate_overview(session: Session, lang: str = "en", table_name: str | None
             f'FROM "{tname}" GROUP BY month ORDER BY month'
         ))
         if trend_res and trend_res["rows"]:
+            # Anomaly detection on trend points
+            values = [row[1] for row in trend_res["rows"] if row[1] is not None]
+            mean_val = sum(values) / len(values) if values else 0
+            variance = sum((v - mean_val) ** 2 for v in values) / len(values) if values else 0
+            std_dev = variance ** 0.5
+            threshold = 2.0
+            points = []
+            for row in trend_res["rows"]:
+                v = row[1] if row[1] is not None else 0
+                is_anomaly = std_dev > 0 and abs(v - mean_val) > threshold * std_dev
+                points.append({
+                    "month": str(row[0]).split(" ")[0] if row[0] else "",
+                    "value": v,
+                    "is_anomaly": is_anomaly,
+                    "anomaly_type": ("spike" if v > mean_val else "drop") if is_anomaly else None,
+                })
             trend = {
                 "title": tr("hero.trend_title", lang),
                 "is_currency": is_currency,
-                "points": [{"month": str(row[0]).split(" ")[0] if row[0] else "", "value": row[1]}
-                           for row in trend_res["rows"]],
+                "points": points,
             }
+
+    # Mark high concentration (top slice > 50%)
+    if pie and pie.get("slices") and len(pie["slices"]) > 0:
+        pie["high_concentration"] = pie["slices"][0].get("pct", 0) > 50
 
     return {"kpis": kpis, "pie": pie, "trend": trend}

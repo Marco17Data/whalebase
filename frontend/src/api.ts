@@ -86,11 +86,12 @@ export const api = {
         total: number;
         is_currency: boolean;
         slices: Array<{ label: string; value: number; pct: number }>;
+        high_concentration?: boolean;
       };
       trend: null | {
         title: string;
         is_currency: boolean;
-        points: Array<{ month: string; value: number }>;
+        points: Array<{ month: string; value: number; is_anomaly?: boolean; anomaly_type?: 'spike' | 'drop' | null }>;
       };
     }>(`/session/${sid}/overview?${params}`);
   },
