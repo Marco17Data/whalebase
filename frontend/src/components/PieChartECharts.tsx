@@ -81,27 +81,13 @@ export function PieChartECharts({
           },
           label: { show: false },
         },
-        data: slices.map((s, i) => {
-          const baseColor = FLAT_COLORS[i % FLAT_COLORS.length];
-          return {
-            name: s.label,
-            value: s.value,
-            itemStyle: {
-              // Inner glow: lighter at the inner edge, full color at outer
-              color: {
-                type: 'radial',
-                x: 0.5,
-                y: 0.5,
-                r: 0.85,
-                colorStops: [
-                  { offset: 0, color: baseColor + 'cc' },   // inner: 80% opacity (slight glow)
-                  { offset: 0.5, color: baseColor },         // mid: full color
-                  { offset: 1, color: baseColor },           // outer: full color
-                ],
-              },
-            },
-          };
-        }),
+        data: slices.map((s, i) => ({
+          name: s.label,
+          value: s.value,
+          itemStyle: {
+            color: FLAT_COLORS[i % FLAT_COLORS.length],
+          },
+        })),
         animationType: 'expansion',
         animationEasing: 'cubicOut',
         animationDuration: 700,

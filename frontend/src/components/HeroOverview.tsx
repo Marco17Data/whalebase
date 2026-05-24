@@ -301,16 +301,9 @@ function KPICard({ kpi, currency }: { kpi: KPI; currency: string }) {
           {kpi.label}
         </div>
         {hasChange && (
-          <div
-            className={`text-[11px] font-semibold px-1.5 py-0.5 rounded flex items-center gap-0.5 ${
-              isPositive ? 'bg-emerald-50 text-emerald-700' : 'bg-rose-50 text-rose-700'
-            }`}
-            style={{
-              boxShadow: isPositive
-                ? 'inset 0 0 8px rgba(16, 185, 129, 0.18), 0 0 0 1px rgba(16, 185, 129, 0.08)'
-                : 'inset 0 0 8px rgba(244, 63, 94, 0.18), 0 0 0 1px rgba(244, 63, 94, 0.08)',
-            }}
-          >
+          <div className={`text-[11px] font-semibold px-1.5 py-0.5 rounded flex items-center gap-0.5 ${
+            isPositive ? 'bg-emerald-50 text-emerald-700' : 'bg-rose-50 text-rose-700'
+          }`}>
             {isPositive ? <TrendingUp className="w-3 h-3" /> : <TrendingDown className="w-3 h-3" />}
             {isPositive ? '+' : ''}{kpi.change_pct!.toFixed(1)}%
           </div>
@@ -322,11 +315,7 @@ function KPICard({ kpi, currency }: { kpi: KPI; currency: string }) {
       </div>
 
       {hasSparkline && (
-        <div className="mt-2 -mx-1 h-12 rounded-md" style={{
-            boxShadow: isPositive
-              ? 'inset 0 -8px 16px -8px rgba(16, 185, 129, 0.18)'
-              : 'inset 0 -8px 16px -8px rgba(244, 63, 94, 0.18)',
-          }}>
+        <div className="mt-2 -mx-1 h-12">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={sparkline.map((v, i) => ({ i, v }))} margin={{ top: 4, right: 2, left: 2, bottom: 2 }}>
               <YAxis hide domain={['dataMin - dataMin*0.1', 'dataMax + dataMax*0.05']} />
