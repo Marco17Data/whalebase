@@ -127,15 +127,15 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
               {data.pie.title}
             </div>
             <div className="flex items-center gap-4">
-              <div className="relative" style={{ width: 200, height: 200 }}>
+              <div className="relative" style={{ width: 280, height: 280 }}>
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
                     <Pie
                       data={data.pie.slices}
                       dataKey="value"
                       nameKey="label"
-                      innerRadius={60}
-                      outerRadius={90}
+                      innerRadius={80}
+                      outerRadius={130}
                       paddingAngle={2}
                       stroke="none"
                       style={{ outline: 'none' }}
@@ -164,8 +164,8 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                   </PieChart>
                 </ResponsiveContainer>
                 <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-                  <div className="text-[10px] text-slate-400 uppercase tracking-wide">Total</div>
-                  <div className="text-xl font-bold text-slate-800">
+                  <div className="text-[11px] text-slate-400 uppercase tracking-wide">Total</div>
+                  <div className="text-2xl font-bold text-slate-800">
                     {formatNum(data.pie.total, data.pie.is_currency, currency)}
                   </div>
                 </div>
