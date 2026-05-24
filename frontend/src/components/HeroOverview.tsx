@@ -4,6 +4,7 @@ import { PieChartECharts, PIE_COLORS } from './PieChartECharts';
 import { Sparkles, TrendingUp, TrendingDown, AlertTriangle } from 'lucide-react';
 import { api } from '../api';
 import { useI18n } from '../i18n';
+import { useTheme } from '../ThemeContext';
 
 interface KPI {
   label: string;
@@ -60,8 +61,6 @@ interface Props {
   activeTable: string | null;
 }
 
-const SLICE_COLORS = ['#1e3a8a', '#f59e0b', '#10b981', '#ef4444', '#8b5cf6', '#06b6d4'];
-
 function formatNum(v: number, isCurrency: boolean, currency: string): string {
   if (typeof v !== 'number' || !isFinite(v)) return '—';
   const symbol = currency === 'CNY' ? '¥' : currency === 'EUR' ? '€' : currency === 'GBP' ? '£' :
@@ -77,10 +76,17 @@ function formatNum(v: number, isCurrency: boolean, currency: string): string {
 
 export function HeroOverview({ sessionId, currency, activeTable }: Props) {
   const { t, lang } = useI18n();
+  const { theme } = useTheme();
   const [data, setData] = useState<Overview | null>(null);
   const [loading, setLoading] = useState(true);
   const [aiInsights, setAiInsights] = useState<Array<{ title: string; content: string }> | null>(null);
   const [aiLoading, setAiLoading] = useState(true);
+
+  // Theme-aware colors for charts
+  const isDark = theme === 'dark';
+  const gridColor = isDark ? '#334155' : '#e2e8f0';
+  const axisColor = isDark ? '#94a3b8' : '#64748b';
+  const lineColor = isDark ? '#60a5fa' : '#1e3a8a';
 
   useEffect(() => {
     if (currency === 'none') return;
@@ -93,7 +99,6 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
       .catch(() => setLoading(false));
   }, [sessionId, lang, activeTable, currency]);
 
-  // Fetch real AI insights (async, takes longer than overview)
   useEffect(() => {
     if (currency === 'none') return;
     setAiLoading(true);
@@ -113,7 +118,7 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
 
   if (loading || !data) {
     return (
-      <div className="flex items-center justify-center py-20 text-slate-400 text-sm">
+      <div className="flex items-center justify-center py-20 text-slate-400 dark:text-slate-500 text-sm">
         {t('common.loading')}
       </div>
     );
@@ -131,13 +136,13 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-3">
         {data.pie && (
-          <div className="lg:col-span-3 bg-white rounded-xl border border-slate-200 p-5">
+          <div className="lg:col-span-3 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
             <div className="flex items-center justify-between mb-3">
-              <div className="text-xs font-semibold uppercase tracking-wide text-slate-600">
+              <div className="text-xs font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-300">
                 {data.pie.title}
               </div>
               {data.pie.high_concentration && (
-                <div className="text-[11px] font-semibold text-rose-600 bg-rose-50 px-2 py-0.5 rounded flex items-center gap-1">
+                <div className="text-[11px] font-semibold text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-900/30 px-2 py-0.5 rounded flex items-center gap-1">
                   <AlertTriangle className="w-3 h-3" />
                   {t('anomaly.high_concentration')}
                 </div>
@@ -149,7 +154,6 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                 total={data.pie.total}
                 totalLabel="TOTAL"
                 totalValueText={
-                  // Use the grand total from KPIs (Total Revenue) if available, else pie sum
                   (() => {
                     const revKpi = data.kpis.find(k => k.format === 'currency' && typeof k.value === 'number');
                     if (revKpi && typeof revKpi.value === 'number') {
@@ -168,52 +172,52 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                       className="w-3 h-3 rounded-sm flex-shrink-0"
                       style={{ background: PIE_COLORS[i % PIE_COLORS.length] }}
                     />
-                    <span className="text-slate-700 flex-1 truncate">{s.label}</span>
-                    <span className="text-slate-500 text-xs font-medium">{s.pct.toFixed(1)}%</span>
+                    <span className="text-slate-700 dark:text-slate-300 flex-1 truncate">{s.label}</span>
+                    <span className="text-slate-500 dark:text-slate-400 text-xs font-medium">{s.pct.toFixed(1)}%</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {data.pie.slices.length >= 2 && (
-              <div className="mt-5 pt-4 border-t border-slate-100 grid grid-cols-3 gap-3">
+              <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-700 grid grid-cols-3 gap-3">
                 <div>
-                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">{t('hero.top')}</div>
-                  <div className="text-sm font-semibold text-slate-800 mt-1 truncate">{data.pie.slices[0].label}</div>
-                  <div className="text-xs text-slate-500 tabular-nums">{data.pie.slices[0].pct.toFixed(1)}%</div>
+                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">{t('hero.top')}</div>
+                  <div className="text-sm font-semibold text-slate-800 dark:text-slate-200 mt-1 truncate">{data.pie.slices[0].label}</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400 tabular-nums">{data.pie.slices[0].pct.toFixed(1)}%</div>
                 </div>
                 <div>
-                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">{t('hero.lowest')}</div>
-                  <div className="text-sm font-semibold text-slate-800 mt-1 truncate">{data.pie.slices[data.pie.slices.length - 1].label}</div>
-                  <div className="text-xs text-slate-500 tabular-nums">{data.pie.slices[data.pie.slices.length - 1].pct.toFixed(1)}%</div>
+                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">{t('hero.lowest')}</div>
+                  <div className="text-sm font-semibold text-slate-800 dark:text-slate-200 mt-1 truncate">{data.pie.slices[data.pie.slices.length - 1].label}</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400 tabular-nums">{data.pie.slices[data.pie.slices.length - 1].pct.toFixed(1)}%</div>
                 </div>
                 <div>
-                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">{t('hero.concentration')}</div>
+                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">{t('hero.concentration')}</div>
                   <div className="text-sm font-semibold mt-1" style={{
-                    color: data.pie.slices[0].pct > 50 ? '#dc2626' : data.pie.slices[0].pct > 35 ? '#d97706' : '#059669'
+                    color: data.pie.slices[0].pct > 50 ? '#ef4444' : data.pie.slices[0].pct > 35 ? '#f59e0b' : '#10b981'
                   }}>
                     {data.pie.slices[0].pct > 50 ? t('hero.high_risk') : data.pie.slices[0].pct > 35 ? t('hero.moderate') : t('hero.balanced')}
                   </div>
-                  <div className="text-xs text-slate-500">{t('hero.top_3')}: {data.pie.slices.slice(0, 3).reduce((s, x) => s + x.pct, 0).toFixed(0)}%</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400">{t('hero.top_3')}: {data.pie.slices.slice(0, 3).reduce((s, x) => s + x.pct, 0).toFixed(0)}%</div>
                 </div>
               </div>
             )}
             {data.pie.high_concentration && (
-              <div className="mt-3 pt-3 border-t border-slate-100 flex items-start gap-2 text-xs">
+              <div className="mt-3 pt-3 border-t border-slate-100 dark:border-slate-700 flex items-start gap-2 text-xs">
                 <AlertTriangle className="w-3.5 h-3.5 text-rose-500 mt-0.5 flex-shrink-0" />
-                <div className="text-slate-700">
+                <div className="text-slate-700 dark:text-slate-300">
                   <span className="font-semibold">{data.pie.top_label}</span>
-                  <span className="text-slate-500"> {t('anomaly.accounts_for')} </span>
-                  <span className="font-semibold text-rose-600 tabular-nums">{data.pie.top_pct?.toFixed(1)}%</span>
-                  <span className="text-slate-500"> {t('anomaly.of_revenue')}. </span>
-                  <span className="text-slate-400">{t('anomaly.diversification_hint')}</span>
+                  <span className="text-slate-500 dark:text-slate-400"> {t('anomaly.accounts_for')} </span>
+                  <span className="font-semibold text-rose-600 dark:text-rose-400 tabular-nums">{data.pie.top_pct?.toFixed(1)}%</span>
+                  <span className="text-slate-500 dark:text-slate-400"> {t('anomaly.of_revenue')}. </span>
+                  <span className="text-slate-400 dark:text-slate-500">{t('anomaly.diversification_hint')}</span>
                 </div>
               </div>
             )}
           </div>
         )}
 
-        <div className="lg:col-span-2 bg-blue-900 text-white rounded-xl p-5 self-start" style={{ boxShadow: '0 0 24px rgba(30, 58, 138, 0.25), 0 8px 24px rgba(30, 58, 138, 0.15)' }}>
+        <div className="lg:col-span-2 bg-blue-900 dark:bg-blue-950 text-white rounded-xl p-5 self-start" style={{ boxShadow: '0 0 24px rgba(30, 58, 138, 0.25), 0 8px 24px rgba(30, 58, 138, 0.15)' }}>
           <div className="flex items-center gap-2 mb-3">
             <Sparkles className="w-4 h-4 text-amber-300" />
             <div className="text-xs font-semibold uppercase tracking-wide">{t('hero.ai_insights')}</div>
@@ -265,16 +269,16 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
       </div>
 
       {data.trend && data.trend.points.length > 1 && (
-        <div className="bg-white rounded-xl border border-slate-200 p-5">
+        <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
           <div className="flex items-center justify-between mb-3">
-            <div className="text-xs font-semibold uppercase tracking-wide text-slate-600">
+            <div className="text-xs font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-300">
               {data.trend.title}
             </div>
             {(() => {
               const anomalies = data.trend!.points.filter(p => p.is_anomaly);
               if (anomalies.length === 0) return null;
               return (
-                <div className="text-[11px] font-semibold text-rose-600 bg-rose-50 px-2 py-0.5 rounded flex items-center gap-1">
+                <div className="text-[11px] font-semibold text-rose-600 dark:text-rose-400 bg-rose-50 dark:bg-rose-900/30 px-2 py-0.5 rounded flex items-center gap-1">
                   <AlertTriangle className="w-3 h-3" />
                   {anomalies.length} {anomalies.length === 1 ? t('anomaly.singular') : t('anomaly.plural')}
                 </div>
@@ -284,27 +288,33 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
           <div style={{ width: '100%', height: 180 }}>
             <ResponsiveContainer>
               <LineChart data={data.trend.points} margin={{ top: 5, right: 16, left: 0, bottom: 5 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" vertical={false} />
-                <XAxis dataKey="month" tick={{ fontSize: 11, fill: '#64748b' }} />
+                <CartesianGrid strokeDasharray="3 3" stroke={gridColor} vertical={false} />
+                <XAxis dataKey="month" tick={{ fontSize: 11, fill: axisColor }} />
                 <YAxis
-                  tick={{ fontSize: 11, fill: '#64748b' }}
+                  tick={{ fontSize: 11, fill: axisColor }}
                   tickFormatter={(v) => formatNum(v, data.trend!.is_currency, currency)}
                 />
                 <Tooltip
                   formatter={(v: number) => [formatNum(v, data.trend!.is_currency, currency), t('trend.value_label')]}
                   labelFormatter={(label: string) => {
-                    // "2025-08-01" -> "2025-08"
                     if (typeof label === 'string' && label.length >= 7) {
                       return label.slice(0, 7);
                     }
                     return label;
                   }}
-                  contentStyle={{ fontSize: 12, borderRadius: 8 }}
+                  contentStyle={{
+                    fontSize: 12,
+                    borderRadius: 8,
+                    backgroundColor: isDark ? '#1e293b' : '#ffffff',
+                    border: isDark ? '1px solid #334155' : '1px solid #e2e8f0',
+                    color: isDark ? '#e2e8f0' : '#1e293b',
+                  }}
+                  labelStyle={{ color: isDark ? '#cbd5e1' : '#475569' }}
                 />
                 <Line
                   type="monotone"
                   dataKey="value"
-                  stroke="#1e3a8a"
+                  stroke={lineColor}
                   strokeWidth={2}
                   dot={(props: any) => {
                     const point = data.trend!.points[props.index];
@@ -314,8 +324,8 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                         cx={props.cx}
                         cy={props.cy}
                         r={isAnomaly ? 5 : 3}
-                        fill={isAnomaly ? '#ef4444' : '#1e3a8a'}
-                        stroke={isAnomaly ? '#fff' : 'none'}
+                        fill={isAnomaly ? '#ef4444' : lineColor}
+                        stroke={isAnomaly ? (isDark ? '#0f172a' : '#fff') : 'none'}
                         strokeWidth={isAnomaly ? 2 : 0}
                       />
                     );
@@ -328,20 +338,20 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
             const anomalies = data.trend!.points.filter(p => p.is_anomaly);
             if (anomalies.length === 0) return null;
             return (
-              <div className="mt-4 pt-3 border-t border-slate-100 space-y-1.5">
+              <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-700 space-y-1.5">
                 {anomalies.map((a, i) => (
                   <div key={i} className="flex items-start gap-2 text-xs">
                     <AlertTriangle className="w-3.5 h-3.5 text-rose-500 mt-0.5 flex-shrink-0" />
-                    <div className="text-slate-700">
+                    <div className="text-slate-700 dark:text-slate-300">
                       <span className="font-semibold">{a.month}</span>
-                      <span className="text-slate-500">: </span>
+                      <span className="text-slate-500 dark:text-slate-400">: </span>
                       <span className="font-semibold tabular-nums">
                         {formatNum(a.value, data.trend!.is_currency, currency)}
                       </span>
-                      <span className={`font-medium ml-2 ${a.anomaly_type === 'spike' ? 'text-emerald-600' : 'text-rose-600'}`}>
+                      <span className={`font-medium ml-2 ${a.anomaly_type === 'spike' ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
                         {(a.deviation_pct ?? 0) > 0 ? '+' : ''}{(a.deviation_pct ?? 0).toFixed(0)}% {a.anomaly_type === 'spike' ? t('anomaly.vs_avg_above') : t('anomaly.vs_avg_below')}
                       </span>
-                      <span className="text-slate-400 ml-1">
+                      <span className="text-slate-400 dark:text-slate-500 ml-1">
                         ({t('anomaly.avg_is')} {formatNum(a.mean_value ?? 0, data.trend!.is_currency, currency)})
                       </span>
                     </div>
@@ -387,14 +397,16 @@ function KPICard({ kpi, currency }: { kpi: KPI; currency: string }) {
   }
 
   return (
-    <div className="bg-white rounded-xl border border-slate-200 p-4 relative overflow-hidden">
+    <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-4 relative overflow-hidden">
       <div className="flex items-start justify-between gap-2">
-        <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+        <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
           {kpi.label}
         </div>
         {hasChange && (
           <div className={`text-[11px] font-semibold px-1.5 py-0.5 rounded flex items-center gap-0.5 ${
-            isPositive ? 'bg-emerald-50 text-emerald-700' : 'bg-rose-50 text-rose-700'
+            isPositive
+              ? 'bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300'
+              : 'bg-rose-50 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300'
           }`}>
             {isPositive ? <TrendingUp className="w-3 h-3" /> : <TrendingDown className="w-3 h-3" />}
             {isPositive ? '+' : ''}{kpi.change_pct!.toFixed(1)}%
@@ -402,7 +414,7 @@ function KPICard({ kpi, currency }: { kpi: KPI; currency: string }) {
         )}
       </div>
 
-      <div className="text-2xl font-bold text-slate-800 mt-1.5 leading-tight">
+      <div className="text-2xl font-bold text-slate-800 dark:text-slate-100 mt-1.5 leading-tight">
         {displayValue}
       </div>
 
@@ -438,7 +450,7 @@ function KPICard({ kpi, currency }: { kpi: KPI; currency: string }) {
       )}
 
       <div className={`text-[10px] mt-1.5 flex items-center gap-1 ${
-        kpi.period_status === 'partial' ? 'text-amber-600' : 'text-slate-400'
+        kpi.period_status === 'partial' ? 'text-amber-600 dark:text-amber-400' : 'text-slate-400 dark:text-slate-500'
       }`}>
         {kpi.period_status === 'partial' && <span>⚠</span>}
         {subInfo}

@@ -9,6 +9,7 @@
   }
   body {
     @apply bg-slate-50 text-slate-900 font-sans;
+    @apply dark:bg-slate-950 dark:text-slate-100;
     font-feature-settings: 'cv11', 'ss01';
   }
   ::-webkit-scrollbar {
@@ -16,14 +17,16 @@
     height: 8px;
   }
   ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { @apply bg-slate-200 rounded-full; }
-  ::-webkit-scrollbar-thumb:hover { @apply bg-slate-300; }
+  ::-webkit-scrollbar-thumb { @apply bg-slate-200 dark:bg-slate-700 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-slate-300 dark:bg-slate-600; }
   ::selection {
     @apply bg-brand-100 text-brand-900;
+    @apply dark:bg-brand-900 dark:text-brand-100;
   }
   kbd {
     @apply font-mono text-[10px] px-1 py-0.5 bg-white border border-slate-200
            rounded text-slate-600;
+    @apply dark:bg-slate-800 dark:border-slate-700 dark:text-slate-300;
   }
 }
 
@@ -38,6 +41,7 @@
     @apply btn bg-brand-900 text-white
            hover:bg-brand-800 active:bg-brand-950
            shadow-sm shadow-brand-900/20;
+    @apply dark:bg-brand-600 dark:hover:bg-brand-500;
   }
   .btn-accent {
     @apply btn bg-accent-500 text-white
@@ -47,14 +51,18 @@
   .btn-secondary {
     @apply btn bg-white text-slate-700 border border-slate-200
            hover:bg-slate-50 hover:border-slate-300;
+    @apply dark:bg-slate-800 dark:text-slate-200 dark:border-slate-700
+           dark:hover:bg-slate-700 dark:hover:border-slate-600;
   }
   .btn-ghost {
     @apply btn text-slate-600 hover:bg-slate-100 hover:text-slate-900;
+    @apply dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-slate-100;
   }
 
   /* —— 卡片 —— */
   .card {
     @apply bg-white border border-slate-200 rounded-lg;
+    @apply dark:bg-slate-900 dark:border-slate-700;
   }
   .card-shadow {
     @apply card shadow-sm;
@@ -64,12 +72,15 @@
   .chip {
     @apply inline-flex items-center gap-1 px-2 py-0.5 text-xs font-medium
            bg-slate-100 text-slate-700 rounded-md;
+    @apply dark:bg-slate-800 dark:text-slate-200;
   }
   .chip-brand {
     @apply chip bg-brand-50 text-brand-900;
+    @apply dark:bg-brand-900/40 dark:text-brand-200;
   }
   .chip-accent {
     @apply chip bg-accent-50 text-accent-700;
+    @apply dark:bg-accent-900/40 dark:text-accent-200;
   }
 
   /* —— 输入 —— */
@@ -78,6 +89,9 @@
            text-sm placeholder:text-slate-400
            focus:outline-none focus:ring-2 focus:ring-brand-200 focus:border-brand-500
            transition-shadow;
+    @apply dark:bg-slate-800 dark:border-slate-700 dark:text-slate-100
+           dark:placeholder:text-slate-500 dark:focus:ring-brand-800
+           dark:focus:border-brand-500;
   }
 
   /* —— 标题 —— */
@@ -86,6 +100,7 @@
   }
   .label {
     @apply text-xs font-medium text-slate-500 uppercase tracking-wider;
+    @apply dark:text-slate-400;
   }
 }
 
@@ -115,6 +130,17 @@
     rgb(241 245 249) 0%,
     rgb(226 232 240) 50%,
     rgb(241 245 249) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+
+.dark .skeleton {
+  background: linear-gradient(
+    90deg,
+    rgb(30 41 59) 0%,
+    rgb(51 65 85) 50%,
+    rgb(30 41 59) 100%
   );
   background-size: 200% 100%;
   animation: shimmer 1.6s linear infinite;
