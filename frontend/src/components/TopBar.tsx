@@ -1,11 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import {
-  Sparkles, Globe, Settings, Download, History, Code2,
+  Sparkles, Globe, Settings, Download, History, Code2, Sun, Moon,
   ChevronDown, BarChart3, LayoutGrid, MessageSquare, FileDown,
   Shield, Zap,
 } from 'lucide-react';
 import { Logo } from './Logo';
 import { useI18n, LANGUAGES, Lang } from '../i18n';
+import { useTheme } from '../ThemeContext';
 
 interface Props {
   queryCount: number;
@@ -37,19 +38,20 @@ export function TopBar({
   historyOpen,
 }: Props) {
   const { t } = useI18n();
+  const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className="h-14 border-b border-slate-200 bg-white flex items-center justify-between px-5 shrink-0 z-30 relative">
+    <header className="h-14 border-b border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 flex items-center justify-between px-5 shrink-0 z-30 relative">
       {/* 左：Logo + 菜单 */}
       <div className="flex items-center gap-1">
         <div className="flex items-center gap-2.5 mr-4">
           <Logo size={32} />
           <div className="flex flex-col leading-none">
-            <span className="text-base font-semibold text-slate-900 tracking-tight">
+            <span className="text-base font-semibold text-slate-900 dark:text-slate-100 tracking-tight">
               Whalebase
-              <span className="ml-1 text-[9px] text-slate-400 font-mono font-normal">v4.4</span>
+              <span className="ml-1 text-[9px] text-slate-400 dark:text-slate-500 font-mono font-normal">v4.4</span>
             </span>
-            <span className="text-[10px] text-slate-500 mt-0.5 uppercase tracking-wider">
+            <span className="text-[10px] text-slate-500 dark:text-slate-400 mt-0.5 uppercase tracking-wider">
               {t('app.tagline')}
             </span>
           </div>
@@ -72,7 +74,7 @@ export function TopBar({
 
       {/* 右：工具栏 */}
       <div className="flex items-center gap-1">
-        {/* AI button - 退到右上角 */}
+        {/* AI button */}
         <button
           onClick={onAskAI}
           disabled={tableCount === 0}
@@ -83,11 +85,11 @@ export function TopBar({
           <span className="hidden sm:inline">{t('nav.ai')}</span>
         </button>
 
-        <div className="w-px h-5 bg-slate-200 mx-1" />
+        <div className="w-px h-5 bg-slate-200 dark:bg-slate-700 mx-1" />
 
         <button
           onClick={onToggleSQL}
-          className={`btn-ghost ${sqlOpen ? '!bg-brand-50 !text-brand-900' : ''}`}
+          className={`btn-ghost ${sqlOpen ? '!bg-brand-50 dark:!bg-brand-900/30 !text-brand-900 dark:!text-brand-200' : ''}`}
           title={t('nav.sql')}
         >
           <Code2 className="w-4 h-4" />
@@ -95,7 +97,7 @@ export function TopBar({
         <button
           onClick={onToggleHistory}
           disabled={queryCount === 0}
-          className={`btn-ghost ${historyOpen ? '!bg-brand-50 !text-brand-900' : ''}`}
+          className={`btn-ghost ${historyOpen ? '!bg-brand-50 dark:!bg-brand-900/30 !text-brand-900 dark:!text-brand-200' : ''}`}
           title={t('nav.history')}
         >
           <History className="w-4 h-4" />
@@ -124,6 +126,16 @@ export function TopBar({
         )}
 
         <LanguageDropdown />
+
+        {/* Theme toggle */}
+        <button
+          onClick={toggleTheme}
+          className="btn-ghost"
+          title={theme === 'light' ? 'Dark mode' : 'Light mode'}
+        >
+          {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
+        </button>
+
         <button onClick={onSettings} className="btn-ghost" title={t('nav.settings')}>
           <Settings className="w-4 h-4" />
         </button>
@@ -183,13 +195,13 @@ function AboutDropdown() {
   return (
     <Dropdown label={t('nav.about')} hoverOpen>
       <div className="p-4 w-80">
-        <h3 className="text-sm font-semibold text-slate-900 mb-1.5">
+        <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100 mb-1.5">
           {t('about.title')}
         </h3>
-        <p className="text-xs text-slate-600 leading-relaxed mb-3">
+        <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
           {t('about.desc')}
         </p>
-        <div className="flex items-center gap-1.5 text-[11px] text-slate-400 mt-2 pt-2 border-t border-slate-100">
+        <div className="flex items-center gap-1.5 text-[11px] text-slate-400 dark:text-slate-500 mt-2 pt-2 border-t border-slate-100 dark:border-slate-700">
           <Zap className="w-3 h-3" />
           {t('about.tech')}
         </div>
@@ -220,11 +232,13 @@ function LanguageDropdown() {
             key={l.code}
             onClick={() => setLang(l.code as Lang)}
             className={`w-full text-left px-3 py-2 rounded-md text-sm flex items-center gap-2.5
-              ${lang === l.code ? 'bg-brand-50 text-brand-900' : 'hover:bg-slate-50 text-slate-700'}`}
+              ${lang === l.code
+                ? 'bg-brand-50 dark:bg-brand-900/30 text-brand-900 dark:text-brand-200'
+                : 'hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300'}`}
           >
             <span className="text-base">{l.flag}</span>
             <span className="flex-1">{l.name}</span>
-            {lang === l.code && <span className="text-brand-600 text-xs">✓</span>}
+            {lang === l.code && <span className="text-brand-600 dark:text-brand-400 text-xs">✓</span>}
           </button>
         ))}
       </div>
@@ -234,8 +248,6 @@ function LanguageDropdown() {
 
 // =================
 // 通用下拉组件
-// hoverOpen=true 时鼠标悬停就展开(用于 Features/About)
-// 否则点击展开(用于 Language)
 // =================
 function Dropdown({
   label,
@@ -252,7 +264,6 @@ function Dropdown({
   const ref = useRef<HTMLDivElement>(null);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // 点击外部关闭(仅 click 模式)
   useEffect(() => {
     if (!open || hoverOpen) return;
     const handler = (e: MouseEvent) => {
@@ -262,7 +273,6 @@ function Dropdown({
     return () => document.removeEventListener('mousedown', handler);
   }, [open, hoverOpen]);
 
-  // hover 延迟关闭(避免按钮/菜单间移动时闪烁)
   const handleEnter = () => {
     if (!hoverOpen) return;
     if (closeTimer.current) clearTimeout(closeTimer.current);
@@ -288,14 +298,14 @@ function Dropdown({
       ) : (
         <button
           onClick={() => !hoverOpen && setOpen(!open)}
-          className={`btn-ghost ${open ? '!bg-slate-100 !text-slate-900' : ''}`}
+          className={`btn-ghost ${open ? '!bg-slate-100 dark:!bg-slate-800 !text-slate-900 dark:!text-slate-100' : ''}`}
         >
           {label}
           <ChevronDown className={`w-3 h-3 transition-transform ${open ? 'rotate-180' : ''}`} />
         </button>
       )}
       {open && (
-        <div className="absolute top-full mt-1.5 left-0 bg-white border border-slate-200 rounded-lg shadow-lg z-40 animate-fade-in">
+        <div className="absolute top-full mt-1.5 left-0 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg shadow-lg z-40 animate-fade-in">
           {children}
         </div>
       )}
@@ -313,13 +323,13 @@ function DropdownItem({
   desc: string;
 }) {
   return (
-    <div className="flex items-start gap-2.5 px-3 py-2 rounded-md hover:bg-slate-50 cursor-default">
-      <div className="w-7 h-7 rounded-md bg-slate-50 flex items-center justify-center shrink-0">
+    <div className="flex items-start gap-2.5 px-3 py-2 rounded-md hover:bg-slate-50 dark:hover:bg-slate-700 cursor-default">
+      <div className="w-7 h-7 rounded-md bg-slate-50 dark:bg-slate-700 flex items-center justify-center shrink-0">
         {icon}
       </div>
       <div className="flex-1 min-w-0">
-        <div className="text-xs font-semibold text-slate-900">{title}</div>
-        <p className="text-[11px] text-slate-500 leading-relaxed mt-0.5">{desc}</p>
+        <div className="text-xs font-semibold text-slate-900 dark:text-slate-100">{title}</div>
+        <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed mt-0.5">{desc}</p>
       </div>
     </div>
   );
@@ -328,8 +338,8 @@ function DropdownItem({
 function MetricChip({ label, value }: { label: string; value: number | string }) {
   return (
     <div className="flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px]">
-      <span className="text-slate-500">{label}</span>
-      <span className="font-semibold text-slate-900 tabular-nums">{value}</span>
+      <span className="text-slate-500 dark:text-slate-400">{label}</span>
+      <span className="font-semibold text-slate-900 dark:text-slate-100 tabular-nums">{value}</span>
     </div>
   );
 }
