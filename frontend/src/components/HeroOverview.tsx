@@ -28,6 +28,9 @@ interface PieData {
   is_currency: boolean;
   slices: Slice[];
   high_concentration?: boolean;
+  top_pct?: number;
+  top3_pct?: number;
+  top_label?: string;
 }
 
 interface TrendPoint {
@@ -35,6 +38,8 @@ interface TrendPoint {
   value: number;
   is_anomaly?: boolean;
   anomaly_type?: 'spike' | 'drop' | null;
+  deviation_pct?: number;
+  mean_value?: number;
 }
 
 interface TrendData {
@@ -193,6 +198,18 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                 </div>
               </div>
             )}
+            {data.pie.high_concentration && (
+              <div className="mt-3 pt-3 border-t border-slate-100 flex items-start gap-2 text-xs">
+                <AlertTriangle className="w-3.5 h-3.5 text-rose-500 mt-0.5 flex-shrink-0" />
+                <div className="text-slate-700">
+                  <span className="font-semibold">{data.pie.top_label}</span>
+                  <span className="text-slate-500"> {t('anomaly.accounts_for')} </span>
+                  <span className="font-semibold text-rose-600 tabular-nums">{data.pie.top_pct?.toFixed(1)}%</span>
+                  <span className="text-slate-500"> {t('anomaly.of_revenue')}. </span>
+                  <span className="text-slate-400">{t('anomaly.diversification_hint')}</span>
+                </div>
+              </div>
+            )}
           </div>
         )}
 
@@ -300,6 +317,32 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
               </LineChart>
             </ResponsiveContainer>
           </div>
+          {(() => {
+            const anomalies = data.trend!.points.filter(p => p.is_anomaly);
+            if (anomalies.length === 0) return null;
+            return (
+              <div className="mt-4 pt-3 border-t border-slate-100 space-y-1.5">
+                {anomalies.map((a, i) => (
+                  <div key={i} className="flex items-start gap-2 text-xs">
+                    <AlertTriangle className="w-3.5 h-3.5 text-rose-500 mt-0.5 flex-shrink-0" />
+                    <div className="text-slate-700">
+                      <span className="font-semibold">{a.month}</span>
+                      <span className="text-slate-500">: </span>
+                      <span className="font-semibold tabular-nums">
+                        {formatNum(a.value, data.trend!.is_currency, currency)}
+                      </span>
+                      <span className={`font-medium ml-2 ${a.anomaly_type === 'spike' ? 'text-emerald-600' : 'text-rose-600'}`}>
+                        {(a.deviation_pct ?? 0) > 0 ? '+' : ''}{(a.deviation_pct ?? 0).toFixed(0)}% {a.anomaly_type === 'spike' ? t('anomaly.vs_avg_above') : t('anomaly.vs_avg_below')}
+                      </span>
+                      <span className="text-slate-400 ml-1">
+                        ({t('anomaly.avg_is')} {formatNum(a.mean_value ?? 0, data.trend!.is_currency, currency)})
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            );
+          })()}
         </div>
       )}
     </div>

@@ -87,11 +87,14 @@ export const api = {
         is_currency: boolean;
         slices: Array<{ label: string; value: number; pct: number }>;
         high_concentration?: boolean;
+        top_pct?: number;
+        top3_pct?: number;
+        top_label?: string;
       };
       trend: null | {
         title: string;
         is_currency: boolean;
-        points: Array<{ month: string; value: number; is_anomaly?: boolean; anomaly_type?: 'spike' | 'drop' | null }>;
+        points: Array<{ month: string; value: number; is_anomaly?: boolean; anomaly_type?: 'spike' | 'drop' | null; deviation_pct?: number; mean_value?: number }>;
       };
     }>(`/session/${sid}/overview?${params}`);
   },
