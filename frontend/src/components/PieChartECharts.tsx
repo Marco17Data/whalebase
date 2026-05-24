@@ -17,14 +17,15 @@ interface Props {
 }
 
 // Premium SaaS color palette with gradient pairs (lighter -> darker)
-// Each slice gets a smooth radial gradient
-const COLOR_PAIRS: Array<{ from: string; to: string }> = [
-  { from: '#3b5dbf', to: '#1e3a8a' }, // deep blue
-  { from: '#fbbf24', to: '#d97706' }, // amber
-  { from: '#34d399', to: '#059669' }, // emerald
-  { from: '#f87171', to: '#dc2626' }, // rose
-  { from: '#a78bfa', to: '#7c3aed' }, // violet
-  { from: '#22d3ee', to: '#0891b2' }, // cyan
+// Linear/Figma-style premium flat color palette
+// Muted but distinct, no gradients - matches Notion/Stripe/Linear aesthetic
+const FLAT_COLORS: string[] = [
+  '#5b6cf9',  // electric indigo
+  '#f5a623',  // warm amber
+  '#10b981',  // emerald
+  '#ef4444',  // coral red
+  '#a855f7',  // royal purple
+  '#06b6d4',  // sky cyan
 ];
 
 export function PieChartECharts({
@@ -61,12 +62,12 @@ export function PieChartECharts({
         avoidLabelOverlap: false,
         padAngle: 2,
         itemStyle: {
-          borderRadius: 4,        // slightly rounded slice corners
+          borderRadius: 6,        // softer rounded corners for premium feel
           borderColor: '#fff',
-          borderWidth: 2,
-          shadowColor: 'rgba(0, 0, 0, 0.08)',
-          shadowBlur: 12,
-          shadowOffsetY: 2,
+          borderWidth: 3,         // thicker white separator (Linear-style)
+          shadowColor: 'rgba(15, 23, 42, 0.06)',
+          shadowBlur: 8,
+          shadowOffsetY: 1,
         },
         label: { show: false },
         labelLine: { show: false },
@@ -80,26 +81,13 @@ export function PieChartECharts({
           },
           label: { show: false },
         },
-        data: slices.map((s, i) => {
-          const pair = COLOR_PAIRS[i % COLOR_PAIRS.length];
-          return {
-            name: s.label,
-            value: s.value,
-            itemStyle: {
-              // Radial gradient: lighter at center, deeper at edges = subtle 3D depth
-              color: {
-                type: 'radial',
-                x: 0.5,
-                y: 0.5,
-                r: 0.8,
-                colorStops: [
-                  { offset: 0, color: pair.from },
-                  { offset: 1, color: pair.to },
-                ],
-              },
-            },
-          };
-        }),
+        data: slices.map((s, i) => ({
+          name: s.label,
+          value: s.value,
+          itemStyle: {
+            color: FLAT_COLORS[i % FLAT_COLORS.length],
+          },
+        })),
         animationType: 'expansion',
         animationEasing: 'cubicOut',
         animationDuration: 700,
@@ -124,4 +112,4 @@ export function PieChartECharts({
 }
 
 // Export the color pairs so the legend can use matching colors
-export const PIE_COLORS = COLOR_PAIRS.map(p => p.to);
+export const PIE_COLORS = FLAT_COLORS;

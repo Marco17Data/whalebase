@@ -132,7 +132,16 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                 slices={data.pie.slices}
                 total={data.pie.total}
                 totalLabel="TOTAL"
-                totalValueText={formatNum(data.pie.total, data.pie.is_currency, currency)}
+                totalValueText={
+                  // Use the grand total from KPIs (Total Revenue) if available, else pie sum
+                  (() => {
+                    const revKpi = data.kpis.find(k => k.format === 'currency' && typeof k.value === 'number');
+                    if (revKpi && typeof revKpi.value === 'number') {
+                      return formatNum(revKpi.value, true, currency);
+                    }
+                    return formatNum(data.pie.total, data.pie.is_currency, currency);
+                  })()
+                }
                 width={280}
                 height={280}
               />
