@@ -175,161 +175,37 @@ async def suggest_questions(llm: LLMClient, session: Session, lang: str = "en") 
 
 
 # ============================================================
-# 4. Auto Insights (UPGRADED: real stats + business analyst tone)
+# 4. Auto Insights
 # ============================================================
 def _auto_insight_prompt(lang: str) -> str:
     from datetime import date
     lname = _lang_name(lang)
     today = date.today().isoformat()
-    return f"""You are a senior business analyst preparing a briefing for a non-technical executive.
+    return f"""You are a data analyst. The user just uploaded data and hasn't asked yet.
 
 CONTEXT:
 - Today's date is {today}.
-- The data you'll see is HISTORICAL business data. The end date being in the past is NORMAL and EXPECTED.
-- You will be given both the schema AND pre-computed real statistics.
-- USE THE REAL NUMBERS in your insights. Speak with confidence, not hedging.
+- Any date in the data that is on or before today is HISTORICAL, never "future" or "forecast".
+- Do not flag past dates as anomalies just because they appear recent.
 
-Task: Find 3-5 most valuable, actionable business insights for the executive.
+Task: Proactively analyze this data and find 3-5 most valuable insights.
 
-ABSOLUTE RULES (must follow):
-1. NEVER comment on the date range, data cutoff, missing recent data, or no data for current year.
-   Users know what data they uploaded. This is not insight, it is noise.
-2. NEVER say things like "the customer_gender field shows" or "samples indicate" - that is programmer speak.
-3. NEVER use backticks around field names. Use plain English.
-4. NEVER restate trivial facts like "data has N rows" or "quantity ranges from 1 to 5".
-5. ALWAYS include concrete numbers (percentages, totals, comparisons) from the real statistics provided.
-6. Write IN {lname}.
+Strategy:
+- Don't repeat "the data has N rows" or basic schema info
+- Find: anomalies (real ones), significant trends, outstanding categories, imbalanced distributions, data quality issues
+- Each insight must reference specific fields and observations
+- 1-2 sentences each
+- Focus on actionable findings, not generic statements
+- Write IN {lname}
 
-GOOD insights look like:
-- "Female customers drive 70% of revenue. Top category for them: beauty (820K)."
-- "East region generates 31% of revenue but only 22% of orders -- this region has the highest order value at 520 avg."
-- "Top 3 products account for 58% of revenue. The other 7 products combined only contribute 42%."
-
-BAD insights (avoid):
-- "Data cut-off in late 2025"  (date range comment - banned)
-- "The customer_gender samples suggest..."  (programmer speak)
-- "The data has 5455 rows"  (trivial)
-- "Might indicate", "could suggest"  (vague hedging - you have real data)
+You may reason from schema (sample values, ranges, distinct counts, null counts).
 
 Output strict JSON array:
 [
-  {{"title": "Punchy 5-10 word headline", "content": "Specific finding with real numbers + business implication", "suggested_question": "One sharp follow-up question"}},
+  {{"title": "5-10 word title", "content": "1-2 sentence insight", "suggested_question": "one follow-up question"}},
   ...
 ]
 """
-
-
-def _compute_real_stats(session: Session, max_dims: int = 3) -> str:
-    """Compute real statistics from the data to ground the AI insights."""
-    if not session.tables:
-        return ""
-    table = next(iter(session.tables.values()))
-    tname = table.name
-
-    revenue_keywords = ("revenue", "sales", "amount", "total", "value", "price",
-                        "营业额", "销售额", "总额", "金额")
-    revenue_col = None
-    for kw in revenue_keywords:
-        for col in table.columns:
-            if col.dtype in ("integer", "float") and kw.lower() in col.name.lower():
-                revenue_col = col
-                break
-        if revenue_col:
-            break
-    if revenue_col is None:
-        for col in table.columns:
-            if col.dtype in ("integer", "float"):
-                revenue_col = col
-                break
-
-    date_col = next((c for c in table.columns if c.dtype == "datetime"), None)
-    cat_cols = [c for c in table.columns
-                if c.dtype == "text" and c.distinct_count and c.distinct_count <= 30][:max_dims]
-
-    stats_lines = [f"## Real Statistics for {tname}"]
-
-    try:
-        r = execute_sql(session, f'SELECT COUNT(*) FROM "{tname}"', max_rows=1)
-        if r and r["rows"]:
-            stats_lines.append(f"- Total rows: {r['rows'][0][0]:,}")
-    except SQLExecutionError:
-        pass
-
-    if revenue_col:
-        try:
-            r = execute_sql(session, (
-                f'SELECT ROUND(SUM("{revenue_col.name}"), 2), '
-                f'ROUND(AVG("{revenue_col.name}"), 2), '
-                f'ROUND(MIN("{revenue_col.name}"), 2), '
-                f'ROUND(MAX("{revenue_col.name}"), 2) '
-                f'FROM "{tname}"'
-            ), max_rows=1)
-            if r and r["rows"]:
-                t, a, mn, mx = r["rows"][0]
-                stats_lines.append(
-                    f"- {revenue_col.name}: total={t:,.0f}, avg={a:,.2f}, min={mn:,.2f}, max={mx:,.2f}"
-                )
-        except SQLExecutionError:
-            pass
-
-    for cat_col in cat_cols:
-        try:
-            if revenue_col:
-                sql = (
-                    f'SELECT "{cat_col.name}", COUNT(*) AS cnt, '
-                    f'ROUND(SUM("{revenue_col.name}"), 2) AS rev, '
-                    f'ROUND(SUM("{revenue_col.name}") * 100.0 / SUM(SUM("{revenue_col.name}")) OVER (), 1) AS pct '
-                    f'FROM "{tname}" WHERE "{cat_col.name}" IS NOT NULL '
-                    f'GROUP BY "{cat_col.name}" ORDER BY rev DESC LIMIT 7'
-                )
-            else:
-                sql = (
-                    f'SELECT "{cat_col.name}", COUNT(*) AS cnt, '
-                    f'ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 1) AS pct '
-                    f'FROM "{tname}" WHERE "{cat_col.name}" IS NOT NULL '
-                    f'GROUP BY "{cat_col.name}" ORDER BY cnt DESC LIMIT 7'
-                )
-            r = execute_sql(session, sql, max_rows=10)
-            if r and r["rows"]:
-                stats_lines.append(f"- Breakdown by {cat_col.name}:")
-                for row in r["rows"]:
-                    if revenue_col:
-                        label, cnt, rev, pct = row
-                        stats_lines.append(f"    - {label}: {cnt:,} orders, revenue={rev:,.0f} ({pct}%)")
-                    else:
-                        label, cnt, pct = row
-                        stats_lines.append(f"    - {label}: {cnt:,} ({pct}%)")
-        except SQLExecutionError:
-            pass
-
-    if date_col and revenue_col:
-        try:
-            r = execute_sql(session, (
-                f"SELECT DATE_TRUNC('month', \"{date_col.name}\") AS m, "
-                f'ROUND(SUM("{revenue_col.name}"), 0) AS v '
-                f'FROM "{tname}" GROUP BY m ORDER BY m'
-            ), max_rows=24)
-            if r and r["rows"] and len(r["rows"]) >= 2:
-                rows = r["rows"]
-                stats_lines.append(f"- Monthly {revenue_col.name} ({len(rows)} months):")
-                if len(rows) <= 8:
-                    for m, v in rows:
-                        stats_lines.append(f"    - {str(m).split(' ')[0]}: {v:,.0f}")
-                else:
-                    for m, v in rows[:3]:
-                        stats_lines.append(f"    - {str(m).split(' ')[0]}: {v:,.0f}")
-                    stats_lines.append(f"    - ... ({len(rows) - 6} months omitted) ...")
-                    for m, v in rows[-3:]:
-                        stats_lines.append(f"    - {str(m).split(' ')[0]}: {v:,.0f}")
-                first_3_avg = sum(v for _, v in rows[:3]) / 3
-                last_3_avg = sum(v for _, v in rows[-3:]) / 3
-                change_pct = (last_3_avg - first_3_avg) / first_3_avg * 100 if first_3_avg else 0
-                direction = "growing" if change_pct > 5 else ("declining" if change_pct < -5 else "stable")
-                stats_lines.append(f"    - Trend: {direction} ({change_pct:+.1f}% from start to end)")
-        except SQLExecutionError:
-            pass
-
-    return "\n".join(stats_lines)
 
 
 async def generate_auto_insights(
@@ -338,10 +214,9 @@ async def generate_auto_insights(
     if not session.tables:
         return []
     schema = build_schema_prompt(session)
-    real_stats = _compute_real_stats(session)
     raw = await llm.chat(
         system_prompt=_auto_insight_prompt(lang),
-        user_message=f"{schema}\n\n{real_stats}\n\nProvide 3-5 specific, actionable insights using the real numbers above. Do not comment on date ranges.",
+        user_message=f"{schema}\n\nProvide 3-5 insights.",
         json_mode=True,
     )
     import logging
