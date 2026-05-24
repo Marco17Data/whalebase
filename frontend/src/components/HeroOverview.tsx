@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
 import { PieChartECharts, PIE_COLORS } from './PieChartECharts';
-import { Sparkles, TrendingUp, TrendingDown } from 'lucide-react';
+import { Sparkles, TrendingUp, TrendingDown, AlertTriangle } from 'lucide-react';
 import { api } from '../api';
 import { useI18n } from '../i18n';
 
@@ -127,8 +127,16 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-3">
         {data.pie && (
           <div className="lg:col-span-3 bg-white rounded-xl border border-slate-200 p-5">
-            <div className="text-xs font-semibold uppercase tracking-wide text-slate-600 mb-3">
-              {data.pie.title}
+            <div className="flex items-center justify-between mb-3">
+              <div className="text-xs font-semibold uppercase tracking-wide text-slate-600">
+                {data.pie.title}
+              </div>
+              {data.pie.high_concentration && (
+                <div className="text-[11px] font-semibold text-rose-600 bg-rose-50 px-2 py-0.5 rounded flex items-center gap-1">
+                  <AlertTriangle className="w-3 h-3" />
+                  High concentration
+                </div>
+              )}
             </div>
             <div className="flex items-center gap-4">
               <PieChartECharts
@@ -241,8 +249,20 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
 
       {data.trend && data.trend.points.length > 1 && (
         <div className="bg-white rounded-xl border border-slate-200 p-5">
-          <div className="text-xs font-semibold uppercase tracking-wide text-slate-600 mb-3">
-            {data.trend.title}
+          <div className="flex items-center justify-between mb-3">
+            <div className="text-xs font-semibold uppercase tracking-wide text-slate-600">
+              {data.trend.title}
+            </div>
+            {(() => {
+              const anomalies = data.trend!.points.filter(p => p.is_anomaly);
+              if (anomalies.length === 0) return null;
+              return (
+                <div className="text-[11px] font-semibold text-rose-600 bg-rose-50 px-2 py-0.5 rounded flex items-center gap-1">
+                  <AlertTriangle className="w-3 h-3" />
+                  {anomalies.length} {anomalies.length === 1 ? 'anomaly' : 'anomalies'}
+                </div>
+              );
+            })()}
           </div>
           <div style={{ width: '100%', height: 180 }}>
             <ResponsiveContainer>
@@ -257,7 +277,26 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                   formatter={(v: number) => formatNum(v, data.trend!.is_currency, currency)}
                   contentStyle={{ fontSize: 12, borderRadius: 8 }}
                 />
-                <Line type="monotone" dataKey="value" stroke="#1e3a8a" strokeWidth={2} dot={{ r: 3, fill: '#1e3a8a' }} />
+                <Line
+                  type="monotone"
+                  dataKey="value"
+                  stroke="#1e3a8a"
+                  strokeWidth={2}
+                  dot={(props: any) => {
+                    const point = data.trend!.points[props.index];
+                    const isAnomaly = point?.is_anomaly;
+                    return (
+                      <circle
+                        cx={props.cx}
+                        cy={props.cy}
+                        r={isAnomaly ? 5 : 3}
+                        fill={isAnomaly ? '#ef4444' : '#1e3a8a'}
+                        stroke={isAnomaly ? '#fff' : 'none'}
+                        strokeWidth={isAnomaly ? 2 : 0}
+                      />
+                    );
+                  }}
+                />
               </LineChart>
             </ResponsiveContainer>
           </div>
