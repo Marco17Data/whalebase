@@ -134,7 +134,7 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
               {data.pie.high_concentration && (
                 <div className="text-[11px] font-semibold text-rose-600 bg-rose-50 px-2 py-0.5 rounded flex items-center gap-1">
                   <AlertTriangle className="w-3 h-3" />
-                  High concentration
+                  {t('anomaly.high_concentration')}
                 </div>
               )}
             </div>
@@ -259,7 +259,7 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
               return (
                 <div className="text-[11px] font-semibold text-rose-600 bg-rose-50 px-2 py-0.5 rounded flex items-center gap-1">
                   <AlertTriangle className="w-3 h-3" />
-                  {anomalies.length} {anomalies.length === 1 ? 'anomaly' : 'anomalies'}
+                  {anomalies.length} {anomalies.length === 1 ? t('anomaly.singular') : t('anomaly.plural')}
                 </div>
               );
             })()}
