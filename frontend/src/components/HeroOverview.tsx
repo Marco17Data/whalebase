@@ -118,7 +118,7 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
 
   if (loading || !data) {
     return (
-      <div className="flex items-center justify-center py-20 text-slate-400 dark:text-slate-500 text-sm">
+      <div className="flex items-center justify-center py-20 text-slate-400 dark:text-slate-400 text-sm">
         {t('common.loading')}
       </div>
     );
@@ -138,7 +138,7 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
         {data.pie && (
           <div className="lg:col-span-3 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
             <div className="flex items-center justify-between mb-3">
-              <div className="text-xs font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-300">
+              <div className="text-xs font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-200">
                 {data.pie.title}
               </div>
               {data.pie.high_concentration && (
@@ -172,8 +172,8 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                       className="w-3 h-3 rounded-sm flex-shrink-0"
                       style={{ background: PIE_COLORS[i % PIE_COLORS.length] }}
                     />
-                    <span className="text-slate-700 dark:text-slate-300 flex-1 truncate">{s.label}</span>
-                    <span className="text-slate-500 dark:text-slate-400 text-xs font-medium">{s.pct.toFixed(1)}%</span>
+                    <span className="text-slate-700 dark:text-slate-200 flex-1 truncate">{s.label}</span>
+                    <span className="text-slate-500 dark:text-slate-300 text-xs font-medium">{s.pct.toFixed(1)}%</span>
                   </div>
                 ))}
               </div>
@@ -182,35 +182,35 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
             {data.pie.slices.length >= 2 && (
               <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-700 grid grid-cols-3 gap-3">
                 <div>
-                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">{t('hero.top')}</div>
+                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-400">{t('hero.top')}</div>
                   <div className="text-sm font-semibold text-slate-800 dark:text-slate-200 mt-1 truncate">{data.pie.slices[0].label}</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400 tabular-nums">{data.pie.slices[0].pct.toFixed(1)}%</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-300 tabular-nums">{data.pie.slices[0].pct.toFixed(1)}%</div>
                 </div>
                 <div>
-                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">{t('hero.lowest')}</div>
+                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-400">{t('hero.lowest')}</div>
                   <div className="text-sm font-semibold text-slate-800 dark:text-slate-200 mt-1 truncate">{data.pie.slices[data.pie.slices.length - 1].label}</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400 tabular-nums">{data.pie.slices[data.pie.slices.length - 1].pct.toFixed(1)}%</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-300 tabular-nums">{data.pie.slices[data.pie.slices.length - 1].pct.toFixed(1)}%</div>
                 </div>
                 <div>
-                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">{t('hero.concentration')}</div>
+                  <div className="text-[10px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-400">{t('hero.concentration')}</div>
                   <div className="text-sm font-semibold mt-1" style={{
                     color: data.pie.slices[0].pct > 50 ? '#ef4444' : data.pie.slices[0].pct > 35 ? '#f59e0b' : '#10b981'
                   }}>
                     {data.pie.slices[0].pct > 50 ? t('hero.high_risk') : data.pie.slices[0].pct > 35 ? t('hero.moderate') : t('hero.balanced')}
                   </div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400">{t('hero.top_3')}: {data.pie.slices.slice(0, 3).reduce((s, x) => s + x.pct, 0).toFixed(0)}%</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-300">{t('hero.top_3')}: {data.pie.slices.slice(0, 3).reduce((s, x) => s + x.pct, 0).toFixed(0)}%</div>
                 </div>
               </div>
             )}
             {data.pie.high_concentration && (
               <div className="mt-3 pt-3 border-t border-slate-100 dark:border-slate-700 flex items-start gap-2 text-xs">
                 <AlertTriangle className="w-3.5 h-3.5 text-rose-500 mt-0.5 flex-shrink-0" />
-                <div className="text-slate-700 dark:text-slate-300">
+                <div className="text-slate-700 dark:text-slate-200">
                   <span className="font-semibold">{data.pie.top_label}</span>
-                  <span className="text-slate-500 dark:text-slate-400"> {t('anomaly.accounts_for')} </span>
+                  <span className="text-slate-500 dark:text-slate-300"> {t('anomaly.accounts_for')} </span>
                   <span className="font-semibold text-rose-600 dark:text-rose-400 tabular-nums">{data.pie.top_pct?.toFixed(1)}%</span>
-                  <span className="text-slate-500 dark:text-slate-400"> {t('anomaly.of_revenue')}. </span>
-                  <span className="text-slate-400 dark:text-slate-500">{t('anomaly.diversification_hint')}</span>
+                  <span className="text-slate-500 dark:text-slate-300"> {t('anomaly.of_revenue')}. </span>
+                  <span className="text-slate-400 dark:text-slate-400">{t('anomaly.diversification_hint')}</span>
                 </div>
               </div>
             )}
@@ -271,7 +271,7 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
       {data.trend && data.trend.points.length > 1 && (
         <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
           <div className="flex items-center justify-between mb-3">
-            <div className="text-xs font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-300">
+            <div className="text-xs font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-200">
               {data.trend.title}
             </div>
             {(() => {
@@ -342,16 +342,16 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
                 {anomalies.map((a, i) => (
                   <div key={i} className="flex items-start gap-2 text-xs">
                     <AlertTriangle className="w-3.5 h-3.5 text-rose-500 mt-0.5 flex-shrink-0" />
-                    <div className="text-slate-700 dark:text-slate-300">
+                    <div className="text-slate-700 dark:text-slate-200">
                       <span className="font-semibold">{a.month}</span>
-                      <span className="text-slate-500 dark:text-slate-400">: </span>
+                      <span className="text-slate-500 dark:text-slate-300">: </span>
                       <span className="font-semibold tabular-nums">
                         {formatNum(a.value, data.trend!.is_currency, currency)}
                       </span>
                       <span className={`font-medium ml-2 ${a.anomaly_type === 'spike' ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
                         {(a.deviation_pct ?? 0) > 0 ? '+' : ''}{(a.deviation_pct ?? 0).toFixed(0)}% {a.anomaly_type === 'spike' ? t('anomaly.vs_avg_above') : t('anomaly.vs_avg_below')}
                       </span>
-                      <span className="text-slate-400 dark:text-slate-500 ml-1">
+                      <span className="text-slate-400 dark:text-slate-400 ml-1">
                         ({t('anomaly.avg_is')} {formatNum(a.mean_value ?? 0, data.trend!.is_currency, currency)})
                       </span>
                     </div>
@@ -399,7 +399,7 @@ function KPICard({ kpi, currency }: { kpi: KPI; currency: string }) {
   return (
     <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-4 relative overflow-hidden">
       <div className="flex items-start justify-between gap-2">
-        <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+        <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-300 uppercase tracking-wider">
           {kpi.label}
         </div>
         {hasChange && (
@@ -450,7 +450,7 @@ function KPICard({ kpi, currency }: { kpi: KPI; currency: string }) {
       )}
 
       <div className={`text-[10px] mt-1.5 flex items-center gap-1 ${
-        kpi.period_status === 'partial' ? 'text-amber-600 dark:text-amber-400' : 'text-slate-400 dark:text-slate-500'
+        kpi.period_status === 'partial' ? 'text-amber-600 dark:text-amber-400' : 'text-slate-400 dark:text-slate-400'
       }`}>
         {kpi.period_status === 'partial' && <span>⚠</span>}
         {subInfo}

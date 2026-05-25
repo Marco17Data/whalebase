@@ -49,9 +49,9 @@ export function TopBar({
           <div className="flex flex-col leading-none">
             <span className="text-base font-semibold text-slate-900 dark:text-slate-100 tracking-tight">
               Whalebase
-              <span className="ml-1 text-[9px] text-slate-400 dark:text-slate-500 font-mono font-normal">v4.4</span>
+              <span className="ml-1 text-[9px] text-slate-400 dark:text-slate-400 font-mono font-normal">v4.4</span>
             </span>
-            <span className="text-[10px] text-slate-500 dark:text-slate-400 mt-0.5 uppercase tracking-wider">
+            <span className="text-[10px] text-slate-500 dark:text-slate-300 mt-0.5 uppercase tracking-wider">
               {t('app.tagline')}
             </span>
           </div>
@@ -198,10 +198,10 @@ function AboutDropdown() {
         <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100 mb-1.5">
           {t('about.title')}
         </h3>
-        <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
+        <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
           {t('about.desc')}
         </p>
-        <div className="flex items-center gap-1.5 text-[11px] text-slate-400 dark:text-slate-500 mt-2 pt-2 border-t border-slate-100 dark:border-slate-700">
+        <div className="flex items-center gap-1.5 text-[11px] text-slate-400 dark:text-slate-400 mt-2 pt-2 border-t border-slate-100 dark:border-slate-700">
           <Zap className="w-3 h-3" />
           {t('about.tech')}
         </div>
@@ -234,7 +234,7 @@ function LanguageDropdown() {
             className={`w-full text-left px-3 py-2 rounded-md text-sm flex items-center gap-2.5
               ${lang === l.code
                 ? 'bg-brand-50 dark:bg-brand-900/30 text-brand-900 dark:text-brand-200'
-                : 'hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300'}`}
+                : 'hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200'}`}
           >
             <span className="text-base">{l.flag}</span>
             <span className="flex-1">{l.name}</span>
@@ -329,7 +329,7 @@ function DropdownItem({
       </div>
       <div className="flex-1 min-w-0">
         <div className="text-xs font-semibold text-slate-900 dark:text-slate-100">{title}</div>
-        <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed mt-0.5">{desc}</p>
+        <p className="text-[11px] text-slate-500 dark:text-slate-300 leading-relaxed mt-0.5">{desc}</p>
       </div>
     </div>
   );
@@ -338,7 +338,7 @@ function DropdownItem({
 function MetricChip({ label, value }: { label: string; value: number | string }) {
   return (
     <div className="flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px]">
-      <span className="text-slate-500 dark:text-slate-400">{label}</span>
+      <span className="text-slate-500 dark:text-slate-300">{label}</span>
       <span className="font-semibold text-slate-900 dark:text-slate-100 tabular-nums">{value}</span>
     </div>
   );
