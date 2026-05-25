@@ -23,7 +23,6 @@ export function DataPanel({ sessionId, tables, activeTable, onTablesChanged, onS
 
   const handleUpload = async (files: FileList | null) => {
     if (!files || files.length === 0) return;
-    // 前端先检查文件大小,避免上传后才报错
     const MAX_MB = 50;
     const oversized = Array.from(files).filter(f => f.size > MAX_MB * 1024 * 1024);
     if (oversized.length > 0) {
@@ -61,10 +60,10 @@ export function DataPanel({ sessionId, tables, activeTable, onTablesChanged, onS
   };
 
   return (
-    <aside className="w-64 border-r border-slate-200 bg-white flex flex-col h-full shrink-0">
-      <div className="px-4 py-3 border-b border-slate-100">
+    <aside className="w-64 border-r border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 flex flex-col h-full shrink-0">
+      <div className="px-4 py-3 border-b border-slate-100 dark:border-slate-800">
         <div className="flex items-center gap-1.5">
-          <Database className="w-3.5 h-3.5 text-slate-500" />
+          <Database className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" />
           <h2 className="label">{t('data.title')}</h2>
         </div>
       </div>
@@ -84,19 +83,19 @@ export function DataPanel({ sessionId, tables, activeTable, onTablesChanged, onS
           onClick={() => !uploading && fileInputRef.current?.click()}
           className={`border border-dashed rounded-md p-4 text-center transition-colors
             ${uploading
-              ? 'border-brand-300 bg-brand-50/50 cursor-wait'
-              : 'border-slate-300 hover:border-brand-500 hover:bg-brand-50/30 cursor-pointer'}`}
+              ? 'border-brand-300 dark:border-brand-700 bg-brand-50/50 dark:bg-brand-900/20 cursor-wait'
+              : 'border-slate-300 dark:border-slate-600 hover:border-brand-500 dark:hover:border-brand-500 hover:bg-brand-50/30 dark:hover:bg-brand-900/20 cursor-pointer'}`}
         >
           {uploading ? (
             <>
-              <Loader2 className="w-4 h-4 mx-auto mb-2 text-brand-600 animate-spin" />
-              <p className="text-xs text-brand-700">{t('data.parsing')}</p>
+              <Loader2 className="w-4 h-4 mx-auto mb-2 text-brand-600 dark:text-brand-400 animate-spin" />
+              <p className="text-xs text-brand-700 dark:text-brand-300">{t('data.parsing')}</p>
             </>
           ) : (
             <>
-              <Upload className="w-4 h-4 mx-auto mb-2 text-slate-400" />
-              <p className="text-xs text-slate-600 mb-0.5">{t('data.upload')}</p>
-              <p className="text-[10px] text-slate-400">{t('data.formats')}</p>
+              <Upload className="w-4 h-4 mx-auto mb-2 text-slate-400 dark:text-slate-500" />
+              <p className="text-xs text-slate-600 dark:text-slate-300 mb-0.5">{t('data.upload')}</p>
+              <p className="text-[10px] text-slate-400 dark:text-slate-500">{t('data.formats')}</p>
             </>
           )}
           <input
@@ -109,7 +108,7 @@ export function DataPanel({ sessionId, tables, activeTable, onTablesChanged, onS
           />
         </div>
         {error && (
-          <div className="mt-2 text-[11px] text-danger bg-red-50 px-2 py-1.5 rounded-md whitespace-pre-wrap leading-relaxed">
+          <div className="mt-2 text-[11px] text-danger dark:text-rose-300 bg-red-50 dark:bg-rose-900/30 px-2 py-1.5 rounded-md whitespace-pre-wrap leading-relaxed">
             {error}
           </div>
         )}
@@ -118,7 +117,7 @@ export function DataPanel({ sessionId, tables, activeTable, onTablesChanged, onS
       {/* 表列表 */}
       <div className="flex-1 overflow-y-auto px-3 pb-3">
         {tables.length === 0 ? (
-          <div className="text-center py-6 text-[11px] text-slate-400">
+          <div className="text-center py-6 text-[11px] text-slate-400 dark:text-slate-500">
             {t('data.empty')}
           </div>
         ) : (
@@ -139,7 +138,7 @@ export function DataPanel({ sessionId, tables, activeTable, onTablesChanged, onS
       </div>
 
       {tables.length > 0 && (
-        <div className="px-3 py-2 border-t border-slate-100">
+        <div className="px-3 py-2 border-t border-slate-100 dark:border-slate-800">
           <button
             onClick={() => fileInputRef.current?.click()}
             disabled={uploading}
@@ -173,34 +172,32 @@ function TableItem({
   return (
     <div className={`rounded-md border transition-colors
       ${isActive
-        ? 'border-brand-500 bg-brand-50/60 ring-1 ring-brand-200'
-        : 'border-slate-100 hover:border-slate-200 bg-slate-50/40'}`}>
+        ? 'border-brand-500 bg-brand-50/60 dark:bg-brand-900/30 ring-1 ring-brand-200 dark:ring-brand-800'
+        : 'border-slate-100 dark:border-slate-700 hover:border-slate-200 dark:hover:border-slate-600 bg-slate-50/40 dark:bg-slate-800/40'}`}>
       <div className="flex items-center gap-1.5 px-2 py-1.5">
-        {/* 单独的展开按钮 */}
         <button
           onClick={onExpandToggle}
-          className="p-0.5 -ml-0.5 rounded hover:bg-slate-200/60"
+          className="p-0.5 -ml-0.5 rounded hover:bg-slate-200/60 dark:hover:bg-slate-700/60"
           title="Show columns"
         >
           {expanded ? (
-            <ChevronDown className="w-3 h-3 text-slate-400" />
+            <ChevronDown className="w-3 h-3 text-slate-400 dark:text-slate-500" />
           ) : (
-            <ChevronRight className="w-3 h-3 text-slate-400" />
+            <ChevronRight className="w-3 h-3 text-slate-400 dark:text-slate-500" />
           )}
         </button>
-        {/* 主体:点击切表 */}
         <div
           onClick={onSelect}
           className="flex items-center gap-1.5 flex-1 min-w-0 cursor-pointer"
           title="Click to analyze this table"
         >
-          <FileText className={`w-3 h-3 shrink-0 ${isActive ? 'text-brand-900' : 'text-brand-700'}`} />
+          <FileText className={`w-3 h-3 shrink-0 ${isActive ? 'text-brand-900 dark:text-brand-300' : 'text-brand-700 dark:text-brand-400'}`} />
           <div className="flex-1 min-w-0">
-            <div className={`text-xs font-medium truncate ${isActive ? 'text-brand-900' : 'text-slate-800'}`}>
+            <div className={`text-xs font-medium truncate ${isActive ? 'text-brand-900 dark:text-brand-200' : 'text-slate-800 dark:text-slate-200'}`}>
               {table.name}
-              {isActive && <span className="ml-1 text-[9px] text-accent-700 font-mono">●</span>}
+              {isActive && <span className="ml-1 text-[9px] text-accent-700 dark:text-accent-300 font-mono">●</span>}
             </div>
-            <div className="text-[10px] text-slate-500">
+            <div className="text-[10px] text-slate-500 dark:text-slate-400">
               {table.row_count.toLocaleString()} {t('data.rows')} · {table.columns.length} {t('data.cols')}
             </div>
           </div>
@@ -210,18 +207,18 @@ function TableItem({
             e.stopPropagation();
             onDelete();
           }}
-          className="p-0.5 rounded hover:bg-red-50 text-slate-400 hover:text-danger transition-colors"
+          className="p-0.5 rounded hover:bg-red-50 dark:hover:bg-rose-900/30 text-slate-400 dark:text-slate-500 hover:text-danger dark:hover:text-rose-400 transition-colors"
         >
           <Trash2 className="w-3 h-3" />
         </button>
       </div>
 
       {expanded && (
-        <div className="border-t border-slate-100 px-2 py-1.5 space-y-1 max-h-60 overflow-y-auto">
+        <div className="border-t border-slate-100 dark:border-slate-700 px-2 py-1.5 space-y-1 max-h-60 overflow-y-auto">
           {table.columns.map((col) => (
             <div key={col.name} className="text-[11px] flex items-baseline gap-1.5">
-              <span className="font-mono text-slate-700 truncate flex-1">{col.name}</span>
-              <span className="text-[9px] text-slate-400 font-mono uppercase shrink-0">
+              <span className="font-mono text-slate-700 dark:text-slate-200 truncate flex-1">{col.name}</span>
+              <span className="text-[9px] text-slate-400 dark:text-slate-500 font-mono uppercase shrink-0">
                 {dtypeShort(col.dtype)}
               </span>
             </div>
