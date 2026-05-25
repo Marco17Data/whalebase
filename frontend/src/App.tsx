@@ -99,9 +99,12 @@ function App() {
 
   // 上传成功回调:立即设 USD 为默认货币(这样数字立刻有 $ 符号),
   // 然后弹货币对话框给用户修改成自己想要的(如 CNY/EUR)
+  const [refreshKey, setRefreshKey] = useState(0);
+
   const handleAfterUpload = async (suggested: string | undefined) => {
     if (!sessionId) return;
     refreshTables();
+    setRefreshKey((k) => k + 1);
     if (currency === 'none') {
       const defaultCur = suggested && suggested !== 'none' ? suggested : 'USD';
       // 立即设默认值,数字立刻有 $ 符号
@@ -215,7 +218,7 @@ function App() {
               activeTable={activeTable}
               onQueryGenerated={addQuery}
               onOpenPivot={() => setView('pivot')}
-          tablesCount={tables.length}
+          tablesCount={refreshKey}
         />
           )}
 
