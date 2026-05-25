@@ -125,7 +125,7 @@ export function DataPanel({ sessionId, tables, activeTable, onTablesChanged, onS
           </div>
         ) : (
           <div className="space-y-1">
-            {tables.map((tbl) => (
+            {tables.filter((tbl) => !tbl.name.startsWith('__')).map((tbl) => (
               <TableItem
                 key={tbl.name}
                 table={tbl}

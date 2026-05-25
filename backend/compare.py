@@ -12,7 +12,7 @@ import re
 from typing import Any
 from database import Session
 
-SIMILARITY_THRESHOLD = 0.80  # 80% 列匹配率视为可对比
+SIMILARITY_THRESHOLD = 0.95  # 80% 列匹配率视为可对比
 
 
 def _normalize_col_name(name: str) -> str:
@@ -99,9 +99,13 @@ def enable_compare_mode(session: Session, table_names: list[str]) -> dict:
     """
     把多个表 UNION ALL 成一张合并表, 加一列 __dataset 标记来源。
     把合并表注册到 session.tables, 标记为 active_table。
+    每次调用都先清理旧合并表 + compare_mode 状态, 支持切换对比组。
     """
     if not table_names or len(table_names) < 2:
         return {"ok": False, "error": "need at least 2 tables"}
+
+    # 清理旧 compare 状态 (允许切换对比组)
+    disable_compare_mode(session)  # cleanup old state
 
     valid = [t for t in table_names if t in session.tables]
     if len(valid) < 2:
