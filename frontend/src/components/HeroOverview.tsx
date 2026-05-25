@@ -292,7 +292,7 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
             <ResponsiveContainer>
               <LineChart data={data.trend.points} margin={{ top: 5, right: 16, left: 0, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke={gridColor} vertical={false} />
-                <XAxis dataKey="month" tick={{ fontSize: 11, fill: axisColor }} />
+                <XAxis dataKey="month" tick={{ fontSize: 11, fill: axisColor }} tickFormatter={(v: string) => (typeof v === "string" ? v.slice(0, 7) : v)} />
                 <YAxis
                   tick={{ fontSize: 11, fill: axisColor }}
                   tickFormatter={(v) => formatNum(v, data.trend!.is_currency, currency)}

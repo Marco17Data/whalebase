@@ -156,8 +156,8 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
         "ru": "Пик дня",
     },
     "hero.pie_title": {
-        "en": "Revenue by {dim}", "zh": "{dim} 收入占比", "es": "Ingresos por {dim}",
-        "ja": "{dim} 別売上", "ko": "{dim}별 매출", "fr": "Revenu par {dim}",
+        "en": "Revenue by {dim}", "zh": "{dim}收入占比", "es": "Ingresos por {dim}",
+        "ja": "{dim}別売上", "ko": "{dim}별 매출", "fr": "Revenu par {dim}",
         "de": "Umsatz nach {dim}", "pt": "Receita por {dim}", "it": "Ricavi per {dim}",
         "ru": "Выручка по {dim}",
     },

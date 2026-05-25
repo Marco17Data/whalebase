@@ -104,7 +104,7 @@ export function PieChartECharts({
       />
       {/* Center total - absolute over the chart */}
       <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-        <div className="text-[10px] text-slate-400 dark:text-slate-500 uppercase tracking-widest">{totalLabel}</div>
+        <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-300 uppercase tracking-wider">{totalLabel}</div>
         <div className="text-2xl font-bold text-slate-800 dark:text-slate-100 mt-0.5">{totalValueText}</div>
       </div>
     </div>
