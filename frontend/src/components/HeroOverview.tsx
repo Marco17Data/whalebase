@@ -148,7 +148,7 @@ export function HeroOverview({ sessionId, currency, activeTable, tablesCount }: 
         setAiInsights(null);
         setAiLoading(false);
       });
-  }, [sessionId, lang, activeTable, currency]);
+  }, [sessionId, lang, activeTable, currency, tablesCount]);
 
   if (loading || !data) {
     return (
