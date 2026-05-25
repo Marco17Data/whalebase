@@ -176,13 +176,11 @@ def generate_overview(session: Session, lang: str = "en", table_name: str | None
     if not session.tables:
         return {"kpis": [], "pie": None, "trend": None}
 
-    # Compare mode: delegate to compare overview
+    # Compare mode: 强制用合并表; 否则按用户指定或默认第一张
     cm = getattr(session, "compare_mode", None) or {}
-    if cm.get("active"):
-        from compare import generate_compare_overview
-        return generate_compare_overview(session, lang=lang)
-
-    if table_name and table_name in session.tables:
+    if cm.get("active") and "__compare_merged__" in session.tables:
+        table = session.tables["__compare_merged__"]
+    elif table_name and table_name in session.tables:
         table = session.tables[table_name]
     else:
         table = next(iter(session.tables.values()))
@@ -363,7 +361,18 @@ def generate_overview(session: Session, lang: str = "en", table_name: str | None
         pie["top3_pct"] = round(top3_pct, 1)
         pie["top_label"] = pie["slices"][0].get("label", "")
 
-    return {"kpis": kpis, "pie": pie, "trend": trend}
+    # Compare mode: 附加 dataset-level breakdown
+    comparison = None
+    if cm.get("active"):
+        from compare import compute_dataset_deltas
+        comparison = compute_dataset_deltas(session, table, lang=lang)
+
+    return {
+        "kpis": kpis,
+        "pie": pie,
+        "trend": trend,
+        "comparison": comparison,
+    }
 
 
 

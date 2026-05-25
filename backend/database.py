@@ -413,7 +413,20 @@ def _read_columns_metadata(conn, table_name: str):
     cols = []
     for row in schema_rows:
         col_name = row[0]
-        col_dtype = row[1]
+        raw_dtype = (row[1] or "").upper()
+        # 归一化 DuckDB 原始类型 -> dashboard.py 期望的友好别名
+        if any(t in raw_dtype for t in ("DATE", "TIME", "TIMESTAMP")):
+            col_dtype = "datetime"
+        elif any(t in raw_dtype for t in ("INT", "BIGINT", "SMALLINT", "TINYINT")):
+            col_dtype = "integer"
+        elif any(t in raw_dtype for t in ("DOUBLE", "FLOAT", "DECIMAL", "NUMERIC", "REAL")):
+            col_dtype = "float"
+        elif any(t in raw_dtype for t in ("VARCHAR", "TEXT", "STRING", "CHAR")):
+            col_dtype = "text"
+        elif "BOOL" in raw_dtype:
+            col_dtype = "boolean"
+        else:
+            col_dtype = raw_dtype.lower() or "text"
         # 简化版: 不算 null_count/sample/min/max/distinct (后续操作不依赖)
         try:
             distinct_count = conn.execute(
