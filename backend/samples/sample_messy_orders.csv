@@ -1,0 +1,1011 @@
+order_id,order_date,customer_email,customer_country,product_name,product_category,quantity,unit_price,total_amount,payment_method,order_status,shipping_cost
+ORD-10252,2025-02-03 04:00,,Japan,Body Lotion,Beauty,4,172.05,688.2,Apple Pay,refunded,8.77
+ORD-10867,2025-03-06 14:00,bbdud27@gmail.com,Japan,Cast Iron Pan,Home & Kitchen,1,37.01,37.01,Cash on Delivery,shipped,
+ORD-10839,2025-05-10 03:00,jaqnyyoa42@icloud.com,France,The Pragmatic Programmer,Books,1,55.39,55.39,Apple Pay,shipped,
+ORD-10555,2025-03-31 03:00,ccfovrbl37@outlook.com,United States,Tennis Balls,Sports,1,135.32,135.32,Apple Pay,refunded,
+ORD-10145,2025-01-30 14:00,ittds90@gmail.com,United Kingdom,Phone Case,Electronics,1,204.02,204.02,Bank Transfer,processing,10.35
+ORD-10368,2025-01-16 16:00,ibxkmmyjs3@outlook.com,France,Shampoo,Beauty,4,57.16,228.64,PayPal,cancelled,
+ORD-10569,2025-05-04 16:00,wvwrmq77@yahoo.com,Singapore,Educated,Books,2,143.2,286.4,Apple Pay,delivered,10.88
+ORD-10671,2025-01-11 11:00,vxsvcnri68@proton.me,Japan,Wool Socks,Apparel,2,176.34,352.68,Cash on Delivery,shipped,3.7
+ORD-10679,2025-02-09 09:00,,France,Lipstick,Beauty,1,90.96,90.96,Cash on Delivery,shipped,9.07
+ORD-10246,2025-04-17 23:00,,Australia,Sapiens,Books,2,126.39,252.78,Apple Pay,refunded,4.27
+ORD-10789,2025-03-12 17:00,fyranrdy46@outlook.com,Australia,Project Hail Mary,Books,2,17.36,31.14,Apple Pay,cancelled,5.0
+ORD-10554,2025-01-13 07:00,enlio30@gmail.com,France,Resistance Bands,Sports,2,192.7,385.4,Apple Pay,delivered,4.37
+ORD-10397,2025-04-24 01:00,lcbbwkqkwu80@gmail.com,Singapore,Yoga Mat,Sports,2,21.14,42.28,Bank Transfer,cancelled,6.62
+ORD-10760,2025-04-04 21:00,jobxibpzpv25@outlook.com,Japan,Cotton T-Shirt,Apparel,2,69.78,139.56,Bank Transfer,delivered,11.23
+ORD-10770,2025-03-08 05:00,gelsjthzrq10@outlook.com,Canada,Face Cream,Beauty,1,35.53,35.53,Credit Card,shipped,10.89
+ORD-10004,2025-01-19 19:00,sejzqorvu30@gmail.com,Australia,Knife Set,Home & Kitchen,3,156.79,470.37,Bank Transfer,processing,10.62
+ORD-10131,2025-02-06 16:00,djeqsqzom18@outlook.com,Australia,Coffee Mug,Home & Kitchen,2,87.14,174.28,Bank Transfer,refunded,7.66
+ORD-10806,2025-04-14 20:00,,Singapore,Phone Case,,4,53.96,215.84,Apple Pay,cancelled,6.88
+ORD-10497,2025-01-01 14:00,qqpate90@proton.me,United Kingdom,Coffee Mug,Home & Kitchen,4,63.71,254.84,Cash on Delivery,cancelled,14.32
+ORD-10238,2025-05-01 05:00,vvdtgul95@gmail.com,Germany,USB-C Cable,Electronics,4,23.13,92.52,Bank Transfer,delivered,5.31
+ORD-10666,2025-01-19 19:00,stgpteeq64@gmail.com,Australia,USB-C Cable,Electronics,1,172.22,172.22,Credit Card,delivered,
+ORD-10812,2025-04-21 16:00,omwloxqz34@yahoo.com,United States,Bamboo Cutting Board,Home & Kitchen,3,19.04,57.12,Credit Card,shipped,
+ORD-10200,2025-01-03 03:00,gqxgbxju15@icloud.com,France,Project Hail Mary,Books,4,219.29,877.16,Cash on Delivery,processing,11.03
+ORD-10938,2025-02-09 16:00,xuhyibcn22@icloud.com,United Kingdom,Cotton T-Shirt,Apparel,4,137.04,548.16,Credit Card,delivered,13.9
+ORD-10072,2025-02-12 23:00,jszptugg61@outlook.com,Australia,Educated,Books,2,42.4,84.8,Cash on Delivery,cancelled,8.25
+ORD-10592,2025-02-18 23:00,ijhhok25@yahoo.com,Germany,Face Cream,Beauty,2,73.25,146.5,PayPal,processing,12.07
+ORD-10598,2025-03-02 06:00,grvjmimrsx86@icloud.com,Singapore,Hoodie,Apparel,3,99999.99,75.12,PayPal,delivered,8.24
+ORD-10597,2025-05-15 06:00,tdiyzitul22@icloud.com,United States,Running Shorts,Apparel,2,203.54,407.08,PayPal,shipped,14.42
+ORD-10401,2025-01-11 15:00,qsmfm99@yahoo.com,Japan,Hair Serum,Beauty,2,30.23,60.46,PayPal,cancelled,5.63
+ORD-10253,2025-03-31 06:00,ruejvuqly30@outlook.com,Australia,Wireless Earbuds,Electronics,4,97.79,391.16,PayPal,delivered,6.85
+ORD-10784,2025-05-11 20:00,gjgcw67@yahoo.com,Japan,Wool Socks,Apparel,4,54.4,217.6,Credit Card,delivered,14.21
+ORD-10316,2025-05-16 17:00,oxhufjh7@outlook.com,Australia,Tennis Balls,Sports,4,133.79,535.16,Apple Pay,cancelled,8.34
+ORD-10324,2025-05-02 22:00,novebiw18@yahoo.com,United Kingdom,Educated,Books,3,141.14,423.42,Credit Card,processing,12.82
+ORD-10110,2025-04-16 13:00,kgiclj69@outlook.com,United States,Knife Set,Home & Kitchen,4,201.93,807.72,Apple Pay,cancelled,9.69
+ORD-10123,2025-03-26 14:00,zdiyfizzhs63@proton.me,Germany,Hair Serum,Beauty,4,178.46,713.84,Apple Pay,cancelled,7.02
+ORD-10421,2025-03-24 17:00,foydfjeki50@outlook.com,Singapore,Bluetooth Speaker,Electronics,1,180.91,180.91,PayPal,delivered,10.52
+ORD-10750,2025-02-07 14:00,dukdxxgksj27@icloud.com,United Kingdom,Cotton T-Shirt,Apparel,2,100.33,200.66,Bank Transfer,delivered,13.38
+ORD-10699,2025-01-04 13:00,xdyfamhfme71@yahoo.com,Germany,Cast Iron Pan,Home & Kitchen,2,92.68,185.36,PayPal,cancelled,12.5
+ORD-10659,2025-05-05 11:00,xtyicpxs72@yahoo.com,United Kingdom,Resistance Bands,Sports,4,50.86,203.44,Bank Transfer,refunded,7.04
+ORD-10521,2025-04-14 12:00,twgfuj37@proton.me,France,Cotton T-Shirt,Apparel,1,66.4,66.4,Credit Card,delivered,
+ORD-10433,2025-05-09 03:00,ebetgx53@icloud.com,Canada,Slim Jeans,Apparel,2,111.13,222.26,PayPal,delivered,8.41
+ORD-10393,2025-02-19 21:00,robdbgofnu25@gmail.com,France,Project Hail Mary,Books,4,44.14,176.56,Cash on Delivery,cancelled,11.87
+ORD-10218,2025-02-22 22:00,jeqgwljh88@icloud.com,Germany,Atomic Habits,Books,1,87.51,87.51,Bank Transfer,refunded,12.65
+ORD-10266,2025-01-31 04:00,,Singapore,Cast Iron Pan,Home & Kitchen,3,140.81,422.43,PayPal,shipped,14.53
+ORD-10910,2025-01-04 11:00,lohdno80@icloud.com,United Kingdom,Storage Box,Home & Kitchen,4,16.9,67.6,Bank Transfer,refunded,12.28
+ORD-10857,2025-03-24 03:00,vefsxwa20@proton.me,United Kingdom,Knife Set,Home & Kitchen,4,144.83,579.32,Cash on Delivery,processing,8.52
+ORD-10826,2025-04-19 07:00,,United Kingdom,Cotton T-Shirt,Apparel,4,31.88,127.52,Cash on Delivery,processing,12.9
+ORD-10086,2025-03-12 04:00,nneyerspv73@gmail.com,United States,USB-C Cable,Electronics,2,142.63,285.26,Credit Card,delivered,
+ORD-10223,2025-05-12 08:00,gljmgiurx4@icloud.com,Canada,The Pragmatic Programmer,Books,3,208.77,626.31,Apple Pay,delivered,13.51
+ORD-10129,2025-04-20 12:00,ftvbcw24@yahoo.com,Australia,Power Bank,Electronics,2,103.31,206.62,PayPal,cancelled,3.05
+ORD-10832,2025-05-19 09:00,ydxwu78@outlook.com,Japan,The Pragmatic Programmer,Books,2,99.15,198.3,Cash on Delivery,processing,12.4
+ORD-10276,2025-02-06 03:00,rdslsnayr77@gmail.com,Australia,Body Lotion,Beauty,3,172.41,517.23,Bank Transfer,delivered,12.87
+ORD-10350,2025-02-04 08:00,vufkewywf3@proton.me,Germany,Cast Iron Pan,Home & Kitchen,4,193.18,772.72,Credit Card,cancelled,5.08
+ORD-10458,2025-04-08 05:00,irvww38@yahoo.com,Singapore,The Pragmatic Programmer,Books,1,97.62,97.62,Apple Pay,processing,7.48
+ORD-10797,2025-01-30 16:00,gcvpomm99@gmail.com,United Kingdom,Phone Case,Electronics,3,74.32,222.96,PayPal,processing,10.75
+ORD-10940,2025-02-20 22:00,ttdqzh92@outlook.com,Germany,Bluetooth Speaker,Electronics,3,130.38,391.14,PayPal,shipped,3.12
+ORD-10900,2025-02-19 01:00,iovgxi30@yahoo.com,United States,Lipstick,Beauty,1,62.05,62.05,Credit Card,delivered,7.64
+ORD-10318,2025-02-01 00:00,tyyezonq38@icloud.com,France,Body Lotion,Beauty,2,121.13,242.26,Cash on Delivery,shipped,7.85
+ORD-10898,2025-02-20 02:00,eslupt63@proton.me,Canada,Cast Iron Pan,Home & Kitchen,3,164.83,494.49,Bank Transfer,cancelled,
+ORD-10447,2025-01-30 02:00,,France,Cast Iron Pan,Home & Kitchen,3,10.46,31.38,Cash on Delivery,shipped,4.46
+ORD-10280,2025-02-27 04:00,gjexiwimb15@yahoo.com,Singapore,Cast Iron Pan,Home & Kitchen,4,57.12,228.48,Bank Transfer,shipped,13.33
+ORD-10779,2025-01-16 13:00,kvhdzkphqx91@icloud.com,France,Sapiens,,4,124.08,496.32,Cash on Delivery,cancelled,5.53
+ORD-10662,2025-04-10 23:00,ugjxyij89@outlook.com,Australia,Project Hail Mary,Books,4,140.98,563.92,PayPal,refunded,6.14
+ORD-10310,2025-04-11 15:00,vlgoatydhq12@gmail.com,Singapore,Water Bottle,,1,98.25,98.25,Apple Pay,shipped,
+ORD-10934,2025-02-17 02:00,plebygrwux19@icloud.com,Australia,Project Hail Mary,Books,4,76.53,306.12,Apple Pay,refunded,5.05
+ORD-10562,2025-04-26 23:00,,Australia,Tennis Balls,Sports,4,201.06,804.24,Bank Transfer,cancelled,13.02
+ORD-10262,2025-04-23 19:00,wxlupvs51@proton.me,United States,Cotton T-Shirt,Apparel,2,204.55,409.1,Cash on Delivery,delivered,8.88
+ORD-10613,2025-01-26 12:00,zkqqdqzp94@icloud.com,United States,Cast Iron Pan,Home & Kitchen,2,152.87,305.74,Apple Pay,refunded,9.96
+ORD-10609,2025-01-04 10:00,vdwmnek52@gmail.com,Canada,Educated,Books,4,205.13,820.52,Bank Transfer,refunded,7.09
+ORD-10829,2025-05-12 05:00,kioltms70@icloud.com,Japan,Running Shorts,Apparel,2,193.85,387.7,Credit Card,cancelled,9.52
+ORD-10688,2025-05-01 22:00,wgcyxcbwmm99@gmail.com,Australia,Educated,Books,2,127.07,254.14,Bank Transfer,refunded,14.8
+ORD-10167,2025-04-10 16:00,ryoghkwao67@proton.me,United Kingdom,Body Lotion,Beauty,2,125.36,250.72,Credit Card,cancelled,8.02
+ORD-10604,2025-04-25 10:00,pjatg11@proton.me,Canada,Hoodie,Apparel,3,96.42,289.26,PayPal,shipped,6.57
+ORD-10248,2025-03-19 00:00,fiuyvx66@proton.me,United Kingdom,Atomic Habits,Books,2,218.6,437.2,Credit Card,delivered,6.6
+ORD-10602,2025-03-19 13:00,duxnusvzce55@proton.me,Japan,Foam Roller,Sports,4,171.53,686.12,Credit Card,shipped,6.1
+ORD-10270,2025-03-15 13:00,goqypms64@icloud.com,United Kingdom,Power Bank,Electronics,1,110.54,110.54,Cash on Delivery,shipped,10.31
+ORD-10095,2025-03-25 21:00,,Singapore,Face Cream,Beauty,2,117.96,235.92,PayPal,shipped,8.74
+ORD-10096,2025-03-18 09:00,sijyuhdrjz45@outlook.com,France,Storage Box,Home & Kitchen,3,55.67,167.01,Credit Card,processing,11.46
+ORD-10719,2025-02-12 01:00,,United States,Cast Iron Pan,Home & Kitchen,4,167.79,671.16,Cash on Delivery,delivered,7.12
+ORD-10126,2025-01-12 18:00,qziuccftor29@icloud.com,Australia,Tennis Balls,Sports,2,145.16,290.32,Bank Transfer,cancelled,14.8
+ORD-10466,2025-03-19 03:00,ysgxear42@outlook.com,France,Face Cream,Beauty,4,144.5,578.0,Bank Transfer,processing,6.23
+ORD-10054,2025-03-02 11:00,jxqbhzyvcf82@proton.me,United States,Tennis Balls,Sports,2,102.0,204.0,Credit Card,processing,
+ORD-10876,2025-05-19 05:00,berauqcy70@gmail.com,Germany,Face Cream,Beauty,4,181.8,727.2,Apple Pay,refunded,4.27
+ORD-10122,2025-04-18 09:00,jysmq59@gmail.com,United Kingdom,Cotton T-Shirt,Apparel,2,100.15,200.3,Apple Pay,delivered,8.81
+ORD-10021,2025-01-18 21:00,iwshikkhd54@icloud.com,United Kingdom,Power Bank,Electronics,2,85.21,170.42,Cash on Delivery,refunded,14.05
+ORD-10830,2025-05-08 07:00,,Australia,Face Cream,Beauty,4,0.0,762.04,PayPal,delivered,13.8
+ORD-10085,2025-05-13 11:00,qezlxbdde42@outlook.com,Australia,Yoga Mat,Sports,4,106.76,427.04,Cash on Delivery,processing,4.54
+ORD-10588,2025-05-02 23:00,uaaxdtwdk16@gmail.com,Singapore,Bluetooth Speaker,Electronics,4,111.94,447.76,Credit Card,processing,13.5
+ORD-10755,2025-02-26 14:00,ymclxq48@icloud.com,France,USB-C Cable,Electronics,4,174.85,699.4,Cash on Delivery,refunded,13.98
+ORD-10614,2025-04-05 00:00,knfxlsgmsf17@yahoo.com,Canada,Slim Jeans,Apparel,4,153.08,612.32,Credit Card,shipped,11.92
+ORD-10286,2025-05-05 21:00,cqklup55@proton.me,United Kingdom,Wireless Earbuds,Electronics,1,38.53,38.53,Bank Transfer,refunded,8.24
+ORD-10891,2025-03-09 05:00,iwmlnal40@yahoo.com,Germany,Face Cream,Beauty,3,175.31,525.93,PayPal,refunded,
+ORD-10360,2025-03-03 12:00,euhtrd63@icloud.com,France,Face Cream,Beauty,4,62.09,248.36,Cash on Delivery,shipped,
+ORD-10369,2025-03-28 19:00,rdhsyvrtuu21@proton.me,Germany,Cast Iron Pan,Home & Kitchen,2,115.62,231.24,Apple Pay,delivered,13.24
+ORD-10709,2025-01-07 01:00,fbfgdwnitr3@proton.me,France,Knife Set,Home & Kitchen,2,19.98,39.96,Bank Transfer,delivered,10.71
+ORD-10181,2025-01-04 10:00,erqgsidjp22@gmail.com,United States,Wireless Earbuds,Electronics,2,162.9,325.8,Apple Pay,processing,12.08
+ORD-10104,2025-02-08 05:00,,Singapore,Power Bank,Electronics,2,129.41,258.82,Apple Pay,delivered,6.94
+ORD-10629,2025-02-05 14:00,vfrgv4@yahoo.com,Japan,Bluetooth Speaker,Electronics,3,144.91,434.73,Bank Transfer,processing,12.2
+ORD-10298,2025-01-18 17:00,yvmoyjrk81@gmail.com,Australia,Shampoo,Beauty,4,186.94,747.76,Cash on Delivery,processing,
+ORD-10106,2025-05-19 04:00,dzkdzvt39@icloud.com,Japan,Shampoo,Beauty,1,152.74,152.74,Cash on Delivery,cancelled,10.84
+ORD-10894,2025-03-13 22:00,jznyn67@icloud.com,United States,Face Cream,Beauty,1,24.76,24.76,Credit Card,refunded,14.8
+ORD-10180,2025-01-02 14:00,oeuudl55@icloud.com,Japan,Resistance Bands,Sports,3,142.51,427.53,Bank Transfer,cancelled,6.28
+ORD-10398,2025-01-07 14:00,fcpbufoqg54@icloud.com,Singapore,Body Lotion,Beauty,1,80.0,80.0,PayPal,shipped,9.21
+ORD-10843,2025-03-02 16:00,kxyoxuk42@proton.me,Japan,Face Cream,Beauty,3,84.53,253.59,Bank Transfer,refunded,9.32
+ORD-10310,2025-04-11 15:00,vlgoatydhq12@gmail.com,Singapore,Water Bottle,,1,98.25,98.25,Apple Pay,shipped,
+ORD-10563,2025-03-13 03:00,ioxpvlii23@outlook.com,United States,Cast Iron Pan,Home & Kitchen,2,115.84,231.68,PayPal,cancelled,5.79
+ORD-10261,2025-05-01 22:00,,Japan,Foam Roller,Sports,2,114.49,228.98,PayPal,shipped,10.79
+ORD-10936,2025-02-13 02:00,unxsrolun28@proton.me,Australia,Resistance Bands,Sports,1,145.17,145.17,Apple Pay,refunded,7.23
+ORD-10464,2025-05-11 05:00,wzgvf91@gmail.com,United Kingdom,Bluetooth Speaker,Electronics,2,138.93,277.86,PayPal,refunded,5.99
+ORD-10550,2025-01-09 17:00,xtivg97@proton.me,Germany,Foam Roller,Sports,1,148.01,148.01,Credit Card,processing,12.16
+ORD-10571,2025-04-15 01:00,giklkxg94@outlook.com,Australia,Bamboo Cutting Board,Home & Kitchen,2,196.64,393.28,Credit Card,processing,9.75
+ORD-10532,2025-01-16 03:00,nssnozdxqe81@yahoo.com,United States,Storage Box,Home & Kitchen,4,154.41,617.64,Bank Transfer,refunded,11.89
+ORD-10751,2025-01-14 11:00,,Australia,Slim Jeans,Apparel,1,70.63,70.63,Apple Pay,shipped,8.58
+ORD-10342,2025-04-04 14:00,ttvkwx82@outlook.com,Japan,Educated,Books,1,118.72,118.72,Apple Pay,processing,
+ORD-10003,2025-04-07 02:00,,Australia,Bluetooth Speaker,Electronics,1,214.3,214.3,PayPal,processing,
+ORD-10060,2025-03-21 11:00,,United States,Cast Iron Pan,Home & Kitchen,1,213.3,213.3,Cash on Delivery,processing,4.24
+ORD-10281,2025-04-14 22:00,obhlpgg21@icloud.com,Japan,Bamboo Cutting Board,Home & Kitchen,2,99999.99,231.38,Credit Card,processing,12.56
+ORD-10909,2025-01-24 02:00,kjwssxyzal42@gmail.com,Japan,Shampoo,Beauty,4,97.48,389.92,Cash on Delivery,refunded,3.16
+ORD-10043,2025-03-16 16:00,vzgojxnw9@yahoo.com,Japan,Face Cream,Beauty,2,113.66,227.32,Apple Pay,refunded,11.46
+ORD-10296,2025-01-16 08:00,ebzfkqc70@icloud.com,Germany,Coffee Mug,Home & Kitchen,4,90.38,361.52,Cash on Delivery,delivered,14.47
+ORD-10268,2025-01-23 01:00,ehrsoo59@proton.me,Australia,Water Bottle,Sports,3,78.2,234.6,Credit Card,delivered,4.31
+ORD-10077,2025-01-05 11:00,,Singapore,Bluetooth Speaker,Electronics,3,61.77,185.31,Bank Transfer,shipped,12.46
+ORD-10901,2025-05-10 09:00,viegx47@yahoo.com,France,Atomic Habits,Books,4,101.39,405.56,Bank Transfer,delivered,9.17
+ORD-10716,2025-01-08 01:00,kzobbuhh62@outlook.com,France,Cotton T-Shirt,Apparel,4,151.74,606.96,Credit Card,processing,8.97
+ORD-10744,2025-04-22 23:00,cgfjzmew83@proton.me,Germany,Bamboo Cutting Board,Home & Kitchen,4,12.34,49.36,Credit Card,cancelled,8.34
+ORD-10331,2025-03-22 03:00,dtsobidhp40@icloud.com,Germany,Running Shorts,Apparel,2,94.41,188.82,Cash on Delivery,cancelled,8.59
+ORD-10374,2025-01-03 22:00,cizeb98@gmail.com,United Kingdom,The Pragmatic Programmer,Books,1,101.83,101.83,Cash on Delivery,delivered,12.67
+ORD-10566,2025-05-07 08:00,ztdjcu94@gmail.com,Australia,Wireless Earbuds,Electronics,4,196.44,785.76,PayPal,refunded,4.04
+ORD-10846,2025-01-18 06:00,mnqltrh37@proton.me,Japan,Yoga Mat,Sports,3,192.12,576.36,Bank Transfer,refunded,3.07
+ORD-10140,2025-04-05 09:00,qrbope45@outlook.com,United Kingdom,Face Cream,Beauty,1,29.88,29.88,Bank Transfer,refunded,4.65
+ORD-10078,2025-02-21 01:00,iikvm5@outlook.com,France,Cotton T-Shirt,Apparel,4,15.84,63.36,Apple Pay,delivered,12.49
+ORD-10654,2025-05-07 22:00,bcuvtxqi86@yahoo.com,Australia,The Pragmatic Programmer,Books,2,192.3,384.6,Credit Card,delivered,14.56
+ORD-10148,2025-01-10 17:00,,United States,Lipstick,Beauty,2,205.41,410.82,Bank Transfer,delivered,12.64
+ORD-10652,2025-01-31 16:00,upglv70@proton.me,Singapore,Tennis Balls,Sports,3,10.28,30.84,PayPal,delivered,6.73
+ORD-10596,2025-03-04 08:00,irhzwtxnk35@proton.me,Japan,Foam Roller,Sports,4,108.4,433.6,Cash on Delivery,delivered,11.68
+ORD-10758,2025-01-15 13:00,emaydgwm51@proton.me,Germany,Face Cream,Beauty,3,204.34,613.02,Bank Transfer,cancelled,7.87
+ORD-10556,2025-04-06 15:00,,Australia,Bamboo Cutting Board,Home & Kitchen,4,198.25,793.0,PayPal,cancelled,14.31
+ORD-10050,2025-03-06 21:00,rdcqbuajdx42@icloud.com,United Kingdom,The Pragmatic Programmer,Books,2,142.96,285.92,PayPal,shipped,12.07
+ORD-10515,2025-03-26 22:00,hedldwtx53@icloud.com,Canada,Wireless Earbuds,Electronics,3,23.91,71.73,Cash on Delivery,refunded,10.35
+ORD-10067,2025-05-01 14:00,pjbmajh83@gmail.com,Japan,Bamboo Cutting Board,Home & Kitchen,2,101.23,202.46,Bank Transfer,refunded,10.58
+ORD-10354,2025-05-01 11:00,zptbgqhkjz72@gmail.com,United Kingdom,Wireless Earbuds,Electronics,3,205.39,616.17,Apple Pay,shipped,14.96
+ORD-10780,2025-03-06 22:00,vpzgsg32@gmail.com,Canada,Wireless Earbuds,Electronics,4,133.24,532.96,Bank Transfer,shipped,4.54
+ORD-10582,2025-01-25 17:00,bmejo29@yahoo.com,United States,USB-C Cable,Electronics,2,50.24,100.48,PayPal,processing,8.5
+ORD-10400,2025-02-20 06:00,uirszp43@proton.me,Australia,Project Hail Mary,Books,1,97.48,97.48,Cash on Delivery,processing,10.69
+ORD-10263,2025-03-04 16:00,,United States,Shampoo,Beauty,1,194.09,194.09,Cash on Delivery,shipped,9.45
+ORD-10944,2025-04-04 12:00,zkzkywb30@icloud.com,United Kingdom,Shampoo,Beauty,1,114.23,114.23,Credit Card,refunded,9.69
+ORD-10878,2025-01-31 14:00,ntgzzjy70@outlook.com,United States,Bamboo Cutting Board,Home & Kitchen,2,42.07,84.14,Credit Card,processing,14.36
+ORD-10182,2025-02-04 10:00,jeyxkfsd94@gmail.com,United Kingdom,Body Lotion,Beauty,3,99.94,299.82,Credit Card,processing,14.95
+ORD-10255,2025-02-21 22:00,,Canada,USB-C Cable,Electronics,2,20.74,41.48,Credit Card,processing,10.42
+ORD-10312,2025-01-21 19:00,ynxjbjmbjq91@gmail.com,Germany,Water Bottle,Sports,2,174.99,349.98,PayPal,processing,13.57
+ORD-10042,2025-04-23 22:00,zpgeo71@icloud.com,Canada,Storage Box,Home & Kitchen,2,204.67,409.34,PayPal,delivered,8.82
+ORD-10667,2025-04-08 22:00,,Australia,Body Lotion,Beauty,4,178.64,714.56,Credit Card,processing,8.69
+ORD-10657,2025-04-16 00:00,jrjzhui90@yahoo.com,United Kingdom,Cotton T-Shirt,Apparel,3,28.95,86.85,PayPal,refunded,11.75
+ORD-10302,2025-02-21 13:00,rizodvutpi16@yahoo.com,United Kingdom,Body Lotion,Beauty,2,21.38,42.76,Bank Transfer,shipped,7.05
+ORD-10848,2025-02-18 02:00,dvahcjacg34@icloud.com,United Kingdom,Running Shorts,Apparel,1,164.25,164.25,PayPal,refunded,4.52
+ORD-10214,2025-03-08 05:00,,United Kingdom,Power Bank,Electronics,2,19.85,39.7,PayPal,cancelled,9.2
+ORD-10769,2025-02-24 17:00,uwykser2@icloud.com,Canada,Tennis Balls,Sports,1,113.29,113.29,Apple Pay,shipped,10.94
+ORD-10872,2025-01-30 01:00,,France,Bamboo Cutting Board,Home & Kitchen,1,168.08,168.08,Cash on Delivery,delivered,
+ORD-10764,2025-03-06 12:00,mzuwlvts85@yahoo.com,United Kingdom,Hoodie,Apparel,1,18.37,18.37,Credit Card,shipped,5.24
+ORD-10037,2025-02-23 20:00,cgoekrmahh59@gmail.com,Germany,Atomic Habits,Books,1,208.89,208.89,Apple Pay,refunded,5.53
+ORD-10194,2025-04-09 13:00,thzzldksth90@proton.me,Australia,Body Lotion,Beauty,3,114.87,344.61,Cash on Delivery,shipped,14.75
+ORD-10522,2025-03-03 05:00,eilzr55@yahoo.com,United States,Running Shorts,Apparel,4,164.69,658.76,PayPal,processing,6.78
+ORD-10308,2025-01-29 14:00,tfheuy22@proton.me,Germany,Power Bank,Electronics,1,67.49,67.49,Credit Card,cancelled,8.5
+ORD-10127,2025-01-07 15:00,xcvsjiun45@icloud.com,Canada,Water Bottle,Sports,2,81.13,162.26,Bank Transfer,cancelled,4.25
+ORD-10379,2025-05-15 12:00,uwpqzrytk21@outlook.com,United Kingdom,Wool Socks,Apparel,1,86.29,86.29,Bank Transfer,cancelled,
+ORD-10429,2025-04-06 12:00,zbxzdyetyu97@yahoo.com,Singapore,Shampoo,,4,207.34,829.36,Apple Pay,delivered,
+ORD-10272,2025-03-20 09:00,tcikoyv25@yahoo.com,Australia,Tennis Balls,Sports,3,175.52,526.56,Bank Transfer,cancelled,9.08
+ORD-10806,2025-04-14 20:00,,Singapore,Phone Case,,4,53.96,215.84,Apple Pay,cancelled,6.88
+ORD-10175,2025-05-14 19:00,azzvo77@proton.me,France,Knife Set,Home & Kitchen,4,72.05,288.2,Apple Pay,delivered,7.77
+ORD-10506,2025-02-15 21:00,wdijzpang16@outlook.com,United States,Slim Jeans,Apparel,3,10.15,30.45,Cash on Delivery,delivered,9.81
+ORD-10352,2025-03-10 09:00,dwpzhrkk19@gmail.com,France,Resistance Bands,Sports,2,208.56,417.12,Apple Pay,shipped,11.96
+ORD-10732,2025-04-16 20:00,vktbik25@yahoo.com,Japan,Atomic Habits,Books,2,60.38,120.76,Bank Transfer,refunded,7.34
+ORD-10151,2025-04-11 02:00,lzggi51@yahoo.com,Australia,Yoga Mat,Sports,1,115.15,115.15,Bank Transfer,processing,
+ORD-10273,2025-04-28 17:00,uktvhsin27@proton.me,Australia,Phone Case,Electronics,4,40.94,163.76,Apple Pay,delivered,13.75
+ORD-10091,2025-04-13 01:00,jhklov80@proton.me,Canada,Tennis Balls,Sports,4,85.58,342.32,PayPal,delivered,9.84
+ORD-10615,2025-04-24 07:00,ncpixemz1@gmail.com,Japan,Educated,,4,59.95,239.8,Cash on Delivery,cancelled,12.56
+ORD-10645,2025-03-19 10:00,rnpwtdkr75@gmail.com,Japan,Slim Jeans,Apparel,3,47.14,141.42,Credit Card,shipped,11.53
+ORD-10058,2025-05-21 22:00,,Singapore,Cotton T-Shirt,Apparel,2,66.3,132.6,PayPal,cancelled,6.9
+ORD-10694,2025-01-21 05:00,augbc42@proton.me,Germany,Wireless Earbuds,Electronics,2,50.3,100.6,Bank Transfer,shipped,4.1
+ORD-10405,2025-03-13 04:00,xfcmrbntq66@yahoo.com,Singapore,Hoodie,Apparel,2,19.29,38.58,Cash on Delivery,cancelled,13.22
+ORD-10729,2025-01-23 18:00,lzjgbu24@proton.me,Japan,Slim Jeans,Apparel,1,13.11,13.11,Credit Card,refunded,5.24
+ORD-10560,2025-02-20 05:00,,United States,Shampoo,,2,130.11,260.22,Bank Transfer,delivered,13.52
+ORD-10904,2025-03-01 01:00,zozsedfofl67@outlook.com,Germany,Cast Iron Pan,Home & Kitchen,2,61.8,123.6,Cash on Delivery,delivered,12.72
+ORD-10283,2025-04-08 10:00,,Singapore,Power Bank,Electronics,1,153.33,153.33,PayPal,shipped,
+ORD-10590,2025-05-09 04:00,,France,Yoga Mat,Sports,1,48.9,48.9,Apple Pay,refunded,11.75
+ORD-10756,2025-05-14 21:00,ugvlhyhzz7@proton.me,France,The Pragmatic Programmer,Books,3,119.66,358.98,Apple Pay,delivered,6.35
+ORD-10172,2025-02-21 01:00,bjfjmkxr31@yahoo.com,Singapore,Running Shorts,Apparel,1,44.83,44.83,Cash on Delivery,cancelled,5.99
+ORD-10394,2025-03-24 13:00,,Singapore,Bluetooth Speaker,Electronics,1,189.02,189.02,Apple Pay,delivered,13.13
+ORD-10882,2025-04-07 12:00,gpalibaocd46@proton.me,Germany,Educated,Books,3,185.04,555.12,Bank Transfer,processing,9.56
+ORD-10384,2025-05-09 00:00,eaugsxlup52@proton.me,United States,Atomic Habits,Books,2,167.12,334.24,Bank Transfer,delivered,4.44
+ORD-10142,2025-03-17 20:00,mcmpnz47@yahoo.com,United Kingdom,Project Hail Mary,Books,2,166.54,333.08,Bank Transfer,refunded,3.65
+ORD-10599,2025-02-04 12:00,vslkbmt76@gmail.com,Germany,Lipstick,Beauty,3,169.77,509.31,Cash on Delivery,shipped,12.28
+ORD-10477,2025-01-12 03:00,nvdxa55@icloud.com,United Kingdom,Tennis Balls,Sports,1,12.5,12.5,Apple Pay,processing,9.54
+ORD-10793,2025-03-08 19:00,uvfhumcpud7@outlook.com,Canada,Running Shorts,Apparel,4,67.19,268.76,Cash on Delivery,cancelled,
+ORD-10061,2025-03-21 10:00,wokdqa96@proton.me,Germany,Phone Case,Electronics,3,156.97,470.91,Bank Transfer,cancelled,7.21
+ORD-10456,2025-01-15 02:00,yvayrydmr87@proton.me,Canada,Phone Case,Electronics,1,43.0,43.0,Bank Transfer,delivered,11.92
+ORD-10537,2025-05-10 21:00,spppvb4@outlook.com,Germany,Shampoo,Beauty,2,130.12,260.24,Credit Card,delivered,9.31
+ORD-10325,2025-03-16 16:00,,Australia,Cast Iron Pan,Home & Kitchen,3,18.33,54.99,Apple Pay,processing,10.67
+ORD-10796,2025-01-03 00:00,avaitvpcey13@icloud.com,Australia,Hoodie,Apparel,3,14.35,43.05,Credit Card,refunded,
+ORD-10031,2025-04-28 22:00,tzhvnm56@proton.me,France,Face Cream,Beauty,4,211.69,846.76,Apple Pay,shipped,4.84
+ORD-10013,2025-05-19 01:00,bmxnb66@gmail.com,United Kingdom,Knife Set,Home & Kitchen,1,130.79,130.79,Credit Card,refunded,11.98
+ORD-10023,2025-02-07 00:00,ptlxosjk19@gmail.com,Canada,Tennis Balls,Sports,2,178.99,357.98,Bank Transfer,shipped,
+ORD-10502,2025-04-11 06:00,vupdqzex67@outlook.com,Japan,Educated,Books,2,125.82,251.64,PayPal,delivered,10.4
+ORD-10624,2025-01-19 06:00,cfofmopw15@icloud.com,Germany,Atomic Habits,Books,3,175.48,526.44,Cash on Delivery,refunded,
+ORD-10257,2025-04-01 11:00,zzhbgk4@proton.me,France,Lipstick,Beauty,1,81.52,81.52,PayPal,shipped,10.5
+ORD-10048,2025-02-06 07:00,lrxmhob45@proton.me,France,Educated,Books,2,113.51,227.02,Bank Transfer,processing,8.53
+ORD-10436,2025-02-01 16:00,tglrwnraqy42@gmail.com,Australia,Shampoo,Beauty,2,13.44,26.88,Credit Card,processing,6.35
+ORD-10365,2025-04-28 22:00,zpmqzjrrkh17@outlook.com,United States,Wireless Earbuds,Electronics,2,147.03,294.06,PayPal,delivered,7.86
+ORD-10197,2025-04-10 07:00,hrykyzioag80@icloud.com,Germany,Power Bank,,2,165.39,330.78,Apple Pay,refunded,9.13
+ORD-10370,2025-02-10 19:00,ymgozjgr23@proton.me,United States,Foam Roller,Sports,2,44.74,89.48,Credit Card,processing,8.91
+ORD-10116,2025-05-15 08:00,ucylgsh11@gmail.com,Canada,Power Bank,Electronics,2,59.09,118.18,Bank Transfer,cancelled,12.78
+ORD-10541,2025-05-13 09:00,fpifyxgs9@outlook.com,France,Power Bank,,1,34.96,34.96,Credit Card,refunded,4.21
+ORD-10386,2025-01-15 09:00,dxgyxbg77@proton.me,Germany,Power Bank,Electronics,3,46.47,139.41,Bank Transfer,refunded,7.68
+ORD-10216,2025-05-17 16:00,mdpvx87@icloud.com,Japan,Project Hail Mary,Books,1,194.08,194.08,Apple Pay,delivered,12.03
+ORD-10643,2025-02-27 02:00,cmzwn18@proton.me,United States,Slim Jeans,Apparel,1,11.17,11.17,Apple Pay,cancelled,8.04
+ORD-10064,2025-05-17 22:00,vubwbaxwo74@icloud.com,Japan,Shampoo,Beauty,2,35.39,70.78,Apple Pay,delivered,5.76
+ORD-10455,2025-02-16 14:00,nhlywvhw40@icloud.com,Australia,Resistance Bands,Sports,4,157.84,631.36,Credit Card,delivered,14.83
+ORD-10301,2025-01-10 23:00,axqgqaqxvc79@outlook.com,Canada,Water Bottle,Sports,2,204.06,408.12,Credit Card,delivered,4.7
+ORD-10186,2025-02-14 01:00,uitctbw85@outlook.com,Australia,Bamboo Cutting Board,Home & Kitchen,4,18.62,74.48,Apple Pay,cancelled,13.23
+ORD-10319,2025-05-03 01:00,daqfjipfn99@yahoo.com,Germany,Educated,,3,154.1,462.3,Credit Card,delivered,4.67
+ORD-10558,2025-03-17 07:00,gizslyk11@yahoo.com,Canada,Hair Serum,Beauty,3,49.35,148.05,Apple Pay,cancelled,6.94
+ORD-10467,2025-05-06 11:00,caowi95@yahoo.com,Australia,Atomic Habits,Books,4,47.19,188.76,PayPal,processing,7.01
+ORD-10519,2025-05-16 14:00,,United States,Lipstick,Beauty,3,14.06,42.18,Bank Transfer,processing,7.22
+ORD-10137,2025-04-12 06:00,mihodw44@gmail.com,United States,Tennis Balls,Sports,1,176.68,176.68,Credit Card,cancelled,14.62
+ORD-10426,2025-02-02 02:00,hiisb73@icloud.com,France,Cotton T-Shirt,Apparel,2,206.91,411.02,Cash on Delivery,cancelled,
+ORD-10101,2025-04-14 13:00,kczmy1@yahoo.com,Japan,Sapiens,Books,2,137.52,275.04,PayPal,cancelled,9.18
+ORD-10745,2025-02-10 02:00,bcylhwhxf40@outlook.com,Canada,Coffee Mug,Home & Kitchen,2,27.07,54.14,PayPal,delivered,10.39
+ORD-10382,2025-03-21 18:00,umsptnl58@icloud.com,United Kingdom,Coffee Mug,Home & Kitchen,1,96.53,96.53,Apple Pay,delivered,8.43
+ORD-10177,2025-02-18 10:00,rqmyjh22@proton.me,United Kingdom,Shampoo,Beauty,4,164.19,656.76,Apple Pay,delivered,11.72
+ORD-10349,2025-05-21 23:00,abqqudkqic21@outlook.com,United Kingdom,Atomic Habits,Books,3,97.22,291.66,Cash on Delivery,cancelled,6.92
+ORD-10274,2025-04-07 20:00,okpwts41@gmail.com,France,Hoodie,Apparel,1,79.9,79.9,Bank Transfer,delivered,9.41
+ORD-10331,2025-03-22 03:00,dtsobidhp40@icloud.com,Germany,Running Shorts,Apparel,2,94.41,188.82,Cash on Delivery,cancelled,8.59
+ORD-10011,2025-02-18 17:00,emwbvwcq70@gmail.com,Canada,Tennis Balls,,1,60.72,60.72,PayPal,shipped,8.38
+ORD-10741,2025-02-26 08:00,rlwwlg11@icloud.com,Singapore,Body Lotion,Beauty,2,197.08,394.16,Bank Transfer,shipped,4.29
+ORD-10845,2025-04-20 10:00,wbujf83@outlook.com,Canada,Hoodie,Apparel,1,213.14,213.14,PayPal,shipped,3.3
+ORD-10247,2025-04-21 23:00,oftygz58@icloud.com,United States,Bamboo Cutting Board,Home & Kitchen,4,170.01,680.04,Credit Card,processing,6.88
+ORD-10612,2025-04-03 20:00,ytinkwmmvl23@icloud.com,France,Body Lotion,Beauty,3,75.71,227.13,Credit Card,refunded,4.27
+ORD-10389,2025-05-04 08:00,jjqpnbtohk16@outlook.com,France,Knife Set,Home & Kitchen,1,20.76,20.76,Bank Transfer,shipped,10.17
+ORD-10293,2025-04-25 12:00,rbxqylxwi35@gmail.com,France,Knife Set,Home & Kitchen,4,10.51,42.04,Cash on Delivery,cancelled,11.14
+ORD-10321,2025-03-15 05:00,skvpdhzn43@gmail.com,Japan,Wool Socks,Apparel,4,178.38,713.52,Credit Card,delivered,12.67
+ORD-10087,2025-04-17 19:00,xoqhgukl89@gmail.com,United Kingdom,Water Bottle,Sports,3,146.04,438.12,Bank Transfer,cancelled,
+ORD-10432,2025-04-12 22:00,vabsnr94@icloud.com,United Kingdom,Hoodie,Apparel,2,205.16,410.32,PayPal,processing,6.7
+ORD-10937,2025-04-29 22:00,scobbz44@outlook.com,Singapore,Atomic Habits,Books,3,128.62,385.86,Cash on Delivery,refunded,14.67
+ORD-10800,2025-01-05 19:00,ebgbdkvdo68@gmail.com,France,Wool Socks,Apparel,4,139.04,556.16,Apple Pay,shipped,12.34
+ORD-10704,2025-03-25 11:00,ouymiwfv25@proton.me,Canada,Lipstick,Beauty,2,142.21,284.42,Apple Pay,delivered,12.9
+ORD-10469,2025-04-18 17:00,zxlsxbkyn3@outlook.com,France,Resistance Bands,Sports,1,35.1,35.1,PayPal,processing,11.54
+ORD-10949,2025-04-06 23:00,ukrrmuks93@yahoo.com,Australia,Water Bottle,Sports,4,94.0,376.0,PayPal,processing,6.2
+ORD-10619,2025-03-17 04:00,dpwgfwpdaj66@proton.me,Japan,Tennis Balls,Sports,4,159.17,636.68,Bank Transfer,refunded,11.92
+ORD-10236,2025-03-11 09:00,vkwehqqhq25@yahoo.com,United States,Bluetooth Speaker,Electronics,2,117.52,235.04,PayPal,delivered,10.78
+ORD-10919,2025-03-22 21:00,gszcnuoi38@outlook.com,United Kingdom,Bluetooth Speaker,,1,179.65,179.65,Cash on Delivery,refunded,3.18
+ORD-10138,2025-01-01 13:00,,France,Wireless Earbuds,Electronics,2,101.55,203.1,PayPal,cancelled,
+ORD-10494,2025-04-03 13:00,bwyrhq11@outlook.com,Canada,Power Bank,Electronics,4,21.23,84.92,Apple Pay,cancelled,14.74
+ORD-10288,2025-05-04 22:00,tzzumcxcmt86@gmail.com,France,Educated,Books,3,31.99,95.97,Cash on Delivery,delivered,3.96
+ORD-10444,2025-02-19 22:00,ciuwbyhr74@outlook.com,Singapore,Tennis Balls,Sports,3,155.63,466.89,Bank Transfer,processing,13.28
+ORD-10528,2025-03-11 04:00,lxhayg87@icloud.com,Japan,Bamboo Cutting Board,Home & Kitchen,2,210.18,420.36,Bank Transfer,delivered,14.95
+ORD-10517,2025-04-09 06:00,fpnwtil20@proton.me,Canada,Cotton T-Shirt,Apparel,2,107.25,214.5,PayPal,shipped,8.85
+ORD-10713,2025-04-10 23:00,pemohzwg79@gmail.com,United States,Slim Jeans,Apparel,3,51.75,155.25,Credit Card,refunded,6.93
+ORD-10511,2025-02-24 16:00,hpwwbxkti41@outlook.com,Germany,Running Shorts,Apparel,1,89.75,89.75,Credit Card,cancelled,5.61
+ORD-10640,2025-04-22 20:00,cqkmyhqidg73@gmail.com,United Kingdom,Bamboo Cutting Board,Home & Kitchen,3,185.35,556.05,Cash on Delivery,shipped,6.61
+ORD-10479,2025-03-19 19:00,,United Kingdom,Foam Roller,Sports,2,197.34,394.68,Apple Pay,shipped,12.81
+ORD-10865,2025-03-14 16:00,,Germany,Bluetooth Speaker,Electronics,2,35.56,71.12,Apple Pay,delivered,10.8
+ORD-10445,2025-02-20 23:00,sorzdyl22@gmail.com,Canada,Slim Jeans,Apparel,2,178.52,357.04,Apple Pay,cancelled,10.81
+ORD-10919,2025-03-22 21:00,gszcnuoi38@outlook.com,United Kingdom,Bluetooth Speaker,,1,179.65,179.65,Cash on Delivery,refunded,3.18
+ORD-10568,2025-02-08 15:00,mdqcnsflmp91@outlook.com,United States,Lipstick,Beauty,2,64.24,128.48,Bank Transfer,processing,12.77
+ORD-10244,2025-05-15 19:00,bfsaxry11@icloud.com,United States,Wireless Earbuds,Electronics,4,147.48,589.92,Apple Pay,refunded,11.42
+ORD-10053,2025-01-30 03:00,dlrtyktek13@icloud.com,Japan,Wireless Earbuds,Electronics,3,219.14,657.42,Apple Pay,delivered,5.82
+ORD-10705,2025-04-07 13:00,hfhaq54@gmail.com,Australia,Resistance Bands,Sports,3,60.62,181.86,Bank Transfer,shipped,11.41
+ORD-10330,2025-02-19 09:00,asyxwmser14@outlook.com,Australia,Wireless Earbuds,Electronics,1,120.11,120.11,Bank Transfer,cancelled,5.06
+ORD-10667,2025-04-08 22:00,,Australia,Body Lotion,Beauty,4,178.64,714.56,Credit Card,processing,8.69
+ORD-10311,2025-04-29 04:00,ewqsaqkr68@gmail.com,France,Foam Roller,Sports,1,215.0,215.0,Bank Transfer,processing,13.49
+ORD-10304,2025-02-14 19:00,emyqujagd68@gmail.com,Australia,Tennis Balls,Sports,4,95.35,381.4,Cash on Delivery,refunded,11.3
+ORD-10590,2025-05-09 04:00,,France,Yoga Mat,Sports,1,48.9,48.9,Apple Pay,refunded,11.75
+ORD-10027,2025-03-28 21:00,svxznxpr11@icloud.com,United Kingdom,Cast Iron Pan,Home & Kitchen,4,14.15,56.6,Bank Transfer,shipped,11.15
+ORD-10412,2025-02-09 10:00,xokjybkmi58@yahoo.com,Canada,Power Bank,Electronics,1,203.49,203.49,PayPal,delivered,9.82
+ORD-10353,2025-04-28 02:00,wzkfjl77@yahoo.com,Canada,Educated,Books,2,86.36,172.72,Credit Card,refunded,3.12
+ORD-10122,2025-04-18 09:00,jysmq59@gmail.com,United Kingdom,Cotton T-Shirt,Apparel,2,100.15,200.3,Apple Pay,delivered,8.81
+ORD-10630,2025-05-09 14:00,besyp6@icloud.com,Singapore,Project Hail Mary,Books,2,177.06,354.12,PayPal,processing,
+ORD-10377,2025-04-06 08:00,dtyloai31@proton.me,Germany,Foam Roller,Sports,1,163.18,163.18,Apple Pay,processing,10.52
+ORD-10670,2025-02-12 03:00,epilrvuyr9@yahoo.com,Germany,USB-C Cable,Electronics,2,133.1,266.2,Apple Pay,shipped,8.97
+ORD-10870,2025-04-22 05:00,rlspmfoiz26@proton.me,Japan,Phone Case,Electronics,1,11.7,11.7,PayPal,cancelled,7.19
+ORD-10634,2025-05-10 10:00,hibbcoce66@gmail.com,Singapore,Power Bank,Electronics,4,219.08,876.32,Cash on Delivery,shipped,12.48
+ORD-10451,2025-03-07 08:00,kcglsn10@yahoo.com,Germany,Knife Set,Home & Kitchen,4,23.76,95.04,Apple Pay,refunded,7.58
+ORD-10425,2025-03-26 10:00,bxzusfwne81@gmail.com,Canada,Hair Serum,Beauty,1,56.55,56.55,Bank Transfer,delivered,5.91
+ORD-10950,2025-03-11 12:00,pnzbfhcijn2@proton.me,Australia,Wool Socks,Apparel,3,127.64,382.92,Cash on Delivery,processing,7.64
+ORD-10066,2025-02-19 11:00,vgdfptreum97@proton.me,Singapore,Power Bank,Electronics,1,120.49,120.49,Cash on Delivery,refunded,
+ORD-10892,2025-04-05 08:00,uweksbki78@yahoo.com,Germany,Atomic Habits,Books,4,35.74,142.96,Credit Card,delivered,12.59
+ORD-10641,2025-02-23 23:00,qvkendv86@outlook.com,Australia,Wool Socks,Apparel,1,20.97,20.97,Credit Card,shipped,10.93
+ORD-10139,2025-05-03 02:00,nlaidw89@outlook.com,Singapore,Yoga Mat,Sports,1,8.23,8.23,Credit Card,shipped,4.59
+ORD-10328,2025-02-03 02:00,,United States,Resistance Bands,Sports,3,34.57,103.71,Bank Transfer,delivered,8.1
+ORD-10600,2025-01-01 19:00,xqdeflir55@outlook.com,France,Hoodie,Apparel,3,80.05,240.15,Apple Pay,cancelled,10.19
+ORD-10121,2025-03-25 12:00,kcxxzoej18@yahoo.com,France,USB-C Cable,Electronics,1,134.55,134.55,Apple Pay,cancelled,3.15
+ORD-10088,2025-02-06 10:00,,France,Shampoo,Beauty,2,80.12,160.24,Bank Transfer,shipped,13.34
+ORD-10372,2025-01-11 16:00,dfjsstmwej18@gmail.com,Germany,Wireless Earbuds,Electronics,1,182.61,182.61,Bank Transfer,cancelled,4.26
+ORD-10778,2025-02-13 05:00,scvmsdtvr31@icloud.com,United States,Project Hail Mary,Books,2,25.39,50.78,Cash on Delivery,processing,10.78
+ORD-10453,2025-02-26 12:00,eshvm68@yahoo.com,France,Hoodie,Apparel,1,28.76,28.76,Cash on Delivery,processing,14.42
+ORD-10834,2025-02-20 17:00,eyljcpsrlp64@icloud.com,United Kingdom,Educated,Books,4,90.79,363.16,Cash on Delivery,refunded,12.23
+ORD-10303,2025-01-11 04:00,puamaecqxk99@icloud.com,United Kingdom,Tennis Balls,Sports,2,101.0,202.0,PayPal,shipped,4.2
+ORD-10450,2025-05-06 22:00,pnrrbad28@outlook.com,Germany,The Pragmatic Programmer,Books,4,37.65,150.6,Cash on Delivery,processing,6.76
+ORD-10706,2025-03-22 03:00,hsledydw71@icloud.com,Australia,Shampoo,Beauty,2,133.9,267.8,PayPal,processing,14.24
+ORD-10868,2025-01-24 15:00,bacsjcpwc44@gmail.com,Singapore,Bluetooth Speaker,Electronics,4,66.55,266.2,Credit Card,shipped,4.94
+ORD-10428,2025-02-14 08:00,ljpbdme25@gmail.com,United States,Storage Box,Home & Kitchen,2,125.2,250.4,Cash on Delivery,processing,7.57
+ORD-10500,2025-05-20 03:00,pahkfljfm16@yahoo.com,Singapore,Wireless Earbuds,Electronics,4,29.98,119.92,Bank Transfer,cancelled,10.6
+ORD-10788,2025-02-25 11:00,apdhplf44@outlook.com,Canada,Lipstick,Beauty,2,164.46,328.92,Credit Card,processing,4.16
+ORD-10698,2025-02-13 01:00,,Japan,Storage Box,Home & Kitchen,2,56.36,112.72,Credit Card,shipped,11.29
+ORD-10726,2025-05-18 20:00,psmxheh43@icloud.com,Canada,Water Bottle,Sports,4,177.88,711.52,PayPal,delivered,11.69
+ORD-10531,2025-04-11 04:00,,Australia,Project Hail Mary,Books,3,19.35,58.05,Cash on Delivery,delivered,7.84
+ORD-10743,2025-03-12 07:00,jwyroq9@icloud.com,United States,Slim Jeans,Apparel,3,82.89,248.67,Bank Transfer,refunded,11.58
+ORD-10245,2025-01-15 19:00,tvcfn13@outlook.com,Japan,Foam Roller,Sports,3,176.38,529.14,PayPal,shipped,6.19
+ORD-10383,2025-04-12 10:00,xtqwsousod72@gmail.com,Germany,Project Hail Mary,Books,4,90.09,360.36,Cash on Delivery,refunded,9.49
+ORD-10219,2025-05-04 08:00,istwrtlse28@proton.me,Japan,Educated,Books,2,86.49,172.98,Apple Pay,refunded,14.86
+ORD-10816,2025-05-09 09:00,yxcvuf19@icloud.com,Japan,Atomic Habits,Books,3,12.51,37.53,Cash on Delivery,refunded,9.83
+ORD-10326,2025-04-01 04:00,hukxefnvu72@proton.me,Canada,Tennis Balls,Sports,1,121.3,121.3,Bank Transfer,cancelled,3.15
+ORD-10674,2025-03-23 02:00,,United Kingdom,Bluetooth Speaker,Electronics,2,197.18,394.36,Bank Transfer,shipped,11.57
+ORD-10234,2025-04-22 16:00,ijouljgha98@outlook.com,Australia,Running Shorts,Apparel,4,141.78,567.12,Apple Pay,cancelled,10.68
+ORD-10220,2025-01-02 02:00,ylbfcajz79@proton.me,France,Atomic Habits,Books,2,90.49,180.98,Cash on Delivery,delivered,12.88
+ORD-10526,2025-03-31 10:00,yhepsvdu73@yahoo.com,France,Sapiens,Books,3,200.99,602.97,Credit Card,delivered,7.69
+ORD-10627,2025-05-16 15:00,,United Kingdom,Hoodie,Apparel,3,75.84,227.52,Apple Pay,refunded,4.24
+ORD-10837,2025-02-20 04:00,hqqdnohkw25@proton.me,Canada,Educated,Books,4,133.84,535.36,Apple Pay,cancelled,7.24
+ORD-10240,2025-03-04 00:00,,United States,Storage Box,Home & Kitchen,1,91.91,91.91,Apple Pay,shipped,14.63
+ORD-10210,2025-03-16 04:00,cjagzzrtd21@outlook.com,United Kingdom,Lipstick,Beauty,3,91.21,273.63,Bank Transfer,processing,8.58
+ORD-10130,2025-03-22 19:00,pjvqvshp11@outlook.com,Australia,USB-C Cable,Electronics,4,119.88,479.52,Credit Card,shipped,7.66
+ORD-10675,2025-03-05 19:00,,Japan,Cast Iron Pan,Home & Kitchen,1,41.06,41.06,Bank Transfer,processing,11.02
+ORD-10589,2025-02-19 20:00,irxxe76@yahoo.com,United States,Power Bank,Electronics,3,216.48,649.44,Bank Transfer,cancelled,10.37
+ORD-10012,2025-04-13 01:00,zgulk94@proton.me,Singapore,Shampoo,Beauty,4,53.31,213.24,PayPal,shipped,4.98
+ORD-10391,2025-01-20 17:00,ldzjpkvvzd48@outlook.com,Singapore,Educated,Books,4,122.08,488.32,Credit Card,shipped,3.37
+ORD-10124,2025-02-21 18:00,jocyh21@outlook.com,Japan,Cast Iron Pan,Home & Kitchen,3,32.14,95.05,Bank Transfer,shipped,14.97
+ORD-10426,2025-02-02 02:00,vygcsisge32@yahoo.com,France,Cotton T-Shirt,Apparel,2,206.91,413.82,Cash on Delivery,cancelled,5.08
+ORD-10111,2025-02-18 18:00,ffxhxfett97@icloud.com,Germany,Water Bottle,Sports,1,193.21,193.21,Cash on Delivery,shipped,11.69
+ORD-10557,2025-01-21 02:00,ozqtod68@gmail.com,Singapore,Atomic Habits,Books,2,88.79,177.58,Cash on Delivery,refunded,14.5
+ORD-10183,2025-03-07 17:00,diirydahzr16@outlook.com,United States,Yoga Mat,Sports,4,193.83,777.95,Apple Pay,cancelled,
+ORD-10911,2025-05-14 20:00,nrqubaul47@icloud.com,Canada,Face Cream,Beauty,2,122.47,244.94,Cash on Delivery,cancelled,9.79
+ORD-10635,2025-02-08 20:00,qinsvl3@icloud.com,France,Bluetooth Speaker,Electronics,3,106.73,320.19,Credit Card,refunded,6.97
+ORD-10341,2025-05-19 10:00,gnrowqne64@outlook.com,Singapore,USB-C Cable,Electronics,3,99.78,299.34,Apple Pay,refunded,5.4
+ORD-10529,2025-04-22 21:00,dtgkfhhyl24@icloud.com,Japan,Bamboo Cutting Board,Home & Kitchen,3,44.74,134.22,Credit Card,shipped,13.51
+ORD-10418,2025-02-04 10:00,,Canada,Wireless Earbuds,Electronics,3,32.31,96.93,PayPal,processing,
+ORD-10005,2025-05-08 12:00,,Canada,Phone Case,Electronics,3,53.08,159.24,Credit Card,delivered,13.62
+ORD-10120,2025-02-09 12:00,ekjcyltccl72@proton.me,Japan,Knife Set,Home & Kitchen,1,25.39,25.39,Credit Card,delivered,11.54
+ORD-10320,2025-04-11 06:00,pyxjdwjjh45@yahoo.com,Singapore,Educated,Books,1,214.88,214.88,Cash on Delivery,delivered,8.89
+ORD-10703,2025-01-25 12:00,inmxysbkf99@yahoo.com,United Kingdom,Educated,Books,1,74.45,74.45,Apple Pay,delivered,12.0
+ORD-10267,2025-01-21 19:00,whqvfe8@yahoo.com,United States,Educated,Books,4,94.95,379.8,PayPal,delivered,10.2
+ORD-10645,2025-03-19 10:00,jdlnayinza20@icloud.com,Japan,Slim Jeans,Apparel,3,47.14,144.98,Credit Card,shipped,11.53
+ORD-10533,2025-02-09 19:00,cfmvlbdkz31@proton.me,France,Resistance Bands,Sports,1,22.23,22.23,Cash on Delivery,cancelled,13.56
+ORD-10948,2025-03-14 14:00,xrjggy5@outlook.com,Canada,Knife Set,Home & Kitchen,2,160.68,321.36,Credit Card,processing,14.69
+ORD-10714,2025-03-19 14:00,ycjqztjhq39@gmail.com,Canada,Wireless Earbuds,Electronics,3,205.19,615.57,Apple Pay,shipped,7.58
+ORD-10700,2025-02-10 15:00,jcysp19@outlook.com,Singapore,Educated,Books,4,0.0,400.96,PayPal,cancelled,
+ORD-10748,2025-04-27 05:00,gqtbjalurk70@icloud.com,Singapore,The Pragmatic Programmer,Books,3,106.03,318.09,Cash on Delivery,processing,11.52
+ORD-10093,2025-05-11 17:00,hvjrzpusr4@proton.me,Singapore,Tennis Balls,Sports,3,115.55,346.65,Apple Pay,refunded,8.88
+ORD-10174,2025-02-03 20:00,fpyss36@icloud.com,Japan,Atomic Habits,Books,1,108.51,108.51,Apple Pay,cancelled,5.08
+ORD-10463,2025-01-28 00:00,ntgrizt56@icloud.com,France,Foam Roller,Sports,2,31.26,62.52,Apple Pay,cancelled,4.51
+ORD-10768,2025-01-10 07:00,ggnbylkly36@proton.me,Japan,Wool Socks,Apparel,3,71.66,214.98,Credit Card,refunded,11.02
+ORD-10864,2025-04-19 03:00,moheql93@gmail.com,Japan,Phone Case,Electronics,4,205.2,820.8,Bank Transfer,refunded,7.34
+ORD-10945,2025-03-19 18:00,hazkfhu92@outlook.com,Japan,Educated,Books,3,84.67,254.01,Apple Pay,delivered,6.44
+ORD-10287,2025-02-27 05:00,pwgnk70@proton.me,Australia,Body Lotion,Beauty,4,89.56,358.24,Credit Card,delivered,8.1
+ORD-10083,2025-03-23 21:00,ohhes90@outlook.com,Australia,Lipstick,Beauty,4,219.42,877.68,Cash on Delivery,shipped,7.17
+ORD-10084,2025-05-07 00:00,juopcizsn99@icloud.com,Canada,Phone Case,Electronics,2,58.19,116.38,PayPal,processing,7.33
+ORD-10427,2025-05-04 02:00,kelnttv62@gmail.com,Japan,Resistance Bands,Sports,3,190.83,572.49,Bank Transfer,delivered,14.41
+ORD-10869,2025-03-05 01:00,izvhzy63@yahoo.com,Germany,Atomic Habits,Books,4,104.03,416.12,Bank Transfer,shipped,
+ORD-10785,2025-03-06 07:00,ywoyxqzayi89@proton.me,Japan,Atomic Habits,Books,2,198.54,397.08,Cash on Delivery,processing,12.09
+ORD-10117,2025-01-03 22:00,vqizzxxf89@proton.me,Singapore,Body Lotion,Beauty,4,19.9,79.6,Apple Pay,delivered,5.06
+ORD-10409,2025-03-26 08:00,vepdwsoguh45@icloud.com,Japan,Power Bank,Electronics,2,78.76,157.52,Cash on Delivery,delivered,6.63
+ORD-10030,2025-02-20 02:00,gshruuobnr9@proton.me,Australia,Storage Box,Home & Kitchen,4,92.09,368.36,Credit Card,cancelled,10.11
+ORD-10164,2025-04-21 20:00,ecfesssg37@yahoo.com,Germany,Storage Box,Home & Kitchen,4,157.35,629.4,Credit Card,delivered,4.98
+ORD-10408,2025-03-09 20:00,hnoch30@gmail.com,Canada,Face Cream,Beauty,2,101.64,203.28,Credit Card,processing,3.91
+ORD-10404,2025-05-15 19:00,bdyuejjpzg6@proton.me,Germany,Hoodie,,3,148.11,444.33,Cash on Delivery,processing,13.58
+ORD-10926,2025-01-16 00:00,tsbiiwyx45@proton.me,France,Storage Box,Home & Kitchen,3,192.85,578.55,Bank Transfer,refunded,4.89
+ORD-10470,2025-02-18 23:00,rwzetjuk35@outlook.com,United Kingdom,Power Bank,Electronics,1,176.41,176.41,Credit Card,shipped,12.77
+ORD-10906,2025-05-14 12:00,cxnqroum50@gmail.com,United States,Slim Jeans,Apparel,1,11.45,11.45,Cash on Delivery,delivered,8.54
+ORD-10147,2025-02-12 11:00,xrcta2@outlook.com,United States,Coffee Mug,Home & Kitchen,4,190.18,760.72,Bank Transfer,processing,4.89
+ORD-10493,2025-02-21 12:00,ipftclo61@outlook.com,Germany,Yoga Mat,Sports,4,170.86,683.44,Apple Pay,refunded,6.94
+ORD-10147,2025-02-12 11:00,xrcta2@outlook.com,United States,Coffee Mug,Home & Kitchen,4,190.18,760.72,Bank Transfer,processing,4.89
+ORD-10225,2025-02-18 15:00,twffgq20@gmail.com,Canada,Knife Set,Home & Kitchen,3,46.75,140.25,Credit Card,cancelled,11.85
+ORD-10736,2025-02-18 19:00,urerso27@icloud.com,United Kingdom,Bamboo Cutting Board,Home & Kitchen,4,149.97,599.88,Credit Card,processing,13.69
+ORD-10402,2025-04-02 00:00,hfptba26@yahoo.com,United Kingdom,Cotton T-Shirt,Apparel,3,10.1,30.3,PayPal,processing,9.66
+ORD-10828,2025-01-24 15:00,neqgykoiv94@proton.me,Singapore,Cotton T-Shirt,Apparel,1,184.8,184.8,PayPal,cancelled,13.73
+ORD-10046,2025-04-12 20:00,wwjistw5@proton.me,Canada,Bluetooth Speaker,Electronics,3,79.77,239.31,PayPal,processing,3.96
+ORD-10465,2025-04-13 01:00,ylqcbk40@outlook.com,Germany,Resistance Bands,Sports,2,33.54,67.08,Apple Pay,cancelled,
+ORD-10079,2025-04-05 13:00,lyierjugcl56@proton.me,United Kingdom,Tennis Balls,Sports,3,34.39,103.17,Cash on Delivery,processing,13.67
+ORD-10026,2025-02-22 13:00,yawomyhkx54@proton.me,Germany,Hair Serum,Beauty,4,96.14,384.56,Bank Transfer,shipped,7.67
+ORD-10483,2025-04-04 04:00,avktm18@proton.me,France,Bluetooth Speaker,Electronics,2,14.4,28.8,Bank Transfer,cancelled,3.95
+ORD-10495,2025-05-15 06:00,ebxlzhf54@icloud.com,Singapore,USB-C Cable,Electronics,4,192.71,770.84,Cash on Delivery,shipped,11.04
+ORD-10895,2025-04-12 15:00,dwepyluau58@outlook.com,Japan,Wireless Earbuds,Electronics,4,132.83,531.32,Apple Pay,shipped,11.53
+ORD-10551,2025-01-15 03:00,,United States,Water Bottle,Sports,4,191.54,766.16,Apple Pay,processing,9.64
+ORD-10512,2025-02-01 14:00,pgaauoa60@yahoo.com,United Kingdom,Face Cream,Beauty,3,97.3,291.9,Bank Transfer,delivered,5.05
+ORD-10873,2025-02-14 01:00,nvhvvykpz82@outlook.com,Canada,Knife Set,Home & Kitchen,1,75.13,75.13,PayPal,cancelled,6.07
+ORD-10364,2025-04-26 19:00,zweetpw14@icloud.com,United States,Storage Box,Home & Kitchen,4,168.56,674.24,Credit Card,cancelled,12.69
+ORD-10161,2025-04-11 18:00,ivpqcmicj41@outlook.com,Canada,Slim Jeans,Apparel,1,209.14,209.14,Apple Pay,cancelled,3.39
+ORD-10334,2025-05-11 08:00,cgmqdcbb87@gmail.com,United Kingdom,Body Lotion,Beauty,4,217.35,869.4,Bank Transfer,refunded,4.77
+ORD-10442,2025-03-14 04:00,ainrhwoqfh49@gmail.com,Australia,Wool Socks,Apparel,4,39.25,157.0,PayPal,shipped,11.96
+ORD-10017,2025-03-09 05:00,socyrdajo56@outlook.com,United States,USB-C Cable,Electronics,2,143.07,286.14,Apple Pay,processing,11.89
+ORD-10808,2025-03-14 19:00,xxwrkpixbp16@proton.me,France,Cast Iron Pan,Home & Kitchen,4,63.94,255.76,Credit Card,refunded,4.44
+ORD-10534,2025-01-06 05:00,retomhrymr51@icloud.com,Canada,Water Bottle,Sports,1,99.66,99.66,Bank Transfer,cancelled,4.7
+ORD-10203,2025-01-05 12:00,asbtbwjnh88@yahoo.com,Canada,Shampoo,Beauty,4,99.8,399.2,Apple Pay,cancelled,11.08
+ORD-10540,2025-05-20 02:00,sxqmvomjqo18@gmail.com,Singapore,Cotton T-Shirt,Apparel,3,172.17,516.51,Bank Transfer,cancelled,7.09
+ORD-10939,2025-05-18 04:00,dybchz84@outlook.com,United Kingdom,Running Shorts,Apparel,2,138.39,276.78,Cash on Delivery,delivered,10.5
+ORD-10888,2025-01-24 10:00,zubddpe88@icloud.com,Australia,Body Lotion,,3,154.0,462.0,PayPal,cancelled,7.08
+ORD-10419,2025-01-03 21:00,jfarfsvv83@gmail.com,Japan,Power Bank,Electronics,4,43.71,174.84,Apple Pay,cancelled,6.28
+ORD-10259,2025-02-07 20:00,ioydiw94@gmail.com,Australia,Water Bottle,Sports,2,99.17,198.34,Bank Transfer,cancelled,14.2
+ORD-10707,2025-03-24 12:00,,United Kingdom,Foam Roller,Sports,1,141.32,141.32,PayPal,delivered,5.14
+ORD-10658,2025-02-14 15:00,,Australia,The Pragmatic Programmer,Books,4,167.7,670.8,Cash on Delivery,cancelled,13.28
+ORD-10366,2025-02-07 20:00,wocudkdxtl63@icloud.com,United States,Phone Case,Electronics,1,52.36,52.36,Bank Transfer,refunded,5.9
+ORD-10735,2025-01-17 08:00,wpfyige40@outlook.com,Australia,Bluetooth Speaker,Electronics,3,120.94,362.82,Cash on Delivery,cancelled,10.55
+ORD-10340,2025-04-13 07:00,sppho68@icloud.com,Japan,Hoodie,Apparel,3,18.08,54.24,PayPal,processing,10.49
+ORD-10774,2025-05-02 15:00,siqaviivh14@gmail.com,France,Power Bank,Electronics,1,133.69,133.69,PayPal,processing,9.64
+ORD-10501,2025-03-10 21:00,raxaauvn95@proton.me,Australia,USB-C Cable,Electronics,2,115.6,231.2,Apple Pay,shipped,6.17
+ORD-10010,2025-05-05 06:00,yomuuecllm94@gmail.com,Canada,Coffee Mug,Home & Kitchen,2,67.04,134.08,Credit Card,cancelled,9.47
+ORD-10056,2025-03-02 18:00,gdkcbl47@proton.me,Canada,Yoga Mat,Sports,2,11.15,22.3,Bank Transfer,refunded,
+ORD-10336,2025-01-10 01:00,whsmdsmcrr88@proton.me,Singapore,Hair Serum,Beauty,4,101.82,407.28,Bank Transfer,refunded,5.12
+ORD-10530,2025-04-02 14:00,kkaoyktp39@outlook.com,Australia,Educated,,3,114.81,344.43,PayPal,refunded,7.25
+ORD-10722,2025-01-19 02:00,,Germany,USB-C Cable,Electronics,1,51.9,51.9,Apple Pay,cancelled,6.04
+ORD-10293,2025-04-25 12:00,rbxqylxwi35@gmail.com,France,Knife Set,Home & Kitchen,4,10.51,42.04,Cash on Delivery,cancelled,11.14
+ORD-10570,2025-04-25 10:00,dmicssum63@proton.me,Japan,Cotton T-Shirt,Apparel,3,96.95,290.85,PayPal,delivered,5.97
+ORD-10543,2025-01-16 07:00,,United Kingdom,Slim Jeans,Apparel,3,203.92,611.76,Apple Pay,delivered,8.92
+ORD-10811,2025-01-15 16:00,kwcwael42@outlook.com,Canada,Face Cream,Beauty,1,208.1,208.1,PayPal,shipped,13.62
+ORD-10159,2025-02-21 04:00,xviapx15@proton.me,Australia,Face Cream,Beauty,3,202.59,607.77,Credit Card,processing,7.09
+ORD-10100,2025-05-20 16:00,wmfcel33@outlook.com,United States,Atomic Habits,Books,3,68.33,204.99,Apple Pay,processing,8.93
+ORD-10923,2025-01-14 14:00,sklicye73@outlook.com,United States,Running Shorts,Apparel,1,78.14,78.14,Cash on Delivery,delivered,12.8
+ORD-10546,2025-05-18 18:00,wgbbl37@gmail.com,Australia,Phone Case,Electronics,4,166.46,665.84,Apple Pay,refunded,
+ORD-10594,2025-02-23 08:00,acredpj49@proton.me,United States,The Pragmatic Programmer,,1,116.81,116.81,Apple Pay,delivered,5.62
+ORD-10514,2025-01-03 04:00,wsfcsvv69@gmail.com,United States,Atomic Habits,Books,1,55.49,55.49,Apple Pay,delivered,4.26
+ORD-10931,2025-04-11 15:00,iaejam49@yahoo.com,France,Tennis Balls,Sports,2,12.35,24.7,PayPal,cancelled,
+ORD-10611,2025-02-01 03:00,zoeeut52@proton.me,Japan,Wool Socks,Apparel,2,88.23,176.46,Apple Pay,shipped,
+ORD-10209,2025-01-20 23:00,wqvpt28@gmail.com,France,Sapiens,Books,3,163.51,490.53,Cash on Delivery,refunded,3.9
+ORD-10552,2025-04-12 01:00,ggquahr34@outlook.com,Singapore,Phone Case,Electronics,3,79.56,238.68,Bank Transfer,delivered,10.39
+ORD-10685,2025-05-19 20:00,kfixrylya27@icloud.com,United Kingdom,Wool Socks,Apparel,2,107.69,215.38,Apple Pay,refunded,8.43
+ORD-10152,2025-01-28 04:00,mknzfigd21@yahoo.com,United States,Cotton T-Shirt,Apparel,2,36.86,73.72,PayPal,processing,4.27
+ORD-10475,2025-04-14 03:00,svpjav98@gmail.com,United Kingdom,Bluetooth Speaker,Electronics,2,104.47,208.94,PayPal,delivered,11.69
+ORD-10851,2025-01-08 10:00,ooptwy94@icloud.com,Australia,Lipstick,Beauty,2,210.82,421.64,Cash on Delivery,delivered,5.18
+ORD-10712,2025-02-22 06:00,,United States,Wireless Earbuds,,4,178.58,714.32,Apple Pay,delivered,12.12
+ORD-10282,2025-04-22 18:00,sertsvcpi13@icloud.com,United Kingdom,Running Shorts,Apparel,4,174.27,697.08,Apple Pay,cancelled,12.45
+ORD-10278,2025-03-14 18:00,ixoba87@gmail.com,Canada,Storage Box,Home & Kitchen,3,65.46,196.38,Bank Transfer,delivered,5.94
+ORD-10723,2025-01-11 21:00,mjgmu97@proton.me,Canada,Project Hail Mary,Books,4,142.67,570.68,Bank Transfer,refunded,8.9
+ORD-10920,2025-04-16 11:00,hmdvcqs19@icloud.com,Germany,Shampoo,Beauty,2,191.42,382.84,Apple Pay,refunded,4.58
+ORD-10044,2025-05-06 04:00,ioolieso30@icloud.com,United States,Coffee Mug,Home & Kitchen,3,161.92,485.76,Apple Pay,cancelled,
+ORD-10114,2025-05-20 15:00,zynvbvbad81@outlook.com,Canada,Tennis Balls,Sports,2,37.67,75.34,PayPal,delivered,5.21
+ORD-10199,2025-05-21 11:00,ifebnkncff43@yahoo.com,Australia,Atomic Habits,Books,3,112.0,336.0,Apple Pay,shipped,3.87
+ORD-10616,2025-05-18 03:00,qnamshkvt47@icloud.com,Singapore,Face Cream,Beauty,4,211.01,844.04,Bank Transfer,delivered,11.59
+ORD-10168,2025-02-02 01:00,lzqvgxxbkk42@yahoo.com,Singapore,Slim Jeans,Apparel,2,179.39,358.78,Credit Card,refunded,8.08
+ORD-10779,2025-01-16 13:00,kvhdzkphqx91@icloud.com,France,Sapiens,,4,124.08,496.32,Cash on Delivery,cancelled,5.53
+ORD-10527,2025-05-14 09:00,embhlfvdma46@gmail.com,United States,Lipstick,Beauty,4,152.36,609.44,Apple Pay,shipped,10.49
+ORD-10097,2025-03-07 23:00,vhohct31@outlook.com,United States,Yoga Mat,Sports,3,203.89,611.67,Cash on Delivery,shipped,8.75
+ORD-10190,2025-05-21 20:00,clocmi64@gmail.com,Canada,Bamboo Cutting Board,Home & Kitchen,1,115.47,115.47,Bank Transfer,cancelled,7.54
+ORD-10553,2025-04-02 15:00,fbyhpibet36@yahoo.com,Singapore,Face Cream,Beauty,4,15.84,63.36,PayPal,shipped,10.65
+ORD-10185,2025-05-21 15:00,yiarxvrdcn93@gmail.com,France,Cast Iron Pan,,3,42.0,126.0,PayPal,cancelled,
+ORD-10727,2025-04-10 23:00,ubeirv30@icloud.com,Canada,Wool Socks,Apparel,4,60.8,243.2,Credit Card,shipped,12.68
+ORD-10134,2025-01-31 07:00,pjsqedffbj36@proton.me,United Kingdom,Bamboo Cutting Board,Home & Kitchen,1,101.08,101.08,Apple Pay,processing,5.52
+ORD-10246,2025-04-17 23:00,,Australia,Sapiens,Books,2,126.39,252.78,Apple Pay,refunded,4.27
+ORD-10112,2025-04-08 14:00,,Australia,Lipstick,,3,172.41,517.23,Apple Pay,cancelled,9.4
+ORD-10912,2025-01-23 04:00,tjwqpveazo1@proton.me,Australia,Face Cream,Beauty,2,34.82,69.64,PayPal,delivered,8.18
+ORD-10516,2025-03-13 10:00,fghcowrt27@gmail.com,Canada,Running Shorts,Apparel,4,148.19,592.76,Bank Transfer,delivered,12.27
+ORD-10041,2025-04-14 16:00,rokej97@icloud.com,Singapore,Bamboo Cutting Board,Home & Kitchen,1,213.68,213.68,Credit Card,shipped,12.9
+ORD-10913,2025-01-31 14:00,srdhpuc87@proton.me,United Kingdom,Hair Serum,Beauty,3,116.23,348.69,Apple Pay,delivered,8.84
+ORD-10721,2025-05-10 03:00,shthf82@gmail.com,Germany,Resistance Bands,Sports,1,197.35,197.35,Credit Card,delivered,8.94
+ORD-10285,2025-04-11 20:00,,France,USB-C Cable,Electronics,1,57.87,57.87,PayPal,shipped,6.82
+ORD-10858,2025-05-03 08:00,nbvxozcrmp15@outlook.com,Japan,Yoga Mat,Sports,1,72.19,72.19,Credit Card,shipped,10.85
+ORD-10840,2025-01-31 21:00,bvxpefvig5@gmail.com,Australia,Phone Case,Electronics,3,141.16,423.48,PayPal,cancelled,13.73
+ORD-10632,2025-05-20 21:00,vrduwstyj99@icloud.com,Germany,Atomic Habits,Books,4,59.99,239.96,PayPal,processing,6.13
+ORD-10347,2025-01-14 22:00,goiyjvdwwk51@yahoo.com,France,Power Bank,Electronics,1,186.39,186.39,Credit Card,shipped,14.01
+ORD-10578,2025-03-21 23:00,arpwgf72@icloud.com,Singapore,Cotton T-Shirt,Apparel,4,61.43,245.72,Apple Pay,shipped,
+ORD-10754,2025-01-11 01:00,fokvdo33@outlook.com,United States,Educated,Books,3,91.61,274.83,Credit Card,shipped,6.63
+ORD-10299,2025-02-15 17:00,rhkcrmxl25@outlook.com,United States,Bluetooth Speaker,Electronics,3,145.33,435.99,PayPal,delivered,3.47
+ORD-10170,2025-04-13 01:00,rbmgjiu40@yahoo.com,Singapore,Cast Iron Pan,Home & Kitchen,2,139.07,278.14,Credit Card,shipped,7.75
+ORD-10098,2025-03-26 22:00,uaoykywmfz42@yahoo.com,United States,Resistance Bands,,1,29.24,29.24,Credit Card,refunded,8.67
+ORD-10201,2025-05-11 14:00,xfnyeyn1@gmail.com,Germany,Power Bank,Electronics,3,117.03,351.09,PayPal,cancelled,8.84
+ORD-10639,2025-02-23 03:00,ptiezujgcl1@icloud.com,Japan,Phone Case,Electronics,1,42.53,42.53,Bank Transfer,delivered,14.29
+ORD-10620,2025-05-09 10:00,wmenexay44@outlook.com,France,Hoodie,Apparel,2,132.47,264.94,PayPal,shipped,9.28
+ORD-10917,2025-04-18 02:00,yujmbjosy12@gmail.com,Australia,Foam Roller,Sports,2,27.1,54.2,Credit Card,refunded,7.67
+ORD-10480,2025-01-29 18:00,hczekilsku43@outlook.com,Germany,Shampoo,Beauty,4,180.71,722.84,Bank Transfer,cancelled,8.13
+ORD-10473,2025-01-28 23:00,ygqpflif81@icloud.com,United Kingdom,Hoodie,Apparel,1,121.93,121.93,Bank Transfer,shipped,11.95
+ORD-10202,2025-01-19 23:00,licbu72@gmail.com,Germany,Phone Case,,4,145.07,580.28,Apple Pay,cancelled,11.23
+ORD-10508,2025-05-07 13:00,xgfvszcu76@yahoo.com,United Kingdom,Tennis Balls,Sports,4,165.98,663.92,PayPal,cancelled,9.15
+ORD-10171,2025-03-24 08:00,qefvttwvn21@gmail.com,France,Hoodie,Apparel,4,172.09,688.36,Cash on Delivery,cancelled,11.75
+ORD-10715,2025-01-08 15:00,cgwpo35@gmail.com,Singapore,Cast Iron Pan,Home & Kitchen,2,33.51,67.02,Credit Card,shipped,5.09
+ORD-10443,2025-02-15 15:00,zrwzoir45@icloud.com,Japan,Resistance Bands,Sports,1,203.71,203.71,Credit Card,refunded,11.73
+ORD-10376,2025-03-27 12:00,wnofniiqax70@proton.me,France,Hoodie,Apparel,1,15.84,15.84,PayPal,processing,11.7
+ORD-10105,2025-01-19 01:00,bzybyakttz83@icloud.com,Australia,Hair Serum,Beauty,1,166.11,166.11,Bank Transfer,cancelled,8.08
+ORD-10817,2025-05-02 04:00,lkxqe28@yahoo.com,Germany,Bluetooth Speaker,Electronics,1,217.88,217.88,Cash on Delivery,refunded,7.78
+ORD-10507,2025-04-04 03:00,ifsyg62@outlook.com,Canada,Project Hail Mary,Books,2,53.86,107.72,Apple Pay,refunded,13.78
+ORD-10070,2025-04-11 04:00,ijuvr95@proton.me,Canada,Resistance Bands,Sports,3,73.77,221.31,Bank Transfer,refunded,10.14
+ORD-10055,2025-02-23 18:00,idxawd17@proton.me,France,Slim Jeans,Apparel,2,22.55,45.1,PayPal,delivered,5.59
+ORD-10090,2025-02-25 18:00,hpvrh2@gmail.com,Japan,Bluetooth Speaker,Electronics,4,212.94,851.76,PayPal,processing,7.23
+ORD-10448,2025-05-18 05:00,aonvmnpsud97@outlook.com,Canada,USB-C Cable,Electronics,1,159.32,159.32,PayPal,refunded,7.86
+ORD-10789,2025-03-12 17:00,symzuxcnfo1@icloud.com,Australia,Project Hail Mary,Books,2,17.36,34.72,Apple Pay,cancelled,5.0
+ORD-10460,2025-01-03 03:00,cnddme85@yahoo.com,Germany,USB-C Cable,Electronics,2,93.24,186.48,Bank Transfer,cancelled,
+ORD-10802,2025-02-03 11:00,lcygmbkyq21@yahoo.com,Australia,Phone Case,Electronics,4,168.37,673.48,Apple Pay,delivered,11.67
+ORD-10947,2025-05-07 19:00,cqkqsxsro49@yahoo.com,Germany,Power Bank,Electronics,1,121.17,121.17,PayPal,refunded,14.4
+ORD-10422,2025-02-25 13:00,mzsuxogci81@icloud.com,United Kingdom,Tennis Balls,Sports,3,17.32,51.96,Apple Pay,shipped,6.62
+ORD-10028,2025-04-27 10:00,hykvmtby29@gmail.com,United States,USB-C Cable,Electronics,4,77.4,309.6,Credit Card,shipped,7.05
+ORD-10499,2025-02-15 14:00,oelhrr82@yahoo.com,Canada,Educated,Books,3,32.04,96.12,Credit Card,delivered,8.14
+ORD-10115,2025-05-04 21:00,nkasn37@gmail.com,Japan,Running Shorts,Apparel,4,87.12,348.48,PayPal,delivered,8.85
+ORD-10559,2025-02-28 18:00,ygxrrp37@yahoo.com,Australia,Sapiens,Books,4,174.7,698.8,Credit Card,delivered,12.93
+ORD-10798,2025-05-01 01:00,apaggiij67@yahoo.com,United Kingdom,Project Hail Mary,Books,1,74.59,74.59,Bank Transfer,cancelled,9.09
+ORD-10720,2025-02-12 23:00,,Germany,Atomic Habits,Books,3,206.12,618.36,Bank Transfer,shipped,5.72
+ORD-10033,2025-03-03 22:00,mucfrhpmnl96@proton.me,Australia,Phone Case,Electronics,4,111.58,446.32,Apple Pay,cancelled,8.71
+ORD-10733,2025-05-11 13:00,ephulabcxd83@gmail.com,Australia,Slim Jeans,Apparel,4,138.36,553.44,Apple Pay,cancelled,10.75
+ORD-10196,2025-01-14 21:00,tehgvrh97@proton.me,United States,Atomic Habits,Books,1,88.74,88.74,Apple Pay,cancelled,3.68
+ORD-10156,2025-05-15 07:00,uzujomxnk24@gmail.com,Australia,Lipstick,,4,50.29,201.16,Cash on Delivery,shipped,10.57
+ORD-10435,2025-05-02 10:00,jxzvyrj8@yahoo.com,Australia,Bluetooth Speaker,Electronics,3,205.61,616.83,Credit Card,delivered,10.25
+ORD-10903,2025-04-09 19:00,,United Kingdom,Project Hail Mary,Books,3,193.32,579.96,Bank Transfer,delivered,9.81
+ORD-10655,2025-02-26 18:00,cusovjn86@icloud.com,United States,Bluetooth Speaker,Electronics,2,132.19,264.38,Cash on Delivery,delivered,8.21
+ORD-10143,2025-01-19 00:00,gbbun81@proton.me,Japan,Hair Serum,Beauty,2,169.7,339.4,Bank Transfer,cancelled,10.05
+ORD-10191,2025-03-19 16:00,swuiszjxr28@outlook.com,Canada,Power Bank,Electronics,1,183.09,179.57,Credit Card,shipped,9.75
+ORD-10022,2025-02-23 13:00,rmlfmxuec66@proton.me,Australia,Cast Iron Pan,Home & Kitchen,1,72.42,72.42,Credit Card,shipped,12.43
+ORD-10006,2025-04-09 12:00,nzwasrng83@yahoo.com,Canada,Slim Jeans,Apparel,4,134.44,537.76,Apple Pay,cancelled,10.15
+ORD-10126,2025-01-12 18:00,qziuccftor29@icloud.com,Australia,Tennis Balls,Sports,2,145.16,290.32,Bank Transfer,cancelled,14.8
+ORD-10020,2025-01-30 08:00,apiulzd74@outlook.com,France,Water Bottle,Sports,3,207.12,621.36,Credit Card,cancelled,5.14
+ORD-10815,2025-03-17 17:00,trtwcndup82@proton.me,Germany,Educated,Books,4,192.35,769.4,PayPal,processing,10.7
+ORD-10902,2025-05-02 19:00,soarturg77@gmail.com,United Kingdom,Sapiens,Books,3,153.95,461.85,Cash on Delivery,cancelled,10.43
+ORD-10440,2025-02-27 08:00,cipey74@yahoo.com,United Kingdom,Foam Roller,Sports,4,179.39,717.56,Apple Pay,cancelled,4.39
+ORD-10068,2025-02-18 10:00,dbcxisneg57@icloud.com,United Kingdom,Atomic Habits,Books,4,200.72,802.88,Apple Pay,processing,10.26
+ORD-10564,2025-03-14 05:00,,United Kingdom,The Pragmatic Programmer,Books,3,29.09,87.27,Credit Card,shipped,4.42
+ORD-10410,2025-02-28 07:00,mnutsl11@yahoo.com,Germany,Body Lotion,Beauty,2,191.48,382.96,Bank Transfer,cancelled,11.68
+ORD-10484,2025-01-04 09:00,,France,Tennis Balls,Sports,4,173.66,694.64,Cash on Delivery,refunded,4.34
+ORD-10345,2025-05-15 08:00,gduip50@outlook.com,Japan,Power Bank,Electronics,1,118.66,118.66,PayPal,shipped,8.96
+ORD-10595,2025-05-02 10:00,ejeot57@proton.me,Singapore,Tennis Balls,,1,41.66,41.66,Cash on Delivery,refunded,7.04
+ORD-10423,2025-01-05 19:00,,Japan,Tennis Balls,Sports,4,22.31,89.24,PayPal,refunded,13.95
+ORD-10814,2025-01-05 19:00,josuheazz75@outlook.com,Japan,Tennis Balls,Sports,4,154.51,618.04,Cash on Delivery,refunded,12.87
+ORD-10198,2025-02-19 09:00,bztdbhgeva60@outlook.com,United States,Project Hail Mary,Books,2,172.54,345.08,PayPal,processing,8.39
+ORD-10357,2025-02-07 03:00,weenhx75@outlook.com,United States,Shampoo,Beauty,4,0.0,127.4,Cash on Delivery,refunded,7.2
+ORD-10309,2025-04-29 08:00,tgipxpdo1@icloud.com,United States,Educated,Books,2,133.42,266.84,Credit Card,cancelled,3.17
+ORD-10335,2025-01-25 02:00,tufrmgiwo98@gmail.com,Japan,Tennis Balls,Sports,2,72.18,144.36,Credit Card,cancelled,10.93
+ORD-10523,2025-05-02 18:00,mbarhf65@outlook.com,United Kingdom,Phone Case,Electronics,1,133.93,133.93,Credit Card,delivered,3.01
+ORD-10045,2025-02-08 15:00,npwwln59@gmail.com,United Kingdom,Foam Roller,Sports,4,217.54,870.16,Bank Transfer,shipped,14.58
+ORD-10855,2025-01-08 21:00,djssb25@outlook.com,United States,Running Shorts,Apparel,2,35.7,71.4,Credit Card,processing,12.03
+ORD-10835,2025-02-09 04:00,,United States,Body Lotion,Beauty,4,160.33,641.32,Apple Pay,delivered,6.84
+ORD-10178,2025-02-16 21:00,cjthuighwm82@proton.me,Canada,Lipstick,Beauty,3,161.74,485.22,Bank Transfer,shipped,13.8
+ORD-10063,2025-01-29 09:00,mrbkpahfd33@yahoo.com,Australia,Running Shorts,Apparel,1,81.18,81.18,Credit Card,delivered,11.14
+ORD-10796,2025-01-03 00:00,avaitvpcey13@icloud.com,Australia,Hoodie,Apparel,3,14.35,43.05,Credit Card,refunded,
+ORD-10457,2025-05-17 23:00,rxzyrbleyt29@outlook.com,Canada,Sapiens,Books,1,159.4,159.4,Apple Pay,shipped,7.14
+ORD-10859,2025-01-31 21:00,ktdcurdj14@outlook.com,United Kingdom,Resistance Bands,Sports,1,51.94,51.94,Credit Card,delivered,14.09
+ORD-10107,2025-03-12 06:00,tarpyxgbpl87@gmail.com,Germany,Slim Jeans,Apparel,4,81.39,325.56,Credit Card,cancelled,14.25
+ORD-10162,2025-01-18 11:00,sblke53@icloud.com,Japan,USB-C Cable,Electronics,2,60.9,121.8,Apple Pay,refunded,6.08
+ORD-10256,2025-05-11 22:00,mpcfzos6@outlook.com,France,Foam Roller,Sports,2,215.72,431.44,Apple Pay,cancelled,4.2
+ORD-10942,2025-03-01 14:00,kppftrq77@gmail.com,Japan,Wireless Earbuds,Electronics,3,159.63,478.89,Credit Card,cancelled,8.48
+ORD-10549,2025-03-11 08:00,,Germany,Wireless Earbuds,Electronics,4,185.3,741.2,Bank Transfer,shipped,10.06
+ORD-10224,2025-04-16 11:00,sghkt44@gmail.com,United Kingdom,Lipstick,Beauty,2,177.63,355.26,Bank Transfer,processing,9.2
+ORD-10884,2025-02-24 03:00,grzqevfkgm53@gmail.com,Australia,Atomic Habits,Books,1,71.58,71.58,PayPal,shipped,10.04
+ORD-10132,2025-02-19 12:00,qkmsleouf5@yahoo.com,Germany,USB-C Cable,Electronics,1,110.74,110.74,Cash on Delivery,processing,14.57
+ORD-10649,2025-05-16 16:00,,Japan,Hoodie,Apparel,2,127.33,254.66,PayPal,processing,3.56
+ORD-10513,2025-01-05 02:00,shtkoipk90@icloud.com,Singapore,Project Hail Mary,Books,1,79.53,79.53,Credit Card,processing,8.64
+ORD-10682,2025-03-30 20:00,lwfhtz50@yahoo.com,United Kingdom,Lipstick,Beauty,4,137.87,551.48,Apple Pay,delivered,
+ORD-10049,2025-05-04 03:00,jhsavkawu7@proton.me,Singapore,Hair Serum,Beauty,2,219.87,439.74,Apple Pay,shipped,5.85
+ORD-10230,2025-04-16 03:00,zfoqeujrmt11@icloud.com,France,Bamboo Cutting Board,Home & Kitchen,3,80.96,242.88,Bank Transfer,shipped,7.21
+ORD-10150,2025-01-03 10:00,jthfzkyzdh6@outlook.com,Japan,Face Cream,Beauty,2,122.81,245.62,Apple Pay,cancelled,
+ORD-10176,2025-03-25 08:00,,Singapore,Face Cream,Beauty,3,217.53,652.59,Apple Pay,processing,6.13
+ORD-10539,2025-04-26 12:00,,Canada,Yoga Mat,Sports,2,76.09,152.18,PayPal,delivered,4.6
+ORD-10776,2025-02-01 05:00,ughvoowvo74@proton.me,France,USB-C Cable,Electronics,3,75.48,226.44,Cash on Delivery,processing,9.92
+ORD-10271,2025-01-07 14:00,tfpkb45@proton.me,Germany,Tennis Balls,,2,8.34,16.68,Credit Card,shipped,10.51
+ORD-10420,2025-04-07 06:00,xfaaavr9@outlook.com,Canada,Power Bank,Electronics,1,18.32,18.32,PayPal,shipped,14.15
+ORD-10277,2025-03-21 20:00,,Canada,Power Bank,Electronics,3,12.77,38.31,PayPal,refunded,13.71
+ORD-10232,2025-03-06 23:00,fkcym7@gmail.com,Japan,Cotton T-Shirt,Apparel,2,162.29,324.58,Cash on Delivery,delivered,11.41
+ORD-10292,2025-03-30 01:00,,Japan,Foam Roller,Sports,2,52.7,105.4,Bank Transfer,cancelled,10.71
+ORD-10765,2025-03-27 04:00,,Australia,Cast Iron Pan,Home & Kitchen,1,111.22,111.22,Apple Pay,refunded,3.5
+ORD-10842,2025-03-10 04:00,uhucuejnzs68@icloud.com,United States,Coffee Mug,Home & Kitchen,1,211.48,211.48,Cash on Delivery,shipped,
+ORD-10935,2025-04-29 00:00,alcies71@gmail.com,United Kingdom,Cotton T-Shirt,Apparel,3,105.93,317.79,PayPal,cancelled,11.34
+ORD-10860,2025-03-29 21:00,tyfqsaoli69@gmail.com,United Kingdom,Atomic Habits,Books,4,36.83,147.32,Bank Transfer,processing,11.91
+ORD-10621,2025-04-02 15:00,xvvunffrkc43@proton.me,Canada,Hoodie,Apparel,1,145.8,145.8,Apple Pay,refunded,8.51
+ORD-10684,2025-02-04 23:00,,Japan,Bamboo Cutting Board,Home & Kitchen,3,149.06,447.18,Apple Pay,processing,9.36
+ORD-10831,2025-05-19 14:00,gotnuezdoz97@proton.me,United States,Hair Serum,Beauty,1,172.78,172.78,Cash on Delivery,refunded,
+ORD-10833,2025-03-28 23:00,qqhlolvxs57@gmail.com,Australia,The Pragmatic Programmer,Books,2,71.21,142.42,PayPal,shipped,10.32
+ORD-10822,2025-03-13 02:00,btbkeqfpl53@outlook.com,United States,Body Lotion,Beauty,1,137.76,137.76,Apple Pay,shipped,6.52
+ORD-10626,2025-05-11 15:00,blhylq69@outlook.com,Germany,Wool Socks,Apparel,1,75.67,75.67,Credit Card,shipped,8.95
+ORD-10856,2025-05-10 18:00,ftsjneqkbv97@gmail.com,Germany,Educated,Books,4,117.95,471.8,Credit Card,processing,8.26
+ORD-10227,2025-05-13 14:00,afpip34@outlook.com,France,Lipstick,Beauty,4,215.02,860.08,PayPal,processing,
+ORD-10891,2025-03-09 05:00,iwmlnal40@yahoo.com,Germany,Face Cream,Beauty,3,175.31,525.93,PayPal,refunded,
+ORD-10907,2025-01-24 09:00,goyqqcnbmk97@proton.me,United Kingdom,Knife Set,Home & Kitchen,3,89.35,268.05,PayPal,processing,3.74
+ORD-10625,2025-03-11 15:00,nnyhwgh72@proton.me,France,Face Cream,Beauty,3,167.97,503.91,Bank Transfer,delivered,10.57
+ORD-10306,2025-05-05 16:00,spifri15@yahoo.com,Germany,Sapiens,,2,174.52,349.04,Credit Card,shipped,4.39
+ORD-10254,2025-02-07 09:00,,Japan,Wireless Earbuds,Electronics,2,209.18,418.36,Cash on Delivery,refunded,3.16
+ORD-10792,2025-04-17 03:00,vgnoryyxxz58@outlook.com,Germany,Phone Case,Electronics,2,23.52,47.04,Bank Transfer,cancelled,8.22
+ORD-10775,2025-04-16 02:00,,Canada,Lipstick,,3,80.07,240.21,Apple Pay,delivered,14.7
+ORD-10289,2025-05-12 15:00,kyuhaxt94@proton.me,France,Storage Box,Home & Kitchen,1,107.4,107.4,Credit Card,cancelled,9.89
+ORD-10728,2025-04-04 22:00,nsqcmhokbg86@yahoo.com,Singapore,Slim Jeans,Apparel,1,100.88,100.88,Bank Transfer,refunded,8.16
+ORD-10403,2025-03-04 05:00,vxarju15@yahoo.com,Germany,Resistance Bands,Sports,3,187.68,563.04,Apple Pay,cancelled,5.35
+ORD-10344,2025-03-13 21:00,wzmawcpwxk47@gmail.com,Japan,Cotton T-Shirt,Apparel,3,175.41,526.23,PayPal,shipped,9.61
+ORD-10887,2025-01-27 07:00,ekjgkrqxs75@icloud.com,Singapore,Bluetooth Speaker,Electronics,3,95.7,287.1,Apple Pay,refunded,13.08
+ORD-10538,2025-03-02 03:00,sjzxbg5@gmail.com,Singapore,Shampoo,Beauty,3,169.1,507.3,Apple Pay,refunded,13.8
+ORD-10297,2025-01-19 18:00,amqaakdi51@proton.me,United States,Hair Serum,Beauty,1,15.39,15.39,Cash on Delivery,cancelled,11.73
+ORD-10803,2025-04-05 10:00,hyxacj53@yahoo.com,France,Wool Socks,Apparel,2,160.88,321.76,Cash on Delivery,refunded,9.52
+ORD-10767,2025-04-27 01:00,kqumw60@proton.me,Germany,Water Bottle,,3,122.22,366.66,Apple Pay,refunded,6.41
+ORD-10241,2025-03-01 10:00,tulfrjdxml38@proton.me,Singapore,Water Bottle,Sports,1,34.68,34.68,PayPal,refunded,14.78
+ORD-10307,2025-02-26 02:00,blfpejlf46@yahoo.com,Germany,Foam Roller,Sports,2,87.61,175.22,Apple Pay,shipped,8.65
+ORD-10610,2025-05-16 11:00,lmepqok98@gmail.com,France,Coffee Mug,Home & Kitchen,2,166.58,333.16,Cash on Delivery,cancelled,
+ORD-10212,2025-04-07 07:00,viuxawl30@gmail.com,France,Storage Box,Home & Kitchen,1,117.53,117.53,PayPal,shipped,9.2
+ORD-10424,2025-03-17 06:00,,Australia,Wireless Earbuds,Electronics,2,87.4,174.8,Credit Card,refunded,4.82
+ORD-10731,2025-05-02 15:00,eoqwb86@outlook.com,United Kingdom,Wool Socks,Apparel,2,48.0,96.0,Credit Card,cancelled,8.74
+ORD-10165,2025-04-03 00:00,vqmcfqz61@gmail.com,France,Body Lotion,Beauty,4,40.56,162.24,Bank Transfer,cancelled,8.13
+ORD-10542,2025-01-15 17:00,pyzqa54@yahoo.com,Germany,Sapiens,Books,3,92.63,277.89,Apple Pay,delivered,11.37
+ORD-10899,2025-02-12 15:00,wojebm92@gmail.com,United States,Lipstick,Beauty,2,148.87,297.74,Credit Card,refunded,5.04
+ORD-10605,2025-03-30 14:00,xxyvob42@yahoo.com,United States,Foam Roller,Sports,4,197.26,789.04,PayPal,refunded,11.27
+ORD-10014,2025-03-05 18:00,croigrigd83@yahoo.com,Singapore,Phone Case,Electronics,4,33.42,133.68,Apple Pay,delivered,
+ORD-10377,2025-04-06 08:00,dtyloai31@proton.me,Germany,Foam Roller,Sports,1,163.18,163.18,Apple Pay,processing,10.52
+ORD-10184,2025-02-05 13:00,nqhum78@outlook.com,France,Yoga Mat,Sports,3,140.03,420.09,Cash on Delivery,shipped,12.97
+ORD-10009,2025-02-21 22:00,qlndfipffb81@gmail.com,Germany,Educated,Books,2,204.93,409.86,Credit Card,delivered,6.74
+ORD-10478,2025-01-29 07:00,jqdyxxp23@icloud.com,Australia,Wool Socks,Apparel,1,112.27,112.27,Cash on Delivery,shipped,4.22
+ORD-10380,2025-04-27 15:00,yjypkd74@yahoo.com,United States,Running Shorts,Apparel,1,155.23,155.23,Cash on Delivery,shipped,3.39
+ORD-10862,2025-02-19 22:00,svbtruf86@proton.me,Australia,Lipstick,Beauty,1,186.08,186.08,PayPal,refunded,13.16
+ORD-10211,2025-03-09 11:00,,United Kingdom,Phone Case,Electronics,4,57.13,228.52,Bank Transfer,cancelled,5.81
+ORD-10766,2025-05-09 06:00,rwthknp79@outlook.com,Japan,Bamboo Cutting Board,Home & Kitchen,1,30.17,30.17,Credit Card,cancelled,5.53
+ORD-10229,2025-02-15 13:00,nsuhookrbv61@gmail.com,Singapore,Resistance Bands,Sports,4,178.8,715.2,Apple Pay,processing,9.0
+ORD-10390,2025-03-29 20:00,lgzilparqa61@gmail.com,United States,Project Hail Mary,Books,3,195.39,586.17,PayPal,cancelled,6.14
+ORD-10795,2025-01-12 13:00,duscdl55@proton.me,Canada,Storage Box,Home & Kitchen,2,183.56,367.12,Apple Pay,cancelled,8.89
+ORD-10757,2025-02-26 07:00,ysnkko39@gmail.com,Germany,Running Shorts,Apparel,2,187.03,374.06,PayPal,refunded,8.57
+ORD-10762,2025-04-02 16:00,skugziigde11@gmail.com,Canada,Resistance Bands,Sports,4,179.78,719.12,PayPal,delivered,
+ORD-10929,2025-04-02 11:00,xribka53@icloud.com,United States,Hoodie,Apparel,2,211.49,422.98,Credit Card,cancelled,12.12
+ORD-10113,2025-01-05 08:00,pkdijvmrr33@icloud.com,Singapore,Power Bank,Electronics,2,165.15,330.3,Bank Transfer,shipped,9.64
+ORD-10081,2025-01-18 07:00,jyadljl10@proton.me,United Kingdom,Phone Case,Electronics,4,15.38,61.52,Cash on Delivery,processing,12.34
+ORD-10452,2025-02-09 10:00,jzghnrki12@yahoo.com,Australia,Water Bottle,Sports,2,96.97,193.94,Apple Pay,shipped,14.91
+ORD-10691,2025-04-28 21:00,awyaohfmk89@yahoo.com,Japan,Coffee Mug,Home & Kitchen,3,167.0,501.0,Apple Pay,processing,3.96
+ORD-10191,2025-03-19 16:00,ryjbfloqmr92@icloud.com,Canada,Power Bank,Electronics,1,183.09,183.09,Credit Card,shipped,
+ORD-10628,2025-03-10 07:00,yvjhsvii73@icloud.com,Japan,Body Lotion,Beauty,4,173.31,693.24,Credit Card,cancelled,14.19
+ORD-10579,2025-01-21 03:00,,United States,Cast Iron Pan,Home & Kitchen,4,117.06,468.24,Bank Transfer,cancelled,8.11
+ORD-10660,2025-04-14 08:00,nkxcyvx38@proton.me,Canada,Yoga Mat,Sports,2,27.79,55.58,Apple Pay,shipped,4.75
+ORD-10805,2025-05-15 08:00,dsuucslmwd7@proton.me,Germany,Slim Jeans,Apparel,3,49.2,147.6,PayPal,refunded,10.05
+ORD-10603,2025-04-27 13:00,bwlbpjl87@yahoo.com,United States,USB-C Cable,Electronics,3,49.89,149.67,Cash on Delivery,processing,3.58
+ORD-10039,2025-01-11 13:00,gczvoyzrh6@outlook.com,Singapore,Project Hail Mary,Books,4,100.8,403.2,Cash on Delivery,cancelled,11.81
+ORD-10204,2025-05-17 07:00,uwhqhxzw83@yahoo.com,United States,Shampoo,Beauty,1,108.49,108.49,Cash on Delivery,refunded,4.64
+ORD-10482,2025-04-18 07:00,bdzsja55@yahoo.com,United States,Hoodie,Apparel,4,38.56,154.24,Credit Card,refunded,5.53
+ORD-10823,2025-05-07 14:00,kbyxstk17@proton.me,United Kingdom,Tennis Balls,Sports,3,11.57,34.71,Apple Pay,delivered,8.31
+ORD-10927,2025-05-07 03:00,edpbjtrqxr9@gmail.com,United States,Coffee Mug,Home & Kitchen,4,67.89,271.56,Bank Transfer,processing,12.18
+ORD-10362,2025-04-22 02:00,hzrhgloo6@proton.me,Canada,Body Lotion,Beauty,1,69.63,69.63,Cash on Delivery,cancelled,13.89
+ORD-10853,2025-04-11 09:00,oggvu79@gmail.com,United Kingdom,Foam Roller,Sports,4,54.4,217.6,Bank Transfer,refunded,5.97
+ORD-10417,2025-05-10 10:00,gnmbst49@yahoo.com,Japan,USB-C Cable,Electronics,1,168.14,168.14,PayPal,cancelled,7.92
+ORD-10024,2025-03-05 03:00,rzpyxpsn71@icloud.com,United Kingdom,Running Shorts,Apparel,4,18.65,74.6,Bank Transfer,cancelled,8.48
+ORD-10034,2025-02-19 10:00,yrethptpz25@yahoo.com,Germany,Bamboo Cutting Board,Home & Kitchen,3,56.87,170.61,Apple Pay,shipped,4.43
+ORD-10339,2025-04-07 18:00,cmrfmvreh56@outlook.com,Singapore,Foam Roller,,1,216.98,216.98,Credit Card,refunded,
+ORD-10264,2025-01-29 05:00,,Canada,Shampoo,Beauty,1,161.2,161.2,Credit Card,delivered,12.34
+ORD-10035,2025-01-14 17:00,,United States,Coffee Mug,,2,66.15,132.3,Apple Pay,cancelled,6.51
+ORD-10718,2025-03-30 13:00,jztdrxrk56@gmail.com,France,Water Bottle,Sports,2,75.99,151.98,PayPal,processing,
+ORD-10356,2025-05-06 04:00,qlebememdx64@gmail.com,Singapore,Lipstick,Beauty,3,164.22,492.66,Apple Pay,refunded,9.67
+ORD-10821,2025-04-10 02:00,vtnbr79@yahoo.com,United States,Power Bank,Electronics,4,135.28,541.12,Credit Card,delivered,
+ORD-10786,2025-03-20 23:00,shfkvpo13@icloud.com,Singapore,Bluetooth Speaker,,2,47.72,95.44,Cash on Delivery,shipped,12.17
+ORD-10430,2025-03-04 15:00,qrsqglr33@outlook.com,United Kingdom,Foam Roller,Sports,4,163.96,655.84,Credit Card,delivered,3.41
+ORD-10742,2025-03-11 06:00,lwianklf19@gmail.com,Japan,Foam Roller,Sports,4,12.88,51.52,PayPal,cancelled,13.58
+ORD-10644,2025-05-19 11:00,smtwffdyfc13@icloud.com,France,Hair Serum,Beauty,2,76.45,152.9,Cash on Delivery,delivered,14.48
+ORD-10461,2025-02-16 17:00,zrldt1@yahoo.com,Germany,Bamboo Cutting Board,Home & Kitchen,3,98.81,296.43,Credit Card,shipped,12.74
+ORD-10608,2025-03-23 03:00,sfpsp59@proton.me,Japan,Resistance Bands,Sports,3,64.62,193.86,Cash on Delivery,processing,5.66
+ORD-10459,2025-03-20 20:00,yxwba59@yahoo.com,France,Cotton T-Shirt,Apparel,4,54.1,216.4,Apple Pay,delivered,9.19
+ORD-10587,2025-03-26 03:00,nahqqkz91@yahoo.com,France,Sapiens,Books,1,132.27,132.27,Credit Card,refunded,13.93
+ORD-10305,2025-02-19 03:00,vxmexbjfgq98@icloud.com,United States,Wool Socks,Apparel,2,66.6,133.2,Credit Card,delivered,12.56
+ORD-10819,2025-04-02 17:00,rcooiqyf72@icloud.com,Japan,Sapiens,Books,4,133.19,532.76,Credit Card,shipped,11.12
+ORD-10746,2025-05-01 13:00,aypcug23@proton.me,Canada,Atomic Habits,Books,2,69.11,138.22,Bank Transfer,refunded,13.74
+ORD-10753,2025-05-12 01:00,sobzyjrls35@outlook.com,United Kingdom,Bluetooth Speaker,Electronics,4,99.88,399.52,PayPal,delivered,11.0
+ORD-10697,2025-01-23 10:00,spyosij62@yahoo.com,Singapore,Face Cream,Beauty,4,10.54,42.16,Apple Pay,cancelled,10.06
+ORD-10885,2025-01-25 12:00,aexhhddcia25@yahoo.com,France,USB-C Cable,Electronics,3,125.93,377.79,Credit Card,refunded,6.99
+ORD-10314,2025-01-17 06:00,ckeycecd20@outlook.com,United States,Cast Iron Pan,Home & Kitchen,3,177.58,532.74,Apple Pay,cancelled,13.7
+ORD-10943,2025-02-10 18:00,fyagzohqk20@proton.me,Canada,Cast Iron Pan,Home & Kitchen,1,190.45,190.45,PayPal,delivered,11.99
+ORD-10476,2025-01-03 03:00,wcdtxvh62@outlook.com,Germany,Knife Set,Home & Kitchen,1,175.99,175.99,Credit Card,refunded,
+ORD-10575,2025-04-11 06:00,ulthlcz74@icloud.com,Japan,Water Bottle,Sports,2,28.26,56.52,Apple Pay,cancelled,12.98
+ORD-10696,2025-03-17 19:00,hlvtnrzgtb9@icloud.com,Australia,Knife Set,Home & Kitchen,2,91.67,183.34,Credit Card,refunded,7.95
+ORD-10144,2025-03-21 02:00,zeiptq83@gmail.com,France,Power Bank,Electronics,2,66.82,133.64,Bank Transfer,shipped,9.14
+ORD-10598,2025-03-02 06:00,grvjmimrsx86@icloud.com,Singapore,Hoodie,Apparel,3,99999.99,75.12,PayPal,delivered,8.24
+ORD-10052,2025-03-09 18:00,ycgawoxfbv90@yahoo.com,Japan,USB-C Cable,Electronics,1,104.41,104.41,Credit Card,shipped,7.57
+ORD-10008,2025-03-03 18:00,tvznd85@icloud.com,United Kingdom,USB-C Cable,Electronics,3,58.76,176.28,Apple Pay,refunded,14.36
+ORD-10492,2025-02-10 18:00,,Canada,Phone Case,Electronics,1,69.62,69.62,Credit Card,shipped,7.79
+ORD-10291,2025-02-14 08:00,muwicd20@icloud.com,Japan,Sapiens,Books,4,86.39,345.56,Bank Transfer,shipped,12.39
+ORD-10468,2025-01-28 04:00,dpxresybo44@yahoo.com,Singapore,Running Shorts,Apparel,4,26.49,105.96,PayPal,refunded,10.55
+ORD-10542,2025-01-15 17:00,smeadjisnk93@gmail.com,Germany,Sapiens,Books,3,92.63,278.9,Apple Pay,delivered,11.37
+ORD-10577,2025-03-27 04:00,,Singapore,Body Lotion,Beauty,1,144.28,144.28,Cash on Delivery,refunded,12.72
+ORD-10290,2025-03-16 23:00,mdbugqh33@gmail.com,Canada,Sapiens,Books,1,147.14,147.14,Cash on Delivery,shipped,10.49
+ORD-10777,2025-04-18 02:00,tdcyaxb47@icloud.com,Canada,Bluetooth Speaker,Electronics,1,74.12,74.12,Apple Pay,shipped,10.89
+ORD-10388,2025-05-09 06:00,jzunlx58@gmail.com,United States,Storage Box,Home & Kitchen,4,102.55,410.2,Bank Transfer,refunded,12.39
+ORD-10838,2025-03-25 05:00,syeykze76@outlook.com,Germany,Hoodie,Apparel,1,153.11,153.11,Apple Pay,refunded,9.4
+ORD-10358,2025-05-08 21:00,arrkpyv20@gmail.com,Canada,Wool Socks,Apparel,1,60.19,60.19,Bank Transfer,cancelled,4.13
+ORD-10025,2025-05-14 15:00,lsgixcd50@outlook.com,Germany,Knife Set,Home & Kitchen,3,170.35,511.05,Credit Card,cancelled,10.52
+ORD-10933,2025-03-04 00:00,ckfdy37@yahoo.com,Singapore,Power Bank,Electronics,4,116.21,464.84,Apple Pay,refunded,4.82
+ORD-10071,2025-02-24 10:00,ezehunot68@gmail.com,Australia,Coffee Mug,Home & Kitchen,3,73.48,220.44,Cash on Delivery,shipped,14.37
+ORD-10601,2025-04-18 05:00,ncujtrkued65@icloud.com,Singapore,Foam Roller,Sports,1,63.34,63.34,Credit Card,cancelled,4.96
+ORD-10611,2025-02-01 03:00,zoeeut52@proton.me,Japan,Wool Socks,Apparel,2,88.23,176.46,Apple Pay,shipped,
+ORD-10272,2025-03-20 09:00,tcikoyv25@yahoo.com,Australia,Tennis Balls,Sports,3,175.52,526.56,Bank Transfer,cancelled,9.08
+ORD-10914,2025-04-22 08:00,pmnbbs34@yahoo.com,France,Project Hail Mary,Books,4,207.27,829.08,PayPal,delivered,5.12
+ORD-10905,2025-02-10 18:00,nnbpye16@gmail.com,Canada,Cotton T-Shirt,Apparel,4,14.38,57.52,Credit Card,shipped,5.52
+ORD-10945,2025-03-19 18:00,hazkfhu92@outlook.com,Japan,Educated,Books,3,84.67,254.01,Apple Pay,delivered,6.44
+ORD-10239,2025-03-21 10:00,byngqfxwfc82@icloud.com,Australia,Sapiens,Books,4,90.49,361.96,Credit Card,shipped,4.9
+ORD-10187,2025-03-29 05:00,zhkwuquc90@gmail.com,United Kingdom,The Pragmatic Programmer,Books,1,87.0,87.0,Credit Card,cancelled,4.37
+ORD-10343,2025-03-02 12:00,,Germany,Resistance Bands,Sports,3,153.61,460.83,PayPal,processing,5.86
+ORD-10693,2025-03-02 02:00,stixb75@icloud.com,Australia,Hoodie,,1,40.65,40.65,Credit Card,refunded,13.36
+ORD-10593,2025-04-01 18:00,nvreypeozl83@yahoo.com,Germany,Cast Iron Pan,Home & Kitchen,3,27.59,82.77,Apple Pay,refunded,7.36
+ORD-10525,2025-02-26 21:00,mgtzjtf49@gmail.com,France,Yoga Mat,Sports,2,215.47,430.94,Cash on Delivery,cancelled,14.93
+ORD-10032,2025-04-29 18:00,,United States,USB-C Cable,Electronics,4,59.7,238.8,Cash on Delivery,shipped,10.32
+ORD-10193,2025-04-26 14:00,dmnbyvmnx23@proton.me,United Kingdom,Face Cream,Beauty,1,171.69,171.69,PayPal,delivered,10.9
+ORD-10689,2025-05-06 21:00,zxbdhkd86@outlook.com,Australia,Sapiens,Books,4,197.53,790.12,Apple Pay,delivered,9.8
+ORD-10337,2025-05-07 18:00,rthbpdjvp98@yahoo.com,Japan,Running Shorts,Apparel,1,90.97,90.97,Credit Card,cancelled,14.65
+ORD-10392,2025-04-02 06:00,qvfzzamsp1@outlook.com,Japan,Yoga Mat,Sports,3,152.28,456.84,Credit Card,processing,4.08
+ORD-10922,2025-03-11 17:00,lfozzxynoz41@outlook.com,Japan,Body Lotion,Beauty,1,93.99,93.99,Apple Pay,cancelled,8.23
+ORD-10893,2025-01-31 05:00,zulwsm52@outlook.com,Australia,Foam Roller,Sports,2,189.38,378.76,Cash on Delivery,delivered,4.83
+ORD-10812,2025-04-21 16:00,omwloxqz34@yahoo.com,United States,Bamboo Cutting Board,Home & Kitchen,3,19.04,57.12,Credit Card,shipped,
+ORD-10119,2025-03-01 02:00,ykuahzmjy56@outlook.com,Japan,The Pragmatic Programmer,Books,1,28.71,28.71,Credit Card,refunded,7.09
+ORD-10208,2025-03-22 07:00,tlvdtwmjho23@proton.me,Canada,Bamboo Cutting Board,Home & Kitchen,4,43.75,175.0,Apple Pay,shipped,12.43
+ORD-10317,2025-03-15 05:00,srdgbidgeo5@yahoo.com,Australia,Running Shorts,Apparel,2,158.9,317.8,PayPal,processing,14.68
+ORD-10737,2025-03-28 05:00,,Japan,Resistance Bands,,2,134.8,269.6,Credit Card,delivered,13.65
+ORD-10877,2025-01-29 02:00,tnqzy66@gmail.com,Canada,Project Hail Mary,Books,4,198.98,795.92,Cash on Delivery,cancelled,14.71
+ORD-10213,2025-01-31 21:00,smmfeva6@outlook.com,United Kingdom,Slim Jeans,Apparel,3,135.63,406.89,PayPal,refunded,5.76
+ORD-10653,2025-01-11 12:00,cmpwrut29@proton.me,Canada,Tennis Balls,Sports,3,209.29,627.87,Credit Card,refunded,13.06
+ORD-10243,2025-05-18 12:00,mopiqcnbvd5@outlook.com,Canada,Sapiens,Books,3,160.85,482.55,Bank Transfer,shipped,5.28
+ORD-10361,2025-05-06 14:00,gpckjeqc66@yahoo.com,Singapore,Coffee Mug,Home & Kitchen,3,116.68,350.04,PayPal,shipped,13.62
+ORD-10431,2025-01-21 16:00,elrnnxpt97@gmail.com,Canada,Bluetooth Speaker,Electronics,4,157.69,630.76,Cash on Delivery,processing,13.92
+ORD-10558,2025-03-17 07:00,gizslyk11@yahoo.com,Canada,Hair Serum,Beauty,3,49.35,148.05,Apple Pay,cancelled,6.94
+ORD-10665,2025-02-04 12:00,ishgunkt88@proton.me,Australia,Coffee Mug,Home & Kitchen,4,99.34,397.36,Credit Card,refunded,5.58
+ORD-10487,2025-01-22 18:00,zmbciztyn41@icloud.com,Australia,Sapiens,Books,1,58.95,58.95,PayPal,delivered,9.78
+ORD-10637,2025-05-17 19:00,uoyii30@outlook.com,Germany,Hoodie,Apparel,2,29.39,58.78,Apple Pay,shipped,14.33
+ORD-10548,2025-04-16 22:00,hfdzftfj19@gmail.com,Germany,Storage Box,Home & Kitchen,1,19.45,19.45,Bank Transfer,cancelled,14.41
+ORD-10544,2025-03-31 13:00,abuvnw88@gmail.com,Singapore,Wireless Earbuds,Electronics,4,115.61,462.44,Credit Card,cancelled,8.73
+ORD-10908,2025-01-26 01:00,uavkejvyyp57@gmail.com,Australia,Cast Iron Pan,Home & Kitchen,3,184.4,553.2,Credit Card,delivered,3.04
+ORD-10348,2025-03-23 20:00,hcumt43@icloud.com,Canada,Knife Set,Home & Kitchen,2,202.17,404.34,PayPal,processing,7.88
+ORD-10472,2025-03-30 20:00,iywgdxh8@gmail.com,Australia,Running Shorts,Apparel,1,8.3,8.3,PayPal,processing,
+ORD-10029,2025-05-02 21:00,mgjpzs21@yahoo.com,Canada,Cotton T-Shirt,,2,58.57,117.14,Cash on Delivery,delivered,4.37
+ORD-10692,2025-02-03 11:00,,Canada,Educated,Books,4,157.94,631.76,PayPal,delivered,11.63
+ORD-10861,2025-03-14 05:00,aoknxwo42@outlook.com,United Kingdom,Atomic Habits,Books,2,170.04,340.08,Cash on Delivery,processing,
+ORD-10747,2025-02-17 07:00,wtnanbd7@icloud.com,United Kingdom,Knife Set,Home & Kitchen,2,121.14,242.28,PayPal,shipped,12.44
+ORD-10449,2025-03-22 03:00,feowaznjo55@gmail.com,Germany,Resistance Bands,Sports,1,125.6,125.6,Apple Pay,delivered,3.47
+ORD-10136,2025-03-10 20:00,butktswl63@yahoo.com,United States,Foam Roller,Sports,4,38.14,152.56,Credit Card,cancelled,7.97
+ORD-10761,2025-05-15 02:00,dmweunm29@yahoo.com,United States,Storage Box,Home & Kitchen,3,138.47,415.41,Bank Transfer,processing,12.98
+ORD-10617,2025-01-29 23:00,rdgmgisl91@icloud.com,Germany,Phone Case,Electronics,3,168.68,506.04,Apple Pay,processing,5.03
+ORD-10082,2025-01-30 00:00,nxdusfps63@outlook.com,Canada,Hair Serum,Beauty,3,60.92,182.76,PayPal,delivered,11.83
+ORD-10237,2025-03-14 08:00,sgdmiiuz60@gmail.com,Australia,Atomic Habits,,2,214.13,428.26,Credit Card,shipped,4.5
+ORD-10496,2025-04-10 00:00,fspdrvtvt2@outlook.com,Singapore,Foam Roller,Sports,3,201.47,604.41,PayPal,cancelled,
+ORD-10503,2025-04-11 20:00,eicaaudqo11@proton.me,Japan,Resistance Bands,Sports,1,141.87,141.87,Credit Card,shipped,
+ORD-10437,2025-04-13 23:00,jyymr90@gmail.com,Japan,Foam Roller,Sports,2,136.63,273.26,Apple Pay,refunded,10.35
+ORD-10169,2025-02-08 04:00,tyyochnik50@icloud.com,Singapore,Project Hail Mary,Books,4,31.85,127.4,Credit Card,shipped,9.8
+ORD-10771,2025-04-26 10:00,mdrhcujke33@gmail.com,Canada,USB-C Cable,Electronics,2,32.03,64.06,Credit Card,shipped,4.46
+ORD-10221,2025-05-13 09:00,nsprjrzch52@yahoo.com,Japan,Wool Socks,Apparel,4,10.27,41.08,Bank Transfer,refunded,5.34
+ORD-10684,2025-02-04 23:00,,Japan,Bamboo Cutting Board,Home & Kitchen,3,149.06,447.18,Apple Pay,processing,9.36
+ORD-10536,2025-05-15 12:00,rjsisu36@yahoo.com,Japan,Sapiens,Books,3,199.34,598.02,Credit Card,cancelled,9.16
+ORD-10782,2025-03-04 15:00,lgleuvt68@yahoo.com,Germany,Wool Socks,Apparel,3,47.86,143.58,Bank Transfer,delivered,
+ORD-10038,2025-02-27 20:00,vbehtoh16@icloud.com,France,Resistance Bands,Sports,4,32.33,129.32,Bank Transfer,processing,4.79
+ORD-10416,2025-04-21 14:00,eokygwhqhx90@outlook.com,Singapore,Sapiens,Books,4,60.82,243.28,Bank Transfer,refunded,7.62
+ORD-10465,2025-04-13 01:00,ylqcbk40@outlook.com,Germany,Resistance Bands,Sports,2,33.54,67.08,Apple Pay,cancelled,
+ORD-10663,2025-05-10 22:00,cvfjszv29@icloud.com,France,Sapiens,Books,1,215.97,215.97,Cash on Delivery,delivered,8.71
+ORD-10581,2025-03-06 15:00,,United Kingdom,Resistance Bands,Sports,3,118.11,354.33,Bank Transfer,delivered,8.55
+ORD-10834,2025-02-20 17:00,eyljcpsrlp64@icloud.com,United Kingdom,Educated,Books,4,90.79,363.16,Cash on Delivery,refunded,12.23
+ORD-10474,2025-05-03 02:00,ewemsqae23@icloud.com,Germany,Foam Roller,Sports,3,39.45,118.35,Credit Card,shipped,8.95
+ORD-10414,2025-01-29 04:00,tkxfwivr21@proton.me,France,Hoodie,Apparel,4,90.91,363.64,Cash on Delivery,shipped,9.44
+ORD-10636,2025-04-20 04:00,,United Kingdom,Face Cream,Beauty,1,55.75,55.75,PayPal,shipped,6.11
+ORD-10441,2025-05-18 06:00,ijrunpfk69@icloud.com,Australia,Atomic Habits,Books,3,21.12,63.36,PayPal,processing,13.17
+ORD-10734,2025-05-18 19:00,wmmtvpo88@proton.me,United Kingdom,Cast Iron Pan,Home & Kitchen,3,72.34,217.02,Bank Transfer,processing,6.93
+ORD-10250,2025-01-15 10:00,kwwfqpau49@gmail.com,France,Power Bank,Electronics,4,24.64,98.56,Cash on Delivery,delivered,7.18
+ORD-10586,2025-02-15 00:00,uilqwxej96@gmail.com,Germany,Yoga Mat,Sports,4,146.24,584.96,Bank Transfer,processing,13.39
+ORD-10207,2025-04-02 04:00,cqxilq40@proton.me,United Kingdom,Water Bottle,Sports,4,209.73,838.92,Cash on Delivery,refunded,11.06
+ORD-10076,2025-05-08 19:00,ngdlpgkrcz9@proton.me,United States,Body Lotion,Beauty,4,21.32,85.28,Bank Transfer,cancelled,9.43
+ORD-10315,2025-04-18 14:00,hbwgy83@yahoo.com,Japan,Water Bottle,Sports,2,108.47,216.94,Cash on Delivery,processing,11.85
+ORD-10154,2025-04-13 11:00,cpxbzfqvcw43@gmail.com,United States,Phone Case,Electronics,2,50.0,100.0,Bank Transfer,delivered,11.24
+ORD-10928,2025-01-04 06:00,,France,Water Bottle,Sports,2,213.6,427.2,Cash on Delivery,delivered,11.28
+ORD-10678,2025-04-05 14:00,pbytefio20@yahoo.com,France,Cotton T-Shirt,Apparel,1,59.25,59.25,PayPal,processing,11.86
+ORD-10140,2025-04-05 09:00,qrbope45@outlook.com,United Kingdom,Face Cream,Beauty,1,29.88,29.88,Bank Transfer,refunded,4.65
+ORD-10099,2025-02-14 13:00,yavuet38@gmail.com,United States,Running Shorts,Apparel,1,201.6,201.6,Apple Pay,refunded,13.59
+ORD-10763,2025-03-14 10:00,gmkyrrshs61@gmail.com,Australia,Lipstick,Beauty,2,161.23,322.46,PayPal,cancelled,11.25
+ORD-10668,2025-01-16 17:00,cazaihu73@proton.me,Australia,Face Cream,Beauty,3,12.32,36.96,Credit Card,shipped,3.71
+ORD-10638,2025-02-25 11:00,dyawwfbl26@outlook.com,Japan,Hair Serum,Beauty,2,206.5,413.0,Cash on Delivery,delivered,3.33
+ORD-10073,2025-04-18 05:00,dgqwocvwh98@outlook.com,France,Hair Serum,Beauty,4,114.62,458.48,Bank Transfer,refunded,12.8
+ORD-10016,2025-01-28 23:00,hfirwng7@gmail.com,Japan,Yoga Mat,Sports,2,64.07,128.14,Apple Pay,delivered,9.64
+ORD-10925,2025-02-15 05:00,,United Kingdom,Foam Roller,Sports,4,19.44,77.76,PayPal,cancelled,10.61
+ORD-10350,2025-02-04 08:00,vufkewywf3@proton.me,Germany,Cast Iron Pan,Home & Kitchen,4,193.18,772.72,Credit Card,cancelled,5.08
+ORD-10921,2025-03-27 01:00,rkrbxfwuj33@proton.me,Germany,Phone Case,Electronics,1,15.53,15.53,Apple Pay,shipped,4.84
+ORD-10173,2025-03-08 23:00,hkeoz29@outlook.com,Germany,Wool Socks,Apparel,3,80.98,242.94,Apple Pay,cancelled,
+ORD-10890,2025-01-13 00:00,,Japan,Atomic Habits,Books,4,110.93,443.72,Bank Transfer,cancelled,10.13
+ORD-10019,2025-05-01 07:00,jvwfrkhb99@yahoo.com,Australia,Cotton T-Shirt,Apparel,4,192.9,771.6,Cash on Delivery,cancelled,
+ORD-10141,2025-01-26 04:00,sjlugqgps37@gmail.com,France,Foam Roller,Sports,2,26.38,52.76,PayPal,refunded,12.03
+ORD-10001,2025-03-04 07:00,rxcka28@outlook.com,United States,Yoga Mat,Sports,1,165.21,165.21,Cash on Delivery,shipped,4.67
+ORD-10489,2025-02-03 10:00,wlxukfpbd81@icloud.com,Canada,Project Hail Mary,Books,3,102.87,308.61,Credit Card,shipped,6.49
+ORD-10062,2025-03-25 18:00,etbcl55@icloud.com,Singapore,Hair Serum,Beauty,2,86.45,172.9,Bank Transfer,processing,10.15
+ORD-10190,2025-05-21 20:00,clocmi64@gmail.com,Canada,Bamboo Cutting Board,Home & Kitchen,1,115.47,115.47,Bank Transfer,cancelled,7.54
+ORD-10367,2025-04-11 01:00,qszwt77@proton.me,France,Slim Jeans,Apparel,3,128.72,386.16,Credit Card,cancelled,7.01
+ORD-10509,2025-03-11 10:00,jfjxvlxyg53@yahoo.com,Australia,Shampoo,Beauty,4,134.42,537.68,Bank Transfer,delivered,10.47
+ORD-10561,2025-05-16 12:00,,Canada,Resistance Bands,Sports,1,36.06,36.06,Credit Card,delivered,
+ORD-10462,2025-03-26 01:00,yyzdmm88@outlook.com,Australia,Coffee Mug,Home & Kitchen,2,0.0,183.28,Bank Transfer,refunded,4.92
+ORD-10329,2025-01-03 03:00,fxejcvyyj21@proton.me,Germany,Coffee Mug,Home & Kitchen,1,71.95,71.95,Cash on Delivery,refunded,
+ORD-10606,2025-01-21 10:00,,France,Yoga Mat,Sports,4,116.68,466.72,Cash on Delivery,refunded,14.13
+ORD-10865,2025-03-14 16:00,,Germany,Bluetooth Speaker,Electronics,2,35.56,71.12,Apple Pay,delivered,10.8
+ORD-10607,2025-05-02 06:00,,Germany,Sapiens,Books,1,87.34,87.34,Credit Card,cancelled,12.13
+ORD-10385,2025-05-16 10:00,ccedg12@outlook.com,France,Cast Iron Pan,Home & Kitchen,2,95.97,191.94,Bank Transfer,shipped,7.58
+ORD-10739,2025-03-10 04:00,rfxoaiqhlf80@proton.me,France,USB-C Cable,Electronics,1,124.28,124.28,Cash on Delivery,processing,12.41
+ORD-10591,2025-01-23 18:00,dcsep3@outlook.com,United States,Coffee Mug,Home & Kitchen,3,106.85,320.55,PayPal,processing,14.16
+ORD-10116,2025-05-15 08:00,ucylgsh11@gmail.com,Canada,Power Bank,Electronics,2,59.09,118.18,Bank Transfer,cancelled,12.78
+ORD-10886,2025-05-04 23:00,dgntqoysw60@proton.me,United Kingdom,Shampoo,Beauty,1,107.65,107.65,Credit Card,processing,3.78
+ORD-10584,2025-02-25 02:00,dewixbnlr42@yahoo.com,Canada,Slim Jeans,,1,174.07,174.07,PayPal,refunded,14.15
+ORD-10896,2025-01-29 05:00,gtwilsswn60@proton.me,Australia,Foam Roller,Sports,1,39.22,39.22,PayPal,processing,3.64
+ORD-10847,2025-02-26 13:00,ushktdvzsx37@outlook.com,Canada,Educated,Books,2,113.91,227.82,Cash on Delivery,shipped,8.39
+ORD-10787,2025-04-02 15:00,ifyabodkb60@icloud.com,Canada,Hoodie,Apparel,1,189.85,189.85,Credit Card,refunded,12.11
+ORD-10338,2025-03-04 07:00,pxbhiai59@icloud.com,Japan,Bamboo Cutting Board,Home & Kitchen,4,82.47,329.88,Apple Pay,delivered,
+ORD-10351,2025-04-20 19:00,yeoan99@icloud.com,Singapore,Hoodie,Apparel,2,18.55,37.1,Credit Card,shipped,6.12
+ORD-10690,2025-04-17 05:00,ehnxmxb31@yahoo.com,France,Storage Box,Home & Kitchen,4,11.38,45.52,Bank Transfer,cancelled,7.38
+ORD-10883,2025-02-26 08:00,,Canada,Project Hail Mary,Books,2,8.07,16.14,Bank Transfer,delivered,9.42
+ORD-10080,2025-03-17 09:00,lrjbwjzhzy10@icloud.com,Australia,Coffee Mug,Home & Kitchen,1,77.52,77.52,Cash on Delivery,shipped,8.35
+ORD-10824,2025-05-02 12:00,oybuay87@proton.me,France,Atomic Habits,Books,4,161.7,646.8,Credit Card,shipped,14.08
+ORD-10275,2025-03-19 06:00,cuuxla62@proton.me,United Kingdom,Lipstick,Beauty,3,103.8,311.4,PayPal,processing,9.3
+ORD-10809,2025-05-03 10:00,dzfvefpdg36@yahoo.com,Australia,Knife Set,,2,92.16,184.32,Bank Transfer,delivered,13.06
+ORD-10439,2025-02-26 23:00,yrrxqmui29@proton.me,Canada,Hoodie,Apparel,4,170.46,681.84,Apple Pay,cancelled,6.09
+ORD-10089,2025-04-09 19:00,vyseez60@icloud.com,France,Cotton T-Shirt,Apparel,1,69.52,69.52,Bank Transfer,delivered,8.02
+ORD-10378,2025-05-14 23:00,nfuldlk12@gmail.com,Japan,Storage Box,Home & Kitchen,2,159.44,318.88,PayPal,cancelled,5.97
+ORD-10186,2025-02-14 01:00,uitctbw85@outlook.com,Australia,Bamboo Cutting Board,Home & Kitchen,4,18.62,74.48,Apple Pay,cancelled,13.23
+ORD-10825,2025-02-03 10:00,fxkmym27@outlook.com,Canada,Slim Jeans,Apparel,4,57.21,228.84,Credit Card,refunded,7.29
+ORD-10642,2025-04-06 08:00,uixaw53@gmail.com,Japan,Bluetooth Speaker,Electronics,2,72.89,145.78,Cash on Delivery,refunded,
+ORD-10820,2025-01-31 08:00,kdpuwhx4@outlook.com,Singapore,Running Shorts,Apparel,3,129.16,387.48,PayPal,delivered,13.12
+ORD-10075,2025-05-01 22:00,,Canada,Slim Jeans,Apparel,1,68.82,68.82,Credit Card,shipped,12.97
+ORD-10583,2025-04-14 08:00,,France,Cast Iron Pan,Home & Kitchen,3,85.86,257.58,Cash on Delivery,cancelled,9.73
+ORD-10258,2025-04-08 16:00,wrkolipld84@outlook.com,Germany,Cast Iron Pan,Home & Kitchen,2,26.61,53.22,PayPal,processing,14.53
+ORD-10327,2025-05-03 11:00,dlznzeh96@gmail.com,Germany,Wireless Earbuds,Electronics,2,203.76,407.52,PayPal,shipped,6.74
+ORD-10371,2025-02-27 15:00,uuuoxww78@gmail.com,United States,Face Cream,,2,33.59,67.18,Bank Transfer,cancelled,6.09
+ORD-10407,2025-01-22 04:00,ljpmqlm53@yahoo.com,Singapore,Sapiens,Books,3,61.96,185.88,Apple Pay,processing,12.02
+ORD-10488,2025-02-08 00:00,mwaercqy30@outlook.com,United Kingdom,Cast Iron Pan,Home & Kitchen,1,114.46,114.46,PayPal,refunded,10.05
+ORD-10284,2025-03-19 13:00,,United States,Tennis Balls,Sports,3,128.9,386.7,Cash on Delivery,processing,11.61
+ORD-10749,2025-05-15 13:00,dabzvdxj39@yahoo.com,United States,Project Hail Mary,Books,4,167.35,669.4,Apple Pay,cancelled,5.0
+ORD-10322,2025-04-29 22:00,fvhmvh75@yahoo.com,Singapore,Hair Serum,Beauty,4,45.08,180.32,Cash on Delivery,cancelled,9.81
+ORD-10065,2025-04-28 22:00,lclkc40@yahoo.com,Germany,Face Cream,Beauty,3,44.44,133.32,Apple Pay,shipped,14.04
+ORD-10396,2025-03-27 16:00,uqtqp11@gmail.com,United States,Lipstick,Beauty,3,184.49,553.47,Bank Transfer,processing,12.53
+ORD-10375,2025-03-19 23:00,ahnxslf70@proton.me,Singapore,Water Bottle,Sports,3,96.89,290.67,Apple Pay,cancelled,11.91
+ORD-10673,2025-05-19 05:00,bazkjnvrln23@proton.me,Australia,Cotton T-Shirt,Apparel,3,197.12,591.36,Credit Card,shipped,10.69
+ORD-10485,2025-03-11 02:00,tkbkvz78@gmail.com,Singapore,Knife Set,Home & Kitchen,4,205.47,821.88,Bank Transfer,processing,9.26
+ORD-10738,2025-05-21 18:00,ofblzpmkd24@gmail.com,Australia,Hoodie,,4,104.41,417.64,Credit Card,delivered,12.85
+ORD-10585,2025-04-01 09:00,nwvyyvs56@proton.me,Singapore,Shampoo,Beauty,4,157.72,630.88,Bank Transfer,processing,13.06
+ORD-10456,2025-01-15 02:00,lpkiemcx83@gmail.com,Canada,Phone Case,Electronics,1,43.0,47.25,Bank Transfer,delivered,11.92
+ORD-10409,2025-03-26 08:00,vepdwsoguh45@icloud.com,Japan,Power Bank,Electronics,2,78.76,157.52,Cash on Delivery,delivered,6.63
+ORD-10680,2025-01-17 13:00,qeyjd14@outlook.com,United States,Running Shorts,Apparel,3,20.02,60.06,Bank Transfer,delivered,9.22
+ORD-10294,2025-02-16 10:00,,Germany,Lipstick,Beauty,2,118.23,236.46,Cash on Delivery,delivered,9.57
+ORD-10804,2025-01-28 11:00,,France,Project Hail Mary,Books,1,171.67,171.67,PayPal,shipped,5.9
+ORD-10897,2025-02-01 21:00,nwjtyb87@icloud.com,France,Storage Box,Home & Kitchen,2,73.67,147.34,Apple Pay,processing,9.69
+ORD-10871,2025-02-08 02:00,nvsma35@icloud.com,Japan,Cast Iron Pan,Home & Kitchen,4,100.6,402.4,Bank Transfer,delivered,7.24
+ORD-10677,2025-01-31 12:00,yomdzm14@gmail.com,Germany,Bamboo Cutting Board,Home & Kitchen,3,31.0,93.0,Credit Card,cancelled,12.87
+ORD-10411,2025-01-08 11:00,htmrjf55@icloud.com,France,Wool Socks,Apparel,4,188.82,755.28,Apple Pay,refunded,4.67
+ORD-10201,2025-05-11 14:00,xfnyeyn1@gmail.com,Germany,Power Bank,Electronics,3,117.03,351.09,PayPal,cancelled,8.84
+ORD-10395,2025-01-07 23:00,lbgeiqcmvp81@yahoo.com,France,Lipstick,,3,25.34,76.02,PayPal,delivered,5.71
+ORD-10794,2025-02-16 17:00,gbwobo11@yahoo.com,Canada,Body Lotion,Beauty,2,19.2,38.4,Apple Pay,processing,13.51
+ORD-10226,2025-04-06 19:00,wmzxhfobu62@proton.me,United States,Atomic Habits,Books,1,187.78,187.78,Cash on Delivery,processing,6.79
+ORD-10074,2025-02-26 14:00,kkjkc29@gmail.com,Australia,Wool Socks,Apparel,1,208.64,208.64,Credit Card,processing,13.62
+ORD-10676,2025-04-12 01:00,drbceubn22@yahoo.com,Japan,Wool Socks,Apparel,3,135.23,405.69,Apple Pay,refunded,11.35
+ORD-10014,2025-03-05 18:00,croigrigd83@yahoo.com,Singapore,Phone Case,Electronics,4,33.42,133.68,Apple Pay,delivered,
+ORD-10153,2025-04-12 16:00,gzakltg60@gmail.com,United Kingdom,Cotton T-Shirt,Apparel,2,213.3,426.6,Credit Card,delivered,3.59
+ORD-10332,2025-05-02 21:00,zmclr11@gmail.com,United Kingdom,Cast Iron Pan,Home & Kitchen,2,189.64,379.28,Bank Transfer,cancelled,7.41
+ORD-10576,2025-05-04 09:00,,Germany,Phone Case,Electronics,4,126.93,507.72,Bank Transfer,processing,13.89
+ORD-10669,2025-02-25 11:00,xpoxswedva5@proton.me,Canada,Running Shorts,,4,46.54,186.16,Apple Pay,processing,
+ORD-10125,2025-02-09 22:00,bzmknxro47@proton.me,Canada,Tennis Balls,Sports,2,61.57,123.14,Credit Card,shipped,8.08
+ORD-10791,2025-02-22 11:00,vlrveje5@proton.me,United Kingdom,Sapiens,Books,1,32.99,32.99,Bank Transfer,delivered,10.53
+ORD-10313,2025-02-23 23:00,jgrhbim68@gmail.com,Singapore,Running Shorts,Apparel,1,145.6,145.6,Cash on Delivery,refunded,12.13
+ORD-10573,2025-05-18 12:00,hejkog2@gmail.com,United States,Hoodie,Apparel,2,216.87,433.74,Cash on Delivery,delivered,13.32
+ORD-10235,2025-05-03 09:00,upuoewlg92@icloud.com,Japan,Atomic Habits,,4,208.75,835.0,PayPal,processing,3.11
+ORD-10323,2025-03-18 20:00,drhexqat64@gmail.com,Australia,Cotton T-Shirt,Apparel,1,40.65,40.65,Cash on Delivery,cancelled,13.01
+ORD-10686,2025-03-23 14:00,dyiyptwruc2@gmail.com,Australia,Wool Socks,Apparel,2,39.94,79.88,Credit Card,processing,5.95
+ORD-10498,2025-01-04 11:00,hhvdm59@icloud.com,Japan,Hoodie,Apparel,2,209.9,419.8,Apple Pay,processing,12.77
+ORD-10007,2025-03-09 16:00,,Australia,Wool Socks,Apparel,1,210.21,210.21,Bank Transfer,delivered,12.14
+ORD-10242,2025-04-30 08:00,xobehgjaq49@outlook.com,United States,Running Shorts,Apparel,3,76.62,229.86,Cash on Delivery,processing,13.41
+ORD-10108,2025-01-15 04:00,gxopuvg19@proton.me,Germany,Lipstick,Beauty,2,167.93,335.86,Bank Transfer,processing,9.05
+ORD-10283,2025-04-08 10:00,,Singapore,Power Bank,Electronics,1,153.33,153.33,PayPal,shipped,
+ORD-10946,2025-02-18 04:00,dwdhdfkd95@yahoo.com,Australia,Storage Box,,4,43.46,173.84,Apple Pay,shipped,13.16
+ORD-10924,2025-05-07 20:00,azcgyzmnkp88@gmail.com,United Kingdom,The Pragmatic Programmer,Books,3,30.71,92.13,Apple Pay,processing,11.4
+ORD-10701,2025-03-28 20:00,lddhsuwjz9@gmail.com,Singapore,Face Cream,Beauty,3,141.88,425.64,Apple Pay,cancelled,6.73
+ORD-10874,2025-04-08 19:00,cxydmym74@yahoo.com,Germany,Educated,Books,1,180.5,180.5,PayPal,shipped,
+ORD-10279,2025-04-25 19:00,vsrnztm17@gmail.com,Singapore,Bluetooth Speaker,Electronics,4,45.94,183.76,Credit Card,cancelled,7.27
+ORD-10057,2025-05-14 09:00,bmkrm57@gmail.com,Canada,Running Shorts,Apparel,1,162.18,162.18,Apple Pay,refunded,8.5
+ORD-10545,2025-05-21 04:00,,Germany,Lipstick,Beauty,4,156.68,626.72,Credit Card,refunded,4.39
+ORD-10118,2025-03-22 00:00,dvvyhoowr70@yahoo.com,Japan,USB-C Cable,Electronics,1,46.02,46.02,PayPal,delivered,14.54
+ORD-10664,2025-04-22 02:00,alqxms9@yahoo.com,Canada,Body Lotion,Beauty,4,113.39,453.56,Apple Pay,refunded,14.44
+ORD-10069,2025-01-14 20:00,,Australia,Cast Iron Pan,Home & Kitchen,4,172.19,688.76,Credit Card,refunded,10.77
+ORD-10251,2025-02-26 04:00,zztocludim96@gmail.com,Japan,Storage Box,Home & Kitchen,2,77.29,154.58,Apple Pay,delivered,3.61
+ORD-10818,2025-05-14 04:00,tvzvxyxdd89@proton.me,Japan,Hoodie,Apparel,3,145.84,437.52,Apple Pay,delivered,10.89
+ORD-10491,2025-03-15 12:00,xdjvyjrng88@gmail.com,United States,Educated,Books,1,85.06,85.06,PayPal,refunded,7.91
+ORD-10740,2025-03-23 07:00,fqyctzhm13@outlook.com,Japan,Slim Jeans,Apparel,1,125.39,125.39,PayPal,shipped,5.06
+ORD-10810,2025-03-17 04:00,,Canada,USB-C Cable,Electronics,1,155.43,155.43,Credit Card,shipped,9.24
+ORD-10651,2025-03-04 12:00,,Germany,Wool Socks,Apparel,2,170.09,340.18,Bank Transfer,shipped,12.44
+ORD-10854,2025-02-14 14:00,irptx93@gmail.com,Germany,Educated,Books,1,47.6,47.6,Bank Transfer,processing,3.84
+ORD-10249,2025-04-04 18:00,vckxtsu23@icloud.com,Canada,Hair Serum,Beauty,2,37.34,74.68,Cash on Delivery,processing,6.0
+ORD-10381,2025-03-19 09:00,dpbxxf95@icloud.com,United States,USB-C Cable,Electronics,3,218.1,654.3,Credit Card,refunded,8.83
+ORD-10458,2025-04-08 05:00,irvww38@yahoo.com,Singapore,The Pragmatic Programmer,Books,1,97.62,97.62,Apple Pay,processing,7.48
+ORD-10672,2025-02-20 09:00,kjmmimkm99@yahoo.com,United States,Bamboo Cutting Board,,2,102.96,205.92,Cash on Delivery,delivered,14.33
+ORD-10381,2025-03-19 09:00,dpbxxf95@icloud.com,United States,USB-C Cable,Electronics,3,218.1,654.3,Credit Card,refunded,8.83
+ORD-10217,2025-05-04 12:00,xvolgtxcpo33@outlook.com,United States,Water Bottle,,4,56.65,226.6,Credit Card,refunded,7.21
+ORD-10346,2025-04-23 13:00,bnscomghu19@yahoo.com,Singapore,Phone Case,Electronics,2,213.62,427.24,Apple Pay,processing,6.05
+ORD-10633,2025-02-20 21:00,gtadkkm7@proton.me,United States,Lipstick,Beauty,4,84.79,339.16,Cash on Delivery,processing,14.66
+ORD-10841,2025-01-28 10:00,csjxvm68@gmail.com,Germany,Coffee Mug,Home & Kitchen,3,70.25,210.75,Bank Transfer,cancelled,12.93
+ORD-10187,2025-03-29 05:00,zhkwuquc90@gmail.com,United Kingdom,The Pragmatic Programmer,Books,1,87.0,87.0,Credit Card,cancelled,4.37
+ORD-10387,2025-03-23 14:00,mkgxg76@gmail.com,Germany,Educated,Books,1,65.09,65.09,Cash on Delivery,shipped,9.64
+ORD-10059,2025-01-25 10:00,,Australia,Cast Iron Pan,Home & Kitchen,4,96.19,384.76,Credit Card,cancelled,8.12
+ORD-10415,2025-02-06 14:00,pgiommbc83@icloud.com,Australia,Educated,Books,3,50.76,152.28,Apple Pay,cancelled,3.77
+ORD-10941,2025-02-02 22:00,jfxtnk7@icloud.com,France,Foam Roller,Sports,4,84.15,336.6,Bank Transfer,shipped,13.51
+ORD-10752,2025-01-26 04:00,hafnakulq37@yahoo.com,United States,Storage Box,Home & Kitchen,2,10.34,20.68,Cash on Delivery,refunded,11.93
+ORD-10183,2025-03-07 17:00,zrqarkjom20@outlook.com,United States,Yoga Mat,Sports,4,193.83,775.32,Apple Pay,cancelled,10.48
+ORD-10189,2025-03-05 15:00,qdvxpaynmm22@gmail.com,Singapore,Project Hail Mary,Books,1,99.76,99.76,Apple Pay,shipped,7.15
+ORD-10647,2025-03-13 20:00,ixgumor86@yahoo.com,France,The Pragmatic Programmer,Books,4,32.98,131.92,Credit Card,processing,12.22
+ORD-10702,2025-03-22 20:00,uopifdiq30@proton.me,Germany,Slim Jeans,Apparel,3,153.92,461.76,PayPal,cancelled,13.99
+ORD-10681,2025-01-31 07:00,obqxy83@icloud.com,France,Atomic Habits,,4,170.96,683.84,Cash on Delivery,cancelled,12.15
+ORD-10836,2025-03-26 21:00,adhou44@yahoo.com,France,Tennis Balls,Sports,4,88.76,355.04,Apple Pay,shipped,8.48
+ORD-10735,2025-01-17 08:00,wpfyige40@outlook.com,Australia,Bluetooth Speaker,Electronics,3,120.94,362.82,Cash on Delivery,cancelled,10.55
+ORD-10889,2025-05-02 02:00,bvnuufiksd66@proton.me,France,Yoga Mat,Sports,3,32.04,96.12,Apple Pay,processing,8.07
+ORD-10580,2025-05-21 13:00,dzswhix73@outlook.com,United Kingdom,Running Shorts,Apparel,4,37.65,150.6,Apple Pay,refunded,
+ORD-10759,2025-02-12 10:00,pwcctdl12@outlook.com,United States,Hoodie,Apparel,2,137.44,274.88,Credit Card,cancelled,
+ORD-10879,2025-05-02 21:00,vjcpcq11@outlook.com,Singapore,Atomic Habits,Books,4,108.55,434.2,Cash on Delivery,processing,4.12
+ORD-10687,2025-03-20 02:00,pvmshco20@outlook.com,Japan,Knife Set,Home & Kitchen,2,211.09,422.18,Credit Card,refunded,7.36
+ORD-10932,2025-03-07 05:00,eysduiwbta6@icloud.com,United States,Hoodie,Apparel,1,105.39,105.39,Apple Pay,shipped,
+ORD-10355,2025-02-03 02:00,lgizmzhjl34@proton.me,France,Educated,Books,3,194.11,582.33,Cash on Delivery,processing,6.81
+ORD-10158,2025-04-02 18:00,jodyvvzoea8@outlook.com,Germany,Slim Jeans,Apparel,3,178.92,536.76,Credit Card,refunded,3.34
+ORD-10260,2025-02-18 03:00,tpgog30@outlook.com,United States,Cast Iron Pan,Home & Kitchen,3,40.21,120.63,Apple Pay,delivered,4.58
+ORD-10300,2025-01-17 17:00,,Singapore,Water Bottle,Sports,2,111.72,223.44,Cash on Delivery,shipped,10.72
+ORD-10254,2025-02-07 09:00,,Japan,Wireless Earbuds,Electronics,2,209.18,418.36,Cash on Delivery,refunded,3.16
+ORD-10773,2025-02-20 01:00,ajzyqk1@yahoo.com,Singapore,Shampoo,Beauty,3,144.22,432.66,Credit Card,shipped,3.44
+ORD-10109,2025-04-20 17:00,yruikdj97@proton.me,Singapore,Coffee Mug,,2,140.71,281.42,PayPal,shipped,
+ORD-10650,2025-05-14 13:00,ishbsrft77@gmail.com,United States,Bluetooth Speaker,Electronics,3,90.63,271.89,Bank Transfer,shipped,13.72
+ORD-10018,2025-01-27 11:00,ztygeuek23@yahoo.com,Japan,USB-C Cable,Electronics,2,152.6,305.2,PayPal,processing,12.36
+ORD-10521,2025-04-14 12:00,twgfuj37@proton.me,France,Cotton T-Shirt,Apparel,1,66.4,66.4,Credit Card,delivered,
+ORD-10730,2025-02-04 23:00,jnang68@gmail.com,France,Phone Case,Electronics,2,39.25,78.5,PayPal,processing,11.42
+ORD-10166,2025-04-10 05:00,jlgmfgbt86@gmail.com,Canada,Hair Serum,Beauty,1,144.08,144.08,Apple Pay,refunded,7.45
+ORD-10146,2025-02-02 23:00,tdxilng74@gmail.com,Singapore,Project Hail Mary,Books,3,43.4,130.2,Bank Transfer,refunded,12.37
+ORD-10157,2025-05-01 16:00,zzcrgvxbz29@proton.me,Japan,USB-C Cable,Electronics,1,179.43,179.43,Apple Pay,shipped,7.29
+ORD-10054,2025-03-02 11:00,jxqbhzyvcf82@proton.me,United States,Tennis Balls,Sports,2,102.0,204.0,Credit Card,processing,
+ORD-10222,2025-01-18 02:00,vxjzhpfyog53@proton.me,Canada,Running Shorts,Apparel,1,164.23,164.23,Cash on Delivery,delivered,9.6
+ORD-10215,2025-05-11 08:00,ilpfkcfwnk20@proton.me,Canada,Sapiens,,2,140.12,280.24,PayPal,cancelled,5.01
+ORD-10149,2025-04-27 00:00,,Germany,Hair Serum,Beauty,3,99999.99,232.17,PayPal,delivered,7.43
+ORD-10135,2025-05-12 21:00,zuxzwd17@outlook.com,United Kingdom,Storage Box,Home & Kitchen,3,209.91,629.73,Apple Pay,shipped,12.78
+ORD-10918,2025-01-23 10:00,tbjyw57@gmail.com,United Kingdom,Wool Socks,Apparel,1,215.98,215.98,PayPal,delivered,5.23
+ORD-10772,2025-05-17 06:00,jiktcnvfeq76@gmail.com,Germany,Hoodie,Apparel,2,118.68,237.36,Bank Transfer,refunded,
+ORD-10510,2025-02-17 11:00,qeqvan44@outlook.com,Singapore,Phone Case,Electronics,3,99.03,294.32,Cash on Delivery,processing,5.94
+ORD-10333,2025-02-13 02:00,ipzdvs36@proton.me,France,Water Bottle,Sports,1,165.18,165.18,Bank Transfer,processing,7.36
+ORD-10206,2025-02-16 21:00,wyzlo38@gmail.com,France,Running Shorts,,3,49.2,147.6,Credit Card,shipped,12.6
+ORD-10490,2025-04-27 10:00,ehjceug61@yahoo.com,Singapore,Storage Box,Home & Kitchen,1,113.77,113.77,PayPal,delivered,5.04
+ORD-10413,2025-05-06 00:00,xkfhn59@gmail.com,Australia,Water Bottle,Sports,2,14.8,29.6,Cash on Delivery,delivered,5.24
+ORD-10799,2025-03-10 16:00,jbieoso6@icloud.com,United States,Atomic Habits,Books,2,95.55,191.1,Bank Transfer,shipped,5.73
+ORD-10265,2025-04-09 23:00,peobeiwwe19@outlook.com,United States,Foam Roller,,3,26.08,78.24,Bank Transfer,processing,12.49
+ORD-10881,2025-03-05 05:00,,United Kingdom,USB-C Cable,Electronics,4,17.33,69.32,Apple Pay,delivered,8.85
+ORD-10547,2025-04-12 15:00,bgomtjxfsy71@yahoo.com,Germany,Resistance Bands,Sports,3,35.5,106.5,Cash on Delivery,processing,10.89
+ORD-10269,2025-01-18 13:00,hdshn68@outlook.com,Germany,Bamboo Cutting Board,Home & Kitchen,3,198.28,594.84,Cash on Delivery,delivered,13.12
+ORD-10781,2025-02-23 22:00,acfdsuwikr88@yahoo.com,Singapore,Hoodie,Apparel,1,129.81,129.81,PayPal,shipped,4.33
+ORD-10725,2025-04-26 06:00,adwuy57@gmail.com,United Kingdom,Educated,Books,1,76.45,76.45,Bank Transfer,processing,10.36
+ORD-10446,2025-03-28 18:00,,Canada,Cotton T-Shirt,Apparel,1,215.82,215.82,Bank Transfer,cancelled,
+ORD-10646,2025-03-02 05:00,omiqv74@icloud.com,Singapore,Cotton T-Shirt,Apparel,2,0.0,285.08,PayPal,cancelled,7.76
+ORD-10863,2025-04-27 03:00,ljijhy28@gmail.com,France,Face Cream,Beauty,1,56.52,56.52,Credit Card,shipped,4.7
+ORD-10813,2025-04-25 06:00,mroxdb30@yahoo.com,Canada,Storage Box,Home & Kitchen,1,176.29,176.29,Credit Card,delivered,7.11
+ORD-10683,2025-04-16 22:00,zdqfkw59@icloud.com,Singapore,Hair Serum,Beauty,2,17.02,34.04,Bank Transfer,cancelled,13.56
+ORD-10505,2025-03-09 05:00,vxfcukmq27@icloud.com,Japan,Atomic Habits,Books,1,38.07,38.07,Apple Pay,cancelled,4.11
+ORD-10880,2025-05-10 04:00,pzymqgpf16@yahoo.com,Canada,Running Shorts,Apparel,4,126.65,506.6,Cash on Delivery,cancelled,8.56
+ORD-10092,2025-04-04 04:00,kbbsundxd79@yahoo.com,United Kingdom,Hair Serum,Beauty,3,126.26,378.78,Bank Transfer,refunded,5.39
+ORD-10724,2025-04-08 01:00,mocss13@icloud.com,Japan,The Pragmatic Programmer,Books,4,218.86,875.44,Apple Pay,shipped,14.55
+ORD-10188,2025-04-08 11:00,wsxmmxlbra87@proton.me,Germany,Educated,Books,4,46.43,185.72,Apple Pay,refunded,10.34
+ORD-10648,2025-04-28 03:00,hwhlzcwnky66@outlook.com,United Kingdom,Face Cream,Beauty,2,28.05,56.1,PayPal,delivered,4.44
+ORD-10574,2025-03-14 09:00,ughdurdthc10@proton.me,Japan,Educated,Books,4,16.96,67.84,Credit Card,delivered,3.29
+ORD-10695,2025-01-16 14:00,,Canada,Foam Roller,Sports,2,107.47,214.94,PayPal,shipped,5.22
+ORD-10572,2025-02-12 17:00,,Canada,Shampoo,Beauty,2,129.37,258.74,Credit Card,refunded,5.47
+ORD-10915,2025-01-12 10:00,dvdvjvsat9@icloud.com,Germany,The Pragmatic Programmer,Books,3,87.04,261.12,Apple Pay,cancelled,8.22
+ORD-10273,2025-04-28 17:00,uktvhsin27@proton.me,Australia,Phone Case,Electronics,4,40.94,163.76,Apple Pay,delivered,13.75
+ORD-10567,2025-05-12 21:00,rxacsneovq82@gmail.com,Germany,Bamboo Cutting Board,Home & Kitchen,4,141.69,566.76,PayPal,refunded,12.32
+ORD-10844,2025-02-05 15:00,,France,Hair Serum,Beauty,3,190.87,572.61,PayPal,refunded,11.47
+ORD-10866,2025-04-03 12:00,xqjxiblrz48@yahoo.com,Japan,Cotton T-Shirt,Apparel,1,11.57,11.57,PayPal,shipped,14.48
+ORD-10661,2025-03-12 00:00,zgfqfagapv54@proton.me,Germany,Face Cream,Beauty,2,124.17,248.34,Bank Transfer,shipped,
+ORD-10603,2025-04-27 13:00,bwlbpjl87@yahoo.com,United States,USB-C Cable,Electronics,3,49.89,149.67,Cash on Delivery,processing,3.58
+ORD-10103,2025-04-06 13:00,tuvtrpun68@yahoo.com,Canada,Lipstick,Beauty,4,166.52,666.08,Cash on Delivery,delivered,11.42
+ORD-10406,2025-05-04 22:00,gkxpaffw51@outlook.com,France,Hoodie,Apparel,3,119.4,358.2,Bank Transfer,cancelled,14.47
+ORD-10160,2025-03-24 04:00,yuyqezsyuf76@outlook.com,Japan,Foam Roller,Sports,1,79.35,79.35,Apple Pay,processing,14.71
+ORD-10128,2025-01-30 00:00,cuytnoilmu81@outlook.com,United Kingdom,Coffee Mug,Home & Kitchen,3,17.47,52.41,Bank Transfer,cancelled,13.19
+ORD-10504,2025-02-26 09:00,,Canada,Hair Serum,Beauty,2,58.82,117.64,Credit Card,cancelled,5.33
+ORD-10015,2025-02-24 16:00,wwjevsp84@proton.me,United States,Bluetooth Speaker,Electronics,1,23.53,23.53,Cash on Delivery,processing,6.18
+ORD-10102,2025-01-03 08:00,grmeryxurq38@yahoo.com,Germany,Bamboo Cutting Board,,3,131.48,394.44,PayPal,shipped,10.84
+ORD-10040,2025-05-06 02:00,irwishyv71@gmail.com,Singapore,Knife Set,Home & Kitchen,4,142.57,570.28,Credit Card,processing,8.64
+ORD-10391,2025-01-20 17:00,ldzjpkvvzd48@outlook.com,Singapore,Educated,Books,4,122.08,488.32,Credit Card,shipped,3.37
+ORD-10205,2025-04-11 17:00,,United Kingdom,Cotton T-Shirt,Apparel,1,9.07,9.07,PayPal,shipped,9.57
+ORD-10875,2025-05-12 21:00,pxzlasx22@icloud.com,United Kingdom,Cast Iron Pan,Home & Kitchen,2,52.72,105.44,Credit Card,shipped,10.09
+ORD-10850,2025-01-24 16:00,tjrgcbwsyq23@gmail.com,Singapore,Lipstick,Beauty,1,76.99,76.99,PayPal,shipped,12.8
+ORD-10163,2025-02-27 05:00,,Canada,Face Cream,Beauty,4,175.21,700.84,Cash on Delivery,delivered,8.42
+ORD-10827,2025-01-12 03:00,zgfgcmc19@icloud.com,Singapore,Phone Case,Electronics,4,70.33,281.32,Cash on Delivery,shipped,8.17
+ORD-10518,2025-05-12 06:00,blrypc60@gmail.com,Canada,Cast Iron Pan,,4,191.99,767.96,PayPal,delivered,12.36
+ORD-10783,2025-04-20 00:00,blhffwvzh62@outlook.com,Singapore,Knife Set,Home & Kitchen,3,67.22,201.66,PayPal,delivered,8.68
+ORD-10124,2025-02-21 18:00,roymsl38@gmail.com,Japan,Cast Iron Pan,Home & Kitchen,3,32.14,96.42,Bank Transfer,shipped,
+ORD-10807,2025-05-15 00:00,favpik71@outlook.com,United States,Bluetooth Speaker,Electronics,4,173.13,692.52,PayPal,cancelled,
+ORD-10510,2025-02-17 11:00,rjudia43@outlook.com,Singapore,Phone Case,Electronics,3,99.03,297.09,Cash on Delivery,processing,5.94
+ORD-10622,2025-01-15 14:00,gueywf92@icloud.com,United Kingdom,Project Hail Mary,Books,1,213.73,213.73,Credit Card,refunded,9.8
+ORD-10399,2025-04-22 16:00,ixudiij2@proton.me,United Kingdom,Cotton T-Shirt,Apparel,1,35.07,35.07,Credit Card,shipped,14.52
+ORD-10192,2025-03-16 17:00,,Germany,USB-C Cable,Electronics,3,183.94,551.82,Apple Pay,delivered,9.26
+ORD-10524,2025-03-31 17:00,glvhinrw77@icloud.com,Canada,Bamboo Cutting Board,Home & Kitchen,4,112.02,448.08,Apple Pay,refunded,6.09
+ORD-10047,2025-01-26 14:00,xbuhjdn73@outlook.com,United Kingdom,Cotton T-Shirt,Apparel,4,215.41,861.64,PayPal,delivered,5.0
+ORD-10471,2025-05-12 14:00,nhfsoebgbd36@outlook.com,France,Sapiens,Books,1,194.38,194.38,Credit Card,shipped,9.05
+ORD-10565,2025-01-11 17:00,avafyo94@icloud.com,United Kingdom,Project Hail Mary,Books,2,13.8,27.6,Bank Transfer,processing,9.45
+ORD-10051,2025-03-07 15:00,ticzdzw93@icloud.com,Australia,The Pragmatic Programmer,Books,3,184.06,552.18,Credit Card,cancelled,14.61
+ORD-10930,2025-04-10 22:00,bsgmgrs28@outlook.com,France,Educated,Books,1,23.62,23.62,Apple Pay,refunded,8.27
+ORD-10094,2025-02-13 16:00,ujvgoselk53@outlook.com,Japan,Sapiens,Books,1,131.71,131.71,Cash on Delivery,refunded,10.55
+ORD-10407,2025-01-22 04:00,ljpmqlm53@yahoo.com,Singapore,Sapiens,Books,3,61.96,185.88,Apple Pay,processing,12.02
+ORD-10481,2025-02-28 12:00,kpstsgazao18@gmail.com,United States,Educated,Books,4,120.88,483.52,Apple Pay,processing,4.0
+ORD-10036,2025-01-14 04:00,,Japan,Wireless Earbuds,Electronics,4,112.25,449.0,Apple Pay,refunded,4.79
+ORD-10359,2025-01-12 20:00,ittyofbq42@gmail.com,Canada,Hair Serum,Beauty,1,77.84,77.84,Cash on Delivery,refunded,10.47
+ORD-10520,2025-04-19 06:00,ehpncbgc15@gmail.com,United States,Coffee Mug,Home & Kitchen,1,145.51,145.51,Cash on Delivery,processing,6.53
+ORD-10090,2025-02-25 18:00,hpvrh2@gmail.com,Japan,Bluetooth Speaker,Electronics,4,212.94,851.76,PayPal,processing,7.23
+ORD-10438,2025-01-23 09:00,zmxymogey90@gmail.com,Canada,Slim Jeans,Apparel,1,35.11,35.11,Bank Transfer,delivered,12.99
+ORD-10434,2025-01-17 10:00,mrcbta75@gmail.com,Canada,Coffee Mug,Home & Kitchen,4,34.43,137.72,PayPal,refunded,3.36
+ORD-10674,2025-03-23 02:00,,United Kingdom,Bluetooth Speaker,Electronics,2,197.18,389.85,Bank Transfer,shipped,11.57
+ORD-10133,2025-01-29 18:00,vjvbsozcv97@outlook.com,France,Wool Socks,Apparel,4,124.54,498.16,Credit Card,cancelled,4.37
+ORD-10231,2025-04-14 02:00,fihgqhl47@proton.me,Singapore,Hoodie,Apparel,4,141.83,567.32,Bank Transfer,shipped,3.95
+ORD-10363,2025-03-06 11:00,tatmu51@gmail.com,Canada,Face Cream,Beauty,4,148.1,592.4,Bank Transfer,processing,6.06
+ORD-10395,2025-01-07 23:00,lbgeiqcmvp81@yahoo.com,France,Lipstick,,3,25.34,76.02,PayPal,delivered,5.71
+ORD-10228,2025-05-08 13:00,,Japan,Body Lotion,Beauty,3,85.58,256.74,PayPal,shipped,5.53
+ORD-10852,2025-02-06 07:00,qsgpxfo40@yahoo.com,Japan,Tennis Balls,Sports,2,125.26,250.52,Credit Card,cancelled,13.76
+ORD-10801,2025-03-05 16:00,tnbgebsqhe74@yahoo.com,Japan,Educated,Books,4,194.66,778.64,Apple Pay,shipped,5.33
+ORD-10162,2025-01-18 11:00,sblke53@icloud.com,Japan,USB-C Cable,Electronics,2,60.9,121.8,Apple Pay,refunded,6.08
+ORD-10849,2025-05-01 12:00,reejm34@yahoo.com,France,Hair Serum,Beauty,1,120.89,120.89,Bank Transfer,shipped,9.22
+ORD-10711,2025-02-21 19:00,igdhap84@proton.me,Japan,Storage Box,Home & Kitchen,4,41.89,167.56,PayPal,shipped,6.08
+ORD-10708,2025-04-03 11:00,,Singapore,Sapiens,Books,2,27.47,54.94,PayPal,delivered,7.06
+ORD-10486,2025-04-06 20:00,ccpwaho9@outlook.com,United States,Foam Roller,Sports,4,42.94,171.76,Apple Pay,shipped,8.09
+ORD-10874,2025-04-08 19:00,cxydmym74@yahoo.com,Germany,Educated,Books,1,180.5,180.5,PayPal,shipped,
+ORD-10373,2025-05-10 05:00,skqgtnu18@icloud.com,Japan,Phone Case,Electronics,4,80.36,321.44,Bank Transfer,cancelled,4.02
+ORD-10295,2025-02-03 12:00,,France,Yoga Mat,Sports,1,189.57,189.57,PayPal,delivered,10.88
+ORD-10002,2025-03-13 00:00,,Australia,Water Bottle,Sports,4,54.73,218.92,Cash on Delivery,processing,12.11
+ORD-10179,2025-04-16 01:00,dfkoxl41@outlook.com,Canada,Atomic Habits,Books,4,120.33,481.32,Bank Transfer,processing,13.45
+ORD-10623,2025-02-18 23:00,,Singapore,Storage Box,Home & Kitchen,3,27.37,82.11,Bank Transfer,delivered,12.97
+ORD-10618,2025-03-08 18:00,tdhfj47@yahoo.com,France,Cast Iron Pan,Home & Kitchen,3,174.92,524.76,PayPal,refunded,6.3
+ORD-10535,2025-01-31 18:00,hqxqbxzms36@gmail.com,United Kingdom,Lipstick,Beauty,1,68.09,68.09,Apple Pay,refunded,7.67
+ORD-10916,2025-02-04 08:00,znxpxxhb63@proton.me,United Kingdom,Coffee Mug,Home & Kitchen,4,44.4,177.6,PayPal,processing,13.17
+ORD-10195,2025-02-03 22:00,nsidjm74@icloud.com,France,Slim Jeans,Apparel,3,153.56,460.68,Bank Transfer,delivered,
+ORD-10631,2025-01-15 20:00,jycdtiukd20@proton.me,France,Project Hail Mary,Books,4,20.58,82.32,Cash on Delivery,shipped,7.11
+ORD-10717,2025-01-12 18:00,osusthcj61@proton.me,United Kingdom,Slim Jeans,Apparel,4,179.8,719.2,Apple Pay,processing,13.02
+ORD-10233,2025-04-10 09:00,hqdvarwimz70@yahoo.com,Singapore,USB-C Cable,Electronics,2,25.87,51.74,PayPal,refunded,5.75
+ORD-10454,2025-04-10 05:00,ruowkpgrsr19@icloud.com,France,Atomic Habits,Books,1,44.2,44.2,Credit Card,processing,7.14
+ORD-10835,2025-02-09 04:00,,United States,Body Lotion,Beauty,4,160.33,641.32,Apple Pay,delivered,6.84
+ORD-10790,2025-01-06 21:00,vgbevf38@icloud.com,United States,Sapiens,Books,1,164.65,164.65,Bank Transfer,shipped,6.3
+ORD-10710,2025-01-10 06:00,aspjxefn81@proton.me,France,Foam Roller,Sports,1,16.51,16.51,Apple Pay,refunded,5.75
+ORD-10656,2025-03-03 11:00,xkktjuwony81@icloud.com,United States,Atomic Habits,Books,1,32.9,32.9,PayPal,refunded,9.96
+ORD-10155,2025-04-12 15:00,,United States,Running Shorts,Apparel,4,182.2,728.8,Credit Card,processing,3.35
