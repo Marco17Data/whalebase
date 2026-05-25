@@ -366,7 +366,7 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
         </div>
       )}
 
-      <DataQualityBar data={dq} />
+      <DataQualityBar data={dq} sessionId={sessionId} tableName={activeTable || undefined} onAfterCleanup={refreshAll} />
     </div>
   );
 }
