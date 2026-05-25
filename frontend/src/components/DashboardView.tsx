@@ -72,7 +72,7 @@ export function DashboardView({ sessionId, currency, activeTable, onQueryGenerat
             icon={<MessageSquare className="w-4 h-4" />}
             title={t('dashboard.presets_title')}
             desc={t('dashboard.presets_desc')}
-            badge={presets.length.toString()}
+            
             onClick={() => setView('presets')}
           />
           <EntryCard
