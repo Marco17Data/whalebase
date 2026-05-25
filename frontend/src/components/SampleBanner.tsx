@@ -12,7 +12,6 @@ const SAMPLES = [
   { id: 'sales', label: 'Sales (mixed regions)', rows: 5455 },
   { id: 'coffee', label: 'Coffee shop chain', rows: 3000 },
   { id: 'ecommerce', label: 'E-commerce orders', rows: 2500 },
-  { id: 'restaurant', label: 'Restaurant orders', rows: 1200 },
   { id: 'messy', label: 'Demo: messy data (try cleanup features)', rows: 1010 },
 ];
 

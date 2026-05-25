@@ -219,13 +219,6 @@ SAMPLE_REGISTRY = {
         "rows": 2500, "cols": 12,
         "currency": "USD",
     },
-    "restaurant": {
-        "filename": "restaurant_orders.csv",
-        "label_en": "Restaurant orders",
-        "label_zh": "Sample dataset 4",
-        "rows": 1200, "cols": 12,
-        "currency": "EUR",
-    },
     "messy": {
         "filename": "sample_messy_orders.csv",
         "label_en": "Demo: messy data (try cleanup features)",
