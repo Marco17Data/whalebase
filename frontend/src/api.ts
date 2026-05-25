@@ -200,6 +200,15 @@ export const api = {
         is_currency: boolean;
         points: Array<{ month: string; value: number; is_anomaly?: boolean; anomaly_type?: 'spike' | 'drop' | null; deviation_pct?: number; mean_value?: number }>;
       };
+      comparison?: null | {
+        datasets: string[];
+        kpi_by_dataset: {
+          rows?: Record<string, number>;
+          revenue?: Record<string, number>;
+        };
+        trend_by_dataset: Record<string, Array<{ month: string; value: number }>>;
+        is_currency: boolean;
+      };
     }>(`/session/${sid}/overview?${params}`);
   },
 

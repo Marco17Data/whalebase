@@ -5,6 +5,9 @@ import { Sparkles, TrendingUp, TrendingDown, AlertTriangle } from 'lucide-react'
 import { api } from '../api';
 import { useI18n } from '../i18n';
 import { useTheme } from '../ThemeContext';
+
+// 前 6 个 dataset 的固定调色 (i 个 dataset -> 第 i 种颜色)
+const COMPARE_COLORS = ['#6366f1', '#f59e0b', '#10b981', '#ef4444', '#a855f7', '#06b6d4'];
 import DataQualityBar from './DataQualityBar';
 import CompareBanner from './CompareBanner';
 import CompareModeIndicator from './CompareModeIndicator';
@@ -56,6 +59,15 @@ interface Overview {
   kpis: KPI[];
   pie: PieData | null;
   trend: TrendData | null;
+  comparison?: null | {
+    datasets: string[];
+    kpi_by_dataset: {
+      rows?: Record<string, number>;
+      revenue?: Record<string, number>;
+    };
+    trend_by_dataset: Record<string, Array<{ month: string; value: number }>>;
+    is_currency: boolean;
+  };
 }
 
 interface Props {
@@ -171,7 +183,13 @@ export function HeroOverview({ sessionId, currency, activeTable, tablesCount }: 
       {data.kpis.length > 0 && (
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
           {data.kpis.map((kpi, i) => (
-            <KPICard key={i} kpi={kpi} currency={currency} />
+            <KPICardWithCompare
+              key={i}
+              kpi={kpi}
+              currency={currency}
+              comparison={data.comparison || null}
+              kpiIndex={i}
+            />
           ))}
         </div>
       )}
@@ -310,7 +328,9 @@ export function HeroOverview({ sessionId, currency, activeTable, tablesCount }: 
         </div>
       </div>
 
-      {data.trend && data.trend.points.length > 1 && (
+      {data.comparison && data.comparison.trend_by_dataset && Object.keys(data.comparison.trend_by_dataset).length > 0 ? (
+        <CompareTrendChart trend={data.comparison.trend_by_dataset} datasets={data.comparison.datasets} isCurrency={data.comparison.is_currency} currency={currency} />
+      ) : data.trend && data.trend.points.length > 1 && (
         <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
           <div className="flex items-center justify-between mb-3">
             <div className="text-xs font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-200">
@@ -502,3 +522,144 @@ function KPICard({ kpi, currency }: { kpi: KPI; currency: string }) {
     </div>
   );
 }
+
+
+function KPICardWithCompare({
+  kpi, currency, comparison, kpiIndex,
+}: {
+  kpi: KPI;
+  currency: string;
+  comparison: any;
+  kpiIndex: number;
+}) {
+  const { t } = useI18n();
+  if (!comparison || !comparison.datasets || comparison.datasets.length === 0) {
+    return <KPICard kpi={kpi} currency={currency} />;
+  }
+  // 决定这个 KPI 用哪个 metric 显示 delta
+  // kpiIndex=0 -> rows, kpiIndex=1 -> revenue (按 generate_compare_overview 的顺序)
+  const metric = kpiIndex === 0 ? 'rows' : 'revenue';
+  const byDataset = comparison.kpi_by_dataset?.[metric];
+  if (!byDataset || comparison.datasets.length < 2) {
+    return <KPICard kpi={kpi} currency={currency} />;
+  }
+  const datasets = comparison.datasets;
+  const values = datasets.map((d: string) => byDataset[d] || 0);
+  const isCurrency = kpi.format === 'currency';
+
+  if (datasets.length === 2) {
+    // 2 个 dataset: 显示 delta
+    const [valA, valB] = values;
+    const pct = valA > 0 ? ((valB - valA) / valA) * 100 : null;
+    const pctStr = pct === null ? '' : (pct >= 0 ? `+${pct.toFixed(1)}%` : `${pct.toFixed(1)}%`);
+    const positive = pct !== null && pct >= 0;
+    return (
+      <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-4">
+        <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-300 uppercase tracking-wider">
+          {kpi.label}
+        </div>
+        <div className="mt-1 text-2xl font-bold text-slate-900 dark:text-slate-100 tabular-nums">
+          {formatNum(valB, isCurrency, currency)}
+        </div>
+        {pct !== null && (
+          <div className={`mt-1 text-xs font-medium tabular-nums ${positive ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+            {pctStr} {t('compare.vs')} <span className="font-mono">{datasets[0]}</span>
+          </div>
+        )}
+        <div className="mt-2 pt-2 border-t border-slate-100 dark:border-slate-800 space-y-0.5 text-xs">
+          <div className="flex justify-between text-slate-500 dark:text-slate-400">
+            <span className="font-mono truncate max-w-[60%]">{datasets[0]}</span>
+            <span className="tabular-nums">{formatNum(valA, isCurrency, currency)}</span>
+          </div>
+          <div className="flex justify-between text-slate-700 dark:text-slate-200">
+            <span className="font-mono truncate max-w-[60%]">{datasets[1]}</span>
+            <span className="tabular-nums font-medium">{formatNum(valB, isCurrency, currency)}</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // 3+ datasets: 列表
+  return (
+    <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-4">
+      <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-300 uppercase tracking-wider">
+        {kpi.label}
+      </div>
+      <div className="mt-2 space-y-1 text-xs">
+        {datasets.map((ds: string, i: number) => (
+          <div key={ds} className="flex justify-between">
+            <span className="font-mono truncate max-w-[60%] flex items-center gap-1.5">
+              <span className="inline-block w-2 h-2 rounded-full" style={{ backgroundColor: COMPARE_COLORS[i % COMPARE_COLORS.length] }} />
+              {ds}
+            </span>
+            <span className="tabular-nums font-medium text-slate-700 dark:text-slate-200">
+              {formatNum(byDataset[ds] || 0, isCurrency, currency)}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+
+function CompareTrendChart({ trend, datasets, isCurrency, currency }: {
+  trend: Record<string, Array<{ month: string; value: number }>>;
+  datasets: string[];
+  isCurrency: boolean;
+  currency: string;
+}) {
+  const { t } = useI18n();
+  // 把多个 dataset 的 points 合并成一个 recharts-friendly 的格式
+  // [{ month: "2025-01", march_sales: 100, april_sales: 120 }, ...]
+  const allMonths = new Set<string>();
+  Object.values(trend).forEach(pts => pts.forEach(p => allMonths.add(p.month.slice(0, 7))));
+  const sortedMonths = Array.from(allMonths).sort();
+  const merged = sortedMonths.map(m => {
+    const row: any = { month: m };
+    datasets.forEach(ds => {
+      const pt = (trend[ds] || []).find(p => p.month.slice(0, 7) === m);
+      row[ds] = pt ? pt.value : null;
+    });
+    return row;
+  });
+
+  return (
+    <div className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700 p-5">
+      <div className="flex items-center justify-between mb-3">
+        <div className="text-xs font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-200">
+          {t('compare.trend_title')}
+        </div>
+      </div>
+      <ResponsiveContainer width="100%" height={300}>
+        <LineChart data={merged} margin={{ top: 5, right: 16, left: 0, bottom: 5 }}>
+          <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" vertical={false} />
+          <XAxis dataKey="month" tick={{ fontSize: 11 }} />
+          <YAxis tick={{ fontSize: 11 }} tickFormatter={(v) => formatNum(v, isCurrency, currency)} />
+          <Tooltip formatter={(v: number) => formatNum(v, isCurrency, currency)} />
+          {datasets.map((ds, i) => (
+            <Line
+              key={ds}
+              type="monotone"
+              dataKey={ds}
+              stroke={COMPARE_COLORS[i % COMPARE_COLORS.length]}
+              strokeWidth={2}
+              dot={{ r: 3 }}
+              connectNulls
+            />
+          ))}
+        </LineChart>
+      </ResponsiveContainer>
+      <div className="mt-3 flex flex-wrap gap-3 text-xs">
+        {datasets.map((ds, i) => (
+          <div key={ds} className="flex items-center gap-1.5">
+            <span className="inline-block w-3 h-0.5" style={{ backgroundColor: COMPARE_COLORS[i % COMPARE_COLORS.length] }} />
+            <span className="font-mono text-slate-700 dark:text-slate-200">{ds}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
