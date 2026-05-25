@@ -150,7 +150,7 @@ function App() {
   }
 
   return (
-    <div className="h-screen flex flex-col bg-slate-50">
+    <div className="h-screen flex flex-col bg-slate-50 dark:bg-slate-950">
       <TopBar
         queryCount={queries.length}
         tableCount={tables.length}
