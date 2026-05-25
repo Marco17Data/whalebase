@@ -62,6 +62,7 @@ interface Props {
   sessionId: string;
   currency: string;
   activeTable: string | null;
+  tablesCount?: number;
 }
 
 function formatNum(v: number, isCurrency: boolean, currency: string): string {
@@ -77,7 +78,7 @@ function formatNum(v: number, isCurrency: boolean, currency: string): string {
   return isCurrency ? symbol + formatted : formatted;
 }
 
-export function HeroOverview({ sessionId, currency, activeTable }: Props) {
+export function HeroOverview({ sessionId, currency, activeTable, tablesCount }: Props) {
   const { t, lang } = useI18n();
   const { theme } = useTheme();
   const [data, setData] = useState<Overview | null>(null);
@@ -99,9 +100,10 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
     if (currency === 'none') return;
     setLoading(true);
     refreshAll();
-  }, [sessionId, lang, activeTable, currency]);
+  }, [sessionId, lang, activeTable, currency, tablesCount]);
 
   const refreshAll = () => {
+    setBannerDismissed(false);
     api.getOverview(sessionId, lang, activeTable || undefined)
       .then((r) => {
         setData(r);

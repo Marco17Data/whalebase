@@ -15,9 +15,10 @@ interface Props {
   activeTable: string | null;
   onQueryGenerated: (answer: AnswerResponse) => void;
   onOpenPivot: () => void;
+  tablesCount?: number;
 }
 
-export function DashboardView({ sessionId, currency, activeTable, onQueryGenerated, onOpenPivot }: Props) {
+export function DashboardView({ sessionId, currency, activeTable, onQueryGenerated, onOpenPivot, tablesCount }: Props) {
   const { t, lang } = useI18n();
   const [view, setView] = useState<View>('home');
   const [presets, setPresets] = useState<PresetQuestion[]>([]);
@@ -61,6 +62,7 @@ export function DashboardView({ sessionId, currency, activeTable, onQueryGenerat
         sessionId={sessionId}
         currency={currency}
         activeTable={activeTable}
+        tablesCount={tablesCount}
       />
 
       <div className="pt-2">

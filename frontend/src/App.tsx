@@ -215,7 +215,8 @@ function App() {
               activeTable={activeTable}
               onQueryGenerated={addQuery}
               onOpenPivot={() => setView('pivot')}
-            />
+          tablesCount={tables.length}
+        />
           )}
 
           {hasData && view === 'pivot' && (
