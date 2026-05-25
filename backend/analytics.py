@@ -339,6 +339,11 @@ def _compute_real_stats(session: Session, max_dims: int = 3) -> str:
 async def generate_auto_insights(
     llm: LLMClient, session: Session, lang: str = "en",
 ) -> list[dict[str, str]]:
+    # Compare mode: delegate to compare-specific insights (don't touch homepage logic)
+    cm = getattr(session, "compare_mode", None) or {}
+    if cm.get("active"):
+        return await generate_compare_insights(llm, session, lang=lang)
+
     if not session.tables:
         return []
     schema = build_schema_prompt(session)
@@ -432,3 +437,118 @@ async def answer_question(
         "result": query_result,
         "insight": insight,
     }
+
+
+async def generate_compare_insights(llm, session, lang: str = "en") -> list:
+    """
+    Compare 模式专属洞察 — 基于 per-dataset 对比生成。
+    跟 generate_auto_insights 完全独立, 用专门的 prompt 让 Gemini 写对比。
+    """
+    from i18n import normalize_lang
+    from compare import COMPARE_TABLE_NAME
+
+    lang = normalize_lang(lang)
+    cm = getattr(session, "compare_mode", None) or {}
+    if not cm.get("active") or COMPARE_TABLE_NAME not in session.tables:
+        return []
+
+    table = session.tables[COMPARE_TABLE_NAME]
+    tname = COMPARE_TABLE_NAME
+    datasets = cm.get("source_tables", [])
+    if len(datasets) < 2:
+        return []
+
+    # === 计算 per-dataset 聚合(为 Gemini 提供"对比素材") ===
+    from dashboard import _find_columns_by_type, _is_currency_col, _safe_exec
+    groups = _find_columns_by_type(table.columns)
+    revenue_keywords = ("revenue","sales","amount","total","value","price","金额","销售","总额","营业")
+    revenue_col = None
+    for kw in revenue_keywords:
+        for c in groups["numeric"]:
+            if kw.lower() in c.name.lower():
+                revenue_col = c; break
+        if revenue_col: break
+    if revenue_col is None and groups["numeric"]:
+        revenue_col = groups["numeric"][0]
+
+    # per-dataset 统计
+    agg_lines = []
+    for ds in datasets:
+        ds_esc = ds.replace("'", "''")
+        # 行数 + 收入
+        r = _safe_exec(session, f'SELECT COUNT(*) FROM "{tname}" WHERE __dataset = \'{ds_esc}\'')
+        rows = int(r["rows"][0][0]) if r and r["rows"] else 0
+        rev = None
+        if revenue_col:
+            r2 = _safe_exec(session, f'SELECT ROUND(SUM("{revenue_col.name}"), 2) FROM "{tname}" WHERE __dataset = \'{ds_esc}\'')
+            if r2 and r2["rows"] and r2["rows"][0][0] is not None:
+                rev = float(r2["rows"][0][0])
+        # AOV
+        aov = round(rev / rows, 2) if rev and rows else None
+        # 月度趋势 (前 3 月)
+        trend_str = ""
+        if revenue_col and groups["datetime"]:
+            dc = groups["datetime"][0]
+            r3 = _safe_exec(session, (
+                f'SELECT DATE_TRUNC(\'month\', "{dc.name}") AS m, '
+                f'ROUND(SUM("{revenue_col.name}"), 2) AS v '
+                f'FROM "{tname}" WHERE __dataset = \'{ds_esc}\' GROUP BY m ORDER BY m DESC LIMIT 3'
+            ))
+            if r3 and r3["rows"]:
+                pts = [(str(row[0])[:7], float(row[1] or 0)) for row in reversed(r3["rows"])]
+                trend_str = ", ".join(f"{m}: {v}" for m, v in pts)
+        agg_lines.append(f"- {ds}: rows={rows}, revenue={rev}, AOV={aov}, recent_trend=[{trend_str}]")
+
+    agg_block = "\n".join(agg_lines)
+
+    # === 语言指令 ===
+    lang_instr = {
+        "en": "Respond in English.",
+        "zh": "用简体中文回答。",
+        "es": "Responde en español.",
+        "ja": "日本語で答えてください。",
+        "ko": "한국어로 답하세요.",
+        "fr": "Réponds en français.",
+        "de": "Antworte auf Deutsch.",
+        "pt": "Responde em português.",
+        "it": "Rispondi in italiano.",
+        "ru": "Отвечайте на русском.",
+    }.get(lang, "Respond in English.")
+
+    # === Prompt ===
+    prompt = f"""You are a business analyst comparing {len(datasets)} datasets: {", ".join(datasets)}.
+
+Here are key per-dataset metrics:
+{agg_block}
+
+Generate EXACTLY 3 comparison insights. Each insight MUST:
+- Be a direct comparison (e.g. "X is 15% higher than Y in revenue")
+- Quote specific numbers/percentages
+- Be under 18 words
+- Have a 2-4 word title
+
+{lang_instr}
+
+Return JSON only (no markdown, no commentary):
+{{"insights": [
+  {{"title": "<title>", "content": "<comparison sentence with numbers>"}},
+  ...
+]}}"""
+
+    # System prompt: instruct JSON output
+    system_prompt = "You are a business analyst writing concise dataset-comparison insights. Output strict JSON only."
+    try:
+        raw = await llm.chat(
+            system_prompt=system_prompt,
+            user_message=prompt,
+            json_mode=True,
+        )
+        parsed = extract_json(raw)
+        if isinstance(parsed, dict) and "insights" in parsed:
+            return parsed["insights"][:3]
+        if isinstance(parsed, list):
+            return parsed[:3]
+    except Exception as e:
+        return [{"title": "Compare", "content": f"Compare insights unavailable: {e}"}]
+    return []
+
