@@ -487,6 +487,45 @@ async def cleanup_status(session_id: str, table: str | None = None):
     return {"has_snapshot": bool(tname and tname in snaps), "table": tname}
 
 
+# ============================================================
+# Compare (Stage 3 Step 3) — multi-dataset comparison
+# ============================================================
+class CompareEnableRequest(BaseModel):
+    tables: list[str]
+
+
+@app.get("/api/session/{session_id}/compare/detect")
+async def compare_detect(session_id: str):
+    """扫描 session 里所有表, 找出可对比的组 (列相似度 >= 80%)。"""
+    from compare import detect_comparable_tables
+    s = get_session_or_404(session_id)
+    return detect_comparable_tables(s)
+
+
+@app.post("/api/session/{session_id}/compare/enable")
+async def compare_enable(session_id: str, req: CompareEnableRequest):
+    """把多个表合并成一张比较表 (UNION ALL + __dataset 列)。"""
+    from compare import enable_compare_mode
+    s = get_session_or_404(session_id)
+    return enable_compare_mode(s, req.tables)
+
+
+@app.post("/api/session/{session_id}/compare/disable")
+async def compare_disable(session_id: str):
+    """退出比较模式, 删除合并表。"""
+    from compare import disable_compare_mode
+    s = get_session_or_404(session_id)
+    return disable_compare_mode(s)
+
+
+@app.get("/api/session/{session_id}/compare/status")
+async def compare_status(session_id: str):
+    """前端查当前是否在比较模式 (用来决定 UI 显示)。"""
+    from compare import get_compare_status
+    s = get_session_or_404(session_id)
+    return get_compare_status(s)
+
+
 @app.get("/api/templates")
 async def list_templates(lang: str = "en"):
     """列出所有可用的仪表盘模板。"""

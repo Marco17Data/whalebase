@@ -402,3 +402,34 @@ def build_schema_prompt(session: Session) -> str:
             lines.append(f"  - {col.name} ({col.dtype})  {extras_str}")
         lines.append("")
     return "\n".join(lines)
+
+
+
+def _read_columns_metadata(conn, table_name: str):
+    """从已存在的表里读 ColumnInfo 列表 + row_count + preview_rows (前 5 行)。
+    供 compare.enable_compare_mode 等内部用途。"""
+    # Schema
+    schema_rows = conn.execute(f'DESCRIBE "{table_name}"').fetchall()
+    cols = []
+    for row in schema_rows:
+        col_name = row[0]
+        col_dtype = row[1]
+        # 简化版: 不算 null_count/sample/min/max/distinct (后续操作不依赖)
+        try:
+            distinct_count = conn.execute(
+                f'SELECT COUNT(DISTINCT "{col_name}") FROM "{table_name}"'
+            ).fetchone()[0]
+        except Exception:
+            distinct_count = None
+        cols.append(ColumnInfo(
+            name=col_name, dtype=col_dtype, null_count=0, sample_values=[],
+            min_value=None, max_value=None, distinct_count=distinct_count,
+        ))
+    row_count = conn.execute(f'SELECT COUNT(*) FROM "{table_name}"').fetchone()[0]
+    try:
+        preview = conn.execute(f'SELECT * FROM "{table_name}" LIMIT 5').fetchall()
+        preview_rows = [list(r) for r in preview]
+    except Exception:
+        preview_rows = []
+    return cols, int(row_count), preview_rows
+
