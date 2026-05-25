@@ -79,6 +79,54 @@ export const api = {
     }>(`/session/${sid}/data-quality?${params}`);
   },
 
+  // ===== Cleanup (Stage 3 Step 2) =====
+  getCleanupSuggestions: (sid: string, lang: string = 'en', table?: string) => {
+    const params = new URLSearchParams({ lang });
+    if (table) params.set('table', table);
+    return request<{
+      table: string | null;
+      row_count: number;
+      suggestions: Array<{
+        id: string;
+        type: 'duplicates' | 'nulls';
+        count: number;
+        column?: string;
+        fill_strategy?: 'zero' | 'placeholder';
+        fill_value_numeric?: number | null;
+        after_rows?: number;
+      }>;
+    }>(`/session/${sid}/cleanup/suggestions?${params}`);
+  },
+
+  applyCleanup: (sid: string, selectedIds: string[], lang: string = 'en', table?: string) => {
+    const params = new URLSearchParams();
+    if (table) params.set('table', table);
+    const qs = params.toString();
+    return request<{
+      ok: boolean;
+      table?: string;
+      actions?: string[];
+      new_row_count?: number;
+      error?: string;
+    }>(`/session/${sid}/cleanup/apply${qs ? `?${qs}` : ''}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ selected_ids: selectedIds, lang }),
+    });
+  },
+
+  undoCleanup: (sid: string, table?: string) => {
+    const params = new URLSearchParams();
+    if (table) params.set('table', table);
+    const qs = params.toString();
+    return request<{
+      ok: boolean;
+      table?: string;
+      restored_rows?: number;
+      error?: string;
+    }>(`/session/${sid}/cleanup/undo${qs ? `?${qs}` : ''}`, { method: 'POST' });
+  },
+
   getOverview: (sid: string, lang: string = 'en', table?: string) => {
     const params = new URLSearchParams({ lang });
     if (table) params.set('table', table);

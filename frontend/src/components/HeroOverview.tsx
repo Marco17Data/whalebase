@@ -93,14 +93,20 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
   useEffect(() => {
     if (currency === 'none') return;
     setLoading(true);
+    refreshAll();
+  }, [sessionId, lang, activeTable, currency]);
+
+  const refreshAll = () => {
     api.getOverview(sessionId, lang, activeTable || undefined)
       .then((r) => {
         setData(r);
-    api.getDataQuality(sessionId, lang, activeTable || undefined).then(setDq).catch(() => setDq(null));
         setLoading(false);
       })
       .catch(() => setLoading(false));
-  }, [sessionId, lang, activeTable, currency]);
+    api.getDataQuality(sessionId, lang, activeTable || undefined)
+      .then(setDq)
+      .catch(() => setDq(null));
+  };
 
   useEffect(() => {
     if (currency === 'none') return;
