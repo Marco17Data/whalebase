@@ -358,3 +358,71 @@ def generate_overview(session: Session, lang: str = "en", table_name: str | None
         pie["top_label"] = pie["slices"][0].get("label", "")
 
     return {"kpis": kpis, "pie": pie, "trend": trend}
+
+
+
+def generate_data_quality(session: Session, lang: str = "en", table_name: str | None = None) -> dict:
+    """Compute data quality metrics: duplicate rows + per-column null rates."""
+    if not session.tables:
+        return {"row_count": 0, "col_count": 0, "duplicate_rows": 0, "duplicate_pct": 0.0, "columns_with_nulls": []}
+
+    tname = table_name if table_name and table_name in session.tables else next(iter(session.tables))
+    table = session.tables[tname]
+    cols = list(table.columns)
+
+    # Row + col counts
+    row_count = table.row_count
+    col_count = len(cols)
+
+    # Duplicate rows: count rows that have any other identical row
+    duplicate_rows = 0
+    try:
+        col_list = ", ".join(f'"{c.name}"' for c in cols)
+        dup_q = (
+            f'SELECT COUNT(*) FROM ('
+            f'SELECT {col_list}, COUNT(*) AS cnt FROM "{tname}" '
+            f'GROUP BY {col_list} HAVING COUNT(*) > 1) sub'
+        )
+        dup_res = _safe_exec(session, dup_q)
+        if dup_res and dup_res["rows"]:
+            # This gives groups of dupes; we want extra rows beyond first
+            extra_q = (
+                f'SELECT SUM(cnt - 1) FROM ('
+                f'SELECT COUNT(*) AS cnt FROM "{tname}" '
+                f'GROUP BY {col_list} HAVING COUNT(*) > 1) sub'
+            )
+            extra_res = _safe_exec(session, extra_q)
+            if extra_res and extra_res["rows"] and extra_res["rows"][0][0] is not None:
+                duplicate_rows = int(extra_res["rows"][0][0])
+    except Exception:
+        duplicate_rows = 0
+
+    duplicate_pct = round(duplicate_rows / row_count * 100, 1) if row_count else 0.0
+
+    # Per-column null rate (only show columns with > 0 nulls)
+    columns_with_nulls = []
+    for col in cols:
+        try:
+            null_res = _safe_exec(session, f'SELECT COUNT(*) FROM "{tname}" WHERE "{col.name}" IS NULL')
+            if null_res and null_res["rows"]:
+                null_count = int(null_res["rows"][0][0] or 0)
+                if null_count > 0:
+                    columns_with_nulls.append({
+                        "name": col.name,
+                        "null_count": null_count,
+                        "null_pct": round(null_count / row_count * 100, 1) if row_count else 0.0,
+                    })
+        except Exception:
+            continue
+
+    # Sort by null_pct desc, keep top 5
+    columns_with_nulls.sort(key=lambda x: x["null_pct"], reverse=True)
+    columns_with_nulls = columns_with_nulls[:5]
+
+    return {
+        "row_count": row_count,
+        "col_count": col_count,
+        "duplicate_rows": duplicate_rows,
+        "duplicate_pct": duplicate_pct,
+        "columns_with_nulls": columns_with_nulls,
+    }

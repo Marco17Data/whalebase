@@ -67,6 +67,18 @@ export const api = {
     }>(`/session/${sid}/load-sample/${sampleId}`, { method: 'POST' }),
 
   // ===== Overview (hero view: KPIs + pie + trend) =====
+  getDataQuality: (sid: string, lang: string = 'en', table?: string) => {
+    const params = new URLSearchParams({ lang });
+    if (table) params.set('table', table);
+    return request<{
+      row_count: number;
+      col_count: number;
+      duplicate_rows: number;
+      duplicate_pct: number;
+      columns_with_nulls: Array<{ name: string; null_count: number; null_pct: number }>;
+    }>(`/session/${sid}/data-quality?${params}`);
+  },
+
   getOverview: (sid: string, lang: string = 'en', table?: string) => {
     const params = new URLSearchParams({ lang });
     if (table) params.set('table', table);

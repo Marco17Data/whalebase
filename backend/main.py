@@ -441,6 +441,14 @@ async def get_overview(session_id: str, lang: str = "en", table: str | None = No
     return generate_overview(s, lang=lang, table_name=table)
 
 
+@app.get("/api/session/{session_id}/data-quality")
+async def get_data_quality(session_id: str, lang: str = "en", table: str | None = None):
+    """Data quality metrics: duplicate rows + per-column null rates."""
+    from dashboard import generate_data_quality
+    s = get_session_or_404(session_id)
+    return generate_data_quality(s, lang=lang, table_name=table)
+
+
 @app.get("/api/templates")
 async def list_templates(lang: str = "en"):
     """列出所有可用的仪表盘模板。"""
