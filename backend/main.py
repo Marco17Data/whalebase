@@ -449,6 +449,35 @@ async def get_data_quality(session_id: str, lang: str = "en", table: str | None 
     return generate_data_quality(s, lang=lang, table_name=table)
 
 
+# ============================================================
+# Cleanup (Stage 3 Step 2)
+# ============================================================
+class CleanupApplyRequest(BaseModel):
+    selected_ids: list[str]
+    lang: str = "en"
+
+
+@app.get("/api/session/{session_id}/cleanup/suggestions")
+async def cleanup_suggestions(session_id: str, lang: str = "en", table: str | None = None):
+    from cleanup import generate_cleanup_suggestions
+    s = get_session_or_404(session_id)
+    return generate_cleanup_suggestions(s, lang=lang, table_name=table)
+
+
+@app.post("/api/session/{session_id}/cleanup/apply")
+async def cleanup_apply(session_id: str, req: CleanupApplyRequest, table: str | None = None):
+    from cleanup import apply_cleanup
+    s = get_session_or_404(session_id)
+    return apply_cleanup(s, req.selected_ids, lang=req.lang, table_name=table)
+
+
+@app.post("/api/session/{session_id}/cleanup/undo")
+async def cleanup_undo(session_id: str, table: str | None = None):
+    from cleanup import undo_cleanup
+    s = get_session_or_404(session_id)
+    return undo_cleanup(s, table_name=table)
+
+
 @app.get("/api/templates")
 async def list_templates(lang: str = "en"):
     """列出所有可用的仪表盘模板。"""
