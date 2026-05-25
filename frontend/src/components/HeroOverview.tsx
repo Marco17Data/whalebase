@@ -5,6 +5,7 @@ import { Sparkles, TrendingUp, TrendingDown, AlertTriangle } from 'lucide-react'
 import { api } from '../api';
 import { useI18n } from '../i18n';
 import { useTheme } from '../ThemeContext';
+import DataQualityBar from './DataQualityBar';
 
 interface KPI {
   label: string;
@@ -78,6 +79,7 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
   const { t, lang } = useI18n();
   const { theme } = useTheme();
   const [data, setData] = useState<Overview | null>(null);
+  const [dq, setDq] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [aiInsights, setAiInsights] = useState<Array<{ title: string; content: string }> | null>(null);
   const [aiLoading, setAiLoading] = useState(true);
@@ -94,6 +96,7 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
     api.getOverview(sessionId, lang, activeTable || undefined)
       .then((r) => {
         setData(r);
+    api.getDataQuality(sessionId, lang, activeTable || undefined).then(setDq).catch(() => setDq(null));
         setLoading(false);
       })
       .catch(() => setLoading(false));
@@ -152,7 +155,7 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
               <PieChartECharts
                 slices={data.pie.slices}
                 total={data.pie.total}
-                totalLabel="TOTAL"
+                totalLabel={t('hero.pie_total')}
                 totalValueText={
                   (() => {
                     const revKpi = data.kpis.find(k => k.format === 'currency' && typeof k.value === 'number');
@@ -362,6 +365,8 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
           })()}
         </div>
       )}
+
+      <DataQualityBar data={dq} />
     </div>
   );
 }

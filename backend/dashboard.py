@@ -6,7 +6,7 @@
 from __future__ import annotations
 from typing import Any
 from database import Session, execute_sql, SQLExecutionError, ColumnInfo
-from i18n import tr, normalize_lang
+from i18n import tr, normalize_lang, humanize
 
 
 def _find_columns_by_type(table_columns: list[ColumnInfo]) -> dict[str, list[ColumnInfo]]:
@@ -305,7 +305,7 @@ def generate_overview(session: Session, lang: str = "en", table_name: str | None
         if pie_res and pie_res["rows"]:
             total_sum = sum(row[1] for row in pie_res["rows"] if row[1])
             pie = {
-                "title": tr("hero.pie_title", lang, dim=cat_col.name),
+                "title": tr("hero.pie_title", lang, dim=humanize(cat_col.name, lang)),
                 "dimension": cat_col.name,
                 "total": total_sum,
                 "is_currency": is_currency,

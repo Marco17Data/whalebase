@@ -5,6 +5,7 @@
 按语言代码返回。未配置的语言回退到英文。
 """
 from __future__ import annotations
+import re
 
 # 10 种语言一致与前端 i18n.tsx
 SUPPORTED_LANGS = ("en", "zh", "es", "ja", "ko", "fr", "de", "pt", "it", "ru")
@@ -407,3 +408,63 @@ def normalize_lang(lang: str | None) -> str:
         return "en"
     lang = lang.lower()[:2]
     return lang if lang in SUPPORTED_LANGS else "en"
+
+
+# ============================================================
+# Column-name humanizer (for chart titles)
+# 把数据库列名 (eg "customer_region") 翻成业务用户友好的标签 (eg "Customer Region" / "客户地区")
+# ============================================================
+HUMANIZE_COL = {
+    # Region / location
+    "customer_region": {"en":"Customer Region","zh":"客户地区","es":"Región del Cliente","ja":"顧客地域","ko":"고객 지역","fr":"Région Client","de":"Kundenregion","pt":"Região do Cliente","it":"Regione Cliente","ru":"Регион клиента"},
+    "region": {"en":"Region","zh":"地区","es":"Región","ja":"地域","ko":"지역","fr":"Région","de":"Region","pt":"Região","it":"Regione","ru":"Регион"},
+    "country": {"en":"Country","zh":"国家","es":"País","ja":"国","ko":"국가","fr":"Pays","de":"Land","pt":"País","it":"Paese","ru":"Страна"},
+    "city": {"en":"City","zh":"城市","es":"Ciudad","ja":"都市","ko":"도시","fr":"Ville","de":"Stadt","pt":"Cidade","it":"Città","ru":"Город"},
+    "store": {"en":"Store","zh":"门店","es":"Tienda","ja":"店舗","ko":"매장","fr":"Magasin","de":"Filiale","pt":"Loja","it":"Negozio","ru":"Магазин"},
+    "store_location": {"en":"Store Location","zh":"门店位置","es":"Ubicación de Tienda","ja":"店舗所在地","ko":"매장 위치","fr":"Emplacement Magasin","de":"Filialstandort","pt":"Localização da Loja","it":"Posizione Negozio","ru":"Местоположение магазина"},
+    "branch": {"en":"Branch","zh":"分店","es":"Sucursal","ja":"支店","ko":"지점","fr":"Succursale","de":"Niederlassung","pt":"Filial","it":"Filiale","ru":"Филиал"},
+    # Product
+    "product": {"en":"Product","zh":"产品","es":"Producto","ja":"製品","ko":"제품","fr":"Produit","de":"Produkt","pt":"Produto","it":"Prodotto","ru":"Продукт"},
+    "product_name": {"en":"Product","zh":"产品","es":"Producto","ja":"製品","ko":"제품","fr":"Produit","de":"Produkt","pt":"Produto","it":"Prodotto","ru":"Продукт"},
+    "product_category": {"en":"Product Category","zh":"产品类别","es":"Categoría de Producto","ja":"製品カテゴリ","ko":"제품 카테고리","fr":"Catégorie Produit","de":"Produktkategorie","pt":"Categoria do Produto","it":"Categoria Prodotto","ru":"Категория продукта"},
+    "category": {"en":"Category","zh":"类别","es":"Categoría","ja":"カテゴリ","ko":"카테고리","fr":"Catégorie","de":"Kategorie","pt":"Categoria","it":"Categoria","ru":"Категория"},
+    "brand": {"en":"Brand","zh":"品牌","es":"Marca","ja":"ブランド","ko":"브랜드","fr":"Marque","de":"Marke","pt":"Marca","it":"Marca","ru":"Бренд"},
+    "sku": {"en":"SKU","zh":"SKU","es":"SKU","ja":"SKU","ko":"SKU","fr":"SKU","de":"SKU","pt":"SKU","it":"SKU","ru":"SKU"},
+    # Customer
+    "customer": {"en":"Customer","zh":"客户","es":"Cliente","ja":"顧客","ko":"고객","fr":"Client","de":"Kunde","pt":"Cliente","it":"Cliente","ru":"Клиент"},
+    "customer_id": {"en":"Customer","zh":"客户","es":"Cliente","ja":"顧客","ko":"고객","fr":"Client","de":"Kunde","pt":"Cliente","it":"Cliente","ru":"Клиент"},
+    "customer_segment": {"en":"Customer Segment","zh":"客户分群","es":"Segmento de Cliente","ja":"顧客セグメント","ko":"고객 세그먼트","fr":"Segment Client","de":"Kundensegment","pt":"Segmento de Cliente","it":"Segmento Cliente","ru":"Сегмент клиента"},
+    "customer_type": {"en":"Customer Type","zh":"客户类型","es":"Tipo de Cliente","ja":"顧客タイプ","ko":"고객 유형","fr":"Type de Client","de":"Kundentyp","pt":"Tipo de Cliente","it":"Tipo di Cliente","ru":"Тип клиента"},
+    # Channel / payment
+    "sales_channel": {"en":"Sales Channel","zh":"销售渠道","es":"Canal de Venta","ja":"販売チャネル","ko":"판매 채널","fr":"Canal de Vente","de":"Vertriebskanal","pt":"Canal de Venda","it":"Canale di Vendita","ru":"Канал продаж"},
+    "channel": {"en":"Channel","zh":"渠道","es":"Canal","ja":"チャネル","ko":"채널","fr":"Canal","de":"Kanal","pt":"Canal","it":"Canale","ru":"Канал"},
+    "payment_method": {"en":"Payment Method","zh":"支付方式","es":"Método de Pago","ja":"支払方法","ko":"결제 수단","fr":"Mode de Paiement","de":"Zahlungsmethode","pt":"Método de Pagamento","it":"Metodo di Pagamento","ru":"Способ оплаты"},
+    "payment_type": {"en":"Payment Type","zh":"支付类型","es":"Tipo de Pago","ja":"支払種別","ko":"결제 유형","fr":"Type de Paiement","de":"Zahlungsart","pt":"Tipo de Pagamento","it":"Tipo di Pagamento","ru":"Тип оплаты"},
+    # Time-related
+    "order_date": {"en":"Order Date","zh":"下单日期","es":"Fecha del Pedido","ja":"注文日","ko":"주문일","fr":"Date de Commande","de":"Bestelldatum","pt":"Data do Pedido","it":"Data Ordine","ru":"Дата заказа"},
+    "date": {"en":"Date","zh":"日期","es":"Fecha","ja":"日付","ko":"날짜","fr":"Date","de":"Datum","pt":"Data","it":"Data","ru":"Дата"},
+    "month": {"en":"Month","zh":"月份","es":"Mes","ja":"月","ko":"월","fr":"Mois","de":"Monat","pt":"Mês","it":"Mese","ru":"Месяц"},
+    "weekday": {"en":"Weekday","zh":"星期","es":"Día de la Semana","ja":"曜日","ko":"요일","fr":"Jour de la Semaine","de":"Wochentag","pt":"Dia da Semana","it":"Giorno della Settimana","ru":"День недели"},
+    # Status / type
+    "status": {"en":"Status","zh":"状态","es":"Estado","ja":"ステータス","ko":"상태","fr":"Statut","de":"Status","pt":"Status","it":"Stato","ru":"Статус"},
+    "order_status": {"en":"Order Status","zh":"订单状态","es":"Estado del Pedido","ja":"注文ステータス","ko":"주문 상태","fr":"Statut Commande","de":"Bestellstatus","pt":"Status do Pedido","it":"Stato Ordine","ru":"Статус заказа"},
+    # Sales/revenue facets (usually not used as pie dim, but just in case)
+    "discount": {"en":"Discount","zh":"折扣","es":"Descuento","ja":"割引","ko":"할인","fr":"Remise","de":"Rabatt","pt":"Desconto","it":"Sconto","ru":"Скидка"},
+    "discount_band": {"en":"Discount Band","zh":"折扣区间","es":"Rango de Descuento","ja":"割引帯","ko":"할인 구간","fr":"Tranche de Remise","de":"Rabattgruppe","pt":"Faixa de Desconto","it":"Fascia di Sconto","ru":"Диапазон скидки"},
+    # Restaurant / coffee shop
+    "meal_type": {"en":"Meal Type","zh":"餐别","es":"Tipo de Comida","ja":"食事タイプ","ko":"식사 종류","fr":"Type de Repas","de":"Mahlzeitart","pt":"Tipo de Refeição","it":"Tipo di Pasto","ru":"Тип приёма пищи"},
+    "table_size": {"en":"Table Size","zh":"桌位人数","es":"Tamaño de Mesa","ja":"テーブルサイズ","ko":"테이블 크기","fr":"Taille de Table","de":"Tischgröße","pt":"Tamanho da Mesa","it":"Dimensione Tavolo","ru":"Размер стола"},
+}
+
+
+def humanize(col_name: str, lang: str = "en") -> str:
+    """业务友好的列名翻译。白名单命中 -> 用翻译; 否则 -> Title Case (下划线变空格)。"""
+    if not col_name:
+        return col_name
+    lang = normalize_lang(lang)
+    key = col_name.lower().strip()
+    if key in HUMANIZE_COL:
+        return HUMANIZE_COL[key].get(lang) or HUMANIZE_COL[key].get("en") or col_name
+    # Fallback: customer_region -> Customer Region
+    return " ".join(w.capitalize() for w in re.split(r"[_\s]+", col_name) if w)
+
