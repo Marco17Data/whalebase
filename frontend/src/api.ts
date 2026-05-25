@@ -137,6 +137,40 @@ export const api = {
     }>(`/session/${sid}/cleanup/status${qs ? `?${qs}` : ''}`);
   },
 
+  // ===== Compare (Stage 3 Step 3) =====
+  detectComparable: (sid: string) =>
+    request<{
+      groups: Array<{
+        tables: string[];
+        match_pct: number;
+        matched_columns: string[];
+        matched_count: number;
+      }>;
+    }>(`/session/${sid}/compare/detect`),
+
+  enableCompare: (sid: string, tables: string[]) =>
+    request<{
+      ok: boolean;
+      merged_table?: string;
+      source_tables?: string[];
+      row_count?: number;
+      error?: string;
+    }>(`/session/${sid}/compare/enable`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ tables }),
+    }),
+
+  disableCompare: (sid: string) =>
+    request<{ ok: boolean; error?: string }>(`/session/${sid}/compare/disable`, { method: 'POST' }),
+
+  getCompareStatus: (sid: string) =>
+    request<{
+      active: boolean;
+      source_tables?: string[];
+      merged_table?: string;
+    }>(`/session/${sid}/compare/status`),
+
   getOverview: (sid: string, lang: string = 'en', table?: string) => {
     const params = new URLSearchParams({ lang });
     if (table) params.set('table', table);

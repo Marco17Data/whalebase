@@ -6,6 +6,8 @@ import { api } from '../api';
 import { useI18n } from '../i18n';
 import { useTheme } from '../ThemeContext';
 import DataQualityBar from './DataQualityBar';
+import CompareBanner from './CompareBanner';
+import CompareModeIndicator from './CompareModeIndicator';
 
 interface KPI {
   label: string;
@@ -80,6 +82,9 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
   const { theme } = useTheme();
   const [data, setData] = useState<Overview | null>(null);
   const [dq, setDq] = useState<any>(null);
+  const [compareGroups, setCompareGroups] = useState<Array<{ tables: string[]; match_pct: number }>>([]);
+  const [compareStatus, setCompareStatus] = useState<{ active: boolean; source_tables?: string[] }>({ active: false });
+  const [bannerDismissed, setBannerDismissed] = useState(false);
   const [loading, setLoading] = useState(true);
   const [aiInsights, setAiInsights] = useState<Array<{ title: string; content: string }> | null>(null);
   const [aiLoading, setAiLoading] = useState(true);
@@ -106,6 +111,12 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
     api.getDataQuality(sessionId, lang, activeTable || undefined)
       .then(setDq)
       .catch(() => setDq(null));
+    api.detectComparable(sessionId)
+      .then((r) => setCompareGroups(r.groups))
+      .catch(() => setCompareGroups([]));
+    api.getCompareStatus(sessionId)
+      .then((r) => setCompareStatus(r))
+      .catch(() => setCompareStatus({ active: false }));
   };
 
   useEffect(() => {
@@ -135,6 +146,26 @@ export function HeroOverview({ sessionId, currency, activeTable }: Props) {
 
   return (
     <div className="space-y-4">
+      {compareStatus.active && compareStatus.source_tables && (
+        <CompareModeIndicator
+          sourceTables={compareStatus.source_tables}
+          onExit={async () => {
+            await api.disableCompare(sessionId);
+            refreshAll();
+          }}
+        />
+      )}
+      {!compareStatus.active && !bannerDismissed && compareGroups.length > 0 && (
+        <CompareBanner
+          tables={compareGroups[0].tables}
+          onCompare={async () => {
+            await api.enableCompare(sessionId, compareGroups[0].tables);
+            setBannerDismissed(true);
+            refreshAll();
+          }}
+          onDismiss={() => setBannerDismissed(true)}
+        />
+      )}
       {data.kpis.length > 0 && (
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
           {data.kpis.map((kpi, i) => (
