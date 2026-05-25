@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Sparkles } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Sparkles, Undo2 } from 'lucide-react';
 import { useI18n } from '../i18n';
 import { api } from '../api';
 import CleanupDialog from './CleanupDialog';
@@ -26,6 +26,15 @@ export default function DataQualityBar({ data, sessionId, tableName, onAfterClea
   const [suggestions, setSuggestions] = useState<any[]>([]);
   const [toastMsg, setToastMsg] = useState<string | null>(null);
   const [loadingSugg, setLoadingSugg] = useState(false);
+  const [hasSnapshot, setHasSnapshot] = useState(false);
+
+  // 每次 data 变化时, 检查后端 snapshot 状态 (决定要不要显示"还原"按钮)
+  useEffect(() => {
+    if (!sessionId) return;
+    api.getCleanupStatus(sessionId, tableName)
+      .then((r) => setHasSnapshot(r.has_snapshot))
+      .catch(() => setHasSnapshot(false));
+  }, [sessionId, tableName, data]);
 
   if (!data) return null;
 
@@ -54,6 +63,7 @@ export default function DataQualityBar({ data, sessionId, tableName, onAfterClea
     try {
       await api.undoCleanup(sessionId, tableName);
       setToastMsg(null);
+      setHasSnapshot(false);
       onAfterCleanup?.();
     } catch (e) {
       console.error(e);
@@ -72,16 +82,28 @@ export default function DataQualityBar({ data, sessionId, tableName, onAfterClea
               {data.row_count.toLocaleString()} {t('dq.rows')} · {data.col_count} {t('dq.cols')}
             </div>
           </div>
-          {!isPerfect && sessionId && (
-            <button
-              onClick={openDialog}
-              disabled={loadingSugg}
-              className="flex items-center gap-1.5 text-xs font-medium text-violet-600 dark:text-violet-400 hover:text-violet-800 dark:hover:text-violet-200 px-3 py-1.5 rounded-lg border border-violet-200 dark:border-violet-700 hover:bg-violet-50 dark:hover:bg-violet-900/30 disabled:opacity-50"
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              {loadingSugg ? '…' : t('cleanup.open_btn')}
-            </button>
-          )}
+          <div className="flex items-center gap-2">
+            {hasSnapshot && sessionId && (
+              <button
+                onClick={handleUndo}
+                className="flex items-center gap-1.5 text-xs font-medium text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800"
+                title={t('cleanup.undo_persistent_hint')}
+              >
+                <Undo2 className="w-3.5 h-3.5" />
+                {t('cleanup.undo_btn')}
+              </button>
+            )}
+            {!isPerfect && sessionId && (
+              <button
+                onClick={openDialog}
+                disabled={loadingSugg}
+                className="flex items-center gap-1.5 text-xs font-medium text-violet-600 dark:text-violet-400 hover:text-violet-800 dark:hover:text-violet-200 px-3 py-1.5 rounded-lg border border-violet-200 dark:border-violet-700 hover:bg-violet-50 dark:hover:bg-violet-900/30 disabled:opacity-50"
+              >
+                <Sparkles className="w-3.5 h-3.5" />
+                {loadingSugg ? '…' : t('cleanup.open_btn')}
+              </button>
+            )}
+          </div>
         </div>
 
         {isPerfect ? (
@@ -115,10 +137,8 @@ export default function DataQualityBar({ data, sessionId, tableName, onAfterClea
                       </span>
                       <div className="flex items-center gap-2 flex-1 ml-3">
                         <div className="flex-1 h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
-                          <div
-                            className="h-full bg-amber-400 dark:bg-amber-500"
-                            style={{ width: `${Math.min(c.null_pct, 100)}%` }}
-                          />
+                          <div className="h-full bg-amber-400 dark:bg-amber-500"
+                            style={{ width: `${Math.min(c.null_pct, 100)}%` }} />
                         </div>
                         <span className="text-xs text-amber-600 dark:text-amber-400 font-medium tabular-nums w-12 text-right">
                           {c.null_pct}%
@@ -149,6 +169,7 @@ export default function DataQualityBar({ data, sessionId, tableName, onAfterClea
           message={toastMsg}
           onUndo={handleUndo}
           onDismiss={() => setToastMsg(null)}
+          durationMs={5000}
         />
       )}
     </>

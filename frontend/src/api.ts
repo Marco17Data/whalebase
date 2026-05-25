@@ -127,6 +127,16 @@ export const api = {
     }>(`/session/${sid}/cleanup/undo${qs ? `?${qs}` : ''}`, { method: 'POST' });
   },
 
+  getCleanupStatus: (sid: string, table?: string) => {
+    const params = new URLSearchParams();
+    if (table) params.set('table', table);
+    const qs = params.toString();
+    return request<{
+      has_snapshot: boolean;
+      table: string | null;
+    }>(`/session/${sid}/cleanup/status${qs ? `?${qs}` : ''}`);
+  },
+
   getOverview: (sid: string, lang: string = 'en', table?: string) => {
     const params = new URLSearchParams({ lang });
     if (table) params.set('table', table);

@@ -478,6 +478,15 @@ async def cleanup_undo(session_id: str, table: str | None = None):
     return undo_cleanup(s, table_name=table)
 
 
+@app.get("/api/session/{session_id}/cleanup/status")
+async def cleanup_status(session_id: str, table: str | None = None):
+    """查询当前是否有可还原的 snapshot。前端用这个决定要不要显示'还原'按钮。"""
+    s = get_session_or_404(session_id)
+    tname = table if table and table in s.tables else (next(iter(s.tables)) if s.tables else None)
+    snaps = getattr(s, "_cleanup_snapshots", {}) or {}
+    return {"has_snapshot": bool(tname and tname in snaps), "table": tname}
+
+
 @app.get("/api/templates")
 async def list_templates(lang: str = "en"):
     """列出所有可用的仪表盘模板。"""
