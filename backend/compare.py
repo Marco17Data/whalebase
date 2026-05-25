@@ -189,3 +189,130 @@ def get_compare_status(session: Session) -> dict:
     """当前 session 是不是在比较模式? 返回元数据供前端 UI 用。"""
     cm = getattr(session, "compare_mode", None) or {"active": False}
     return cm
+
+
+
+def generate_compare_overview(session, lang: str = "en") -> dict:
+    """
+    在 compare 模式下生成 overview。
+    后端返回的结构兼容前端原 overview, 额外加一个 'comparison' 字段:
+    {
+        "kpis": [...],   # 主 KPI (跟正常一样, 但基于合并表)
+        "pie": null,     # compare 模式下 pie 暂不画 (太复杂)
+        "trend": {...},  # 跟正常一样, 单条线
+        "comparison": {
+            "datasets": ["march_sales", "april_sales"],  # 按文件名
+            "kpi_by_dataset": {           # 每个 KPI 在每个 dataset 的值
+                "revenue":  {"march_sales": 1000, "april_sales": 1200},
+                "orders":   {"march_sales": 3,    "april_sales": 4},
+            },
+            "trend_by_dataset": {         # 每个 dataset 的月度走势
+                "march_sales": [{"month": "2025-03", "value": 1000}],
+                "april_sales": [{"month": "2025-04", "value": 1200}],
+            }
+        }
+    }
+    """
+    from i18n import tr, normalize_lang
+    from dashboard import _find_columns_by_type, _is_currency_col, _safe_exec
+
+    lang = normalize_lang(lang)
+    cm = getattr(session, "compare_mode", None) or {}
+    if not cm.get("active") or COMPARE_TABLE_NAME not in session.tables:
+        return {"kpis": [], "pie": None, "trend": None, "comparison": None}
+
+    table = session.tables[COMPARE_TABLE_NAME]
+    tname = COMPARE_TABLE_NAME
+    groups = _find_columns_by_type(table.columns)
+
+    # 找 revenue 列 (跟 generate_overview 同样逻辑)
+    revenue_keywords = ("revenue", "sales", "amount", "total", "value", "price",
+                        "营业额", "销售额", "总额", "金额")
+    revenue_col = None
+    for kw in revenue_keywords:
+        for col in groups["numeric"]:
+            if kw.lower() in col.name.lower():
+                revenue_col = col
+                break
+        if revenue_col:
+            break
+    if revenue_col is None and groups["numeric"]:
+        revenue_col = groups["numeric"][0]
+    is_currency = revenue_col and _is_currency_col(revenue_col)
+
+    # === 主 KPI 卡 (合并表的总计) ===
+    kpis = []
+    
+    # 总行数
+    total_rows_res = _safe_exec(session, f'SELECT COUNT(*) FROM "{tname}"')
+    if total_rows_res and total_rows_res["rows"]:
+        kpis.append({
+            "label": tr("kpi.total_records", lang),
+            "value": int(total_rows_res["rows"][0][0]),
+            "format": "number",
+        })
+
+    # 总收入
+    if revenue_col:
+        total_rev_res = _safe_exec(session, f'SELECT ROUND(SUM("{revenue_col.name}"), 2) FROM "{tname}"')
+        if total_rev_res and total_rev_res["rows"] and total_rev_res["rows"][0][0] is not None:
+            kpis.append({
+                "label": tr("kpi.total_revenue", lang),
+                "value": float(total_rev_res["rows"][0][0]),
+                "format": "currency" if is_currency else "number",
+            })
+
+    # === Comparison: 按 __dataset 分组的指标 ===
+    datasets = cm.get("source_tables", [])
+    kpi_by_dataset = {}
+    trend_by_dataset = {}
+
+    # 每个 dataset 的总行数和总收入
+    rows_by_ds = {}
+    rev_by_ds = {}
+    for ds in datasets:
+        # 总行数
+        ds_escaped = ds.replace("'", "''")
+        r = _safe_exec(session, f'SELECT COUNT(*) FROM "{tname}" WHERE __dataset = \'{ds_escaped}\'')
+        if r and r["rows"]:
+            rows_by_ds[ds] = int(r["rows"][0][0])
+        # 总收入
+        if revenue_col:
+            r2 = _safe_exec(session,
+                f'SELECT ROUND(SUM("{revenue_col.name}"), 2) FROM "{tname}" WHERE __dataset = \'{ds_escaped}\'')
+            if r2 and r2["rows"] and r2["rows"][0][0] is not None:
+                rev_by_ds[ds] = float(r2["rows"][0][0])
+
+    if rows_by_ds:
+        kpi_by_dataset["rows"] = rows_by_ds
+    if rev_by_ds:
+        kpi_by_dataset["revenue"] = rev_by_ds
+
+    # === 趋势线 (每个 dataset 一条) ===
+    if revenue_col and groups["datetime"]:
+        dc = groups["datetime"][0]
+        for ds in datasets:
+            ds_escaped3 = ds.replace("'", "''")
+            r = _safe_exec(session, (
+                f'SELECT DATE_TRUNC(\'month\', "{dc.name}") AS m, '
+                f'ROUND(SUM("{revenue_col.name}"), 2) AS v '
+                f'FROM "{tname}" WHERE __dataset = \'{ds_escaped3}\' GROUP BY m ORDER BY m'
+            ))
+            if r and r["rows"]:
+                trend_by_dataset[ds] = [
+                    {"month": str(row[0])[:10], "value": float(row[1] or 0)}
+                    for row in r["rows"]
+                ]
+
+    return {
+        "kpis": kpis,
+        "pie": None,  # compare 模式不画 pie
+        "trend": None,  # compare 模式用 comparison.trend_by_dataset 代替
+        "comparison": {
+            "datasets": datasets,
+            "kpi_by_dataset": kpi_by_dataset,
+            "trend_by_dataset": trend_by_dataset,
+            "is_currency": is_currency,
+        },
+    }
+

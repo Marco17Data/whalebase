@@ -176,6 +176,12 @@ def generate_overview(session: Session, lang: str = "en", table_name: str | None
     if not session.tables:
         return {"kpis": [], "pie": None, "trend": None}
 
+    # Compare mode: delegate to compare overview
+    cm = getattr(session, "compare_mode", None) or {}
+    if cm.get("active"):
+        from compare import generate_compare_overview
+        return generate_compare_overview(session, lang=lang)
+
     if table_name and table_name in session.tables:
         table = session.tables[table_name]
     else:
