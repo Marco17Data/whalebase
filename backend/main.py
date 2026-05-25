@@ -228,8 +228,8 @@ SAMPLE_REGISTRY = {
     },
     "messy": {
         "filename": "sample_messy_orders.csv",
-        "label_en": "Messy data demo (with duplicates & nulls)",
-        "label_zh": "脏数据示例(含重复+空值)",
+        "label_en": "Demo: messy data (try cleanup features)",
+        "label_zh": "演示：脏数据(体验清洗功能)",
         "rows": 1010, "cols": 12,
         "currency": "USD",
     },

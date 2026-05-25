@@ -13,6 +13,7 @@ const SAMPLES = [
   { id: 'coffee', label: 'Coffee shop chain', rows: 3000 },
   { id: 'ecommerce', label: 'E-commerce orders', rows: 2500 },
   { id: 'restaurant', label: 'Restaurant orders', rows: 1200 },
+  { id: 'messy', label: 'Demo: messy data (try cleanup features)', rows: 1010 },
 ];
 
 export function SampleBanner({ sampleId, onSwitchSample, onUploadClick }: Props) {
