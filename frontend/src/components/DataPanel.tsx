@@ -150,15 +150,21 @@ export function DataPanel({ sessionId, tables, activeTable, onTablesChanged, onS
             <Plus className="w-3 h-3" />
             {t('data.add_more')}
           </button>
-          {tables.filter((t) => !t.name.startsWith('__')).length >= 2 && (
-            <button
-              onClick={() => setShowCompareDialog(true)}
-              className="btn-ghost w-full"
-            >
-              <GitCompare className="w-3 h-3" />
-              {t('compare.btn_tooltip')}
-            </button>
-          )}
+          {(() => {
+            const realCount = tables.filter((t) => !t.name.startsWith('__')).length;
+            const canCompare = realCount >= 2;
+            return (
+              <button
+                onClick={() => canCompare && setShowCompareDialog(true)}
+                disabled={!canCompare}
+                title={canCompare ? '' : t('compare.btn_disabled_tooltip')}
+                className={`btn-ghost w-full ${!canCompare ? 'opacity-50 cursor-not-allowed' : ''}`}
+              >
+                <GitCompare className="w-3 h-3" />
+                {t('compare.btn_tooltip')}
+              </button>
+            );
+          })()}
         </div>
       )}
     </aside>

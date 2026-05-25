@@ -164,6 +164,8 @@ export function HeroOverview({ sessionId, currency, activeTable, tablesCount }: 
         <CompareModeIndicator
           sourceTables={compareStatus.source_tables}
           onExit={async () => {
+            // 立即同步前端 state, 不等后端轮询
+            setCompareStatus({ active: false });
             await api.disableCompare(sessionId);
             refreshAll();
           }}
@@ -173,7 +175,11 @@ export function HeroOverview({ sessionId, currency, activeTable, tablesCount }: 
         <CompareBanner
           tables={compareGroups[0].tables}
           onCompare={async () => {
-            await api.enableCompare(sessionId, compareGroups[0].tables);
+            const result = await api.enableCompare(sessionId, compareGroups[0].tables);
+            if (result.ok) {
+              // 立即同步前端 state
+              setCompareStatus({ active: true, source_tables: result.source_tables });
+            }
             setBannerDismissed(true);
             refreshAll();
           }}
@@ -562,8 +568,13 @@ function KPICardWithCompare({
           {formatNum(valB, isCurrency, currency)}
         </div>
         {pct !== null && (
-          <div className={`mt-1 text-xs font-medium tabular-nums ${positive ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
-            {pctStr} {t('compare.vs')} <span className="font-mono">{datasets[0]}</span>
+          <div className="mt-2 flex items-center gap-1.5">
+            <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold tabular-nums ${positive ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300' : 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300'}`}>
+              {pctStr}
+            </span>
+            <span className="text-xs text-slate-500 dark:text-slate-400">
+              {t('compare.vs')} <span className="font-mono">{datasets[0]}</span>
+            </span>
           </div>
         )}
         <div className="mt-2 pt-2 border-t border-slate-100 dark:border-slate-800 space-y-0.5 text-xs">
