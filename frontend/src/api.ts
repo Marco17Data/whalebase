@@ -3,11 +3,30 @@ import type {
   DashboardCard, TemplateMeta, TemplateResult, PresetQuestion,
   PivotConfig, PivotResult,
 } from './types';
+import { supabase } from './supabase';
 
 const API_BASE = import.meta.env.VITE_API_BASE || '/api';
 
+async function authHeaders(): Promise<Record<string, string>> {
+  try {
+    const { data } = await supabase.auth.getSession();
+    if (data.session?.access_token) {
+      return { Authorization: `Bearer ${data.session.access_token}` };
+    }
+  } catch {
+    // ignore
+  }
+  return {};
+}
+
+async function fetchWithAuth(input: RequestInfo, init?: RequestInit): Promise<Response> {
+  const auth = await authHeaders();
+  const headers = { ...(init?.headers || {}), ...auth };
+  return fetch(input, { ...init, headers });
+}
+
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
-  const resp = await fetch(`${API_BASE}${path}`, init);
+  const resp = await fetchWithAuth(`${API_BASE}${path}`, init);
   if (!resp.ok) {
     let errMsg = `Request failed (${resp.status})`;
     try {

@@ -7,6 +7,9 @@ import {
 import { Logo } from './Logo';
 import { useI18n, LANGUAGES, Lang } from '../i18n';
 import { useTheme } from '../ThemeContext';
+import { useAuth } from '../AuthContext';
+import { UserMenu } from './UserMenu';
+import { AuthDialog } from './AuthDialog';
 
 interface Props {
   queryCount: number;
@@ -39,6 +42,8 @@ export function TopBar({
 }: Props) {
   const { t } = useI18n();
   const { theme, toggleTheme } = useTheme();
+  const { user, loading: authLoading } = useAuth();
+  const [showAuthDialog, setShowAuthDialog] = useState(false);
 
   return (
     <header className="h-14 border-b border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 flex items-center justify-between px-5 shrink-0 z-30 relative">
@@ -136,10 +141,28 @@ export function TopBar({
           {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
         </button>
 
+        {!authLoading && (
+          user ? (
+            <UserMenu />
+          ) : (
+            <button
+              onClick={() => setShowAuthDialog(true)}
+              className="btn-ghost"
+              title={t('auth.sign_in')}
+            >
+              {t('auth.sign_in')}
+            </button>
+          )
+        )}
+
         <button onClick={onSettings} className="btn-ghost" title={t('nav.settings')}>
           <Settings className="w-4 h-4" />
         </button>
       </div>
+
+      {showAuthDialog && (
+        <AuthDialog onClose={() => setShowAuthDialog(false)} />
+      )}
     </header>
   );
 }
