@@ -147,8 +147,7 @@ export function TopBar({
           ) : (
             <button
               onClick={() => setShowAuthDialog(true)}
-              className="btn-ghost"
-              title={t('auth.sign_in')}
+              className="px-3 py-1.5 text-sm font-medium text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors"
             >
               {t('auth.sign_in')}
             </button>

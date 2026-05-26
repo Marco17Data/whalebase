@@ -142,14 +142,6 @@ export function DataPanel({ sessionId, tables, activeTable, onTablesChanged, onS
 
       {tables.length > 0 && (
         <div className="px-3 py-2 border-t border-slate-100 dark:border-slate-800 space-y-1.5">
-          <button
-            onClick={() => fileInputRef.current?.click()}
-            disabled={uploading}
-            className="btn-ghost w-full"
-          >
-            <Plus className="w-3 h-3" />
-            {t('data.add_more')}
-          </button>
           {(() => {
             const realCount = tables.filter((t) => !t.name.startsWith('__')).length;
             const canCompare = realCount >= 2;

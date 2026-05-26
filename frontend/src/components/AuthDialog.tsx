@@ -114,12 +114,15 @@ export function AuthDialog({ onClose }: Props) {
                   className="mt-3 w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-brand-500 hover:bg-brand-600 text-white rounded-lg text-sm font-medium disabled:opacity-50"
                 >
                   {submitting && <Loader2 className="w-4 h-4 animate-spin" />}
-                  {submitting ? t('auth.sending') : t('auth.send_magic')}
+                  {submitting ? t('auth.sending') : t('auth.continue_email')}
                 </button>
               </form>
 
               <p className="text-xs text-slate-500 dark:text-slate-500 mt-4 text-center">
-                {t('auth.privacy_hint')}
+                {t('auth.privacy_hint_prefix')}{' '}
+                <a href="/terms" target="_blank" className="underline hover:text-slate-700 dark:hover:text-slate-300">{t('auth.terms')}</a>
+                {' '}{t('auth.and')}{' '}
+                <a href="/privacy" target="_blank" className="underline hover:text-slate-700 dark:hover:text-slate-300">{t('auth.privacy')}</a>
               </p>
             </>
           )}

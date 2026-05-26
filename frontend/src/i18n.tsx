@@ -8,7 +8,6 @@
  *
  * 添加翻译: 直接在下面对象里加新 key 和各语言文案
  */
-
 export const LANGUAGES = [
   { code: 'en', name: 'English', flag: '🇬🇧' },
   { code: 'zh', name: '中文', flag: '🇨🇳' },
@@ -21,11 +20,8 @@ export const LANGUAGES = [
   { code: 'it', name: 'Italiano', flag: '🇮🇹' },
   { code: 'ru', name: 'Русский', flag: '🇷🇺' },
 ] as const;
-
 export type Lang = typeof LANGUAGES[number]['code'];
-
 type Dict = Record<string, string>;
-
 const TRANSLATIONS: Record<Lang, Dict> = {
   en: {
     'app.tagline': 'Sales Analysis Tool',
@@ -42,15 +38,23 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'auth.email_label': 'Your email',
     'auth.send_magic': 'Send magic link',
     'auth.sending': 'Sending...',
-    'auth.magic_sent_title': 'Check your email',
-    'auth.magic_sent_desc': 'We sent a sign-in link to',
-    'auth.magic_sent_hint': 'Click the link in the email to finish signing in.',
-    'auth.privacy_hint': 'By signing in, you agree to our terms.',
     'auth.signed_in_as': 'Signed in as',
+    'auth.continue_email': 'Continue with email',
+    'auth.privacy_hint_prefix': 'By continuing, you agree to our',
+    'auth.terms': 'Terms',
+    'auth.privacy': 'Privacy Policy',
+    'auth.and': 'and',
+    'legal.terms_title': 'Terms of Service',
+    'legal.privacy_title': 'Privacy Policy',
+    'legal.coming_soon': 'Full terms are being prepared. For now:',
+    'legal.contact_us': 'For questions, contact us at',
+    'legal.back_home': 'Back to home',
+    'auth.magic_sent_title': 'We sent you a link',
+    'auth.magic_sent_desc': 'Check your inbox for',
+    'auth.magic_sent_hint': 'Open it on this device to sign in.',
     'nav.export': 'Export',
     'nav.history': 'History',
     'nav.sql': 'SQL',
-
     'features.dashboard.title': 'Instant Dashboards',
     'features.dashboard.desc': 'Pre-built templates — sales, repurchase, channel — one click to generate',
     'features.presets.title': 'Preset Questions',
@@ -63,11 +67,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.export.desc': 'Download CSV data and Markdown reports',
     'features.privacy.title': 'Privacy First',
     'features.privacy.desc': 'Your data lives only in memory — never stored on our servers',
-
     'about.title': 'About Whalebase',
     'about.desc': 'Whalebase turns sales data into instant dashboards and insights. Upload a CSV or Excel file, pick a template or click a preset question, and get charts and analysis instantly.',
     'about.tech': 'Built with FastAPI, React, DuckDB, and Recharts',
-
     'data.title': 'Datasets',
     'data.upload': 'Click or drag files here',
     'data.formats': 'CSV · TSV · Excel · JSON',
@@ -78,7 +80,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.rows': 'rows',
     'data.cols': 'cols',
     'data.delete_confirm': 'Delete table {name}?',
-
     'welcome.title': 'Welcome to Whalebase',
     'welcome.subtitle': 'Upload your sales data. Get dashboards, insights, and answers in seconds.',
     'welcome.step1.title': 'Upload data',
@@ -89,7 +90,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'welcome.step3.desc': 'Use preset questions, pivot tables, or ask AI in your own words.',
     'welcome.cta': 'Upload Dataset',
     'welcome.cta_sub': 'Click here or drag a file into the left panel',
-
     'dashboard.title': 'Dashboard',
     'dashboard.subtitle': 'Auto-generated from your data',
     'dashboard.templates_title': 'Dashboard Templates',
@@ -100,11 +100,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'dashboard.pivot_desc': 'Build cross-tab reports by dragging fields',
     'dashboard.open': 'Open',
     'dashboard.back': 'Back to dashboard',
-
     'preset.cat.sales': 'Sales',
     'preset.cat.customer': 'Customers',
     'preset.cat.overview': 'Overview',
-
     'pivot.rows': 'Rows',
     'pivot.columns': 'Columns',
     'pivot.measure': 'Measure',
@@ -120,14 +118,12 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'pivot.agg.min': 'Min',
     'pivot.agg.max': 'Max',
     'pivot.no_result': 'Pick fields and click Generate',
-
     'ai.modal.title': 'Ask AI',
     'ai.modal.subtitle': 'Ask in plain language. Uses your Gemini API key.',
     'ai.placeholder': 'e.g. Which product had the highest repurchase rate last quarter?',
     'ai.submit': 'Ask',
     'ai.thinking': 'Generating SQL and analyzing data...',
     'ai.rate_limit': 'Free tier limit reached. Please wait 30-60 seconds.',
-
     'chart.bar': 'Bar',
     'chart.line': 'Line',
     'chart.area': 'Area',
@@ -135,7 +131,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'chart.scatter': 'Scatter',
     'chart.table': 'Table',
     'chart.kpi': 'Number',
-
     'query.viewsql': 'View SQL',
     'query.hidesql': 'Hide SQL',
     'query.edit': 'Edit',
@@ -146,7 +141,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'query.truncated': '(truncated)',
     'query.insight': 'Insight',
     'query.export_csv': 'CSV',
-
     'common.loading': 'Loading...',
     'sample.banner.title': "You're viewing sample data",
     'sample.banner.desc': '. explore freely or upload your own',
@@ -218,7 +212,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'common.error': 'Error',
     'common.confirm': 'Confirm',
     'common.skip': 'Skip',
-
     'currency.title': 'Select currency for this dataset',
     'currency.desc': 'We detected money columns (revenue, price, amount, etc.). What currency are they in?',
     'currency.confirm': 'Use this currency',
@@ -226,7 +219,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'currency.change_later': 'You can change this anytime in Settings',
     'currency.none': 'No currency',
   },
-
   zh: {
     'app.tagline': '销售分析工具',
     'nav.features': '功能',
@@ -242,15 +234,23 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'auth.email_label': '你的邮箱',
     'auth.send_magic': '发送登录链接',
     'auth.sending': '发送中...',
-    'auth.magic_sent_title': '查收你的邮件',
-    'auth.magic_sent_desc': '我们已发送登录链接到',
-    'auth.magic_sent_hint': '点击邮件中的链接完成登录。',
-    'auth.privacy_hint': '登录即表示同意我们的服务条款。',
     'auth.signed_in_as': '已登录为',
+    'auth.continue_email': '使用邮箱继续',
+    'auth.privacy_hint_prefix': '继续即表示同意我们的',
+    'auth.terms': '服务条款',
+    'auth.privacy': '隐私政策',
+    'auth.and': '和',
+    'legal.terms_title': '服务条款',
+    'legal.privacy_title': '隐私政策',
+    'legal.coming_soon': '完整条款正在准备中。目前：',
+    'legal.contact_us': '如有疑问,请联系我们',
+    'legal.back_home': '返回首页',
+    'auth.magic_sent_title': '我们已经发送链接给你',
+    'auth.magic_sent_desc': '请查收发送至',
+    'auth.magic_sent_hint': '在此设备上打开链接即可登录。',
     'nav.export': '导出',
     'nav.history': '历史',
     'nav.sql': 'SQL',
-
     'features.dashboard.title': '即用仪表盘',
     'features.dashboard.desc': '销售/复购/渠道 等预设模板,一键生成',
     'features.presets.title': '预设问题',
@@ -263,11 +263,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.export.desc': '下载 CSV 数据和 Markdown 报告',
     'features.privacy.title': '隐私优先',
     'features.privacy.desc': '数据仅在内存,不写入任何服务器',
-
     'about.title': '关于 Whalebase',
     'about.desc': 'Whalebase 把销售数据瞬间变成仪表盘和洞察。上传 CSV 或 Excel,选模板或点预设问题,立即获得图表和分析。',
     'about.tech': '基于 FastAPI、React、DuckDB、Recharts 构建',
-
     'data.title': '数据集',
     'data.upload': '点击或拖入文件',
     'data.formats': 'CSV · TSV · Excel · JSON',
@@ -278,7 +276,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.rows': '行',
     'data.cols': '列',
     'data.delete_confirm': '删除表 {name}?',
-
     'welcome.title': '欢迎使用 Whalebase',
     'welcome.subtitle': '上传销售数据,几秒钟得到仪表盘、洞察和答案。',
     'welcome.step1.title': '上传数据',
@@ -289,7 +286,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'welcome.step3.desc': '用预设问题、透视表,或用自己的话问 AI',
     'welcome.cta': '上传数据集',
     'welcome.cta_sub': '点击此处或拖文件到左侧面板',
-
     'dashboard.title': '仪表盘',
     'dashboard.subtitle': '自动从你的数据生成',
     'dashboard.templates_title': '仪表盘模板',
@@ -300,11 +296,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'dashboard.pivot_desc': '拖拽字段生成交叉报表',
     'dashboard.open': '打开',
     'dashboard.back': '返回仪表盘',
-
     'preset.cat.sales': '销售',
     'preset.cat.customer': '客户',
     'preset.cat.overview': '总览',
-
     'pivot.rows': '行',
     'pivot.columns': '列',
     'pivot.measure': '度量值',
@@ -320,14 +314,12 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'pivot.agg.min': '最小',
     'pivot.agg.max': '最大',
     'pivot.no_result': '选择字段后点击生成',
-
     'ai.modal.title': '问 AI',
     'ai.modal.subtitle': '用自然语言提问。使用你的 Gemini API key。',
     'ai.placeholder': '例如:上季度哪个产品复购率最高?',
     'ai.submit': '提问',
     'ai.thinking': '生成 SQL 并分析数据中...',
     'ai.rate_limit': '已达到免费层限流。请等待 30-60 秒。',
-
     'chart.bar': '柱状',
     'chart.line': '折线',
     'chart.area': '面积',
@@ -335,7 +327,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'chart.scatter': '散点',
     'chart.table': '表格',
     'chart.kpi': '数字',
-
     'query.viewsql': '查看 SQL',
     'query.hidesql': '隐藏 SQL',
     'query.edit': '编辑',
@@ -346,7 +337,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'query.truncated': '(已截断)',
     'query.insight': '洞察',
     'query.export_csv': 'CSV',
-
     'common.loading': '加载中...',
     'sample.banner.title': '当前显示的是示例数据',
     'sample.banner.desc': '. 自由探索或上传你自己的数据',
@@ -418,7 +408,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'common.error': '错误',
     'common.confirm': '确认',
     'common.skip': '跳过',
-
     'currency.title': '为此数据集选择货币',
     'currency.desc': '检测到金额相关列(销售额、单价、金额等),它们是什么货币?',
     'currency.confirm': '使用此货币',
@@ -426,7 +415,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'currency.change_later': '随时可以在设置中修改',
     'currency.none': '无货币',
   },
-
   es: {
     'app.tagline': 'Herramienta de Análisis de Ventas',
     'nav.features': 'Funciones',
@@ -442,15 +430,23 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'auth.email_label': 'Tu correo',
     'auth.send_magic': 'Enviar enlace mágico',
     'auth.sending': 'Enviando...',
-    'auth.magic_sent_title': 'Revisa tu correo',
-    'auth.magic_sent_desc': 'Enviamos un enlace a',
-    'auth.magic_sent_hint': 'Haz clic en el enlace del correo para iniciar sesión.',
-    'auth.privacy_hint': 'Al iniciar sesión, aceptas los términos.',
     'auth.signed_in_as': 'Sesión iniciada como',
+    'auth.continue_email': 'Continuar con email',
+    'auth.privacy_hint_prefix': 'Al continuar, aceptas nuestros',
+    'auth.terms': 'Términos',
+    'auth.privacy': 'Privacidad',
+    'auth.and': 'y',
+    'legal.terms_title': 'Términos del Servicio',
+    'legal.privacy_title': 'Política de Privacidad',
+    'legal.coming_soon': 'Los términos completos se están preparando. Por ahora:',
+    'legal.contact_us': 'Para preguntas, contáctanos en',
+    'legal.back_home': 'Volver al inicio',
+    'auth.magic_sent_title': 'Te enviamos un enlace',
+    'auth.magic_sent_desc': 'Revisa tu bandeja para',
+    'auth.magic_sent_hint': 'Ábrelo en este dispositivo para entrar.',
     'nav.export': 'Exportar',
     'nav.history': 'Historial',
     'nav.sql': 'SQL',
-
     'features.dashboard.title': 'Paneles Instantáneos',
     'features.dashboard.desc': 'Plantillas listas — ventas, recompra, canal — un clic',
     'features.presets.title': 'Preguntas Predefinidas',
@@ -463,11 +459,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.export.desc': 'Descarga datos CSV y reportes Markdown',
     'features.privacy.title': 'Privacidad Primero',
     'features.privacy.desc': 'Tus datos solo en memoria — nunca en nuestros servidores',
-
     'about.title': 'Acerca de Whalebase',
     'about.desc': 'Whalebase convierte tus datos de ventas en dashboards e insights instantáneos. Sube un CSV o Excel, elige una plantilla o haz clic en una pregunta predefinida.',
     'about.tech': 'Construido con FastAPI, React, DuckDB y Recharts',
-
     'data.title': 'Conjuntos de datos',
     'data.upload': 'Haz clic o arrastra archivos',
     'data.formats': 'CSV · TSV · Excel · JSON',
@@ -478,7 +472,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.rows': 'filas',
     'data.cols': 'cols',
     'data.delete_confirm': '¿Eliminar tabla {name}?',
-
     'welcome.title': 'Bienvenido a Whalebase',
     'welcome.subtitle': 'Sube tus datos de ventas. Obtén dashboards, insights y respuestas en segundos.',
     'welcome.step1.title': 'Subir datos',
@@ -489,7 +482,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'welcome.step3.desc': 'Usa preguntas predefinidas, tablas dinámicas o pregunta a la IA.',
     'welcome.cta': 'Subir conjunto de datos',
     'welcome.cta_sub': 'Haz clic aquí o arrastra a la izquierda',
-
     'dashboard.title': 'Panel',
     'dashboard.subtitle': 'Auto-generado desde tus datos',
     'dashboard.templates_title': 'Plantillas de Panel',
@@ -500,11 +492,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'dashboard.pivot_desc': 'Construye reportes cruzados',
     'dashboard.open': 'Abrir',
     'dashboard.back': 'Volver al panel',
-
     'preset.cat.sales': 'Ventas',
     'preset.cat.customer': 'Clientes',
     'preset.cat.overview': 'Resumen',
-
     'pivot.rows': 'Filas',
     'pivot.columns': 'Columnas',
     'pivot.measure': 'Medida',
@@ -520,14 +510,12 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'pivot.agg.min': 'Mínimo',
     'pivot.agg.max': 'Máximo',
     'pivot.no_result': 'Elige campos y haz clic en Generar',
-
     'ai.modal.title': 'Preguntar IA',
     'ai.modal.subtitle': 'Pregunta en lenguaje natural. Usa tu API key Gemini.',
     'ai.placeholder': 'Ej: ¿Qué producto tuvo la tasa de recompra más alta?',
     'ai.submit': 'Preguntar',
     'ai.thinking': 'Generando SQL y analizando...',
     'ai.rate_limit': 'Límite gratis alcanzado. Espera 30-60 segundos.',
-
     'chart.bar': 'Barras',
     'chart.line': 'Líneas',
     'chart.area': 'Área',
@@ -535,7 +523,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'chart.scatter': 'Dispersión',
     'chart.table': 'Tabla',
     'chart.kpi': 'Número',
-
     'query.viewsql': 'Ver SQL',
     'query.hidesql': 'Ocultar SQL',
     'query.edit': 'Editar',
@@ -546,7 +533,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'query.truncated': '(truncado)',
     'query.insight': 'Insight',
     'query.export_csv': 'CSV',
-
     'common.loading': 'Cargando...',
     'sample.banner.title': 'Estas viendo datos de muestra',
     'sample.banner.desc': '. explora libremente o sube los tuyos',
@@ -625,7 +611,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'currency.change_later': 'Puede cambiarlo después en Ajustes',
     'currency.none': 'Sin moneda',
   },
-
   ja: {
     'app.tagline': '販売分析ツール',
     'nav.features': '機能',
@@ -641,15 +626,23 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'auth.email_label': 'メールアドレス',
     'auth.send_magic': 'マジックリンクを送る',
     'auth.sending': '送信中...',
-    'auth.magic_sent_title': 'メールを確認',
-    'auth.magic_sent_desc': 'ログインリンクを送信しました:',
-    'auth.magic_sent_hint': 'メール内のリンクをクリックしてログインを完了。',
-    'auth.privacy_hint': 'ログインで利用規約に同意します。',
     'auth.signed_in_as': 'ログイン中:',
+    'auth.continue_email': 'メールで続行',
+    'auth.privacy_hint_prefix': '続行することで、当社の',
+    'auth.terms': '利用規約',
+    'auth.privacy': 'プライバシー',
+    'auth.and': 'と',
+    'legal.terms_title': '利用規約',
+    'legal.privacy_title': 'プライバシーポリシー',
+    'legal.coming_soon': '完全な利用規約は準備中です。当面は:',
+    'legal.contact_us': 'ご質問は次までお問い合わせください:',
+    'legal.back_home': 'ホームに戻る',
+    'auth.magic_sent_title': 'リンクを送信しました',
+    'auth.magic_sent_desc': '受信箱を確認:',
+    'auth.magic_sent_hint': 'このデバイスで開いてサインインします。',
     'nav.export': 'エクスポート',
     'nav.history': '履歴',
     'nav.sql': 'SQL',
-
     'features.dashboard.title': '即時ダッシュボード',
     'features.dashboard.desc': '販売・リピート・チャネル等のテンプレートをワンクリックで',
     'features.presets.title': 'プリセット質問',
@@ -662,11 +655,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.export.desc': 'CSV データと Markdown レポートをダウンロード',
     'features.privacy.title': 'プライバシー優先',
     'features.privacy.desc': 'データはメモリ内のみ — サーバーに保存しません',
-
     'about.title': 'Whalebase について',
     'about.desc': 'Whalebase は販売データを瞬時にダッシュボードと洞察に変えるツールです。CSV/Excel をアップロードして、テンプレートやプリセット質問をクリックするだけ。',
     'about.tech': 'FastAPI, React, DuckDB, Recharts で構築',
-
     'data.title': 'データセット',
     'data.upload': 'クリックまたはドラッグ',
     'data.formats': 'CSV · TSV · Excel · JSON',
@@ -677,7 +668,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.rows': '行',
     'data.cols': '列',
     'data.delete_confirm': '{name} を削除?',
-
     'welcome.title': 'Whalebase へようこそ',
     'welcome.subtitle': '販売データをアップロード。数秒でダッシュボード、洞察、回答を取得。',
     'welcome.step1.title': 'データアップロード',
@@ -688,7 +678,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'welcome.step3.desc': 'プリセット質問・ピボット・AI に質問',
     'welcome.cta': 'データセットをアップロード',
     'welcome.cta_sub': 'ここをクリックまたは左にドラッグ',
-
     'dashboard.title': 'ダッシュボード',
     'dashboard.subtitle': 'データから自動生成',
     'dashboard.templates_title': 'ダッシュボードテンプレート',
@@ -699,11 +688,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'dashboard.pivot_desc': 'クロス集計レポートを作成',
     'dashboard.open': '開く',
     'dashboard.back': 'ダッシュボードへ戻る',
-
     'preset.cat.sales': '販売',
     'preset.cat.customer': '顧客',
     'preset.cat.overview': '概要',
-
     'pivot.rows': '行',
     'pivot.columns': '列',
     'pivot.measure': '指標',
@@ -719,14 +706,12 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'pivot.agg.min': '最小',
     'pivot.agg.max': '最大',
     'pivot.no_result': 'フィールド選択後に生成',
-
     'ai.modal.title': 'AI に質問',
     'ai.modal.subtitle': '自然言語で質問。Gemini API キー使用。',
     'ai.placeholder': '例: 前四半期で最もリピート率の高い商品は?',
     'ai.submit': '質問',
     'ai.thinking': 'SQL 生成・分析中...',
     'ai.rate_limit': '無料枠の上限到達。30-60 秒お待ちください。',
-
     'chart.bar': '棒',
     'chart.line': '線',
     'chart.area': 'エリア',
@@ -734,7 +719,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'chart.scatter': '散布',
     'chart.table': '表',
     'chart.kpi': '数値',
-
     'query.viewsql': 'SQL 表示',
     'query.hidesql': 'SQL 非表示',
     'query.edit': '編集',
@@ -745,7 +729,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'query.truncated': '(切り捨て)',
     'query.insight': '洞察',
     'query.export_csv': 'CSV',
-
     'common.loading': '読み込み中...',
     'sample.banner.title': 'サンプルデータを表示中',
     'sample.banner.desc': '. 自由に探索するか、データをアップロード',
@@ -824,7 +807,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'currency.change_later': '設定でいつでも変更可',
     'currency.none': '通貨なし',
   },
-
   ko: {
     'app.tagline': '판매 분석 도구',
     'nav.features': '기능',
@@ -840,15 +822,23 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'auth.email_label': '이메일',
     'auth.send_magic': '매직 링크 보내기',
     'auth.sending': '전송 중...',
-    'auth.magic_sent_title': '이메일 확인',
-    'auth.magic_sent_desc': '로그인 링크를 보냈습니다:',
-    'auth.magic_sent_hint': '이메일의 링크를 클릭하여 로그인을 완료하세요.',
-    'auth.privacy_hint': '로그인 시 약관에 동의합니다.',
     'auth.signed_in_as': '로그인됨:',
+    'auth.continue_email': '이메일로 계속',
+    'auth.privacy_hint_prefix': '계속하면 다음에 동의합니다',
+    'auth.terms': '이용약관',
+    'auth.privacy': '개인정보',
+    'auth.and': '와',
+    'legal.terms_title': '서비스 약관',
+    'legal.privacy_title': '개인정보처리방침',
+    'legal.coming_soon': '전체 약관은 준비 중입니다. 현재:',
+    'legal.contact_us': '문의사항은 다음으로 연락주세요:',
+    'legal.back_home': '홈으로 돌아가기',
+    'auth.magic_sent_title': '링크를 보냈습니다',
+    'auth.magic_sent_desc': '받은편지함을 확인:',
+    'auth.magic_sent_hint': '이 기기에서 열어 로그인하세요.',
     'nav.export': '내보내기',
     'nav.history': '기록',
     'nav.sql': 'SQL',
-
     'features.dashboard.title': '즉시 대시보드',
     'features.dashboard.desc': '판매·재구매·채널 템플릿 원클릭',
     'features.presets.title': '프리셋 질문',
@@ -861,11 +851,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.export.desc': 'CSV 데이터 및 Markdown 보고서 다운로드',
     'features.privacy.title': '개인정보 우선',
     'features.privacy.desc': '데이터는 메모리에만 — 서버에 저장되지 않음',
-
     'about.title': 'Whalebase 소개',
     'about.desc': 'Whalebase 는 판매 데이터를 즉각적인 대시보드와 인사이트로 변환합니다.',
     'about.tech': 'FastAPI, React, DuckDB, Recharts 로 제작',
-
     'data.title': '데이터셋',
     'data.upload': '파일 클릭 또는 드래그',
     'data.formats': 'CSV · TSV · Excel · JSON',
@@ -876,7 +864,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.rows': '행',
     'data.cols': '열',
     'data.delete_confirm': '{name} 삭제?',
-
     'welcome.title': 'Whalebase 에 오신 것을 환영합니다',
     'welcome.subtitle': '판매 데이터를 업로드하세요. 몇 초 만에 대시보드, 인사이트, 답변을 얻으세요.',
     'welcome.step1.title': '데이터 업로드',
@@ -887,7 +874,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'welcome.step3.desc': '프리셋·피벗·AI 질문',
     'welcome.cta': '데이터셋 업로드',
     'welcome.cta_sub': '클릭 또는 왼쪽으로 드래그',
-
     'dashboard.title': '대시보드',
     'dashboard.subtitle': '데이터로부터 자동 생성',
     'dashboard.templates_title': '대시보드 템플릿',
@@ -898,11 +884,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'dashboard.pivot_desc': '교차표 작성',
     'dashboard.open': '열기',
     'dashboard.back': '대시보드로 돌아가기',
-
     'preset.cat.sales': '판매',
     'preset.cat.customer': '고객',
     'preset.cat.overview': '개요',
-
     'pivot.rows': '행',
     'pivot.columns': '열',
     'pivot.measure': '측정값',
@@ -918,14 +902,12 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'pivot.agg.min': '최소',
     'pivot.agg.max': '최대',
     'pivot.no_result': '필드 선택 후 생성',
-
     'ai.modal.title': 'AI 에 묻기',
     'ai.modal.subtitle': '자연어로 질문. Gemini API 키 사용.',
     'ai.placeholder': '예: 지난 분기 재구매율 최고 상품?',
     'ai.submit': '질문',
     'ai.thinking': 'SQL 생성 및 분석 중...',
     'ai.rate_limit': '무료 한도 초과. 30-60 초 대기.',
-
     'chart.bar': '막대',
     'chart.line': '선',
     'chart.area': '영역',
@@ -933,7 +915,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'chart.scatter': '산점도',
     'chart.table': '테이블',
     'chart.kpi': '숫자',
-
     'query.viewsql': 'SQL 보기',
     'query.hidesql': 'SQL 숨기기',
     'query.edit': '편집',
@@ -944,7 +925,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'query.truncated': '(잘림)',
     'query.insight': '인사이트',
     'query.export_csv': 'CSV',
-
     'common.loading': '로딩 중...',
     'sample.banner.title': '샘플 데이터를 보고 있습니다',
     'sample.banner.desc': '. 자유롭게 탐색하거나 데이터를 업로드하세요',
@@ -1023,7 +1003,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'currency.change_later': '설정에서 변경 가능',
     'currency.none': '통화 없음',
   },
-
   fr: {
     'app.tagline': "Outil d'Analyse des Ventes",
     'nav.features': 'Fonctionnalités',
@@ -1039,15 +1018,23 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'auth.email_label': 'Votre e-mail',
     'auth.send_magic': 'Envoyer le lien magique',
     'auth.sending': 'Envoi...',
-    'auth.magic_sent_title': 'Vérifie ton e-mail',
-    'auth.magic_sent_desc': 'Lien de connexion envoyé à',
-    'auth.magic_sent_hint': 'Cliquez sur le lien dans le message pour continuer.',
-    'auth.privacy_hint': 'En vous connectant, vous acceptez les conditions.',
     'auth.signed_in_as': 'Connecté en tant que',
+    'auth.continue_email': 'Continuer par e-mail',
+    'auth.privacy_hint_prefix': 'En continuant, vous acceptez nos',
+    'auth.terms': 'Conditions',
+    'auth.privacy': 'Confidentialité',
+    'auth.and': 'et',
+    'legal.terms_title': 'Conditions d utilisation',
+    'legal.privacy_title': 'Politique de confidentialité',
+    'legal.coming_soon': 'Les conditions complètes sont en préparation. Pour le moment:',
+    'legal.contact_us': 'Pour toute question, contactez-nous à',
+    'legal.back_home': 'Retour à l accueil',
+    'auth.magic_sent_title': 'Lien envoyé',
+    'auth.magic_sent_desc': 'Vérifie ta boîte pour',
+    'auth.magic_sent_hint': 'Ouvre-le sur cet appareil pour te connecter.',
     'nav.export': 'Exporter',
     'nav.history': 'Historique',
     'nav.sql': 'SQL',
-
     'features.dashboard.title': 'Tableaux de bord instantanés',
     'features.dashboard.desc': 'Modèles ventes/rachat/canal — un clic',
     'features.presets.title': 'Questions préétablies',
@@ -1060,11 +1047,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.export.desc': 'Téléchargez CSV et rapports Markdown',
     'features.privacy.title': 'Confidentialité',
     'features.privacy.desc': 'Données uniquement en mémoire — jamais sur serveur',
-
     'about.title': 'À propos de Whalebase',
     'about.desc': "Whalebase transforme vos données de ventes en tableaux de bord et insights instantanés.",
     'about.tech': 'Construit avec FastAPI, React, DuckDB, Recharts',
-
     'data.title': 'Jeux de données',
     'data.upload': 'Cliquez ou glissez',
     'data.formats': 'CSV · TSV · Excel · JSON',
@@ -1075,7 +1060,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.rows': 'lignes',
     'data.cols': 'col',
     'data.delete_confirm': 'Supprimer {name} ?',
-
     'welcome.title': 'Bienvenue sur Whalebase',
     'welcome.subtitle': 'Téléchargez vos données. Obtenez tableaux de bord, insights et réponses en quelques secondes.',
     'welcome.step1.title': 'Téléchargez',
@@ -1086,7 +1070,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'welcome.step3.desc': 'Préétabli, pivot ou IA',
     'welcome.cta': 'Télécharger',
     'welcome.cta_sub': 'Cliquez ou glissez à gauche',
-
     'dashboard.title': 'Tableau de bord',
     'dashboard.subtitle': 'Auto-généré',
     'dashboard.templates_title': 'Modèles',
@@ -1097,11 +1080,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'dashboard.pivot_desc': 'Rapports croisés',
     'dashboard.open': 'Ouvrir',
     'dashboard.back': 'Retour',
-
     'preset.cat.sales': 'Ventes',
     'preset.cat.customer': 'Clients',
     'preset.cat.overview': 'Aperçu',
-
     'pivot.rows': 'Lignes',
     'pivot.columns': 'Colonnes',
     'pivot.measure': 'Mesure',
@@ -1117,14 +1098,12 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'pivot.agg.min': 'Min',
     'pivot.agg.max': 'Max',
     'pivot.no_result': 'Choisissez et générez',
-
     'ai.modal.title': "Demander à l'IA",
     'ai.modal.subtitle': "Demandez en langage naturel.",
     'ai.placeholder': 'Ex : Quel produit a le meilleur taux ?',
     'ai.submit': 'Demander',
     'ai.thinking': 'Génération SQL...',
     'ai.rate_limit': 'Limite atteinte. Attendez 30-60 s.',
-
     'chart.bar': 'Barres',
     'chart.line': 'Ligne',
     'chart.area': 'Aire',
@@ -1132,7 +1111,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'chart.scatter': 'Nuage',
     'chart.table': 'Tableau',
     'chart.kpi': 'Nombre',
-
     'query.viewsql': 'Voir SQL',
     'query.hidesql': 'Masquer SQL',
     'query.edit': 'Modifier',
@@ -1143,7 +1121,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'query.truncated': '(tronqué)',
     'query.insight': 'Insight',
     'query.export_csv': 'CSV',
-
     'common.loading': 'Chargement...',
     'sample.banner.title': 'Donnees de demo affichees',
     'sample.banner.desc': '. explorez librement ou telechargez les votres',
@@ -1222,7 +1199,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'currency.change_later': 'Modifiable dans les Paramètres',
     'currency.none': 'Aucune devise',
   },
-
   de: {
     'app.tagline': 'Verkaufs-Analyse-Tool',
     'nav.features': 'Funktionen',
@@ -1238,15 +1214,23 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'auth.email_label': 'Deine E-Mail',
     'auth.send_magic': 'Magic Link senden',
     'auth.sending': 'Senden...',
-    'auth.magic_sent_title': 'E-Mail prüfen',
-    'auth.magic_sent_desc': 'Anmeldelink gesendet an',
-    'auth.magic_sent_hint': 'Klicke auf den Link in der E-Mail.',
-    'auth.privacy_hint': 'Mit der Anmeldung akzeptieren Sie die Bedingungen.',
     'auth.signed_in_as': 'Angemeldet als',
+    'auth.continue_email': 'Mit E-Mail fortfahren',
+    'auth.privacy_hint_prefix': 'Mit dem Fortfahren akzeptierst du unsere',
+    'auth.terms': 'AGB',
+    'auth.privacy': 'Datenschutz',
+    'auth.and': 'und',
+    'legal.terms_title': 'Nutzungsbedingungen',
+    'legal.privacy_title': 'Datenschutzerklärung',
+    'legal.coming_soon': 'Vollständige Bedingungen werden vorbereitet. Vorerst:',
+    'legal.contact_us': 'Bei Fragen kontaktiere uns unter',
+    'legal.back_home': 'Zur Startseite',
+    'auth.magic_sent_title': 'Link gesendet',
+    'auth.magic_sent_desc': 'Prüfe dein Postfach für',
+    'auth.magic_sent_hint': 'Öffne ihn auf diesem Gerät zum Anmelden.',
     'nav.export': 'Exportieren',
     'nav.history': 'Verlauf',
     'nav.sql': 'SQL',
-
     'features.dashboard.title': 'Sofortige Dashboards',
     'features.dashboard.desc': 'Verkauf/Wiederkauf/Kanal-Vorlagen — ein Klick',
     'features.presets.title': 'Vordefinierte Fragen',
@@ -1259,11 +1243,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.export.desc': 'CSV und Markdown-Berichte',
     'features.privacy.title': 'Datenschutz',
     'features.privacy.desc': 'Nur im Speicher — nie auf Server',
-
     'about.title': 'Über Whalebase',
     'about.desc': 'Whalebase verwandelt Verkaufsdaten in sofortige Dashboards und Insights.',
     'about.tech': 'Mit FastAPI, React, DuckDB, Recharts',
-
     'data.title': 'Datensätze',
     'data.upload': 'Klick oder ziehen',
     'data.formats': 'CSV · TSV · Excel · JSON',
@@ -1274,7 +1256,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.rows': 'Zeilen',
     'data.cols': 'Spalten',
     'data.delete_confirm': '{name} löschen?',
-
     'welcome.title': 'Willkommen bei Whalebase',
     'welcome.subtitle': 'Daten hochladen. Erhalten Sie Dashboards, Insights und Antworten in Sekunden.',
     'welcome.step1.title': 'Daten hochladen',
@@ -1285,7 +1266,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'welcome.step3.desc': 'Vordefiniert·Pivot·KI',
     'welcome.cta': 'Datensatz hochladen',
     'welcome.cta_sub': 'Hier klicken oder links ziehen',
-
     'dashboard.title': 'Dashboard',
     'dashboard.subtitle': 'Automatisch generiert',
     'dashboard.templates_title': 'Dashboard-Vorlagen',
@@ -1296,11 +1276,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'dashboard.pivot_desc': 'Kreuztabellen erstellen',
     'dashboard.open': 'Öffnen',
     'dashboard.back': 'Zurück',
-
     'preset.cat.sales': 'Verkauf',
     'preset.cat.customer': 'Kunden',
     'preset.cat.overview': 'Übersicht',
-
     'pivot.rows': 'Zeilen',
     'pivot.columns': 'Spalten',
     'pivot.measure': 'Maß',
@@ -1316,14 +1294,12 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'pivot.agg.min': 'Min',
     'pivot.agg.max': 'Max',
     'pivot.no_result': 'Felder wählen und generieren',
-
     'ai.modal.title': 'KI fragen',
     'ai.modal.subtitle': 'In natürlicher Sprache.',
     'ai.placeholder': 'z.B.: Welches Produkt hat höchste Wiederkaufrate?',
     'ai.submit': 'Fragen',
     'ai.thinking': 'SQL wird erstellt...',
     'ai.rate_limit': 'Gratis-Limit erreicht. 30-60 s warten.',
-
     'chart.bar': 'Balken',
     'chart.line': 'Linie',
     'chart.area': 'Fläche',
@@ -1331,7 +1307,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'chart.scatter': 'Streu',
     'chart.table': 'Tabelle',
     'chart.kpi': 'Zahl',
-
     'query.viewsql': 'SQL anzeigen',
     'query.hidesql': 'SQL verbergen',
     'query.edit': 'Bearbeiten',
@@ -1342,7 +1317,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'query.truncated': '(gekürzt)',
     'query.insight': 'Einsicht',
     'query.export_csv': 'CSV',
-
     'common.loading': 'Lädt...',
     'hero.ai_insights': 'KI-Einsichten',
     'hero.top': 'Top',
@@ -1412,7 +1386,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'currency.change_later': 'Jederzeit in Einstellungen änderbar',
     'currency.none': 'Keine Währung',
   },
-
   pt: {
     'app.tagline': 'Ferramenta de Análise de Vendas',
     'nav.features': 'Recursos',
@@ -1428,15 +1401,23 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'auth.email_label': 'Seu e-mail',
     'auth.send_magic': 'Enviar link mágico',
     'auth.sending': 'Enviando...',
-    'auth.magic_sent_title': 'Verifique seu e-mail',
-    'auth.magic_sent_desc': 'Link de login enviado para',
-    'auth.magic_sent_hint': 'Clique no link no e-mail para entrar.',
-    'auth.privacy_hint': 'Ao entrar, você aceita os termos.',
     'auth.signed_in_as': 'Conectado como',
+    'auth.continue_email': 'Continuar com email',
+    'auth.privacy_hint_prefix': 'Ao continuar, você concorda com',
+    'auth.terms': 'Termos',
+    'auth.privacy': 'Privacidade',
+    'auth.and': 'e',
+    'legal.terms_title': 'Termos de Serviço',
+    'legal.privacy_title': 'Política de Privacidade',
+    'legal.coming_soon': 'Os termos completos estão sendo preparados. Por enquanto:',
+    'legal.contact_us': 'Para dúvidas, entre em contato:',
+    'legal.back_home': 'Voltar ao início',
+    'auth.magic_sent_title': 'Enviamos um link',
+    'auth.magic_sent_desc': 'Verifique sua caixa para',
+    'auth.magic_sent_hint': 'Abra-o neste dispositivo para entrar.',
     'nav.export': 'Exportar',
     'nav.history': 'Histórico',
     'nav.sql': 'SQL',
-
     'features.dashboard.title': 'Painéis Instantâneos',
     'features.dashboard.desc': 'Modelos vendas/recompra/canal — um clique',
     'features.presets.title': 'Perguntas Predefinidas',
@@ -1449,11 +1430,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.export.desc': 'Baixe CSV e relatórios Markdown',
     'features.privacy.title': 'Privacidade',
     'features.privacy.desc': 'Dados apenas na memória — nunca em servidor',
-
     'about.title': 'Sobre Whalebase',
     'about.desc': 'Whalebase transforma dados de vendas em dashboards e insights instantâneos.',
     'about.tech': 'Construído com FastAPI, React, DuckDB, Recharts',
-
     'data.title': 'Conjuntos de dados',
     'data.upload': 'Clique ou arraste',
     'data.formats': 'CSV · TSV · Excel · JSON',
@@ -1464,7 +1443,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.rows': 'linhas',
     'data.cols': 'cols',
     'data.delete_confirm': 'Excluir {name}?',
-
     'welcome.title': 'Bem-vindo ao Whalebase',
     'welcome.subtitle': 'Envie seus dados. Obtenha dashboards, insights e respostas em segundos.',
     'welcome.step1.title': 'Enviar dados',
@@ -1475,7 +1453,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'welcome.step3.desc': 'Predefinido · Pivot · IA',
     'welcome.cta': 'Enviar conjunto',
     'welcome.cta_sub': 'Clique ou arraste à esquerda',
-
     'dashboard.title': 'Painel',
     'dashboard.subtitle': 'Gerado automaticamente',
     'dashboard.templates_title': 'Modelos de Painel',
@@ -1486,11 +1463,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'dashboard.pivot_desc': 'Relatórios cruzados',
     'dashboard.open': 'Abrir',
     'dashboard.back': 'Voltar',
-
     'preset.cat.sales': 'Vendas',
     'preset.cat.customer': 'Clientes',
     'preset.cat.overview': 'Visão geral',
-
     'pivot.rows': 'Linhas',
     'pivot.columns': 'Colunas',
     'pivot.measure': 'Medida',
@@ -1506,14 +1481,12 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'pivot.agg.min': 'Mín',
     'pivot.agg.max': 'Máx',
     'pivot.no_result': 'Escolha campos e gere',
-
     'ai.modal.title': 'Perguntar à IA',
     'ai.modal.subtitle': 'Em linguagem natural.',
     'ai.placeholder': 'Ex: Qual produto teve maior recompra?',
     'ai.submit': 'Perguntar',
     'ai.thinking': 'Gerando SQL...',
     'ai.rate_limit': 'Limite gratuito atingido. Aguarde 30-60s.',
-
     'chart.bar': 'Barras',
     'chart.line': 'Linha',
     'chart.area': 'Área',
@@ -1521,7 +1494,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'chart.scatter': 'Dispersão',
     'chart.table': 'Tabela',
     'chart.kpi': 'Número',
-
     'query.viewsql': 'Ver SQL',
     'query.hidesql': 'Ocultar SQL',
     'query.edit': 'Editar',
@@ -1532,7 +1504,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'query.truncated': '(truncado)',
     'query.insight': 'Insight',
     'query.export_csv': 'CSV',
-
     'common.loading': 'Carregando...',
     'sample.banner.title': 'Visualizando dados de amostra',
     'sample.banner.desc': '. explore livremente ou envie seus dados',
@@ -1611,7 +1582,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'currency.change_later': 'Alterável em Configurações',
     'currency.none': 'Sem moeda',
   },
-
   it: {
     'app.tagline': 'Strumento di Analisi Vendite',
     'nav.features': 'Funzionalità',
@@ -1627,15 +1597,23 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'auth.email_label': 'La tua email',
     'auth.send_magic': 'Invia link magico',
     'auth.sending': 'Invio...',
-    'auth.magic_sent_title': 'Controlla la tua email',
-    'auth.magic_sent_desc': 'Link inviato a',
-    'auth.magic_sent_hint': 'Clicca sul link nel messaggio per completare.',
-    'auth.privacy_hint': 'Accedendo accetti i termini.',
     'auth.signed_in_as': 'Connesso come',
+    'auth.continue_email': 'Continua con email',
+    'auth.privacy_hint_prefix': 'Continuando, accetti i nostri',
+    'auth.terms': 'Termini',
+    'auth.privacy': 'Privacy',
+    'auth.and': 'e',
+    'legal.terms_title': 'Termini di Servizio',
+    'legal.privacy_title': 'Informativa sulla privacy',
+    'legal.coming_soon': 'I termini completi sono in preparazione. Per ora:',
+    'legal.contact_us': 'Per domande, contattaci a',
+    'legal.back_home': 'Torna alla home',
+    'auth.magic_sent_title': 'Link inviato',
+    'auth.magic_sent_desc': 'Controlla la posta per',
+    'auth.magic_sent_hint': 'Aprilo su questo dispositivo per accedere.',
     'nav.export': 'Esporta',
     'nav.history': 'Cronologia',
     'nav.sql': 'SQL',
-
     'features.dashboard.title': 'Dashboard Istantanee',
     'features.dashboard.desc': 'Modelli vendite/riacquisto/canale — un clic',
     'features.presets.title': 'Domande Predefinite',
@@ -1648,11 +1626,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.export.desc': 'Scarica CSV e report Markdown',
     'features.privacy.title': 'Privacy',
     'features.privacy.desc': 'Dati solo in memoria — mai sul server',
-
     'about.title': 'Info Whalebase',
     'about.desc': "Whalebase trasforma i dati di vendita in dashboard e insight istantanei.",
     'about.tech': 'Costruito con FastAPI, React, DuckDB, Recharts',
-
     'data.title': 'Dataset',
     'data.upload': 'Clicca o trascina',
     'data.formats': 'CSV · TSV · Excel · JSON',
@@ -1663,7 +1639,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.rows': 'righe',
     'data.cols': 'col',
     'data.delete_confirm': 'Eliminare {name}?',
-
     'welcome.title': 'Benvenuto in Whalebase',
     'welcome.subtitle': 'Carica i dati. Ottieni dashboard, insight e risposte in pochi secondi.',
     'welcome.step1.title': 'Carica dati',
@@ -1674,7 +1649,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'welcome.step3.desc': 'Predefinito · Pivot · IA',
     'welcome.cta': 'Carica dataset',
     'welcome.cta_sub': 'Clicca o trascina a sinistra',
-
     'dashboard.title': 'Dashboard',
     'dashboard.subtitle': 'Auto-generata',
     'dashboard.templates_title': 'Modelli Dashboard',
@@ -1685,11 +1659,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'dashboard.pivot_desc': 'Report incrociati',
     'dashboard.open': 'Apri',
     'dashboard.back': 'Indietro',
-
     'preset.cat.sales': 'Vendite',
     'preset.cat.customer': 'Clienti',
     'preset.cat.overview': 'Panoramica',
-
     'pivot.rows': 'Righe',
     'pivot.columns': 'Colonne',
     'pivot.measure': 'Misura',
@@ -1705,14 +1677,12 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'pivot.agg.min': 'Min',
     'pivot.agg.max': 'Max',
     'pivot.no_result': 'Seleziona e genera',
-
     'ai.modal.title': "Chiedi all'IA",
     'ai.modal.subtitle': 'In linguaggio naturale.',
     'ai.placeholder': 'Es: Quale prodotto ha più riacquisti?',
     'ai.submit': 'Chiedi',
     'ai.thinking': 'Generazione SQL...',
     'ai.rate_limit': 'Limite gratuito raggiunto. 30-60s.',
-
     'chart.bar': 'Barre',
     'chart.line': 'Linea',
     'chart.area': 'Area',
@@ -1720,7 +1690,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'chart.scatter': 'Dispersione',
     'chart.table': 'Tabella',
     'chart.kpi': 'Numero',
-
     'query.viewsql': 'Vedi SQL',
     'query.hidesql': 'Nascondi SQL',
     'query.edit': 'Modifica',
@@ -1731,7 +1700,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'query.truncated': '(troncato)',
     'query.insight': 'Insight',
     'query.export_csv': 'CSV',
-
     'common.loading': 'Caricamento...',
     'sample.banner.title': 'Stai vedendo dati di esempio',
     'sample.banner.desc': '. esplora liberamente o carica i tuoi dati',
@@ -1810,7 +1778,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'currency.change_later': 'Modificabile nelle Impostazioni',
     'currency.none': 'Nessuna valuta',
   },
-
   ru: {
     'app.tagline': 'Инструмент Анализа Продаж',
     'nav.features': 'Возможности',
@@ -1826,15 +1793,23 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'auth.email_label': 'Ваш email',
     'auth.send_magic': 'Отправить ссылку',
     'auth.sending': 'Отправка...',
-    'auth.magic_sent_title': 'Проверьте почту',
-    'auth.magic_sent_desc': 'Ссылка отправлена на',
-    'auth.magic_sent_hint': 'Нажмите ссылку в письме.',
-    'auth.privacy_hint': 'Входя, вы соглашаетесь с условиями.',
     'auth.signed_in_as': 'Вы вошли как',
+    'auth.continue_email': 'Войти через email',
+    'auth.privacy_hint_prefix': 'Продолжая, вы соглашаетесь с',
+    'auth.terms': 'Условиями',
+    'auth.privacy': 'Конфиденциальностью',
+    'auth.and': 'и',
+    'legal.terms_title': 'Условия использования',
+    'legal.privacy_title': 'Политика конфиденциальности',
+    'legal.coming_soon': 'Полные условия готовятся. Пока:',
+    'legal.contact_us': 'По вопросам пишите на',
+    'legal.back_home': 'На главную',
+    'auth.magic_sent_title': 'Ссылка отправлена',
+    'auth.magic_sent_desc': 'Проверьте почту:',
+    'auth.magic_sent_hint': 'Откройте на этом устройстве для входа.',
     'nav.export': 'Экспорт',
     'nav.history': 'История',
     'nav.sql': 'SQL',
-
     'features.dashboard.title': 'Мгновенные дашборды',
     'features.dashboard.desc': 'Шаблоны продаж/повторов/каналов — один клик',
     'features.presets.title': 'Готовые вопросы',
@@ -1847,11 +1822,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'features.export.desc': 'Скачивайте CSV и Markdown отчёты',
     'features.privacy.title': 'Приватность',
     'features.privacy.desc': 'Данные только в памяти — не на сервере',
-
     'about.title': 'О Whalebase',
     'about.desc': 'Whalebase превращает данные продаж в мгновенные дашборды и инсайты.',
     'about.tech': 'Построен на FastAPI, React, DuckDB, Recharts',
-
     'data.title': 'Наборы данных',
     'data.upload': 'Клик или перетащить',
     'data.formats': 'CSV · TSV · Excel · JSON',
@@ -1862,7 +1835,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'data.rows': 'строк',
     'data.cols': 'столб',
     'data.delete_confirm': 'Удалить {name}?',
-
     'welcome.title': 'Добро пожаловать в Whalebase',
     'welcome.subtitle': 'Загрузите данные. Получайте дашборды, инсайты и ответы за секунды.',
     'welcome.step1.title': 'Загрузить данные',
@@ -1873,7 +1845,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'welcome.step3.desc': 'Готовые · Сводная · ИИ',
     'welcome.cta': 'Загрузить набор',
     'welcome.cta_sub': 'Клик или перетащить слева',
-
     'dashboard.title': 'Дашборд',
     'dashboard.subtitle': 'Авто-сгенерирован',
     'dashboard.templates_title': 'Шаблоны дашбордов',
@@ -1884,11 +1855,9 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'dashboard.pivot_desc': 'Перекрёстные отчёты',
     'dashboard.open': 'Открыть',
     'dashboard.back': 'Назад',
-
     'preset.cat.sales': 'Продажи',
     'preset.cat.customer': 'Клиенты',
     'preset.cat.overview': 'Обзор',
-
     'pivot.rows': 'Строки',
     'pivot.columns': 'Столбцы',
     'pivot.measure': 'Метрика',
@@ -1904,14 +1873,12 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'pivot.agg.min': 'Мин',
     'pivot.agg.max': 'Макс',
     'pivot.no_result': 'Выберите поля и создайте',
-
     'ai.modal.title': 'Спросить ИИ',
     'ai.modal.subtitle': 'Естественным языком.',
     'ai.placeholder': 'Напр.: У какого товара высокий повтор?',
     'ai.submit': 'Спросить',
     'ai.thinking': 'Генерация SQL...',
     'ai.rate_limit': 'Лимит бесплатного. 30-60 с.',
-
     'chart.bar': 'Столбцы',
     'chart.line': 'Линия',
     'chart.area': 'Область',
@@ -1919,7 +1886,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'chart.scatter': 'Точки',
     'chart.table': 'Таблица',
     'chart.kpi': 'Число',
-
     'query.viewsql': 'SQL',
     'query.hidesql': 'Скрыть',
     'query.edit': 'Изменить',
@@ -1930,7 +1896,6 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'query.truncated': '(обрезано)',
     'query.insight': 'Инсайт',
     'query.export_csv': 'CSV',
-
     'common.loading': 'Загрузка...',
     'sample.banner.title': 'Показаны демонстрационные данные',
     'sample.banner.desc': '. исследуйте свободно или загрузите свои',
@@ -2010,17 +1975,13 @@ const TRANSLATIONS: Record<Lang, Dict> = {
     'currency.none': 'Без валюты',
   },
 };
-
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-
 interface I18nContextValue {
   lang: Lang;
   setLang: (lang: Lang) => void;
   t: (key: string, params?: Record<string, string | number>) => string;
 }
-
 const I18nContext = createContext<I18nContextValue | null>(null);
-
 export function I18nProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>(() => {
     const saved = localStorage.getItem('whalebase.lang') as Lang | null;
@@ -2030,14 +1991,11 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     if (browserLang in TRANSLATIONS) return browserLang as Lang;
     return 'en';
   });
-
   useEffect(() => {
     localStorage.setItem('whalebase.lang', lang);
     document.documentElement.lang = lang;
   }, [lang]);
-
   const setLang = (l: Lang) => setLangState(l);
-
   const t = (key: string, params?: Record<string, string | number>): string => {
     let v = TRANSLATIONS[lang]?.[key] || TRANSLATIONS.en[key] || key;
     if (params) {
@@ -2047,12 +2005,10 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     }
     return v;
   };
-
   return (
     <I18nContext.Provider value={{ lang, setLang, t }}>{children}</I18nContext.Provider>
   );
 }
-
 export function useI18n() {
   const ctx = useContext(I18nContext);
   if (!ctx) throw new Error('useI18n must be inside I18nProvider');
