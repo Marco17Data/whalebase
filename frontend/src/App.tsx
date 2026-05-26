@@ -18,6 +18,16 @@ import { useI18n } from './i18n';
 type MainView = 'welcome' | 'dashboard' | 'pivot' | 'query';
 
 function App() {
+  // Clean up auth redirect hash (Supabase leaves # after processing magic-link/oauth tokens)
+  useEffect(() => {
+    const t = setTimeout(() => {
+      if (window.location.hash) {
+        window.history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+    }, 500);
+    return () => clearTimeout(t);
+  }, []);
+
   const { t, lang } = useI18n();
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [tables, setTables] = useState<TableInfo[]>([]);
