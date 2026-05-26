@@ -27,9 +27,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     });
 
     // Listen for auth state changes
-    const { data: authListener } = supabase.auth.onAuthStateChange((_event, newSession) => {
+    const { data: authListener } = supabase.auth.onAuthStateChange((event, newSession) => {
       setSession(newSession);
       setUser(newSession?.user ?? null);
+      // After Supabase finishes processing OAuth/magic-link tokens, strip the leftover # from URL
+      if (event === 'SIGNED_IN' && window.location.hash) {
+        window.history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
     });
 
     return () => {
