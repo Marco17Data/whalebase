@@ -13,8 +13,8 @@ export function PrivacyPage() {
         </p>
         <p className="text-sm text-slate-700 dark:text-slate-200 leading-relaxed">
           {t('legal.contact_us')}{' '}
-          <a href="mailto:marco17data@gmail.com" className="underline text-brand-600 dark:text-brand-400">
-            marco17data@gmail.com
+          <a href="mailto:marcozhao17@gmail.com" className="underline text-brand-600 dark:text-brand-400">
+            marcozhao17@gmail.com
           </a>
         </p>
         <div className="mt-8 pt-4 border-t border-slate-100 dark:border-slate-800">
