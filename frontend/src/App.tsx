@@ -1,6 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import type { TableInfo, AnswerResponse } from './types';
 import { api } from './api';
+import { useAuth } from './AuthContext';
 import { TopBar } from './components/TopBar';
 import { DataPanel } from './components/DataPanel';
 import { DashboardView } from './components/DashboardView';
@@ -21,6 +22,7 @@ function App() {
 
 
   const { t, lang } = useI18n();
+  const { user } = useAuth();
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [tables, setTables] = useState<TableInfo[]>([]);
   const [activeTable, setActiveTable] = useState<string | null>(null);
@@ -67,6 +69,34 @@ function App() {
       }
     })();
   }, []);
+
+  // Auto-restore latest file when user logs in (Stage 2 Batch 2-3)
+  useEffect(() => {
+    if (!user || !sessionId) return;
+    // 用户已登录 + session 已创建 → 检查是否有云端文件可恢复
+    (async () => {
+      try {
+        const r = await api.listMyFiles();
+        if (!r.authenticated || r.files.length === 0) return;
+        // 只在当前是 sample 状态时自动恢复 (用户已上传自己文件就不打扰)
+        if (!isSample) return;
+        // 加载最近一个文件 (列表已按 created_at desc 排序)
+        const latestFile = r.files[0];
+        await api.loadPersistedFile(sessionId, latestFile.id);
+        // 重新拉表列表
+        const info = await api.listTables(sessionId);
+        setTables(info.tables);
+        setIsSample(false);
+        setSampleId(null);
+        if (info.tables.length > 0) {
+          setActiveTable(info.tables[0].name);
+          setView('dashboard');
+        }
+      } catch (e) {
+        console.warn('Auto-restore failed:', e);
+      }
+    })();
+  }, [user, sessionId]);
 
   // 切语言时,如果有已生成的查询,把它们的 insight 用新语言重新生成
   useEffect(() => {

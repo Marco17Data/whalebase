@@ -50,11 +50,16 @@ export const api = {
   uploadFiles: async (sid: string, files: File[]) => {
     const fd = new FormData();
     for (const f of files) fd.append('files', f);
+    // Logged-in users: use persistent upload (saves to Supabase Storage)
+    const { data } = await supabase.auth.getSession();
+    const endpoint = data.session?.access_token
+      ? `/session/${sid}/upload-persist`
+      : `/session/${sid}/upload`;
     return request<{
       tables: TableInfo[];
       errors: { filename: string; error: string }[];
       suggested_currency?: string;
-    }>(`/session/${sid}/upload`, { method: 'POST', body: fd });
+    }>(endpoint, { method: 'POST', body: fd });
   },
 
   listTables: (sid: string) =>
@@ -236,6 +241,32 @@ export const api = {
       `/session/${sid}/table/${encodeURIComponent(tableName)}`,
       { method: 'DELETE' }
     ),
+
+  // ===== User file persistence (Stage 2) =====
+  listMyFiles: async () => {
+    return request<{
+      files: Array<{
+        id: string;
+        filename: string;
+        storage_path: string;
+        size_bytes: number;
+        row_count: number | null;
+        col_count: number | null;
+        created_at: string;
+      }>;
+      authenticated: boolean;
+    }>('/files');
+  },
+
+  loadPersistedFile: async (sid: string, fileId: string) => {
+    return request<{
+      table: TableInfo & { file_id: string; persisted: boolean };
+    }>(`/session/${sid}/files/${fileId}/load`, { method: 'POST' });
+  },
+
+  deleteMyFile: async (fileId: string) => {
+    return request<{ ok: boolean }>(`/files/${fileId}`, { method: 'DELETE' });
+  },
 
   // ===== Currency =====
   getCurrency: (sid: string) =>
