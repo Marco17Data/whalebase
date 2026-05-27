@@ -18,19 +18,6 @@ import { useI18n } from './i18n';
 type MainView = 'welcome' | 'dashboard' | 'pivot' | 'query';
 
 function App() {
-  // Strip stray '#' from URL on every render (Supabase auth artifact)
-  useEffect(() => {
-    const stripHash = () => {
-      if (window.location.hash && window.location.hash.length <= 1) {
-        // 只清空的 # (不清 #access_token=... 这种, Supabase 还要处理)
-        window.history.replaceState(null, '', window.location.pathname + window.location.search);
-      }
-    };
-    stripHash();
-    // 每次 URL 变化也清
-    window.addEventListener('hashchange', stripHash);
-    return () => window.removeEventListener('hashchange', stripHash);
-  }, []);
 
 
   const { t, lang } = useI18n();
