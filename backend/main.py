@@ -27,7 +27,14 @@ from dotenv import load_dotenv
 # 加载 .env（必须在导入其他模块前）
 load_dotenv()
 
-from fastapi import FastAPI, UploadFile, File, HTTPException, Path
+from fastapi import FastAPI, HTTPException, Request, UploadFile, File, Path
+from auth import get_user_id_from_request, require_user_id
+from persistence import (
+    upload_file as supa_upload_file,
+    list_user_files as supa_list_files,
+    download_file as supa_download_file,
+    delete_file as supa_delete_file,
+)
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import PlainTextResponse
 from pydantic import BaseModel, Field
@@ -680,3 +687,122 @@ if __name__ == "__main__":
         port=int(os.getenv("PORT", 8000)),
         reload=True,
     )
+
+
+# ============================================================
+# Stage 2: User file persistence (Supabase-backed)
+# ============================================================
+
+@app.get("/api/files")
+async def list_my_files(request: Request):
+    """登录用户列出云端持久化的所有文件 (返回元数据列表)."""
+    user_id = get_user_id_from_request(request)
+    if not user_id:
+        return {"files": [], "authenticated": False}
+    # 拿 JWT (我们已经在 require_user_id 验证过, 直接从 header 拿)
+    auth_header = request.headers.get("Authorization", "")
+    jwt = auth_header[7:].strip() if auth_header.startswith("Bearer ") else ""
+    files = supa_list_files(jwt, user_id)
+    return {"files": files, "authenticated": True}
+
+
+@app.post("/api/session/{session_id}/upload-persist")
+async def upload_files_persist(
+    session_id: str, request: Request, files: list[UploadFile] = File(...)
+):
+    """登录用户上传 — 同时存到 session 内存 + Supabase Storage."""
+    s = get_session_or_404(session_id)
+    user_id = get_user_id_from_request(request)
+    if not user_id:
+        # 未登录: 退回到普通 upload 行为, 不持久化
+        return await upload_files(session_id, files)
+
+    auth_header = request.headers.get("Authorization", "")
+    jwt = auth_header[7:].strip() if auth_header.startswith("Bearer ") else ""
+
+    MAX_FILE_MB = 10  # 比普通上传更严格 (跟 persistence.py 一致)
+    MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024
+    results, errors = [], []
+
+    for f in files:
+        try:
+            content = await f.read()
+            if len(content) > MAX_FILE_BYTES:
+                size_mb = round(len(content) / (1024 * 1024), 1)
+                errors.append({
+                    "filename": f.filename,
+                    "error": f"File is {size_mb} MB; max for saved files is {MAX_FILE_MB} MB."
+                })
+                continue
+            # 1. 加到 DuckDB session
+            table = add_table_from_file(s, f.filename or "data", content)
+            # 2. 推到 Supabase Storage
+            upload_result = supa_upload_file(
+                jwt, user_id, f.filename or "data.csv", content,
+                row_count=table.row_count,
+                col_count=len(table.columns),
+            )
+            t = serialize_table(table)
+            if upload_result.get("ok"):
+                t["file_id"] = upload_result.get("file_id")
+                t["persisted"] = True
+            else:
+                t["persisted"] = False
+                t["persist_error"] = upload_result.get("error")
+            results.append(t)
+        except Exception as e:
+            errors.append({"filename": f.filename, "error": str(e)})
+
+    if results and not getattr(s, "currency", None):
+        s.currency = detect_default_currency(results[0]["original_filename"])
+    if results:
+        s.is_sample = False
+        s.sample_id = None
+
+    return {"tables": results, "errors": errors, "suggested_currency": getattr(s, "currency", "USD")}
+
+
+@app.post("/api/session/{session_id}/files/{file_id}/load")
+async def load_persisted_file(session_id: str, file_id: str, request: Request):
+    """登录用户: 从 Storage 加载一个已存的文件到当前 session."""
+    s = get_session_or_404(session_id)
+    user_id = require_user_id(request)
+    auth_header = request.headers.get("Authorization", "")
+    jwt = auth_header[7:].strip() if auth_header.startswith("Bearer ") else ""
+
+    # 拿 storage_path
+    user_files = supa_list_files(jwt, user_id)
+    target = next((f for f in user_files if f.get("id") == file_id), None)
+    if not target:
+        raise HTTPException(404, "File not found or not yours")
+
+    # 从 Storage 下载
+    content = supa_download_file(jwt, target["storage_path"])
+    if not content:
+        raise HTTPException(500, "Failed to download from storage")
+
+    try:
+        table = add_table_from_file(s, target["filename"], content)
+        s.is_sample = False
+        s.sample_id = None
+        if not getattr(s, "currency", None):
+            s.currency = detect_default_currency(target["filename"])
+        t = serialize_table(table)
+        t["file_id"] = file_id
+        t["persisted"] = True
+        return {"table": t}
+    except Exception as e:
+        raise HTTPException(400, f"Failed to load file: {e}")
+
+
+@app.delete("/api/files/{file_id}")
+async def delete_my_file(file_id: str, request: Request):
+    """登录用户: 永久删除一个云端文件."""
+    user_id = require_user_id(request)
+    auth_header = request.headers.get("Authorization", "")
+    jwt = auth_header[7:].strip() if auth_header.startswith("Bearer ") else ""
+    result = supa_delete_file(jwt, user_id, file_id)
+    if not result.get("ok"):
+        raise HTTPException(400, result.get("error", "delete failed"))
+    return {"ok": True}
+
