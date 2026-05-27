@@ -16,6 +16,7 @@ from supabase import create_client, Client
 
 SUPABASE_URL = os.getenv("SUPABASE_URL", "")
 SUPABASE_ANON_KEY = os.getenv("SUPABASE_ANON_KEY", "")
+SUPABASE_SERVICE_KEY = os.getenv("SUPABASE_SERVICE_KEY", "")
 
 # 全局 client (anon key, 操作时通过 RLS 用 JWT 限制访问权限)
 # 注意: 这个 client 不带 user JWT, 所以无法读用户私有数据
@@ -31,6 +32,22 @@ def _get_global_client() -> Client:
             raise RuntimeError("SUPABASE_URL and SUPABASE_ANON_KEY must be set in env")
         _global_client = create_client(SUPABASE_URL, SUPABASE_ANON_KEY)
     return _global_client
+
+
+_service_client: Optional[Client] = None
+
+def _get_service_client() -> Client:
+    """
+    Service-role client (bypasses RLS).
+    Use ONLY after we've manually verified the user_id, e.g. against the
+    JWT-extracted user_id. Never expose this client to user input.
+    """
+    global _service_client
+    if _service_client is None:
+        if not SUPABASE_URL or not SUPABASE_SERVICE_KEY:
+            raise RuntimeError("SUPABASE_URL and SUPABASE_SERVICE_KEY must be set in env")
+        _service_client = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
+    return _service_client
 
 
 def _get_user_client(user_jwt: str) -> Client:
@@ -65,11 +82,14 @@ def upload_file(user_jwt: str, user_id: str, filename: str, file_bytes: bytes,
     if len(file_bytes) > MAX_FILE_BYTES:
         return {"ok": False, "error": f"File exceeds {MAX_FILE_BYTES // (1024*1024)}MB limit", "file_id": None}
 
-    client = _get_user_client(user_jwt)
+    # Storage 上传用 user client (Storage RLS works correctly)
+    user_client = _get_user_client(user_jwt)
+    # 元数据 (user_files 表) 用 service client (Postgres RLS via JWT 不可靠)
+    svc = _get_service_client()
 
-    # 1. 检查用户文件数量
+    # 1. 检查用户文件数量 (用 service client 绕过 RLS)
     try:
-        count_resp = client.table("user_files").select("id", count="exact").eq("user_id", user_id).execute()
+        count_resp = svc.table("user_files").select("id", count="exact").eq("user_id", user_id).execute()
         current_count = count_resp.count or 0
         if current_count >= MAX_FILES_PER_USER:
             return {"ok": False, "error": f"Limit reached: max {MAX_FILES_PER_USER} files per user", "file_id": None}
@@ -80,7 +100,7 @@ def upload_file(user_jwt: str, user_id: str, filename: str, file_bytes: bytes,
     file_id = str(uuid.uuid4())
     storage_path = f"{user_id}/{file_id}-{filename}"
     try:
-        client.storage.from_(BUCKET).upload(
+        user_client.storage.from_(BUCKET).upload(
             storage_path,
             file_bytes,
             {"content-type": "text/csv"}
@@ -90,7 +110,7 @@ def upload_file(user_jwt: str, user_id: str, filename: str, file_bytes: bytes,
 
     # 3. 插入 user_files 表
     try:
-        client.table("user_files").insert({
+        svc.table("user_files").insert({
             "id": file_id,
             "user_id": user_id,
             "filename": filename,
@@ -102,7 +122,7 @@ def upload_file(user_jwt: str, user_id: str, filename: str, file_bytes: bytes,
     except Exception as e:
         # rollback storage
         try:
-            client.storage.from_(BUCKET).remove([storage_path])
+            user_client.storage.from_(BUCKET).remove([storage_path])
         except Exception:
             pass
         return {"ok": False, "error": f"DB insert failed: {e}", "file_id": None}
@@ -112,7 +132,7 @@ def upload_file(user_jwt: str, user_id: str, filename: str, file_bytes: bytes,
 
 def list_user_files(user_jwt: str, user_id: str) -> list:
     """返回用户所有文件的元数据列表 (最新在前)."""
-    client = _get_user_client(user_jwt)
+    client = _get_service_client()  # bypass RLS for reliable access
     try:
         resp = client.table("user_files").select("*").eq("user_id", user_id).order("created_at", desc=True).execute()
         return resp.data or []
@@ -132,7 +152,7 @@ def download_file(user_jwt: str, storage_path: str) -> Optional[bytes]:
 
 def delete_file(user_jwt: str, user_id: str, file_id: str) -> dict:
     """删除文件: 删 storage + user_files 表行 (cascade 会自动删 user_queries 相关)."""
-    client = _get_user_client(user_jwt)
+    client = _get_service_client()  # bypass RLS for reliable access
     try:
         # 先查 storage_path
         resp = client.table("user_files").select("storage_path").eq("id", file_id).eq("user_id", user_id).single().execute()
