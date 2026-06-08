@@ -231,15 +231,15 @@ export function HeroOverview({ sessionId, currency, activeTable, tablesCount }: 
                 width={280}
                 height={280}
               />
-              <div className="flex-1 space-y-1.5 text-sm">
+              <div className="flex-1 space-y-1.5 text-xs">
                 {data.pie.slices.map((s, i) => (
                   <div key={i} className="flex items-center gap-2">
                     <div
                       className="w-3 h-3 rounded-sm flex-shrink-0"
                       style={{ background: PIE_COLORS[i % PIE_COLORS.length] }}
                     />
-                    <span className="text-slate-700 dark:text-slate-200 flex-1 truncate">{s.label}</span>
-                    <span className="text-slate-500 dark:text-slate-300 text-xs font-medium">{s.pct.toFixed(1)}%</span>
+                    <span className="text-slate-700 dark:text-slate-200 flex-1 truncate font-normal">{s.label}</span>
+                    <span className="text-slate-500 dark:text-slate-300 text-[11px] font-normal">{s.pct.toFixed(1)}%</span>
                   </div>
                 ))}
               </div>
@@ -673,4 +673,3 @@ function CompareTrendChart({ trend, datasets, isCurrency, currency }: {
     </div>
   );
 }
-

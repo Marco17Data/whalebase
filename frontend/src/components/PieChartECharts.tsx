@@ -16,16 +16,13 @@ interface Props {
   height?: number;
 }
 
-// Premium SaaS color palette with gradient pairs (lighter -> darker)
-// Linear/Figma-style premium flat color palette
-// Muted but distinct, no gradients - matches Notion/Stripe/Linear aesthetic
 const FLAT_COLORS: string[] = [
-  '#5b6cf9',  // electric indigo
-  '#f5a623',  // warm amber
-  '#10b981',  // emerald
-  '#ef4444',  // coral red
-  '#a855f7',  // royal purple
-  '#06b6d4',  // sky cyan
+  '#6366f1',
+  '#8b5cf6',
+  '#a78bfa',
+  '#c4b5fd',
+  '#ddd6fe',
+  '#e0e7ff',
 ];
 
 export function PieChartECharts({
@@ -45,11 +42,11 @@ export function PieChartECharts({
       textStyle: {
         color: '#fff',
         fontSize: 12,
-        fontWeight: 500,
+        fontWeight: 400,
       },
       padding: [8, 12],
       formatter: (params: any) => {
-        return `<div style="font-weight:600;margin-bottom:2px;">${params.name}</div>
+        return `<div style="font-weight:400;margin-bottom:2px;">${params.name}</div>
                 <div style="opacity:0.9;">${params.percent}% · ${params.value.toLocaleString()}</div>`;
       },
       extraCssText: 'border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);',
@@ -60,11 +57,10 @@ export function PieChartECharts({
         radius: ['58%', '88%'],   // inner / outer (relative to container)
         center: ['50%', '50%'],
         avoidLabelOverlap: false,
-        padAngle: 2,
+        padAngle: 1,
         itemStyle: {
-          borderRadius: 6,        // softer rounded corners for premium feel
-          borderColor: '#fff',
-          borderWidth: 3,         // thicker white separator (Linear-style)
+          borderRadius: 3,
+          borderWidth: 0,
           shadowColor: 'rgba(15, 23, 42, 0.06)',
           shadowBlur: 8,
           shadowOffsetY: 1,
@@ -104,12 +100,11 @@ export function PieChartECharts({
       />
       {/* Center total - absolute over the chart */}
       <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-        <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-300 uppercase tracking-wider">{totalLabel}</div>
-        <div className="text-2xl font-bold text-slate-800 dark:text-slate-100 mt-0.5">{totalValueText}</div>
+        <div className="text-[10px] font-normal text-slate-500 dark:text-slate-300 uppercase tracking-wider">{totalLabel}</div>
+        <div className="text-xl font-semibold text-slate-800 dark:text-slate-100 mt-0.5">{totalValueText}</div>
       </div>
     </div>
   );
 }
 
-// Export the color pairs so the legend can use matching colors
 export const PIE_COLORS = FLAT_COLORS;
