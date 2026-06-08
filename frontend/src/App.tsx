@@ -147,6 +147,12 @@ function App() {
     }
   };
 
+  const handlePersistedTablesChanged = useCallback(async () => {
+    await refreshTables();
+    setRefreshKey((k) => k + 1);
+    setView('dashboard');
+  }, [refreshTables]);
+
   const handleCurrencyConfirm = async (c: string) => {
     if (!sessionId) return;
     await api.setCurrency(sessionId, c);
@@ -200,6 +206,8 @@ function App() {
           setSuggestedCurrency(currency !== 'none' ? currency : 'USD');
           setCurrencyDialogOpen(true);
         }}
+        sessionId={sessionId}
+        onTablesChanged={handlePersistedTablesChanged}
         sqlOpen={sqlOpen}
         historyOpen={historyOpen}
       />

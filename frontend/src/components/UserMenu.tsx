@@ -1,12 +1,19 @@
 import { useState, useRef, useEffect } from 'react';
-import { LogOut, User as UserIcon } from 'lucide-react';
+import { Files, LogOut } from 'lucide-react';
 import { useI18n } from '../i18n';
 import { useAuth } from '../AuthContext';
+import { MyFilesPanel } from './MyFilesPanel';
 
-export function UserMenu() {
+interface Props {
+  sessionId: string;
+  onTablesChanged: () => Promise<void>;
+}
+
+export function UserMenu({ sessionId, onTablesChanged }: Props) {
   const { t } = useI18n();
   const { user, signOut } = useAuth();
   const [open, setOpen] = useState(false);
+  const [filesOpen, setFilesOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -48,13 +55,28 @@ export function UserMenu() {
             </div>
           </div>
           <button
-            onClick={async () => { setOpen(false); await signOut(); }}
+            onClick={() => { setOpen(false); setFilesOpen(true); }}
             className="w-full px-3 py-2 text-left text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-2"
+          >
+            <Files className="w-4 h-4" />
+            {t('files.my_files')}
+          </button>
+          <button
+            onClick={async () => { setOpen(false); await signOut(); }}
+            className="w-full px-3 py-2 text-left text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 flex items-center gap-2 border-t border-slate-100 dark:border-slate-800"
           >
             <LogOut className="w-4 h-4" />
             {t('auth.sign_out')}
           </button>
         </div>
+      )}
+
+      {filesOpen && (
+        <MyFilesPanel
+          sessionId={sessionId}
+          onTablesChanged={onTablesChanged}
+          onClose={() => setFilesOpen(false)}
+        />
       )}
     </div>
   );

@@ -22,6 +22,8 @@ interface Props {
   onSettings: () => void;
   onAskAI: () => void;
   onChangeCurrency: () => void;
+  sessionId: string;
+  onTablesChanged: () => Promise<void>;
   sqlOpen: boolean;
   historyOpen: boolean;
 }
@@ -37,6 +39,8 @@ export function TopBar({
   onSettings,
   onAskAI,
   onChangeCurrency,
+  sessionId,
+  onTablesChanged,
   sqlOpen,
   historyOpen,
 }: Props) {
@@ -143,7 +147,10 @@ export function TopBar({
 
         {!authLoading && (
           user ? (
-            <UserMenu />
+            <UserMenu
+              sessionId={sessionId}
+              onTablesChanged={onTablesChanged}
+            />
           ) : (
             <button
               onClick={() => setShowAuthDialog(true)}

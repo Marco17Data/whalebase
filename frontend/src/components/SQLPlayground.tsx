@@ -12,7 +12,7 @@ interface Props {
 
 export function SQLPlayground({ sessionId, tables, onClose }: Props) {
   const [sql, setSql] = useState(() => {
-    if (tables.length === 0) return '-- 先上传数据集';
+    if (tables.length === 0) return '-- 先上传文件';
     const t = tables[0];
     return `SELECT * FROM "${t.name}" LIMIT 10;`;
   });
