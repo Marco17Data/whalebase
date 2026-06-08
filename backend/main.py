@@ -19,6 +19,7 @@ API 端点列表:
 
 from __future__ import annotations
 
+import logging
 import os
 from typing import Any
 
@@ -50,6 +51,8 @@ from dashboard import generate_dashboard
 from templates import TEMPLATES, run_template, list_templates as list_templates_i18n, get_preset_questions
 from pivot import PivotConfig, run_pivot
 
+logger = logging.getLogger(__name__)
+
 
 # ============================================================
 # FastAPI app
@@ -59,6 +62,17 @@ app = FastAPI(
     description="自然语言 BI 工具的后端 API",
     version="0.1.0",
 )
+
+
+@app.on_event("startup")
+async def log_persistence_config():
+    logger.info(
+        "Supabase runtime config: URL loaded=%s, ANON_KEY loaded=%s, SERVICE_KEY loaded=%s",
+        bool(os.getenv("SUPABASE_URL")),
+        bool(os.getenv("SUPABASE_ANON_KEY")),
+        bool(os.getenv("SUPABASE_SERVICE_KEY")),
+    )
+
 
 # CORS（前端开发地址 + 部署后地址）
 # FRONTEND_ORIGIN 支持逗号分隔多个 origin
@@ -749,8 +763,19 @@ async def upload_files_persist(
             else:
                 t["persisted"] = False
                 t["persist_error"] = upload_result.get("error")
+                logger.error(
+                    "Persistent upload failed: user=%s filename=%r error=%s",
+                    user_id[:8],
+                    f.filename,
+                    upload_result.get("error"),
+                )
             results.append(t)
         except Exception as e:
+            logger.exception(
+                "Persistent upload endpoint failed: user=%s filename=%r",
+                user_id[:8],
+                f.filename,
+            )
             errors.append({"filename": f.filename, "error": str(e)})
 
     if results and not getattr(s, "currency", None):
@@ -805,4 +830,3 @@ async def delete_my_file(file_id: str, request: Request):
     if not result.get("ok"):
         raise HTTPException(400, result.get("error", "delete failed"))
     return {"ok": True}
-

@@ -9,14 +9,24 @@ Supabase 持久化层 (Stage 2)
 """
 
 from __future__ import annotations
+import logging
 import os
 import uuid
 from typing import Optional
 from supabase import create_client, Client
 
+logger = logging.getLogger(__name__)
+
 SUPABASE_URL = os.getenv("SUPABASE_URL", "")
 SUPABASE_ANON_KEY = os.getenv("SUPABASE_ANON_KEY", "")
 SUPABASE_SERVICE_KEY = os.getenv("SUPABASE_SERVICE_KEY", "")
+
+logger.info(
+    "Supabase persistence config: URL loaded=%s, ANON_KEY loaded=%s, SERVICE_KEY loaded=%s",
+    bool(SUPABASE_URL),
+    bool(SUPABASE_ANON_KEY),
+    bool(SUPABASE_SERVICE_KEY),
+)
 
 # 全局 client (anon key, 操作时通过 RLS 用 JWT 限制访问权限)
 # 注意: 这个 client 不带 user JWT, 所以无法读用户私有数据
@@ -79,21 +89,48 @@ def upload_file(user_jwt: str, user_id: str, filename: str, file_bytes: bytes,
     上传文件到 Supabase Storage + 在 user_files 表添加记录.
     返回 {"ok": True/False, "file_id": str | None, "error": str | None}
     """
+    user_ref = user_id[:8] if user_id else "unknown"
+    logger.info(
+        "Persist upload started: user=%s filename=%r size_bytes=%d rows=%s cols=%s",
+        user_ref,
+        filename,
+        len(file_bytes),
+        row_count,
+        col_count,
+    )
+
     if len(file_bytes) > MAX_FILE_BYTES:
+        logger.warning(
+            "Persist upload rejected: user=%s filename=%r reason=file_too_large",
+            user_ref,
+            filename,
+        )
         return {"ok": False, "error": f"File exceeds {MAX_FILE_BYTES // (1024*1024)}MB limit", "file_id": None}
 
-    # Storage 上传用 user client (Storage RLS works correctly)
-    user_client = _get_user_client(user_jwt)
-    # 元数据 (user_files 表) 用 service client (Postgres RLS via JWT 不可靠)
-    svc = _get_service_client()
+    try:
+        # Storage 上传用 user client (Storage RLS works correctly)
+        user_client = _get_user_client(user_jwt)
+        # 元数据 (user_files 表) 用 service client (Postgres RLS via JWT 不可靠)
+        svc = _get_service_client()
+        logger.info(
+            "Persist clients ready: user=%s service_key_loaded=%s",
+            user_ref,
+            bool(os.getenv("SUPABASE_SERVICE_KEY")),
+        )
+    except Exception as e:
+        logger.exception("Persist client initialization failed: user=%s", user_ref)
+        return {"ok": False, "error": f"Supabase client initialization failed: {e}", "file_id": None}
 
     # 1. 检查用户文件数量 (用 service client 绕过 RLS)
     try:
         count_resp = svc.table("user_files").select("id", count="exact").eq("user_id", user_id).execute()
         current_count = count_resp.count or 0
+        logger.info("Persist file count checked: user=%s count=%d", user_ref, current_count)
         if current_count >= MAX_FILES_PER_USER:
+            logger.warning("Persist upload rejected: user=%s reason=file_limit", user_ref)
             return {"ok": False, "error": f"Limit reached: max {MAX_FILES_PER_USER} files per user", "file_id": None}
     except Exception as e:
+        logger.exception("Persist file count failed: user=%s table=user_files", user_ref)
         return {"ok": False, "error": f"DB error: {e}", "file_id": None}
 
     # 2. 上传到 Storage (路径: {user_id}/{file_id}-{filename})
@@ -105,7 +142,19 @@ def upload_file(user_jwt: str, user_id: str, filename: str, file_bytes: bytes,
             file_bytes,
             {"content-type": "text/csv"}
         )
+        logger.info(
+            "Persist storage upload succeeded: user=%s bucket=%s path=%r",
+            user_ref,
+            BUCKET,
+            storage_path,
+        )
     except Exception as e:
+        logger.exception(
+            "Persist storage upload failed: user=%s bucket=%s path=%r",
+            user_ref,
+            BUCKET,
+            storage_path,
+        )
         return {"ok": False, "error": f"Storage upload failed: {e}", "file_id": None}
 
     # 3. 插入 user_files 表
@@ -119,14 +168,34 @@ def upload_file(user_jwt: str, user_id: str, filename: str, file_bytes: bytes,
             "row_count": row_count,
             "col_count": col_count,
         }).execute()
+        logger.info(
+            "Persist metadata insert succeeded: user=%s file_id=%s",
+            user_ref,
+            file_id,
+        )
     except Exception as e:
+        logger.exception(
+            "Persist metadata insert failed: user=%s file_id=%s table=user_files",
+            user_ref,
+            file_id,
+        )
         # rollback storage
         try:
             user_client.storage.from_(BUCKET).remove([storage_path])
+            logger.info(
+                "Persist storage rollback succeeded: user=%s path=%r",
+                user_ref,
+                storage_path,
+            )
         except Exception:
-            pass
+            logger.exception(
+                "Persist storage rollback failed: user=%s path=%r",
+                user_ref,
+                storage_path,
+            )
         return {"ok": False, "error": f"DB insert failed: {e}", "file_id": None}
 
+    logger.info("Persist upload completed: user=%s file_id=%s", user_ref, file_id)
     return {"ok": True, "file_id": file_id, "storage_path": storage_path, "error": None}
 
 
@@ -136,7 +205,11 @@ def list_user_files(user_jwt: str, user_id: str) -> list:
     try:
         resp = client.table("user_files").select("*").eq("user_id", user_id).order("created_at", desc=True).execute()
         return resp.data or []
-    except Exception as e:
+    except Exception:
+        logger.exception(
+            "List persisted files failed: user=%s table=user_files",
+            user_id[:8] if user_id else "unknown",
+        )
         return []
 
 
