@@ -204,7 +204,7 @@ function App() {
         historyOpen={historyOpen}
       />
 
-      {isSample && (
+      {!user && isSample && (
         <SampleBanner
           sampleId={sampleId}
           onSwitchSample={async (id) => {
