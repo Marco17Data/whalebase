@@ -17,12 +17,12 @@ interface Props {
 }
 
 const FLAT_COLORS: string[] = [
-  '#6366f1',
-  '#8b5cf6',
-  '#a78bfa',
-  '#c4b5fd',
-  '#ddd6fe',
-  '#e0e7ff',
+  '#5b6cf9',
+  '#f5a623',
+  '#10b981',
+  '#ef4444',
+  '#a855f7',
+  '#06b6d4',
 ];
 
 export function PieChartECharts({
