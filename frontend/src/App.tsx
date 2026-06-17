@@ -70,7 +70,7 @@ function App() {
     })();
   }, []);
 
-  // Auto-restore latest file when user logs in (Stage 2 Batch 2-3)
+  // Auto-restore saved files when user logs in (Stage 2 Batch 2-3)
   useEffect(() => {
     if (!user || !sessionId) return;
     // 用户已登录 + session 已创建 → 检查是否有云端文件可恢复
@@ -80,16 +80,31 @@ function App() {
         if (!r.authenticated || r.files.length === 0) return;
         // 只在当前是 sample 状态时自动恢复 (用户已上传自己文件就不打扰)
         if (!isSample) return;
-        // 加载最近一个文件 (列表已按 created_at desc 排序)
-        const latestFile = r.files[0];
-        await api.loadPersistedFile(sessionId, latestFile.id);
+        // 列表按 created_at desc 排序；恢复时从旧到新加载，最后让最新文件成为 active table。
+        const filesToRestore = [...r.files].reverse();
+        let restoredAny = false;
+        let activeRestoredTable: string | null = null;
+        for (const file of filesToRestore) {
+          try {
+            const loaded = await api.loadPersistedFile(sessionId, file.id);
+            restoredAny = true;
+            activeRestoredTable = loaded.table.name;
+          } catch (e) {
+            console.warn('Auto-restore file failed:', file.filename, e);
+          }
+        }
+        if (!restoredAny) return;
         // 重新拉表列表
         const info = await api.listTables(sessionId);
         setTables(info.tables);
         setIsSample(false);
         setSampleId(null);
         if (info.tables.length > 0) {
-          setActiveTable(info.tables[0].name);
+          setActiveTable(
+            activeRestoredTable && info.tables.some((table) => table.name === activeRestoredTable)
+              ? activeRestoredTable
+              : info.tables[0].name
+          );
           setView('dashboard');
         }
       } catch (e) {

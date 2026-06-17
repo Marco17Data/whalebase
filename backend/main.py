@@ -762,12 +762,17 @@ async def upload_files_persist(
                 t["persisted"] = True
             else:
                 t["persisted"] = False
-                t["persist_error"] = upload_result.get("error")
+                persist_error = upload_result.get("error") or "Unknown persistence error"
+                t["persist_error"] = persist_error
+                errors.append({
+                    "filename": f.filename or "data.csv",
+                    "error": f"Saved file persistence failed: {persist_error}",
+                })
                 logger.error(
                     "Persistent upload failed: user=%s filename=%r error=%s",
                     user_id[:8],
                     f.filename,
-                    upload_result.get("error"),
+                    persist_error,
                 )
             results.append(t)
         except Exception as e:
