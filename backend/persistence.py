@@ -79,7 +79,7 @@ def _get_user_client(user_jwt: str) -> Client:
 # 文件管理
 # ============================================================
 MAX_FILE_BYTES = 10 * 1024 * 1024  # 10 MB
-MAX_FILES_PER_USER = 30
+MAX_FILES_PER_USER = 100
 BUCKET = "user-uploads"
 
 
