@@ -48,6 +48,7 @@ export function TopBar({
   const { theme, toggleTheme } = useTheme();
   const { user, loading: authLoading } = useAuth();
   const [showAuthDialog, setShowAuthDialog] = useState(false);
+  const fileLabel = tableCount === 1 ? t('files.file') : t('files.files');
 
   return (
     <header className="h-14 border-b border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 flex items-center justify-between px-5 shrink-0 z-30 relative">
@@ -72,12 +73,12 @@ export function TopBar({
 
       {/* 中：指标卡片（数据上传后显示） */}
       {tableCount > 0 && (
-        <div className="hidden lg:flex items-center gap-1 absolute left-1/2 -translate-x-1/2">
-          <MetricChip label={t('data.title')} value={tableCount} />
-          <MetricChip label={t('query.rows', { n: '' }).replace('{n}', '').trim()} value={totalRows.toLocaleString()} />
-          {queryCount > 0 && (
-            <MetricChip label={t('nav.history')} value={queryCount} />
-          )}
+        <div className="hidden lg:flex items-center gap-1.5 absolute left-1/2 -translate-x-1/2 text-[11px] text-slate-500 dark:text-slate-300">
+          <span className="font-semibold text-slate-900 dark:text-slate-100 tabular-nums">{tableCount.toLocaleString()}</span>
+          <span>{fileLabel}</span>
+          <span className="text-slate-300 dark:text-slate-600">·</span>
+          <span className="font-semibold text-slate-900 dark:text-slate-100 tabular-nums">{totalRows.toLocaleString()}</span>
+          <span>{t('files.rows')}</span>
         </div>
       )}
 
@@ -360,15 +361,6 @@ function DropdownItem({
         <div className="text-xs font-semibold text-slate-900 dark:text-slate-100">{title}</div>
         <p className="text-[11px] text-slate-500 dark:text-slate-300 leading-relaxed mt-0.5">{desc}</p>
       </div>
-    </div>
-  );
-}
-
-function MetricChip({ label, value }: { label: string; value: number | string }) {
-  return (
-    <div className="flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px]">
-      <span className="text-slate-500 dark:text-slate-300">{label}</span>
-      <span className="font-semibold text-slate-900 dark:text-slate-100 tabular-nums">{value}</span>
     </div>
   );
 }

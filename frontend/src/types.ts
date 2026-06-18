@@ -14,6 +14,8 @@ export interface TableInfo {
   row_count: number;
   columns: ColumnInfo[];
   preview_rows: Record<string, any>[];
+  file_id?: string | null;
+  persisted?: boolean;
 }
 
 export interface QueryResult {

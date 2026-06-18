@@ -46,6 +46,8 @@ class TableInfo:
     row_count: int
     columns: list[ColumnInfo]
     preview_rows: list[dict[str, Any]]  # 前 20 行用于前端展示
+    file_id: str | None = None
+    persisted: bool = False
 
 
 @dataclass
@@ -445,4 +447,3 @@ def _read_columns_metadata(conn, table_name: str):
     except Exception:
         preview_rows = []
     return cols, int(row_count), preview_rows
-

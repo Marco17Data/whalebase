@@ -142,6 +142,8 @@ def serialize_table(table) -> dict[str, Any]:
             for c in table.columns
         ],
         "preview_rows": table.preview_rows,
+        "file_id": getattr(table, "file_id", None),
+        "persisted": bool(getattr(table, "persisted", False)),
     }
 
 
@@ -756,11 +758,13 @@ async def upload_files_persist(
                 row_count=table.row_count,
                 col_count=len(table.columns),
             )
-            t = serialize_table(table)
             if upload_result.get("ok"):
-                t["file_id"] = upload_result.get("file_id")
-                t["persisted"] = True
+                table.file_id = upload_result.get("file_id")
+                table.persisted = True
+                t = serialize_table(table)
             else:
+                table.persisted = False
+                t = serialize_table(table)
                 t["persisted"] = False
                 persist_error = upload_result.get("error") or "Unknown persistence error"
                 t["persist_error"] = persist_error
@@ -813,13 +817,13 @@ async def load_persisted_file(session_id: str, file_id: str, request: Request):
 
     try:
         table = add_table_from_file(s, target["filename"], content)
+        table.file_id = file_id
+        table.persisted = True
         s.is_sample = False
         s.sample_id = None
         if not getattr(s, "currency", None):
             s.currency = detect_default_currency(target["filename"])
         t = serialize_table(table)
-        t["file_id"] = file_id
-        t["persisted"] = True
         return {"table": t}
     except Exception as e:
         raise HTTPException(400, f"Failed to load file: {e}")
